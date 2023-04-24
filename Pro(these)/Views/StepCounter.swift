@@ -16,6 +16,16 @@ struct StepCounter: View {
     @Namespace private var MoodAnimationCounter
     @Namespace var bottomID
     
+    func dateMin(_ value: Int) -> Date {
+        let dateMin = Calendar.current.date(byAdding: .day, value: -value, to: Date())!
+        print(dateMin)
+        return dateMin
+    }
+    
+    func dateMax(_ value: Int) -> Date {
+        let dateMin = Calendar.current.date(byAdding: .day, value: +value, to: Date())!
+        return dateMin
+    }
     
     @State private var dragAmount = CGSize.zero
 
@@ -193,24 +203,11 @@ struct StepCounter: View {
             Chart() {
                 RuleMark(y: .value("Durchschnitt", stepCounterManager.avgSteps(steps: healthStorage.Steps) ) )
                     .foregroundStyle(.orange.opacity(0.5))
-               
-                RuleMark(y: .value("MaxSteps", stepCounterManager.maxSteps(steps: healthStorage.Steps) + 2000 ) )
-                    .foregroundStyle(.orange.opacity(0.01))
                 
-                RuleMark(y: .value("MinSteps", stepCounterManager.minSteps(steps: healthStorage.Steps) - 2000 ) )
-                    .foregroundStyle(.orange.opacity(0.01))
-                
-                RuleMark(x: .value("MinSteps", stepCounterManager.activeDateCicle ) )
+                RuleMark(x: .value("ActiveSteps", stepCounterManager.activeDateCicle ) )
                     .foregroundStyle(stepCounterManager.activeisActive ? .white.opacity(1) : .white.opacity(0.2))
                     .offset(dragAmount)
-                
-               // .animation(.default.delay(Double(5) / 20), value: dragAmount)
-                
-                // Spacer Right
-                LineMark(
-                    x: .value("Dates", Calendar.current.date(byAdding: .day, value: -7, to: Date())!),
-                    y: .value("Steps", 0)
-                )
+
                 
                 if AppConfig().ChartBarIsShowing {
                     ForEach(Array(healthStorage.Steps.enumerated()), id: \.offset) { index, step in
@@ -281,10 +278,7 @@ struct StepCounter: View {
                                         .frame(width: 20)
                                         .shadow(radius: 2)
                                 }
-                                
-                                
                             }
-                            
                         }
                         .foregroundStyle(
                             .linearGradient(
@@ -300,18 +294,14 @@ struct StepCounter: View {
                     }
                 }
                 
-                // Spaer Right
-                LineMark(
-                    x: .value("Dates", Calendar.current.date(byAdding: .day, value: +0, to: Date())!),
-                    y: .value("Steps", 0)
-                )
+                
             }
             .frame(width: stepCounterManager.calcChartItemSize())
-            .chartForegroundStyleScale([
+            /*.chartForegroundStyleScale([
                     "Schritte": Color.white,
                     "Distanz": Color.red,
                     "Durschnitt": Color.orange
-                ])
+                ])*/
             .chartOverlay { proxy in
                 GeometryReader { geometry in
                     ZStack(alignment: .top) {
@@ -352,10 +342,9 @@ struct StepCounter: View {
                 let steps = healthStorage.Steps.map { $0.count }
                 let min = steps.min() ?? 1000
                 let max = steps.max() ?? 20000
-                let consumptionStride = Array(stride(from: min, through: max, by: (max - min)/3))
-                AxisMarks(position: .trailing, values: consumptionStride) { axis in
-                    let value = consumptionStride[axis.index]
-                    //AxisValueLabel("\(value)", centered: true)
+                //let consumptionStride = Array(stride(from: min, through: max, by: (max - min)/3))
+                let test = Array(stride(from: min, to: max, by: 5000))
+                AxisMarks(position: .trailing, values: test) { axis in
                     AxisGridLine(stroke: StrokeStyle(lineWidth: 2,
                                                      lineCap: .butt,
                                                      lineJoin: .bevel,
@@ -363,6 +352,7 @@ struct StepCounter: View {
                                                      dash: [5],
                                                      dashPhase: 1))
                 }
+               
             }
             .chartXAxis {
                 AxisMarks(values: .stride(by: .day, count: 1)) { value in
@@ -377,6 +367,8 @@ struct StepCounter: View {
                     
                 }
             }
+            .chartYScale(range: .plotDimension(padding: 20))
+            .chartXScale(range: .plotDimension(padding: 30))
             Text("").id(bottomID)
         }
         .frame(height: 200)
@@ -392,19 +384,6 @@ struct StepCounter: View {
                     Chart() {
                         RuleMark(y: .value("Durchschnitt", stepCounterManager.avgSteps(steps: healthStorage.Steps) ) )
                             .foregroundStyle(.orange.opacity(0.5))
-                       
-                        RuleMark(y: .value("MaxSteps", stepCounterManager.maxSteps(steps: healthStorage.Steps) + 2000 ) )
-                            .foregroundStyle(.orange.opacity(0.01))
-                        
-                        RuleMark(y: .value("MinSteps", stepCounterManager.minSteps(steps: healthStorage.Steps) - 2000 ) )
-                            .foregroundStyle(.orange.opacity(0.01))
-                        
-                        
-                        // Spacer Right
-                        LineMark(
-                            x: .value("Dates", Calendar.current.date(byAdding: .day, value: -7, to: Date())!),
-                            y: .value("Steps", 0)
-                        )
                         
                         if AppConfig().ChartBarIsShowing {
                             ForEach(Array(healthStorage.Steps.enumerated()), id: \.offset) { index, step in
@@ -419,24 +398,24 @@ struct StepCounter: View {
                         }
                         
                         if AppConfig().ChartLineDistanceIsShowing {
-                        ForEach(Array(healthStorage.Steps.enumerated()), id: \.offset) { index, step in
-                            LineMark(
-                                x: .value("Dates", step.date),
-                                y: .value("Steps", (step.dist ?? 0))
-                            )
-                            .interpolationMethod(.catmullRom)
-                            .foregroundStyle(.red)
-                            .foregroundStyle(by: .value("distance", "Distanz"))
-                            .lineStyle(StrokeStyle(lineWidth: 3, dash: [5, 10]))
-                            .symbol() {
-                                Rectangle()
-                                    .fill(.red)
-                                    .frame(width: 8, height: 8)
+                            ForEach(Array(healthStorage.Steps.enumerated()), id: \.offset) { index, step in
+                                LineMark(
+                                    x: .value("Dates", step.date),
+                                    y: .value("Steps", (step.dist ?? 0))
+                                )
+                                .interpolationMethod(.catmullRom)
+                                .foregroundStyle(.red)
+                                .foregroundStyle(by: .value("distance", "Distanz"))
+                                .lineStyle(StrokeStyle(lineWidth: 3, dash: [5, 10]))
+                                .symbol() {
+                                    Rectangle()
+                                        .fill(.red)
+                                        .frame(width: 8, height: 8)
+                                }
+                                .symbolSize(30)
+                                .accessibilityLabel("\(step.date)")
+                                .accessibilityValue("\(step.count) Steps")
                             }
-                            .symbolSize(30)
-                            .accessibilityLabel("\(step.date)")
-                            .accessibilityValue("\(step.count) Steps")
-                        }
                         }
                         
                         if AppConfig().ChartLineStepsIsShowing {
@@ -493,19 +472,14 @@ struct StepCounter: View {
                                 .foregroundStyle(by: .value("step", "Schritte"))
                             }
                         }
-                        
-                        // Spaer Right
-                        LineMark(
-                            x: .value("Dates", Calendar.current.date(byAdding: .day, value: +0, to: Date())!),
-                            y: .value("Steps", 0)
-                        )
+
                     }
                     .frame(width: stepCounterManager.calcChartItemSize())
-                    .chartForegroundStyleScale([
+                   /* .chartForegroundStyleScale([
                             "Schritte": Color.white,
                             "Distanz": Color.red,
                             "Durschnitt": Color.orange
-                        ])
+                        ])*/
                     .chartOverlay { proxy in
                         GeometryReader { geometry in
                             ZStack(alignment: .top) {
@@ -545,6 +519,8 @@ struct StepCounter: View {
                             
                         }
                     }
+                    .chartYScale(range: .plotDimension(padding: 20))
+                    .chartXScale(range: .plotDimension(padding: 30))
                     Text("").id(bottomID)
                 }
                 
