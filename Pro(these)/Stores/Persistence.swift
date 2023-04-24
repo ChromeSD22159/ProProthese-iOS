@@ -1,8 +1,8 @@
 //
 //  Persistence.swift
-//  Pro(these)
+//  Pro Prothese
 //
-//  Created by Frederik Kohler on 24.04.23.
+//  Created by Frederik Kohler on 23.04.23.
 //
 
 import CoreData

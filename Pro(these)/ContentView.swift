@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Pro(these)
+//  Pro Prothese
 //
-//  Created by Frederik Kohler on 24.04.23.
+//  Created by Frederik Kohler on 23.04.23.
 //
 
 import SwiftUI
@@ -10,36 +10,62 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    @EnvironmentObject private var tabManager: TabManager
+    @EnvironmentObject private var healthStore: HealthStorage
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
 
+    @State var currentTab: Tab = .home
+    
     var body: some View {
+        
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+            ZStack {
+                AppConfig().backgroundGradient
+                    .ignoresSafeArea()
+                
+                VStack(){
+                    
+                    switch tabManager.currentTab {
+                    case .home: StepCounter()
+                    case .timer: VStack{ Spacer() }
+                    case .profil: VStack{ Spacer() }
+                    case .more: NavigationStackView()
                     }
+                    
+                    TabStack()
                 }
-                .onDelete(perform: deleteItems)
+                .foregroundColor(AppConfig().foreground)
+                
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
         }
+        /*
+         List {
+             ForEach(items) { item in
+                 NavigationLink {
+                     Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                 } label: {
+                     Text(item.timestamp!, formatter: itemFormatter)
+                 }
+             }
+             .onDelete(perform: deleteItems)
+         }
+         .toolbar {
+             ToolbarItem(placement: .navigationBarTrailing) {
+                 EditButton()
+             }
+             ToolbarItem {
+                 Button(action: addItem) {
+                     Label("Add Item", systemImage: "plus")
+                 }
+             }
+         }
+         Text("Select an item")
+         */
+      
     }
 
     private func addItem() {
