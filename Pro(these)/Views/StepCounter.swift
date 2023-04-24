@@ -18,7 +18,6 @@ struct StepCounter: View {
     
     func dateMin(_ value: Int) -> Date {
         let dateMin = Calendar.current.date(byAdding: .day, value: -value, to: Date())!
-        print(dateMin)
         return dateMin
     }
     
@@ -333,7 +332,6 @@ struct StepCounter: View {
                                            // dragAmount = .zero
                                         }
                                         updateSelectedStep(at: value.predictedEndLocation, proxy: proxy, geometry: geometry)
-                                        print(value.location)
                                     })
                     }
                 }

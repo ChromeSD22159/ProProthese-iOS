@@ -19,8 +19,14 @@ class AppConfig: ObservableObject {
     var backgroundGradient  = LinearGradient(colors: [Color(red: 32/255, green: 40/255, blue: 63/255), Color(red: 4/255, green: 5/255, blue: 8/255)], startPoint: .top, endPoint: .bottom)
     
     
-    var ChartBarIsShowing           = false
-    var ChartLineDistanceIsShowing  = false
-    var ChartLineStepsIsShowing     = true
+    
+    // MARK: SETTINGS StepsCount
+    var ChartBarIsShowing                       = false     // BarMarks - Shows a green bar when your daily target has been reached
+    var ChartLineDistanceIsShowing              = false     // LineMark - Show a red line Marker Stroke, with the daily distance
+    var ChartLineStepsIsShowing                 = true      //  LineMark - Show a white/blue line Marker Stroke, with the daily steps
+    
+    //
+    var PushNotificationDailyMoodRemembering    = false
+    var PushNotificationDisable                 = false
 }
 

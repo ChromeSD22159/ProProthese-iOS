@@ -23,6 +23,7 @@
 		B6F9491629F6EF2A00BBE3A2 /* MoreListStaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491529F6EF2A00BBE3A2 /* MoreListStaks.swift */; };
 		B6F9491929F6EF5C00BBE3A2 /* HealthKitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491829F6EF5C00BBE3A2 /* HealthKitStore.swift */; };
 		B6F9491B29F6EF7600BBE3A2 /* StepCounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491A29F6EF7600BBE3A2 /* StepCounterManager.swift */; };
+		B6F9491F29F730DE00BBE3A2 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B6F9491A29F6EF7600BBE3A2 /* StepCounterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterManager.swift; sourceTree = "<group>"; };
 		B6F9491C29F6EF9300BBE3A2 /* Pro(these).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pro(these).entitlements"; sourceTree = "<group>"; };
 		B6F9491D29F6F15700BBE3A2 /* Pro-these--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pro-these--Info.plist"; sourceTree = SOURCE_ROOT; };
+		B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F9491829F6EF5C00BBE3A2 /* HealthKitStore.swift */,
+				B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */,
 				B6F9491A29F6EF7600BBE3A2 /* StepCounterManager.swift */,
 			);
 			path = Manager;
@@ -223,6 +226,7 @@
 				B6F9491929F6EF5C00BBE3A2 /* HealthKitStore.swift in Sources */,
 				B6F9490829F6EE4500BBE3A2 /* TabStack.swift in Sources */,
 				B6F9491229F6EEFA00BBE3A2 /* Tab.swift in Sources */,
+				B6F9491F29F730DE00BBE3A2 /* PushNotificationManager.swift in Sources */,
 				B6F9490A29F6EE6500BBE3A2 /* StepCounter.swift in Sources */,
 				B6F948FD29F6ED8700BBE3A2 /* Pro_these_.xcdatamodeld in Sources */,
 			);

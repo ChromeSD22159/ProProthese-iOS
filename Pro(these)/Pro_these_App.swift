@@ -10,6 +10,7 @@ struct Pro_theseApp: App {
     
     let persistenceController = PersistenceController.shared
     let healthStorage = HealthStorage()
+    let pushNotificationManager = PushNotificationManager()
     let stepCounterManager = StepCounterManager()
     var healthStore: HealthStore?
     
@@ -28,14 +29,19 @@ struct Pro_theseApp: App {
                 .environmentObject(TabManager())
                 .environmentObject(healthStorage)
                 .environmentObject(stepCounterManager)
+                .environmentObject(pushNotificationManager)
             
                 .onChange(of: scenePhase) { newPhase in
                    if newPhase == .active {
                        // APP is in Foreground / Active
                        loadData(days: healthStorage.fetchDays)
+                       
+                       pushNotificationManager.removeNotification(identifier: "PROTHESE_COMEBACK_REMINDER")
                    } else if newPhase == .inactive {
                        // APP is in Foreground / Active
-                       //print("APP is Inactive")
+
+                       pushNotificationManager.PushNotificationComeBack()
+                          
                    } else if newPhase == .background {
                        // APP is in Foreground / Active
                        print("APP changed to Background")
