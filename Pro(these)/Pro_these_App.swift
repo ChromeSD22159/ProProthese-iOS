@@ -30,20 +30,13 @@ struct Pro_theseApp: App {
                 .environmentObject(healthStorage)
                 .environmentObject(stepCounterManager)
                 .environmentObject(pushNotificationManager)
-            
                 .onChange(of: scenePhase) { newPhase in
                    if newPhase == .active {
-                       // APP is in Foreground / Active
                        loadData(days: healthStorage.fetchDays)
-                       
-                       pushNotificationManager.removeNotification(identifier: "PROTHESE_COMEBACK_REMINDER")
+                       pushNotificationManager.removeNotificationsWhenAppLoads()
                    } else if newPhase == .inactive {
-                       // APP is in Foreground / Active
-
-                       pushNotificationManager.PushNotificationComeBack()
-                          
+                       pushNotificationManager.setUpNotifications()
                    } else if newPhase == .background {
-                       // APP is in Foreground / Active
                        print("APP changed to Background")
                    }
                 }

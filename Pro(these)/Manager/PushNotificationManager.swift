@@ -10,92 +10,19 @@ import UserNotifications
 
 class PushNotificationManager : ObservableObject {
     
+    @StateObject var PushNotification = PushNotifications()
+    
     var pendingNotification: [String] = []
     
     init(){
-        if AppConfig().PushNotificationDailyMoodRemembering {
-            PushNotificationMoodReminder()
-        }
-        
         if !AppConfig().PushNotificationDisable {
-            request()
+            setUpDailyNotifications()
         }
-        self.PushNotificationGoodMorning()
     }
     
     
-    // MARK: Remember add the daily Mood/Note
-    func PushNotificationMoodReminder(){
-        let strIdentifier = "PROTHESE_MOOD_REMINDER"
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Erzähle mir von deinem Tag 🦾 🦾 "
-        content.body = "Hinterlasse keine leere Seite in deinem Prothesentagebuch. ✌️"
-        content.sound = UNNotificationSound.default
-        
-        var date = DateComponents()
-        date.hour = 20
-        date.minute = 30
-        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
-
-        // choose a random identifier
-        let request = UNNotificationRequest(identifier: strIdentifier, content: content, trigger: trigger)
-
-        // add our notification request
-        UNUserNotificationCenter.current().add(request)
-        
-        print("Register Notification: FK_PROTHESE_MOOD_REMINDER")
-    }
-    
-    // MARK: Say good morning
-    func PushNotificationGoodMorning(){
-        let strIdentifier = "PROTHESE_MOOD_GOOD_MORNING"
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Starte gut in den Tag 🦾 🦾 "
-        content.body = "Denke an dein Prothesentagebuch und träge brav deine Zeit. ✌️"
-        content.sound = UNNotificationSound.default
-        
-        var date = DateComponents()
-        date.hour = 7
-        date.minute = 30
-        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
-
-        // choose a random identifier
-        let request = UNNotificationRequest(identifier: strIdentifier, content: content, trigger: trigger)
-
-        // add our notification request
-        UNUserNotificationCenter.current().add(request)
-        
-        print("Register Notification:  FK_PROTHESE_MOOD_GOOD_MORNING")
-    }
-    
-    // MARK: Come back Push Notification
-    func PushNotificationComeBack(){
-        let strIdentifier = "PROTHESE_COMEBACK_REMINDER"
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Wir haben dich heute noch nicht gesehen 😢" //
-        content.body = "Komm bald wieder vorbei, es wird Spannend ✌️"
-        content.sound = UNNotificationSound.default
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(Int(300)), repeats: false)
-
-        // choose a random identifier
-        let request = UNNotificationRequest(identifier: strIdentifier, content: content, trigger: trigger)
-
-        // add our notification request
-        UNUserNotificationCenter.current().add(request)
-        
-        print("Register Notification:  FK_PROTHESE_MOOD_GOOD_MORNING")
-    }
-    
-    
-    
-    
-    
-    // MARK: User AUTH Request
-    func request(){
+    /// Register Push Notification and ask for Authorizarion.
+    func registerForPushNotifications(){
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
                 print("All set!")
@@ -105,10 +32,115 @@ class PushNotificationManager : ObservableObject {
         }
     }
     
+    /// Write the Notification Settings into the debug console.
+    func getNotificationSettings() {
+      UNUserNotificationCenter.current().getNotificationSettings { settings in
+        print("Notification settings: \(settings)")
+      }
+    }
     
+    /// Remove Notifications when the App appear or change in foreground.
+    ///
+    /// Important
+    /// The func is fired as soon as the scene is in the foreground and when the app is started.
+    ///
+    /// ```swift
+    ///   .onChange(of: scenePhase) { newPhase in
+    ///       if newPhase == .active {  // APP is in Foreground / Active
+    ///         pushNotificationManager.removeNotifications()
+    ///       } else if newPhase == .inactive { // // APP changed to Inactive
+    ///         pushNotificationManager.setUpNotifications()
+    ///    } else if newPhase == .background { // APP changed to Background
+    ///         print("APP changed to Background")
+    ///    }
+    /// ```
+    func removeNotificationsWhenAppLoads(){
+        removeNotification(identifier: "PROTHESE_COMEBACK_REMINDER")
+    }
     
+    func setUpDailyNotifications(){
+        if AppConfig().PushNotificationDailyMoodRemembering {
+            PushNotificationByDate(
+                identifier: "PROTHESE_MOOD_REMINDER",
+                title: "Erzähle mir von deinem Tag 🦾 🦾 ",
+                body: "Hinterlasse keine leere Seite in deinem Prothesentagebuch. ✌️",
+                triggerHour: 20,
+                triggerMinute: 30,
+                repeater: true)
+        }
+        
+        PushNotificationByDate(
+            identifier: "PROTHESE_MOOD_GOOD_MORNING",
+            title: "Starte gut in den Tag 🦾 🦾",
+            body: "Denke an dein Prothesentagebuch und träge brav deine Zeit. ✌️",
+            triggerHour: 7,
+            triggerMinute: 30, repeater: true)
+        
+        
+    }
     
+    /// Set Notifications new Notifications when the App getting starting or change to foreground.
+    ///
+    /// Important
+    /// The func is fired as soon as the scene is in the foreground and when the app is started.
+    ///
+    func setUpNotifications() {
+        PushNotificationByTimer(
+            identifier: "PROTHESE_COMEBACK_REMINDER",
+            title: "Wir haben dich heute noch nicht gesehen 😢",
+            body: "Komm bald wieder vorbei, es wird Spannend ✌️",
+            triggerTimer: 20
+        )
+    }
     
+    /// Setup a new Notification with an Timer Trigger
+    ///
+    /// - Parameter identifier:    (String)     - Set Notification Identifier - To search for it or delele
+    /// - Parameter title:         (String)     - Set Notification Headline (String)
+    /// - Parameter body:          (String)     - Set Notification Body Text (String)
+    /// - Parameter triggerTimer:  (String)     - Set Notification Timer (Int) in seconds after trigger/ register the Notification
+    func PushNotificationByTimer(identifier: String, title: String, body: String, triggerTimer: Int) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(triggerTimer), repeats: false)
+
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+
+        // add our notification request
+        UNUserNotificationCenter.current().add(request)
+        
+        print("Register Notification:  \(identifier)")
+    }
+    
+    /// Setup a new Notification with an Date Trigger
+    ///
+    /// - Parameter identifier:    (String)     - Set Notification Identifier - To search for it or delele
+    /// - Parameter title:         (String)     - Set Notification Headline (String)
+    /// - Parameter body:          (String)     - Set Notification Body Text (String)
+    /// - Parameter triggerTimer:  (String)     - Set Notification Timer (Int) in seconds after trigger/ register the Notification
+    func PushNotificationByDate(identifier: String, title: String, body: String, triggerHour: Int, triggerMinute: Int, repeater: Bool) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = UNNotificationSound.default
+        
+        var date = DateComponents()
+        date.hour = triggerHour
+        date.minute = triggerMinute
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: repeater)
+
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+
+        // add our notification request
+        UNUserNotificationCenter.current().add(request)
+        
+        print("Register Notification:  \(identifier)")
+    }
     
     
     // MARK: Remove all pending Notifications
@@ -203,7 +235,23 @@ class PushNotificationManager : ObservableObject {
 
         // add our notification request
         UNUserNotificationCenter.current().add(request)
+      
     }
-    
-
 }
+
+
+
+class Random {
+//   Random().int(between: 1, and: 10)
+    func int(between: Int, and: Int) -> Int {
+      return Int.random(in: between...and)
+    }
+
+    func double(between: Double, and: Double) -> Double {
+      return Double.random(in: between...and)
+    }
+}
+
+    
+    
+    
