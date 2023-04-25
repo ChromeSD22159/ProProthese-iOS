@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-struct StepCounter: View {
+struct StepCounterView: View {
     @EnvironmentObject var healthStorage: HealthStorage
     @EnvironmentObject var stepCounterManager: StepCounterManager
     @AppStorage("Days") var fetchDays:Int = 7
@@ -305,34 +305,28 @@ struct StepCounter: View {
                 GeometryReader { geometry in
                     ZStack(alignment: .top) {
                         Rectangle().fill(.clear).contentShape(Rectangle())
-                            .onTapGesture { location in
-                                updateSelectedStep(at: location, proxy: proxy, geometry: geometry)
-                            }
-                            .gesture(DragGesture()
-                                    .onChanged { value in
-                                      // find start and end positions of the drag
-                                      let start = geometry[proxy.plotAreaFrame].origin.x
-                                      let xStart = value.startLocation.x - start
-                                      let xCurrent = value.location.x - start
-                                      // map those positions to X-axis values in the chart
-                                      if let dateStart: Date = proxy.value(atX: xStart),
-                                         let dateCurrent: Date = proxy.value(atX: xCurrent) {
-                                          stepCounterManager.activeDateCicle = dateCurrent //(dateStart, dateCurrent)
-                                          //dragAmount = CGSize(width: value.location.x, height: start)
-                                          withAnimation(.easeIn(duration: 0.2)){
-                                              stepCounterManager.activeisActive = true
-                                          }
-                                      }
-                                        
-                                        updateSelectedStep(at: CGPoint(x: value.location.x, y: value.location.y) , proxy: proxy, geometry: geometry)
-                                    }
-                                    .onEnded { value in
-                                        withAnimation(.easeOut(duration: 0.2)){
-                                            stepCounterManager.activeisActive = false
-                                           // dragAmount = .zero
+                            .onTapGesture { location in updateSelectedStep(at: location, proxy: proxy, geometry: geometry) }
+                            .gesture( DragGesture().onChanged { value in
+                                    // find start and end positions of the drag
+                                    let start = geometry[proxy.plotAreaFrame].origin.x
+                                    let xStart = value.startLocation.x - start
+                                    let xCurrent = value.location.x - start
+                                    // map those positions to X-axis values in the chart
+                                    if let dateCurrent: Date = proxy.value(atX: xCurrent) {
+                                        stepCounterManager.activeDateCicle = dateCurrent //(dateStart, dateCurrent)
+                                        //dragAmount = CGSize(width: value.location.x, height: start)
+                                        withAnimation(.easeIn(duration: 0.2)){
+                                            stepCounterManager.activeisActive = true
                                         }
-                                        updateSelectedStep(at: value.predictedEndLocation, proxy: proxy, geometry: geometry)
-                                    })
+                                    }
+                                    updateSelectedStep(at: CGPoint(x: value.location.x, y: value.location.y) , proxy: proxy, geometry: geometry)
+                                }.onEnded { value in
+                                    withAnimation(.easeOut(duration: 0.2)){
+                                        stepCounterManager.activeisActive = false
+                                       // dragAmount = .zero
+                                    }
+                                    updateSelectedStep(at: value.predictedEndLocation, proxy: proxy, geometry: geometry)
+                                } )
                     }
                 }
               }
@@ -596,8 +590,8 @@ struct StepCounter: View {
       }
 }
 
-struct StepCounter_Previews: PreviewProvider {
+struct StepCounterView_Previews: PreviewProvider {
     static var previews: some View {
-        StepCounter()
+        StepCounterView()
     }
 }

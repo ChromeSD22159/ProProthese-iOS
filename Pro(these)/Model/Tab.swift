@@ -9,15 +9,15 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case home = "Home"
+    case step = "Profile"
     case timer = "Stoppuhr"
-    case profil = "Profile"
     case more = "Mehr"
     
     func TabIcon() -> String {
         switch self {
             case .home: return "house.fill"
-            case .timer: return "prothesis"
-            case .profil: return "slider.horizontal.3"
+            case .step: return "prothesis"
+            case .timer: return "timer"
             case .more: return "ellipsis.circle"
         }
     }
@@ -25,13 +25,13 @@ enum Tab: String, CaseIterable {
     func TabTitle() -> String {
         switch self {
             case .home: return "Home"
-            case .timer: return "Schritte"
-            case .profil: return "Profil"
+            case .step: return "Schritte"
+            case .timer: return "Profil"
             case .more: return "Mehr"
         }
     }
 }
 
 class TabManager: ObservableObject {
-    @Published var currentTab: Tab = .home
+    @Published var currentTab: Tab = .timer
 }

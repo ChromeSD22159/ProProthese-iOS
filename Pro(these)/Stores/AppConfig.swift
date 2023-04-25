@@ -29,5 +29,8 @@ class AppConfig: ObservableObject {
     var PushNotificationDailyMoodRemembering    = true     // Send Mood Reminder Notification
     var PushNotificationDisable                 = false     // Send no Notification
     var PushNotificationGoodMorning             = true      // Send GoodMorning Notification
+    
+    // Live Notification
+    var showLiveActivity                        = true
 }
 

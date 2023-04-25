@@ -16,8 +16,6 @@ class HealthStorage: ObservableObject {
     
     @Published var Distances: [Double] = [Double]()
     @Published var Steps: [Step] = [Step]()
-    
     @Published var Merged: [Step] = [Step]()
-    
     @Published var StepCount: Int = 0
 }

@@ -16,7 +16,7 @@ struct TabStack: View {
         HStack(spacing: 10){
             ForEach(Tab.allCases, id: \.self){ tab in
                 VStack {
-                    if tab == .timer {
+                    if tab == .step {
                         Image(tab.TabIcon())
                             .imageScale(.large)
                             .font(Font.system(size: 28, weight: .regular))

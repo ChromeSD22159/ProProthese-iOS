@@ -3,6 +3,7 @@
 import SwiftUI
 import HealthKit
 import Combine
+import Foundation
 
 @main
 struct Pro_theseApp: App {
@@ -30,6 +31,9 @@ struct Pro_theseApp: App {
                 .environmentObject(healthStorage)
                 .environmentObject(stepCounterManager)
                 .environmentObject(pushNotificationManager)
+                .environmentObject(StopWatchManager())
+            
+            
                 .onChange(of: scenePhase) { newPhase in
                    if newPhase == .active {
                        loadData(days: healthStorage.fetchDays)
