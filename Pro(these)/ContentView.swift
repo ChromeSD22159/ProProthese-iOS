@@ -13,13 +13,15 @@ struct ContentView: View {
     @EnvironmentObject private var tabManager: TabManager
     @EnvironmentObject private var healthStore: HealthStorage
     
-  
-    
     var body: some View {
         
         NavigationView {
             ZStack {
                 AppConfig().backgroundGradient
+                    .ignoresSafeArea()
+                
+                CircleAnimation(delay: 1, duration: 2)
+                    .opacity(0.2)
                     .ignoresSafeArea()
                 
                 VStack(){
@@ -37,29 +39,6 @@ struct ContentView: View {
                 
             }
         }
-        /*
-         List {
-             ForEach(items) { item in
-                 NavigationLink {
-                     Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                 } label: {
-                     Text(item.timestamp!, formatter: itemFormatter)
-                 }
-             }
-             .onDelete(perform: deleteItems)
-         }
-         .toolbar {
-             ToolbarItem(placement: .navigationBarTrailing) {
-                 EditButton()
-             }
-             ToolbarItem {
-                 Button(action: addItem) {
-                     Label("Add Item", systemImage: "plus")
-                 }
-             }
-         }
-         Text("Select an item")
-         */
       
     }
 
@@ -69,6 +48,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        //ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        Text("")
     }
 }

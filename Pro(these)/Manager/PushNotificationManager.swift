@@ -25,7 +25,7 @@ class PushNotificationManager : ObservableObject {
     func registerForPushNotifications(){
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
-                print("All set!")
+                print("Notification Authorization successful")
             } else if let error = error {
                 print(error.localizedDescription)
             }
@@ -80,8 +80,6 @@ class PushNotificationManager : ObservableObject {
                 repeater:       Bool(PushNotification.GoodMorning["repeater"]!) ?? false
             )
         }
-        
-        
     }
     
     /// Set Notifications new Notifications when the App getting starting or change to foreground.
@@ -89,7 +87,7 @@ class PushNotificationManager : ObservableObject {
     /// Important
     /// The func is fired as soon as the scene is in the foreground and when the app is started.
     ///
-    func setUpNotifications() {
+    func setUpNonPermanentNotifications() {
         let comeback = PushNotification.ComeBack
         PushNotificationByTimer(
             identifier: comeback["identifier"]!,
@@ -112,7 +110,6 @@ class PushNotificationManager : ObservableObject {
         content.sound = UNNotificationSound.default
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(triggerTimer), repeats: false)
-
         // choose a random identifier
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
 

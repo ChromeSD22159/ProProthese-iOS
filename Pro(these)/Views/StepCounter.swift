@@ -27,11 +27,11 @@ struct StepCounterView: View {
     }
     
     @State private var dragAmount = CGSize.zero
-
+    
     var body: some View {
         VStack{
             GeometryReader { proxy in
-             
+                
                 VStack{
                     VStack{
                         Spacer()
@@ -73,7 +73,7 @@ struct StepCounterView: View {
                             }
                             
                             Spacer()
-
+                            
                             VStack {
                                 ring(color: .blue, trim: 0.9, stroke: 3, delay: 1, image: "figure.walk")
                                     .frame(width: 50)
@@ -102,6 +102,7 @@ struct StepCounterView: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                             stepCounterManager.devideSizeWidth = proxy.size.width
                             stepCounterManager.activeStepCount = healthStorage.showStep
+                            print(stepCounterManager.activeStepCount)
                             stepCounterManager.activeStepDistance = healthStorage.Distances.last ?? 9999
                             stepCounterManager.activeDateCicle = healthStorage.showDate
                             stepCounterManager.drawingRingStroke = true
@@ -136,22 +137,23 @@ struct StepCounterView: View {
         }
         
         stepCounterManager.activeDateCicle = healthStorage.Steps.sorted(by: {
-                abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date))
+            abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date))
         }).first?.date ?? Date()
         
         stepCounterManager.activeStepDistance = healthStorage.Steps.sorted(by: {
             abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date))
-    }).first?.dist ?? 9999999
+        }).first?.dist ?? 9999999
         
         stepCounterManager.activeStepCount = healthStorage.Steps.sorted(by: {
             abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date))
-    }).first?.count ?? 9999999
-   }
+        }).first?.count ?? 9999999
+    }
     
+    // MARK: Step Circle VB
     @ViewBuilder
     func StepCircle(Double: Double) -> some View {
         ZStack {
-            ring(color: .blue, trim: Double, stroke: 5, delay: 1, image: "")
+            ring(color: .blue, trim: Double, stroke: 5, delay: 1, image: "a")
                 .frame(width: 200)
                 .animation(.easeIn(duration: 1), value: stepCounterManager.drawingRingStroke)
             
@@ -182,6 +184,7 @@ struct StepCounterView: View {
         .padding(.bottom)
     }
     
+    // MARK: Select Days VB
     @ViewBuilder
     func chooseDay() -> some View {
         HStack(spacing: 5) {
@@ -195,7 +198,26 @@ struct StepCounterView: View {
         .padding(.bottom)
     }
     
+    // MARK: Select Button VB
+    @ViewBuilder
+    func chooseDayButton(_ day: Int) -> some View {
+        HStack{
+            Button("\(day) Tage"){
+                healthStorage.fetchDays = day
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .padding(5)
+        .background(AppConfig().backgroundLabel)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(lineWidth: 2)
+                .stroke(AppConfig().backgroundLabel)
+        )
+        .cornerRadius(10)
+    }
     
+    // MARK: No Scrollable Chart VB
     @ViewBuilder
     func StepChartNoScrolling() -> some View{
         HStack {
@@ -206,7 +228,7 @@ struct StepCounterView: View {
                 RuleMark(x: .value("ActiveSteps", stepCounterManager.activeDateCicle ) )
                     .foregroundStyle(stepCounterManager.activeisActive ? .white.opacity(1) : .white.opacity(0.2))
                     .offset(dragAmount)
-
+                
                 
                 if AppConfig().ChartBarIsShowing {
                     ForEach(Array(healthStorage.Steps.enumerated()), id: \.offset) { index, step in
@@ -221,24 +243,24 @@ struct StepCounterView: View {
                 }
                 
                 if AppConfig().ChartLineDistanceIsShowing {
-                ForEach(Array(healthStorage.Steps.enumerated()), id: \.offset) { index, step in
-                    LineMark(
-                        x: .value("Dates", step.date),
-                        y: .value("Steps", (step.dist ?? 0))
-                    )
-                    .interpolationMethod(.catmullRom)
-                    .foregroundStyle(.red)
-                    .foregroundStyle(by: .value("distance", "Distanz"))
-                    .lineStyle(StrokeStyle(lineWidth: 3, dash: [5, 10]))
-                    .symbol() {
-                        Rectangle()
-                            .fill(.red)
-                            .frame(width: 8, height: 8)
+                    ForEach(Array(healthStorage.Steps.enumerated()), id: \.offset) { index, step in
+                        LineMark(
+                            x: .value("Dates", step.date),
+                            y: .value("Steps", (step.dist ?? 0))
+                        )
+                        .interpolationMethod(.catmullRom)
+                        .foregroundStyle(.red)
+                        .foregroundStyle(by: .value("distance", "Distanz"))
+                        .lineStyle(StrokeStyle(lineWidth: 3, dash: [5, 10]))
+                        .symbol() {
+                            Rectangle()
+                                .fill(.red)
+                                .frame(width: 8, height: 8)
+                        }
+                        .symbolSize(30)
+                        .accessibilityLabel("\(step.date)")
+                        .accessibilityValue("\(step.count) Steps")
                     }
-                    .symbolSize(30)
-                    .accessibilityLabel("\(step.date)")
-                    .accessibilityValue("\(step.count) Steps")
-                }
                 }
                 
                 if AppConfig().ChartLineStepsIsShowing {
@@ -297,39 +319,39 @@ struct StepCounterView: View {
             }
             .frame(width: stepCounterManager.calcChartItemSize())
             /*.chartForegroundStyleScale([
-                    "Schritte": Color.white,
-                    "Distanz": Color.red,
-                    "Durschnitt": Color.orange
-                ])*/
+             "Schritte": Color.white,
+             "Distanz": Color.red,
+             "Durschnitt": Color.orange
+             ])*/
             .chartOverlay { proxy in
                 GeometryReader { geometry in
                     ZStack(alignment: .top) {
                         Rectangle().fill(.clear).contentShape(Rectangle())
                             .onTapGesture { location in updateSelectedStep(at: location, proxy: proxy, geometry: geometry) }
                             .gesture( DragGesture().onChanged { value in
-                                    // find start and end positions of the drag
-                                    let start = geometry[proxy.plotAreaFrame].origin.x
-                                    let xStart = value.startLocation.x - start
-                                    let xCurrent = value.location.x - start
-                                    // map those positions to X-axis values in the chart
-                                    if let dateCurrent: Date = proxy.value(atX: xCurrent) {
-                                        stepCounterManager.activeDateCicle = dateCurrent //(dateStart, dateCurrent)
-                                        //dragAmount = CGSize(width: value.location.x, height: start)
-                                        withAnimation(.easeIn(duration: 0.2)){
-                                            stepCounterManager.activeisActive = true
-                                        }
+                                // find start and end positions of the drag
+                                let start = geometry[proxy.plotAreaFrame].origin.x
+                                let xStart = value.startLocation.x - start
+                                let xCurrent = value.location.x - start
+                                // map those positions to X-axis values in the chart
+                                if let dateCurrent: Date = proxy.value(atX: xCurrent) {
+                                    stepCounterManager.activeDateCicle = dateCurrent //(dateStart, dateCurrent)
+                                    //dragAmount = CGSize(width: value.location.x, height: start)
+                                    withAnimation(.easeIn(duration: 0.2)){
+                                        stepCounterManager.activeisActive = true
                                     }
-                                    updateSelectedStep(at: CGPoint(x: value.location.x, y: value.location.y) , proxy: proxy, geometry: geometry)
-                                }.onEnded { value in
-                                    withAnimation(.easeOut(duration: 0.2)){
-                                        stepCounterManager.activeisActive = false
-                                       // dragAmount = .zero
-                                    }
-                                    updateSelectedStep(at: value.predictedEndLocation, proxy: proxy, geometry: geometry)
-                                } )
+                                }
+                                updateSelectedStep(at: CGPoint(x: value.location.x, y: value.location.y) , proxy: proxy, geometry: geometry)
+                            }.onEnded { value in
+                                withAnimation(.easeOut(duration: 0.2)){
+                                    stepCounterManager.activeisActive = false
+                                    // dragAmount = .zero
+                                }
+                                updateSelectedStep(at: value.predictedEndLocation, proxy: proxy, geometry: geometry)
+                            } )
                     }
                 }
-              }
+            }
             .chartYAxis {
                 let steps = healthStorage.Steps.map { $0.count }
                 let min = steps.min() ?? 1000
@@ -344,12 +366,12 @@ struct StepCounterView: View {
                                                      dash: [5],
                                                      dashPhase: 1))
                 }
-               
+                
             }
             .chartXAxis {
                 AxisMarks(values: .stride(by: .day, count: 1)) { value in
                     AxisGridLine(stroke: StrokeStyle(lineWidth: 0.3))
-                   // print(value)
+                    // print(value)
                     if value.count > 7 {
                         AxisValueLabel(format: .dateTime.day().month())
                     } else {
@@ -368,6 +390,7 @@ struct StepCounterView: View {
         .padding(.bottom)
     }
     
+    // MARK: Scrollable Chart VB
     @ViewBuilder
     func StepChartScrolling(days: Int) -> some View{
         ScrollViewReader { value in
@@ -464,14 +487,14 @@ struct StepCounterView: View {
                                 .foregroundStyle(by: .value("step", "Schritte"))
                             }
                         }
-
+                        
                     }
                     .frame(width: stepCounterManager.calcChartItemSize())
-                   /* .chartForegroundStyleScale([
-                            "Schritte": Color.white,
-                            "Distanz": Color.red,
-                            "Durschnitt": Color.orange
-                        ])*/
+                    /* .chartForegroundStyleScale([
+                     "Schritte": Color.white,
+                     "Distanz": Color.red,
+                     "Durschnitt": Color.orange
+                     ])*/
                     .chartOverlay { proxy in
                         GeometryReader { geometry in
                             ZStack(alignment: .top) {
@@ -481,7 +504,7 @@ struct StepCounterView: View {
                                     }
                             }
                         }
-                      }
+                    }
                     .chartYAxis {
                         let steps = healthStorage.Steps.map { $0.count }
                         let min = steps.min() ?? 1000
@@ -501,7 +524,7 @@ struct StepCounterView: View {
                     .chartXAxis {
                         AxisMarks(values: .stride(by: .day, count: 1)) { value in
                             AxisGridLine(stroke: StrokeStyle(lineWidth: 0.3))
-                           // print(value)
+                            // print(value)
                             if value.count > 7 {
                                 AxisValueLabel(format: .dateTime.day().month())
                             } else {
@@ -529,37 +552,20 @@ struct StepCounterView: View {
                     }
                 }
             }
-       }
+        }
         .frame(height: 200)
         .frame(maxWidth: .infinity)
         .padding(.bottom)
     }
     
-    @ViewBuilder
-    func chooseDayButton(_ day: Int) -> some View {
-        HStack{
-            Button("\(day) Tage"){
-                healthStorage.fetchDays = day
-            }
-        }
-        .frame(maxWidth: .infinity)
-        .padding(5)
-        .background(AppConfig().backgroundLabel)
-        .overlay(
-               RoundedRectangle(cornerRadius: 10)
-               .stroke(lineWidth: 2)
-               .stroke(AppConfig().backgroundLabel)
-       )
-        .cornerRadius(10)
-    }
-    
+    // MARK: CIRCLES VB
     @ViewBuilder
     func ring(color: Color, trim: Double, stroke: Double, delay: Double, image: String?) -> some View {
         // Background ring
         ZStack {
             Image(systemName: image ?? "figure.walk", variableValue: 5)
                 .opacity(image != nil ? Double(1) : Double(0))
-    
+            
             Circle()
                 .stroke(style: StrokeStyle(lineWidth: stroke))
                 .foregroundStyle(.tertiary)
@@ -588,6 +594,7 @@ struct StepCounterView: View {
               }
               .rotationEffect(.degrees(-90))
       }
+    
 }
 
 struct StepCounterView_Previews: PreviewProvider {

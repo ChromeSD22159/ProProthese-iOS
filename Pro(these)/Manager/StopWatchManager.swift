@@ -25,7 +25,7 @@ class StopWatchManager : ObservableObject {
     
     init() {
        startTime = fetchStartTime()
-       
+        
        if startTime != nil {
            restart(time: startTime!)
        }
@@ -33,10 +33,13 @@ class StopWatchManager : ObservableObject {
     
     func fetchTimesData() {
         let requesttimestamps = NSFetchRequest<WearingTimes>(entityName: "WearingTimes")
-        
+        let sort = NSSortDescriptor(key: "timestamp", ascending: false)
+        requesttimestamps.sortDescriptors = [sort]
         do {
             timesArray = try PersistenceController.shared.container.viewContext.fetch(requesttimestamps)
-            sumTime(timesArray)
+            sumTime( timesArray )
+            print("reds")
+            
         }catch {
           print("DEBUG: Some error occured while fetching Times")
         }
@@ -44,6 +47,8 @@ class StopWatchManager : ObservableObject {
     
     func refetchTimesData() {
         let requesttimestamps = NSFetchRequest<WearingTimes>(entityName: "WearingTimes")
+        let sort = NSSortDescriptor(key: "timestamp", ascending: false)
+        requesttimestamps.sortDescriptors = [sort]
         timesArray.removeAll(keepingCapacity: true)
         do {
             timesArray = try PersistenceController.shared.container.viewContext.fetch(requesttimestamps)
@@ -201,15 +206,13 @@ class StopWatchManager : ObservableObject {
     // Mark: new LIVE ACTIVITY
     func LiveActivityStart() {
         if ActivityAuthorizationInfo().areActivitiesEnabled {
-            let Attributes = Prothesen_widgetAttributes()
-            let ContentState = Prothesen_widgetAttributes.ProthesenTimerStatus(isRunning: true, timeStamp: Date.now, state: "Zeichnet auf", endTime: "" )
+            
             do {
-               let timerActivity = try Activity<Prothesen_widgetAttributes>.request(
-                   attributes: Attributes,
-                   contentState: ContentState,
-                   pushType: nil)
-                
-               print("Requested a Timer Live Activity \(timerActivity.id)")
+                let Attributes = Prothesen_widgetAttributes()
+                let ContentState = Prothesen_widgetAttributes.ProthesenTimerStatus(isRunning: true, timeStamp: Date.now, state: "Zeichnet auf", endTime: "" )
+                //let timerActivity = try Activity<Prothesen_widgetAttributes>.request( attributes: Attributes, contentState: ContentState, pushType: nil)
+                activity = try Activity<Prothesen_widgetAttributes>.request( attributes: Attributes, contentState: ContentState, pushType: nil)
+               //print("Requested a Timer Live Activity \(timerActivity.id)")
             } catch (let error) {
                print("Error requesting Timer Live Activity \(error.localizedDescription)")
             }

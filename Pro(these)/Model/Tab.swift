@@ -30,8 +30,7 @@ enum Tab: String, CaseIterable {
             case .more: return "Mehr"
         }
     }
+   
 }
 
-class TabManager: ObservableObject {
-    @Published var currentTab: Tab = .timer
-}
+

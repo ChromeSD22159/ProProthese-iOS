@@ -16,39 +16,75 @@ struct Pro_theseApp: App {
     var healthStore: HealthStore?
     
     @AppStorage("Days") var fetchDays:Int = 7
-    
+    @State private var LaunchScreen = true
     init() {
+        pushNotificationManager.registerForPushNotifications()
         healthStore = HealthStore()
     }
     
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                .environmentObject(AppConfig())
-                .environmentObject(TabManager())
-                .environmentObject(healthStorage)
-                .environmentObject(stepCounterManager)
-                .environmentObject(pushNotificationManager)
-                .environmentObject(StopWatchManager())
-            
-            
-                .onChange(of: scenePhase) { newPhase in
-                   if newPhase == .active {
-                       loadData(days: healthStorage.fetchDays)
-                       pushNotificationManager.removeNotificationsWhenAppLoads()
-                   } else if newPhase == .inactive {
-                       pushNotificationManager.setUpNotifications()
-                   } else if newPhase == .background {
-                       print("APP changed to Background")
-                   }
-                }
-                .onChange(of: fetchDays){ new in
-                    loadData(days: new)
-                }
+            ZStack{
                 
+                ContentView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(AppConfig())
+                    .environmentObject(TabManager())
+                    .environmentObject(healthStorage)
+                    .environmentObject(stepCounterManager)
+                    .environmentObject(pushNotificationManager)
+                    .environmentObject(StopWatchManager())
+                    .onChange(of: scenePhase) { newPhase in
+                        if newPhase == .active {
+                            loadData(days: healthStorage.fetchDays)
+                            pushNotificationManager.removeNotificationsWhenAppLoads()
+                        } else if newPhase == .inactive {
+                            
+                        } else if newPhase == .background {
+                            print("APP changed to Background")
+                            if !AppConfig().PushNotificationDisable {
+                                pushNotificationManager.setUpNonPermanentNotifications()
+                            }
+                        }
+                    }
+                    .onChange(of: fetchDays){ new in
+                        loadData(days: new)
+                    }
                 
+             
+                if LaunchScreen {
+                    ZStack{
+                        Image("LaunchImage")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .clipped()
+                            .ignoresSafeArea()
+                        
+                        VStack{
+                            HStack{
+                                Image("prothesis")
+                                    .imageScale(.large)
+                                    .font(Font.system(size: 40, weight: .heavy))
+                                    .foregroundColor(.white)
+                                    .padding(.leading, 20)
+                            }
+                            .frame(alignment: .center)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .ignoresSafeArea()
+                }
+
+             
+            }
+            .onAppear{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                    withAnimation(.easeOut(duration: 2.0)) {
+                        LaunchScreen = false
+                    }
+                })
+            }
         }
     }
     

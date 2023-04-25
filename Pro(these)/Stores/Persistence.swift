@@ -13,10 +13,9 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
+        let newTime = WearingTimes(context: viewContext)
+        newTime.timestamp = Date.now
+        newTime.duration = String(Int.random(in: 1...50))
         do {
             try viewContext.save()
         } catch {

@@ -47,12 +47,15 @@ struct StopWatchView: View {
             }
             .sheet(isPresented: $isShowListSheet) {
                 ListSheetContent()
-                    .presentationDetents([.medium, .large], selection: $selectedDetent)
+                    .presentationDetents([.large], selection: $selectedDetent)
                     .presentationDragIndicator(.visible)
             }
             .fullSizeCenter()
         }
         .fullSizeCenter()
+        .onAppear{
+            stopWatchManager.fetchTimesData()
+        }
     }
 
     
@@ -91,17 +94,23 @@ struct StopWatchView: View {
             Spacer()
             VStack(alignment: .center){
                 Text(stopWatchManager.totalProtheseTimeYesterday)
-                    .font(.system(size: 35))
+                    .font(.system(size: 20))
+                    .multilineTextAlignment(.center)
                 Text("Gester")
                     .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
             }
+            .frame(width: 200)
             Spacer()
             VStack(alignment: .center){
                 Text(stopWatchManager.totalProtheseTimeToday)
-                    .font(.system(size: 35))
+                    .font(.system(size: 20))
+                    .multilineTextAlignment(.center)
                 Text("Heute")
                     .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
             }
+            .frame(width: 200)
             Spacer()
         }
         .padding(.bottom, 20)
@@ -137,9 +146,9 @@ struct StopWatchView: View {
             .listRowBackground(Color.white.opacity(0.2))
 
             
-            ForEach(stopWatchManager.timesArray) { time in
+            ForEach(stopWatchManager.timesArray, id: \.timestamp) { time in
                 HStack {
-                    Text(time.duration!)
+                    Text(stopWatchManager.convertSecondsToHrMinuteSec(seconds: Int(time.duration ?? "0") ?? 0))
                     Spacer()
                     Text("\(time.timestamp!.formatted(.dateTime.hour().minute())) Uhr -")
                     Text("\(time.timestamp!.formatted(.dateTime.day().month()))")
