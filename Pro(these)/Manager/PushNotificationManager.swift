@@ -10,7 +10,7 @@ import UserNotifications
 
 class PushNotificationManager : ObservableObject {
     
-    @StateObject var PushNotification = PushNotifications()
+    var PushNotification = PushNotifications()
     
     var pendingNotification: [String] = []
     
@@ -61,20 +61,25 @@ class PushNotificationManager : ObservableObject {
     func setUpDailyNotifications(){
         if AppConfig().PushNotificationDailyMoodRemembering {
             PushNotificationByDate(
-                identifier: "PROTHESE_MOOD_REMINDER",
-                title: "Erzähle mir von deinem Tag 🦾 🦾 ",
-                body: "Hinterlasse keine leere Seite in deinem Prothesentagebuch. ✌️",
-                triggerHour: 20,
-                triggerMinute: 30,
-                repeater: true)
+                identifier:     PushNotification.MoodReminder["identifier"]!,
+                title:          PushNotification.MoodReminder["titel"]!,
+                body:           PushNotification.MoodReminder["body"]!,
+                triggerHour:    Int(PushNotification.MoodReminder["triggerHour"]!)!,
+                triggerMinute:  Int(PushNotification.MoodReminder["triggerMinute"]!)!,
+                repeater:       Bool(PushNotification.MoodReminder["repeater"]!) ?? false
+            )
         }
-        
-        PushNotificationByDate(
-            identifier: "PROTHESE_MOOD_GOOD_MORNING",
-            title: "Starte gut in den Tag 🦾 🦾",
-            body: "Denke an dein Prothesentagebuch und träge brav deine Zeit. ✌️",
-            triggerHour: 7,
-            triggerMinute: 30, repeater: true)
+
+        if AppConfig().PushNotificationGoodMorning {
+            PushNotificationByDate(
+                identifier:     PushNotification.GoodMorning["identifier"]!,
+                title:          PushNotification.GoodMorning["titel"]!,
+                body:           PushNotification.GoodMorning["body"]!,
+                triggerHour:    Int(PushNotification.GoodMorning["triggerHour"]!)!,
+                triggerMinute:  Int(PushNotification.GoodMorning["triggerMinute"]!)!,
+                repeater:       Bool(PushNotification.GoodMorning["repeater"]!) ?? false
+            )
+        }
         
         
     }
@@ -85,11 +90,12 @@ class PushNotificationManager : ObservableObject {
     /// The func is fired as soon as the scene is in the foreground and when the app is started.
     ///
     func setUpNotifications() {
+        let comeback = PushNotification.ComeBack
         PushNotificationByTimer(
-            identifier: "PROTHESE_COMEBACK_REMINDER",
-            title: "Wir haben dich heute noch nicht gesehen 😢",
-            body: "Komm bald wieder vorbei, es wird Spannend ✌️",
-            triggerTimer: 20
+            identifier: comeback["identifier"]!,
+            title: comeback["titel"]!,
+            body: comeback["body"]!,
+            triggerTimer: Int(comeback["triggerTimer"]!)!
         )
     }
     
@@ -252,6 +258,5 @@ class Random {
     }
 }
 
-    
     
     

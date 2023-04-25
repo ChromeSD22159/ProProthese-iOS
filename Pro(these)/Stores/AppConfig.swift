@@ -25,8 +25,9 @@ class AppConfig: ObservableObject {
     var ChartLineDistanceIsShowing              = false     // LineMark - Show a red line Marker Stroke, with the daily distance
     var ChartLineStepsIsShowing                 = true      //  LineMark - Show a white/blue line Marker Stroke, with the daily steps
     
-    //
-    var PushNotificationDailyMoodRemembering    = false
-    var PushNotificationDisable                 = false
+    // Notification
+    var PushNotificationDailyMoodRemembering    = true     // Send Mood Reminder Notification
+    var PushNotificationDisable                 = false     // Send no Notification
+    var PushNotificationGoodMorning             = true      // Send GoodMorning Notification
 }
 

@@ -289,7 +289,7 @@ struct StepCounter: View {
                                 endPoint: .top)
                         )
                         .lineStyle(.init(lineWidth: 5))
-                        .foregroundStyle(by: .value("step", "Schritte"))
+                        //.foregroundStyle(by: .value("step", "Schritte"))
                     }
                 }
                 
