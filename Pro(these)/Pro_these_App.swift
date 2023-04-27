@@ -13,6 +13,7 @@ struct Pro_theseApp: App {
     let healthStorage = HealthStorage()
     let pushNotificationManager = PushNotificationManager()
     let stepCounterManager = StepCounterManager()
+    let stopWatchManager = StopWatchManager()
     var healthStore: HealthStore?
     
     @AppStorage("Days") var fetchDays:Int = 7
@@ -34,7 +35,7 @@ struct Pro_theseApp: App {
                     .environmentObject(healthStorage)
                     .environmentObject(stepCounterManager)
                     .environmentObject(pushNotificationManager)
-                    .environmentObject(StopWatchManager())
+                    .environmentObject(stopWatchManager)
                     .onChange(of: scenePhase) { newPhase in
                         if newPhase == .active {
                             loadData(days: healthStorage.fetchDays)
@@ -79,6 +80,8 @@ struct Pro_theseApp: App {
              
             }
             .onAppear{
+                stopWatchManager.fetchTimesData()
+                stepCounterManager
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                     withAnimation(.easeOut(duration: 2.0)) {
                         LaunchScreen = false

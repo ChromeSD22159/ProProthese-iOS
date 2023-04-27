@@ -8,7 +8,7 @@
 import SwiftUI
 
 class TabManager: ObservableObject {
-    @Published var currentTab: Tab = .home
+    @Published var currentTab: Tab = .timer // StartTab
     
     
     @Published var animation:Bool = false

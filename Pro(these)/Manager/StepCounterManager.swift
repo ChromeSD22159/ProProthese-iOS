@@ -12,14 +12,13 @@ class StepCounterManager: ObservableObject {
     
     @Published var activeChartCirle: Int = 0
     @Published var devideSizeWidth: CGFloat = 0
-    
     // tab gesture
     @Published var activeDateCicle: Date = Date()
     @Published var activeisActive: Bool = false
     @Published var activeStepCount: Int = 0
     @Published var activeStepDistance: Double = 0
-  
-    @AppStorage("StepsTarget") var targetSteps: Int = 10000
+    
+    @AppStorage("targetSteps") var targetSteps = 10000
     
     // Circle
     @Published var drawingRingStroke: Bool = false

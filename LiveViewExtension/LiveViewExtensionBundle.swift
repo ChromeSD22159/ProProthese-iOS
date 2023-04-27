@@ -12,9 +12,10 @@ import SwiftUI
 struct LiveViewExtensionBundle: WidgetBundle {
     var body: some Widget {
         LiveViewExtension()
-        if #available(iOS 16.1, *) {
-            Prothesen_widgetLiveActivity()
-        }
+        
+        Prothesen_widgetLiveActivity()
+        
+        LiveActivity()
     }
 }
 

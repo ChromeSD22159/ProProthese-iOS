@@ -1,5 +1,5 @@
 //
-//  CircleAnimation.swift
+//  CircleAnimationInBackground.swift
 //  Pro(these)
 //
 //  Created by Frederik Kohler on 25.04.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CircleAnimation: View {
+struct CircleAnimationInBackground: View {
     
     
     @State private var animation:Bool = false

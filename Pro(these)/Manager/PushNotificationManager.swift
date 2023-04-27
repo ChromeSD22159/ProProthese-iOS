@@ -88,13 +88,31 @@ class PushNotificationManager : ObservableObject {
     /// The func is fired as soon as the scene is in the foreground and when the app is started.
     ///
     func setUpNonPermanentNotifications() {
-        let comeback = PushNotification.ComeBack
-        PushNotificationByTimer(
-            identifier: comeback["identifier"]!,
-            title: comeback["titel"]!,
-            body: comeback["body"]!,
-            triggerTimer: Int(comeback["triggerTimer"]!)!
-        )
+        // Random Time between 2-4hours
+        let random = Int.random(in: 7200..<14400)
+        //let random = Int.random(in: 10...20)
+        let randomNotification = Int.random(in: 1...2)
+        if randomNotification == 1 {
+            let comeback = PushNotification.ComeBack1
+            PushNotificationByTimer(
+                identifier: comeback["identifier"]!,
+                title: comeback["titel"]!,
+                body: comeback["body"]!,
+                triggerTimer: random
+            )
+        }
+        
+        if randomNotification == 2 {
+            let comeback = PushNotification.ComeBack2
+            PushNotificationByTimer(
+                identifier: comeback["identifier"]!,
+                title: comeback["titel"]!,
+                body: comeback["body"]!,
+                triggerTimer: random
+            )
+        }
+        
+        
     }
     
     /// Setup a new Notification with an Timer Trigger

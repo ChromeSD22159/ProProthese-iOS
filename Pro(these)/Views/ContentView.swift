@@ -20,17 +20,17 @@ struct ContentView: View {
                 AppConfig().backgroundGradient
                     .ignoresSafeArea()
                 
-                CircleAnimation(delay: 1, duration: 2)
+                CircleAnimationInBackground(delay: 1, duration: 2)
                     .opacity(0.2)
                     .ignoresSafeArea()
                 
                 VStack(){
                     
                     switch tabManager.currentTab {
-                    case .home: StepCounterView()
                     case .step: StepCounterView()
                     case .timer: StopWatchView()
-                    case .more: NavigationStackView()
+                    case .map: LocationTracker()
+                    case .more: MoreView()
                     }
                     
                     TabStack()
@@ -39,16 +39,5 @@ struct ContentView: View {
                 
             }
         }
-      
-    }
-
-   
-}
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        //ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-        Text("")
     }
 }

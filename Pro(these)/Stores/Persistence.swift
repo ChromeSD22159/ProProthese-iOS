@@ -15,7 +15,7 @@ struct PersistenceController {
         let viewContext = result.container.viewContext
         let newTime = WearingTimes(context: viewContext)
         newTime.timestamp = Date.now
-        newTime.duration = String(Int.random(in: 1...50))
+       // newTime.duration = String(Int.random(in: 1...50))
         do {
             try viewContext.save()
         } catch {

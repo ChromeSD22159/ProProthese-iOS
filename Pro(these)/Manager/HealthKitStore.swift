@@ -35,7 +35,6 @@ class HealthStore:ObservableObject {
         let startDate =  Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .month, value: -(HealthStorage().fetchDays-1), to: Date())!)
         let anchorDate = Date.mondayAt12AM()
         let daily = DateComponents(day: 1)
-
         let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
 
         query = HKStatisticsCollectionQuery(quantityType: stepType, quantitySamplePredicate: predicate, options: .cumulativeSum, anchorDate: anchorDate, intervalComponents: daily)

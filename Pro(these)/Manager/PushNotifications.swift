@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
-
+// https://emojiterra.com/de/nachdenkender-smiley/
 class PushNotifications {
     
-    var ComeBack:[String: String] = [
-        "identifier" : "PROTHESE_COMEBACK_REMINDER",
+    var ComeBack1:[String: String] = [
+        "identifier" : "PROTHESE_COMEBACK_REMINDER1",
         "titel": "Wir haben dich heute noch nicht gesehen 😢",
         "body": "Komm bald wieder vorbei, es wird Spannend ✌️",
+        "triggerTimer": "20"
+    ]
+    
+    var ComeBack2:[String: String] = [
+        "identifier" : "PROTHESE_COMEBACK_REMINDER1",
+        "titel": "Wie geht's dir? 🤔",
+        "body": "Es ist so Still hier ohne  dich...😢",
         "triggerTimer": "20"
     ]
     

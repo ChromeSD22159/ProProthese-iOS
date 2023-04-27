@@ -8,25 +8,25 @@
 import SwiftUI
 
 enum Tab: String, CaseIterable {
-    case home = "Home"
     case step = "Profile"
     case timer = "Stoppuhr"
+    case map = "Karte"
     case more = "Mehr"
     
     func TabIcon() -> String {
         switch self {
-            case .home: return "house.fill"
             case .step: return "prothesis"
-            case .timer: return "timer"
+            case .timer: return "stopwatch"
+            case .map: return "location.circle"
             case .more: return "ellipsis.circle"
         }
     }
     
     func TabTitle() -> String {
         switch self {
-            case .home: return "Home"
             case .step: return "Schritte"
             case .timer: return "Profil"
+            case .map: return "GPS Tracking"
             case .more: return "Mehr"
         }
     }
