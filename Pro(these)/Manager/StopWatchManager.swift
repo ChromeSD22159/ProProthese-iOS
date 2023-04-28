@@ -35,6 +35,7 @@ class StopWatchManager : ObservableObject {
     @Published var dragAmount = CGSize.zero
     @Published var devideSizeWidth: CGFloat = 0
     @Published var activeisActive = false
+    var fetchDays:Int = 7
     
     init() {
        startTime = fetchStartTime()
@@ -256,23 +257,37 @@ class StopWatchManager : ObservableObject {
     func convertDates(_ arr: [WearingTimes]) {
         let start = arr.reversed()
         var newArray:[ProthesenTimes] = [
-            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -16, to: Date())!, duration: 0),
-            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -15, to: Date())!, duration: 0),
-            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -14, to: Date())!, duration: 0),
-            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -13, to: Date())!, duration: 0),
-            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -12, to: Date())!, duration: 0),
-            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -11, to: Date())!, duration: 0),
-            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -10, to: Date())!, duration: 0),
+//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -16, to: Date())!, duration: 0),
+//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -15, to: Date())!, duration: 0),
+//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -14, to: Date())!, duration: 0),
+//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -13, to: Date())!, duration: 0),
+//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -12, to: Date())!, duration: 0),
+//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -11, to: Date())!, duration: 0),
+//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -10, to: Date())!, duration: 0),
         ]
-        let dictionary = Dictionary(grouping: start, by: { Calendar.current.startOfDay(for: $0.timestamp!) })
-        let Ints = dictionary.map { newArray.append(ProthesenTimes(date: $0.key, duration: $0.value.map({ $0.duration }).reduce(0, +)) ) }
+
         
-
-        let sorted = newArray.sort {
-            $0.date > $1.date
+        // Groupiert alle Zeiten zu dein Datum und Summiert die Zeiten
+        var GroupedAndSumArray:[ProthesenTimes] = []
+        let dictionary = Dictionary(grouping: arr.reversed(), by: { Calendar.current.startOfDay(for: $0.timestamp!) })
+        let _: [()] = dictionary.map { GroupedAndSumArray.append(ProthesenTimes(date: $0.key, duration: $0.value.map({ $0.duration }).reduce(0, +)) ) }
+        // Ordnet das Array nach der Zeit
+        let sorted = GroupedAndSumArray.sorted { itemA, itemB in
+            return itemA.date > itemB.date
         }
-
-        mergedTimesArray = newArray
+        //
+        mergedTimesArray = sorted
+        
+        
+        
+        var EntryDurationArray:[ProthesenTimes] = []
+        var countDownDay = 6
+        while countDownDay >= 0 {
+            let day = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -countDownDay, to: Date())!)
+            EntryDurationArray.append( ProthesenTimes(date: day, duration: 0) )
+            countDownDay -= 1
+        } // CREAT ARRAY with Entry durations
+        
     }
     
 }

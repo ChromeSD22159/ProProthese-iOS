@@ -15,7 +15,7 @@ struct StopWatchView: View {
     @State var isShowListSheet = false
     
     @State var devideSizeWidth: CGFloat = 0
-    
+    @Namespace var StopWatchbottomID
     var body: some View {
         GeometryReader { proxy in
             VStack {
@@ -61,7 +61,7 @@ struct StopWatchView: View {
             }
             .fullSizeCenter()
             .onAppear{
-                devideSizeWidth = proxy.size.width
+                stopWatchManager.devideSizeWidth = proxy.size.width
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
@@ -132,16 +132,16 @@ struct StopWatchView: View {
                 Spacer()
                 VStack(alignment: .center){
                     Text(stopWatchManager.totalProtheseTimeYesterday)
-                        .font(.system(size: 35))
+                        .font(.title)
                     Text("Gester")
-                        .foregroundColor(.gray)
+                        .foregroundColor(AppConfig().fontLight)
                 }
                 Spacer()
                 VStack(alignment: .center){
                     Text(stopWatchManager.totalProtheseTimeToday)
-                        .font(.system(size: 35))
+                        .font(.title)
                     Text("Heute")
-                        .foregroundColor(.gray)
+                        .foregroundColor(AppConfig().fontLight)
                 }
                 Spacer()
             }
@@ -218,19 +218,22 @@ struct StopWatchView: View {
                             )
                             .interpolationMethod(.catmullRom)
                             .symbol {
-                                ZStack{
-                                    Circle()
-                                        .fill(.white)
-                                        .frame(width: 10)
-                                        .shadow(radius: 2)
-                                    
-                                    if stopWatchManager.activeDateCicle == t.date {
+                                VStack{
+                                    ZStack{
                                         Circle()
-                                            .stroke(Color.white, lineWidth: 2)
-                                            .frame(width: 20)
+                                            .fill(.white)
+                                            .frame(width: 10)
                                             .shadow(radius: 2)
+                                        
+                                        if stopWatchManager.activeDateCicle == t.date {
+                                            Circle()
+                                                .stroke(Color.white, lineWidth: 2)
+                                                .frame(width: 20)
+                                                .shadow(radius: 2)
+                                        }
                                     }
                                 }
+                                
                             }
                             .foregroundStyle(
                                 .linearGradient(
@@ -244,11 +247,14 @@ struct StopWatchView: View {
                             .lineStyle(.init(lineWidth: 5))
                         }
                     }
+                    .frame(width: stopWatchManager.calcChartItemSize())
                     .chartOverlay { proxy in
                         GeometryReader { geometry in
                             ZStack(alignment: .top) {
                                 Rectangle().fill(.clear).contentShape(Rectangle())
-                                    .onTapGesture { location in updateSelectedStep(at: location, proxy: proxy, geometry: geometry) }
+                                    .onTapGesture { location in
+                                        updateSelectedStep(at: location, proxy: proxy, geometry: geometry)
+                                    }
                                     .gesture( DragGesture().onChanged { value in
                                         // find start and end positions of the drag
                                         let start = geometry[proxy.plotAreaFrame].origin.x
@@ -261,6 +267,7 @@ struct StopWatchView: View {
                                                 stopWatchManager.activeisActive = true
                                             }
                                         }
+                                        
                                         updateSelectedStep(at: CGPoint(x: value.location.x, y: value.location.y) , proxy: proxy, geometry: geometry)
                                     }.onEnded { value in
                                         withAnimation(.easeOut(duration: 0.2)){
@@ -271,6 +278,7 @@ struct StopWatchView: View {
                             }
                         }
                     }
+                    //Vertical
                     .chartYAxis {
                         let sec = stopWatchManager.mergedTimesArray.map { $0.duration }
                         let min = sec.min() ?? 1000
@@ -287,6 +295,8 @@ struct StopWatchView: View {
                         }
                         
                     }
+                    .chartYScale(domain: 0...43200)
+                    .chartYScale(range: .plotDimension(padding: 40))
                     .chartXAxis {
                         AxisMarks(values: .stride(by: .day, count: 1)) { value in
                             AxisGridLine(stroke: StrokeStyle(lineWidth: 0.3))
@@ -300,16 +310,30 @@ struct StopWatchView: View {
                             
                         }
                     }
-                    .chartYScale(domain: 0...43200)
-                    // .chartXScale(domain: 0...2)
-                    .chartYScale(range: .plotDimension(padding: 20))
-                    .chartXScale(range: .plotDimension(padding: 30))
-                    .frame(maxWidth: .infinity)
+                    .chartXScale(
+                        range: .plotDimension(startPadding: 60)
+                    )
+                    
+                    Text("").id(StopWatchbottomID)
                 }
-                .frame(width: devideSizeWidth)
             }
-            .frame(width: devideSizeWidth)
+            .onChange(of: stopWatchManager.fetchDays){ new in
+                withAnimation(.easeInOut(duration: 1)){
+                    value.scrollTo(StopWatchbottomID)
+                    TabManager().currentTab = .timer
+                }
+            }
+            .onAppear{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
+                    withAnimation(.easeInOut(duration: 1)){
+                        value.scrollTo(StopWatchbottomID)
+                    }
+                }
+            }
         }
+        .frame(height: 200)
+        .frame(maxWidth: .infinity)
+        .padding(.bottom)
     }
     
     func updateSelectedStep(at location: CGPoint, proxy: ChartProxy, geometry: GeometryProxy) {

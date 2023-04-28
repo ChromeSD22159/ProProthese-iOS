@@ -7,19 +7,26 @@
 
 import SwiftUI
 import Charts
+import HealthKit
+import Combine
+import Foundation
 
 struct StepCounterView: View {
-    @EnvironmentObject var healthStorage: HealthStorage
+    @Environment(\.scenePhase) var scenePhase
+    var healthStore: HealthStore?
     @EnvironmentObject var stepCounterManager: StepCounterManager
     @EnvironmentObject var TM: TabManager
     @EnvironmentObject var stopWatchManager: StopWatchManager
-    
-    @AppStorage("Days") var fetchDays:Int = 7
+    @EnvironmentObject var healthStorage: HealthStorage
     
     @Namespace private var MoodAnimationCounter
-    @Namespace var bottomID
+    @Namespace var StepCounterbottomID
     
     @State private var dragAmount = CGSize.zero
+    
+    init(){
+        healthStore = HealthStore()
+    }
     
     var body: some View {
         VStack{
@@ -28,17 +35,13 @@ struct StepCounterView: View {
                     VStack{
                         HeaderComponent()
                             .padding(.bottom)
-                        
-                        // MARK: Step Circle
-                       
-                        
+
                         ZStack{
-                            VStack{
-                                RecorderButton()
-                                    .padding(.top, 10)
-                                    .padding(.trailing, 15)
-                            }
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                            
+                            RecorderButton()
+                                .padding(.top, 10)
+                                .padding(.trailing, 15)
+                            
                             
                             StepCircle(Double: stepCounterManager.dez(Int: stepCounterManager.activeStepCount))
                         }
@@ -89,7 +92,7 @@ struct StepCounterView: View {
                                 Text("\(stepCounterManager.avgSteps(steps: healthStorage.Steps))")
                                     .foregroundColor(.white)
                                 
-                                Text("⌀ Schritte \(healthStorage.fetchDays)")
+                                Text("⌀ Schritte \(stepCounterManager.fetchDays)")
                                     .font(.callout)
                                     .foregroundColor(.gray)
                             }
@@ -106,6 +109,7 @@ struct StepCounterView: View {
                         })
                     })
                     .onAppear{
+                        loadData(days: 7)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                             stepCounterManager.devideSizeWidth = proxy.size.width
                             stepCounterManager.activeStepCount = healthStorage.showStep
@@ -120,13 +124,15 @@ struct StepCounterView: View {
                     // MARK: CHARTswitcher
                     chooseDay()
                     
+                   // StepChartNoScrolling()
                     
+                    StepChartScrolling(days: stepCounterManager.fetchDays)
                     // MARK: CHART
-                    if(fetchDays == 7){
-                        StepChartNoScrolling()
-                    } else {
-                        StepChartScrolling(days: fetchDays)
-                    }
+//                    if(stepCounterManager.fetchDays == 7){
+//                        // StepChartNoScrolling()
+//                    } else {
+//                       // StepChartScrolling(days: stepCounterManager.fetchDays)
+//                    }
                     
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -134,7 +140,98 @@ struct StepCounterView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onChange(of: stepCounterManager.fetchDays){ new in
+            loadData(days: new)
+        }
+        .onChange(of: scenePhase) { newPhase in
+            if newPhase == .active {
+            } else if newPhase == .inactive {
+                
+            } else if newPhase == .background {
+       
+            }
+        }
         
+    }
+    
+    func loadData(days: Int) {
+        if let healthStore = healthStore {
+            healthStore.requestAuthorization { success in
+                if success {
+                    
+                    healthStore.getDistance { statisticsCollection in
+                       let startDate =  Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -(days-1), to: Date())!)
+                        
+                        var arr = [Double]()
+                        var distances = [Double]()
+                        if let statisticsCollection = statisticsCollection {
+                            
+                            statisticsCollection.enumerateStatistics(from: startDate, to: Date()) { (statistics, stop) in
+                                let count = statistics.sumQuantity()?.doubleValue(for: HKUnit.meter())
+                                arr.append(count ?? 0)
+                                distances.append(count ?? 0)
+                            }
+                            
+                        }
+                        
+                        DispatchQueue.main.async {
+                            healthStorage.showDistance = distances.last ?? 0 // Update APPStorage for distance in HomeTabView
+                            healthStorage.Distances = distances
+                        }
+                        
+                    }
+   
+                    healthStore.calculateSteps { statisticsCollection in
+                        if let statisticsCollection = statisticsCollection {
+                            // update the UI
+                            let startDateNew =  Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -(days-1), to: Date())!)
+                            let endDateNew = Date()
+                            var StepsData: [Step] = [Step]()
+                            statisticsCollection.enumerateStatistics(from: startDateNew, to: endDateNew) { (statistics, stop) in
+                                let count = statistics.sumQuantity()?.doubleValue(for: .count())
+                                let step = Step(count: Int(count ?? 0), date: statistics.startDate, dist: nil)
+                                StepsData.append(step)
+                            }
+
+                            
+                            DispatchQueue.main.async {
+                                healthStorage.showStep = StepsData.last?.count ?? 0 // Update APPStorage for Circle in HomeTabView
+                                healthStorage.Steps = StepsData
+                                healthStorage.StepCount = StepsData.count
+                                healthStorage.showDate = StepsData.last?.date ?? Date()
+                            }
+                           
+                            
+                        }
+                    }
+                   
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                        mergeArray()
+                    })
+                }
+            }
+        }
+    }
+    
+    func mergeArray(){
+        let distances = healthStorage.Distances
+        var steps = healthStorage.Steps
+        
+        var newSteps: [Step] = [Step]()
+
+        for (index, step) in steps.enumerated() {
+            if index == 0 {
+                let newStep = Step(count: step.count, date: step.date, dist: nil)
+                newSteps.append(newStep)
+            } else {
+                let newStep = Step(count: step.count, date: step.date, dist: distances[index])
+                newSteps.append(newStep)
+            }
+            
+            
+        }
+        steps.removeAll(keepingCapacity: false)
+        healthStorage.Steps = newSteps
     }
     
     func updateSelectedStep(at location: CGPoint, proxy: ChartProxy, geometry: GeometryProxy) {
@@ -159,36 +256,39 @@ struct StepCounterView: View {
     // MARK: Recorder
     @ViewBuilder
     func RecorderButton() -> some View {
-        HStack{
-            if AppConfig().ShowRecordOnHomeView == true {
-                Button {
-                    if stopWatchManager.isRunning {
-                        stopWatchManager.stop()
-                    } else {
-                        stopWatchManager.start()
-                    }
-                } label: {
-                    VStack{
+        VStack{
+            HStack{
+                if AppConfig().ShowRecordOnHomeView == true {
+                    Button {
                         if stopWatchManager.isRunning {
-                            Image(systemName: "record.circle")
-                                .font(.largeTitle)
-                                .foregroundColor(.red)
-                            Text(stopWatchManager.fetchStartTime()!, style: .timer)
-                                .font(.caption2)
-                                .padding(.top, 2)
-                                .foregroundColor(.white)
+                            stopWatchManager.stop()
                         } else {
-                            Image(systemName: "record.circle")
-                                .font(.largeTitle)
-                                .foregroundColor(.white)
-                            Text("0:00")
-                                .font(.caption2)
-                                .padding(.top, 2)
-                                .foregroundColor(.white)
+                            stopWatchManager.start()
+                        }
+                    } label: {
+                        VStack{
+                            if stopWatchManager.isRunning {
+                                Image(systemName: "record.circle")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.red)
+                                Text(stopWatchManager.fetchStartTime()!, style: .timer)
+                                    .font(.caption2)
+                                    .padding(.top, 2)
+                                    .foregroundColor(.white)
+                            } else {
+                                Image(systemName: "record.circle")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                                Text("0:00")
+                                    .font(.caption2)
+                                    .padding(.top, 2)
+                                    .foregroundColor(.white)
+                            }
                         }
                     }
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
     }
@@ -247,8 +347,8 @@ struct StepCounterView: View {
     func chooseDayButton(_ day: Int) -> some View {
         HStack{
             Button("\(day) Tage"){
-                healthStorage.fetchDays = day
-                print(TM.currentTab)
+                loadData(days: day)
+                stepCounterManager.fetchDays = day
             }
         }
         .frame(maxWidth: .infinity)
@@ -363,7 +463,7 @@ struct StepCounterView: View {
                 
                 
             }
-            .frame(width: stepCounterManager.calcChartItemSize())
+            //.frame(width: stepCounterManager.calcChartItemSize())
             .chartForegroundStyleScale([
              "Schritte": Color.white,
              "Distanz": Color.red,
@@ -427,7 +527,7 @@ struct StepCounterView: View {
             }
             .chartYScale(range: .plotDimension(padding: 20))
             .chartXScale(range: .plotDimension(padding: 30))
-            Text("").id(bottomID)
+            Text("").id(StepCounterbottomID)
         }
         .frame(height: 200)
         .frame(maxWidth: .infinity)
@@ -579,21 +679,23 @@ struct StepCounterView: View {
                         }
                     }
                     .chartYScale(range: .plotDimension(padding: 20))
-                    .chartXScale(range: .plotDimension(padding: 30))
-                    Text("").id(bottomID)
+                    .chartXScale(range: .plotDimension(padding: 20))
+                    Text("").id(StepCounterbottomID)
                 }
                 
             }
-            .onChange(of: fetchDays){ new in
-                withAnimation(.easeIn(duration: 0.8)){
-                    value.scrollTo(bottomID)
-                    TM.currentTab = .step
+            .onChange(of: stepCounterManager.fetchDays){ new in
+                withAnimation(.easeInOut(duration: 1)){
+                    value.scrollTo(StepCounterbottomID)
+                    //TM.currentTab = .step
                 }
             }
             .onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
                     withAnimation(.easeInOut(duration: 1)){
-                        value.scrollTo(bottomID)
+                        if stepCounterManager.fetchDays != 7 {
+                            value.scrollTo(StepCounterbottomID)
+                        }
                     }
                 }
             }
@@ -640,10 +742,4 @@ struct StepCounterView: View {
               .rotationEffect(.degrees(-90))
       }
     
-}
-
-struct StepCounterView_Previews: PreviewProvider {
-    static var previews: some View {
-        StepCounterView()
-    }
 }

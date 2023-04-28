@@ -26,7 +26,7 @@ class StepCounterManager: ObservableObject {
     @Published var drawingRecordStroke: Bool = false
     @Published var angleGradient = AngularGradient(colors: [.white.opacity(0.5), .blue.opacity(0.5)], center: .center, startAngle: .degrees(-90), endAngle: .degrees(360))
     @Published var recordGradient = AngularGradient(colors: [.orange, .red], center: .center, startAngle: .degrees(-90), endAngle: .degrees(360))
-    @AppStorage("Days") var fetchDays:Int = 7
+    var fetchDays:Int = 7
 
     func percent(Int: Int) -> Double {
         return Double(Int) / Double(targetSteps) * 100

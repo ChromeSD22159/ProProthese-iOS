@@ -3,7 +3,7 @@
 //  Pro(these)
 //
 //  Created by Frederik Kohler on 26.04.23.
-//
+//  https://www.kodeco.com/34269507-background-modes-tutorial-getting-started
 
 
 import CoreLocation
@@ -18,19 +18,42 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var locationRegion:MKCoordinateRegion? = nil 
     
     @Published var coordsArray: [CLLocationCoordinate2D] = []
-    
+
     
     private let locationManager: CLLocationManager
+    
+    var backgroundTask: UIBackgroundTaskIdentifier = .invalid
     
     override init() {
         locationManager = CLLocationManager()
         authorizationStatus = locationManager.authorizationStatus
+        locationManager.requestAlwaysAuthorization()
+ 
         
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+        
+        locationManager.requestAlwaysAuthorization()
+        locationManager.allowsBackgroundLocationUpdates = true
         }
+    
+    func registerBackgroundTask() {
+      backgroundTask = UIApplication.shared.beginBackgroundTask { [weak self] in
+        print("iOS has signaled time has expired")
+        self?.endBackgroundTaskIfActive()
+      }
+    }
+    
+    func endBackgroundTaskIfActive() {
+      let isBackgroundTaskActive = backgroundTask != .invalid
+      if isBackgroundTaskActive {
+        print("Background task ended.")
+        UIApplication.shared.endBackgroundTask(backgroundTask)
+        backgroundTask = .invalid
+      }
+    }
     
     func requestPermission() {
         locationManager.requestWhenInUseAuthorization()

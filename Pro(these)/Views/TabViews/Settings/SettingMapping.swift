@@ -35,7 +35,8 @@ struct Settings: Identifiable {
                 Options(titel: "Tages Ziel in Chart", icon: "target", desc: "Zeige erfüllte Tagesziele an", info: "Zeigt den Record Button auch auf der Schrittüberischt an.", binding: AppConfig().$ChartBarIsShowing),
                 Options(titel: "Schritte in Chart", icon:  "figure.walk", desc:  "Zeige Schritte", info: "Zeigt den Record Button auch auf der Schrittüberischt an.", binding: AppConfig().$ChartLineStepsIsShowing),
                 Options(titel: "Distanz in Chart", icon:  "figure.walk.diamond", desc:  "Zeige Distance", info: "Zeigt den Record Button auch auf der Schrittüberischt an.", binding: AppConfig().$ChartLineDistanceIsShowing),
-                Options(titel: "Durchschnittliche Schritte", icon: "waveform", desc: "Zeige Durchschnittliche Schritte", info: "Zeigt den Record Button auch auf der Schrittüberischt an.", binding: AppConfig().$stepRuleMark)
+                Options(titel: "Durchschnittliche Schritte", icon: "waveform", desc: "Zeige Durchschnittliche Schritte", info: "Zeigt den Record Button auch auf der Schrittüberischt an.", binding: AppConfig().$stepRuleMark),
+                Options(titel: "Mini StopWatch im Schrittzähler", icon: "stopwatch", desc: "Aktiviere eine mini StopWatch im Schrittzähler", info: "Aktiviere eine mini StopWatch im Schrittzähler", binding: AppConfig().$ShowRecordOnHomeView)
             ]
         ),
         

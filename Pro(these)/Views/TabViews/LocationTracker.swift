@@ -11,6 +11,7 @@ import MapKit
 
 struct LocationTracker: View {
     @EnvironmentObject var tabManager: TabManager
+    @Environment(\.scenePhase) var scenePhase
     
     @StateObject var localManager = LocationManager()
 
@@ -77,6 +78,9 @@ struct LocationTracker: View {
                         localManager.authorizationStatus
                         if timerRecord == true {
                             localManager.coordsArray.removeAll(keepingCapacity: true)
+                            localManager.registerBackgroundTask()
+                        } else {
+                            localManager.endBackgroundTaskIfActive()
                         }
                     }, label: {
                         ZStack {
@@ -100,6 +104,22 @@ struct LocationTracker: View {
  
             }
             .fullSizeTop()
+            .onChange(of: scenePhase, perform: { scenePhase in
+                switch scenePhase {
+                    case .background:
+                      let isTimerRunning = timerRecord != false
+                      let isTaskUnregistered = localManager.backgroundTask == .invalid
+
+                      if isTimerRunning && isTaskUnregistered {
+                          localManager.registerBackgroundTask()
+                      }
+                    case .active:
+                    localManager.endBackgroundTaskIfActive()
+                case .inactive: print("")
+                @unknown default:
+                    print("")
+                }
+            })
         }
         
     @ViewBuilder
