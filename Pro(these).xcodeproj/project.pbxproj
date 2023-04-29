@@ -18,6 +18,10 @@
 		B612E31F29FAAC8E00C6BF88 /* SettingSetStepTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E31E29FAAC8E00C6BF88 /* SettingSetStepTarget.swift */; };
 		B612E32129FABF6F00C6BF88 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E32029FABF6F00C6BF88 /* HeaderComponent.swift */; };
 		B612E32329FAD16500C6BF88 /* LiveActivityStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */; };
+		B66F2C4029FC50C5006CA21E /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C3F29FC50C5006CA21E /* Counter.swift */; };
+		B66F2C4229FC50E2006CA21E /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */; };
+		B66F2C4629FD0649006CA21E /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
+		B66F2C4929FD0670006CA21E /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4829FD0670006CA21E /* TimerViewModel.swift */; };
 		B6C0B6DC29F8FF140071A88E /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C0B6DB29F8FF140071A88E /* LocationTracker.swift */; };
 		B6C0B6DE29F929000071A88E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C0B6DD29F929000071A88E /* LocationManager.swift */; };
 		B6C1285D29FA52870018C71D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C1285C29FA52870018C71D /* HomeView.swift */; };
@@ -25,6 +29,20 @@
 		B6C16B6E29F84CB600B5BD70 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C16B6D29F84CB600B5BD70 /* TabManager.swift */; };
 		B6C16B7029F84CE700B5BD70 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C16B6F29F84CE700B5BD70 /* LaunchScreen.swift */; };
 		B6C16B9429F8779F00B5BD70 /* CircleAnimationInBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C16B9329F8779F00B5BD70 /* CircleAnimationInBackground.swift */; };
+		B6E3B3DD29FD1B5900341144 /* ProWatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3B3DC29FD1B5900341144 /* ProWatchOSApp.swift */; };
+		B6E3B3E129FD1B5A00341144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E3B3E029FD1B5A00341144 /* Assets.xcassets */; };
+		B6E3B3E429FD1B5A00341144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E3B3E329FD1B5A00341144 /* Preview Assets.xcassets */; };
+		B6E3B3E729FD1B5A00341144 /* ProWatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6E3B3EC29FD1BE200341144 /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
+		B6E3B3ED29FD1BE200341144 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4829FD0670006CA21E /* TimerViewModel.swift */; };
+		B6E3B3EF29FD1CBC00341144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3B3DE29FD1B5900341144 /* ContentView.swift */; };
+		B6EEC4B829FD3FA5004E2F2F /* StepCounterWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */; };
+		B6EEC4B929FD40BE004E2F2F /* HealthKitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491829F6EF5C00BBE3A2 /* HealthKitStore.swift */; };
+		B6EEC4BA29FD40C9004E2F2F /* StepCounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491A29F6EF7600BBE3A2 /* StepCounterManager.swift */; };
+		B6EEC4BB29FD40D8004E2F2F /* HealthStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9490C29F6EEB600BBE3A2 /* HealthStorage.swift */; };
+		B6EEC4BD29FD41C0004E2F2F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9490E29F6EECC00BBE3A2 /* AppConfig.swift */; };
+		B6EEC4BE29FD42BD004E2F2F /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491329F6EF0900BBE3A2 /* Step.swift */; };
+		B6EEC4C129FD52EA004E2F2F /* ComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEC4C029FD52EA004E2F2F /* ComplicationView.swift */; };
 		B6F948F129F6ED8500BBE3A2 /* Pro_these_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F948F029F6ED8500BBE3A2 /* Pro_these_App.swift */; };
 		B6F948F329F6ED8500BBE3A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F948F229F6ED8500BBE3A2 /* ContentView.swift */; };
 		B6F948F529F6ED8700BBE3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F948F429F6ED8700BBE3A2 /* Assets.xcassets */; };
@@ -57,6 +75,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B6E3B3E529FD1B5A00341144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6E3B3D929FD1B5900341144;
+			remoteInfo = "ProWatchOS Watch App";
+		};
 		B6F9493D29F7F92900BBE3A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
@@ -67,6 +92,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B6E3B3EB29FD1B5A00341144 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B6E3B3E729FD1B5A00341144 /* ProWatchOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6F9494329F7F92900BBE3A2 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +128,10 @@
 		B612E31E29FAAC8E00C6BF88 /* SettingSetStepTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSetStepTarget.swift; sourceTree = "<group>"; };
 		B612E32029FABF6F00C6BF88 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityStructs.swift; sourceTree = "<group>"; };
+		B66F2C3F29FC50C5006CA21E /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
+		B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
+		B66F2C4829FD0670006CA21E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		B6C0B6DB29F8FF140071A88E /* LocationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
 		B6C0B6DD29F929000071A88E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B6C1285B29F99C730018C71D /* LiveViewExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LiveViewExtensionExtension.entitlements; path = "Pro(these)/LiveViewExtensionExtension.entitlements"; sourceTree = "<group>"; };
@@ -100,6 +140,14 @@
 		B6C16B6D29F84CB600B5BD70 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
 		B6C16B6F29F84CE700B5BD70 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		B6C16B9329F8779F00B5BD70 /* CircleAnimationInBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationInBackground.swift; sourceTree = "<group>"; };
+		B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProWatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E3B3DC29FD1B5900341144 /* ProWatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProWatchOSApp.swift; sourceTree = "<group>"; };
+		B6E3B3DE29FD1B5900341144 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6E3B3E029FD1B5A00341144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6E3B3E329FD1B5A00341144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6EEC4B629FD3F39004E2F2F /* ProWatchOS Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ProWatchOS Watch App.entitlements"; sourceTree = "<group>"; };
+		B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterWatch.swift; sourceTree = "<group>"; };
+		B6EEC4C029FD52EA004E2F2F /* ComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationView.swift; sourceTree = "<group>"; };
 		B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro(these).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F948F029F6ED8500BBE3A2 /* Pro_these_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro_these_App.swift; sourceTree = "<group>"; };
 		B6F948F229F6ED8500BBE3A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +184,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6E3B3D729FD1B5900341144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6F948EA29F6ED8500BBE3A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +253,17 @@
 			path = ContentViewComponents;
 			sourceTree = "<group>";
 		};
+		B66F2C3E29FC5090006CA21E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B66F2C3F29FC50C5006CA21E /* Counter.swift */,
+				B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */,
+				B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */,
+				B66F2C4829FD0670006CA21E /* TimerViewModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		B6C1285E29FA74A70018C71D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,12 +285,36 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		B6E3B3DB29FD1B5900341144 /* ProWatchOS Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				B6EEC4B629FD3F39004E2F2F /* ProWatchOS Watch App.entitlements */,
+				B6E3B3DC29FD1B5900341144 /* ProWatchOSApp.swift */,
+				B6E3B3DE29FD1B5900341144 /* ContentView.swift */,
+				B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */,
+				B6EEC4C029FD52EA004E2F2F /* ComplicationView.swift */,
+				B6E3B3E029FD1B5A00341144 /* Assets.xcassets */,
+				B6E3B3E229FD1B5A00341144 /* Preview Content */,
+			);
+			path = "ProWatchOS Watch App";
+			sourceTree = "<group>";
+		};
+		B6E3B3E229FD1B5A00341144 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6E3B3E329FD1B5A00341144 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		B6F948E429F6ED8500BBE3A2 = {
 			isa = PBXGroup;
 			children = (
+				B66F2C3E29FC5090006CA21E /* Shared */,
 				B6C1285B29F99C730018C71D /* LiveViewExtensionExtension.entitlements */,
 				B6F948EF29F6ED8500BBE3A2 /* Pro(these) */,
 				B6F9493329F7F92700BBE3A2 /* LiveViewExtension */,
+				B6E3B3DB29FD1B5900341144 /* ProWatchOS Watch App */,
 				B6F9492E29F7F92600BBE3A2 /* Frameworks */,
 				B6F948EE29F6ED8500BBE3A2 /* Products */,
 			);
@@ -235,6 +325,7 @@
 			children = (
 				B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */,
 				B6F9492D29F7F92600BBE3A2 /* LiveViewExtensionExtension.appex */,
+				B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,12 +333,12 @@
 		B6F948EF29F6ED8500BBE3A2 /* Pro(these) */ = {
 			isa = PBXGroup;
 			children = (
+				B6F948F429F6ED8700BBE3A2 /* Assets.xcassets */,
 				B6F9491D29F6F15700BBE3A2 /* Pro-these--Info.plist */,
-				B6F9491C29F6EF9300BBE3A2 /* Pro(these).entitlements */,
 				B6F948FE29F6ED8700BBE3A2 /* Info.plist */,
+				B6F9491C29F6EF9300BBE3A2 /* Pro(these).entitlements */,
 				B6F948F029F6ED8500BBE3A2 /* Pro_these_App.swift */,
 				B6F9490429F6EE0D00BBE3A2 /* Views */,
-				B6F948F429F6ED8700BBE3A2 /* Assets.xcassets */,
 				B6F9492429F7DD1000BBE3A2 /* Extention */,
 				B6F9491729F6EF4600BBE3A2 /* Manager */,
 				B6F9491029F6EEEE00BBE3A2 /* Model */,
@@ -344,6 +435,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E3B3E829FD1B5A00341144 /* Build configuration list for PBXNativeTarget "ProWatchOS Watch App" */;
+			buildPhases = (
+				B6E3B3D629FD1B5900341144 /* Sources */,
+				B6E3B3D729FD1B5900341144 /* Frameworks */,
+				B6E3B3D829FD1B5900341144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProWatchOS Watch App";
+			productName = "ProWatchOS Watch App";
+			productReference = B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B6F948EC29F6ED8500BBE3A2 /* Pro(these) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F9490129F6ED8700BBE3A2 /* Build configuration list for PBXNativeTarget "Pro(these)" */;
@@ -352,11 +460,13 @@
 				B6F948EA29F6ED8500BBE3A2 /* Frameworks */,
 				B6F948EB29F6ED8500BBE3A2 /* Resources */,
 				B6F9494329F7F92900BBE3A2 /* Embed Foundation Extensions */,
+				B6E3B3EB29FD1B5A00341144 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				B6F9493E29F7F92900BBE3A2 /* PBXTargetDependency */,
+				B6E3B3E629FD1B5A00341144 /* PBXTargetDependency */,
 			);
 			name = "Pro(these)";
 			productName = "Pro(these)";
@@ -390,6 +500,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					B6E3B3D929FD1B5900341144 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					B6F948EC29F6ED8500BBE3A2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -413,11 +526,21 @@
 			targets = (
 				B6F948EC29F6ED8500BBE3A2 /* Pro(these) */,
 				B6F9492C29F7F92600BBE3A2 /* LiveViewExtensionExtension */,
+				B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B6E3B3D829FD1B5900341144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E3B3E429FD1B5A00341144 /* Preview Assets.xcassets in Resources */,
+				B6E3B3E129FD1B5A00341144 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6F948EB29F6ED8500BBE3A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +561,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B6E3B3D629FD1B5900341144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EEC4BE29FD42BD004E2F2F /* Step.swift in Sources */,
+				B6EEC4BD29FD41C0004E2F2F /* AppConfig.swift in Sources */,
+				B6E3B3ED29FD1BE200341144 /* TimerViewModel.swift in Sources */,
+				B6EEC4BB29FD40D8004E2F2F /* HealthStorage.swift in Sources */,
+				B6EEC4BA29FD40C9004E2F2F /* StepCounterManager.swift in Sources */,
+				B6E3B3DD29FD1B5900341144 /* ProWatchOSApp.swift in Sources */,
+				B6EEC4B929FD40BE004E2F2F /* HealthKitStore.swift in Sources */,
+				B6E3B3EF29FD1CBC00341144 /* ContentView.swift in Sources */,
+				B6EEC4B829FD3FA5004E2F2F /* StepCounterWatch.swift in Sources */,
+				B6E3B3EC29FD1BE200341144 /* WatchConnectivityProvider.swift in Sources */,
+				B6EEC4C129FD52EA004E2F2F /* ComplicationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6F948E929F6ED8500BBE3A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,12 +594,16 @@
 				B6C16B6E29F84CB600B5BD70 /* TabManager.swift in Sources */,
 				B6F948F329F6ED8500BBE3A2 /* ContentView.swift in Sources */,
 				B6F948F129F6ED8500BBE3A2 /* Pro_these_App.swift in Sources */,
+				B66F2C4629FD0649006CA21E /* WatchConnectivityProvider.swift in Sources */,
 				B6F9492829F7E7D000BBE3A2 /* StopWatchManager.swift in Sources */,
+				B66F2C4029FC50C5006CA21E /* Counter.swift in Sources */,
 				B6F9490629F6EE1C00BBE3A2 /* MoreView.swift in Sources */,
+				B66F2C4929FD0670006CA21E /* TimerViewModel.swift in Sources */,
 				B6F9491B29F6EF7600BBE3A2 /* StepCounterManager.swift in Sources */,
 				B6C1286029FA74CC0018C71D /* SettingsDeteilsView.swift in Sources */,
 				B612E31B29FAA6AA00C6BF88 /* SettingChangeName.swift in Sources */,
 				B612E31229FA9BF400C6BF88 /* BackBTN.swift in Sources */,
+				B66F2C4229FC50E2006CA21E /* SessionDelegater.swift in Sources */,
 				B6F9492629F7DD2800BBE3A2 /* ViewExtention.swift in Sources */,
 				B6F9491929F6EF5C00BBE3A2 /* HealthKitStore.swift in Sources */,
 				B612E32329FAD16500C6BF88 /* LiveActivityStructs.swift in Sources */,
@@ -496,6 +641,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B6E3B3E629FD1B5A00341144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */;
+			targetProxy = B6E3B3E529FD1B5A00341144 /* PBXContainerItemProxy */;
+		};
 		B6F9493E29F7F92900BBE3A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B6F9492C29F7F92600BBE3A2 /* LiveViewExtensionExtension */;
@@ -504,6 +654,72 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B6E3B3E929FD1B5A00341144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ProWatchOS Watch App/ProWatchOS Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProWatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZD275Y62U7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ProWatchOS;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Records Health Records Data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "FK.Pro-these-";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.ProWatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		B6E3B3EA29FD1B5A00341144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ProWatchOS Watch App/ProWatchOS Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProWatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = ZD275Y62U7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ProWatchOS;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Records Health Records Data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "FK.Pro-these-";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.ProWatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 		B6F948FF29F6ED8700BBE3A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -763,6 +979,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B6E3B3E829FD1B5A00341144 /* Build configuration list for PBXNativeTarget "ProWatchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E3B3E929FD1B5A00341144 /* Debug */,
+				B6E3B3EA29FD1B5A00341144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6F948E829F6ED8500BBE3A2 /* Build configuration list for PBXProject "Pro(these)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
