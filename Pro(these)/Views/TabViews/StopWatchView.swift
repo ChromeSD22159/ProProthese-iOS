@@ -19,32 +19,27 @@ struct StopWatchView: View {
     @Namespace var StopWatchbottomID
     var body: some View {
         GeometryReader { proxy in
+            let screenWidth = proxy.size.width
             VStack {
-             //   Text(watchTimerModel.textFieldValue)
                 
-                ring()
-                    .frame(width: (proxy.size.width/2))
-                Spacer()
-                HStack {
-                    ZStack {
-                        Circle()
-                            .fill(.white)
-                            .frame(width: 60)
-                        
-                        Button(stopWatchManager.isRunning ? "Stop" : "Start"){
-                            if stopWatchManager.isRunning {
-                                stopWatchManager.stop()
-                            } else {
-                                stopWatchManager.start()
-                            }
-                        }
-                    }
+                VStack{
+                    Spacer()
+                    
+                    StopWatch(spacingBottom: 20) //ring()
+                        .foregroundColor(.white)
+                        .padding(.bottom, 20)
+                    
+                    Spacer()
+                    
+                    showProthesisTimes()
+                        .frame(width: (screenWidth/2))
+                        .padding(.bottom, 50)
+
+                    TimerChartScrolling(devideSizeWidth)
+                        .frame(maxWidth: .infinity, maxHeight: 200)
                 }
-                
-                Spacer()
-                
-                TimerChartScrolling(devideSizeWidth)
-                    .frame(maxWidth: .infinity, maxHeight: 200)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+               
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -66,7 +61,7 @@ struct StopWatchView: View {
                 stopWatchManager.devideSizeWidth = proxy.size.width
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
     
@@ -125,6 +120,80 @@ struct StopWatchView: View {
             Spacer()
         }
         .padding(.bottom, 20)
+    }
+    
+    @ViewBuilder
+    func StopWatch(spacingBottom: CGFloat) -> some View {
+        HStack(alignment: .center ,spacing: 50){
+            if stopWatchManager.isRunning {
+                Text( stopWatchManager.fetchStartTime()!, style: .timer )
+                    .font(.system(size: 60))
+                    .padding(.bottom, spacingBottom)
+            } else {
+                Text("0:00")
+                    .font(.system(size: 60))
+                    .padding(.bottom, spacingBottom)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .foregroundColor(AppConfig().foreground)
+        
+        HStack {
+            Spacer()
+            ZStack {
+                Circle()
+                    .fill(.red.opacity(0.5))
+                    .frame(width: 60)
+                
+                Button("Stop"){
+                    if stopWatchManager.isRunning {
+                        stopWatchManager.stop()
+                    }
+                }
+            }
+            Spacer()
+            ZStack {
+                Circle()
+                    .fill(.green.opacity(0.5))
+                    .frame(width: 60)
+                
+                Button("Start"){
+                    if !stopWatchManager.isRunning {
+                        stopWatchManager.start()
+                    }
+                }
+            }
+            Spacer()
+        }
+        .foregroundColor(.white)
+        .frame(maxWidth: .infinity)
+    }
+    
+    @ViewBuilder
+    func showProthesisTimes() -> some View {
+        HStack{
+            Spacer()
+            VStack(alignment: .center){
+                Text(stopWatchManager.totalProtheseTimeYesterday)
+                    .font(.system(size: 20))
+                    .multilineTextAlignment(.center)
+                Text("Gester")
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+            }
+            .frame(width: 200)
+            Spacer()
+            VStack(alignment: .center){
+                Text(stopWatchManager.totalProtheseTimeToday)
+                    .font(.system(size: 20))
+                    .multilineTextAlignment(.center)
+                Text("Heute")
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+            }
+            .frame(width: 200)
+            Spacer()
+        }
     }
     
     @ViewBuilder

@@ -19,6 +19,7 @@ struct StepCounterView: View {
     @EnvironmentObject var stopWatchManager: StopWatchManager
     @EnvironmentObject var healthStorage: HealthStorage
     
+    
     @Namespace private var MoodAnimationCounter
     @Namespace var StepCounterbottomID
     
