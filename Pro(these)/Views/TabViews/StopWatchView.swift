@@ -10,6 +10,7 @@ import Charts
 
 struct StopWatchView: View {
     @EnvironmentObject var stopWatchManager: StopWatchManager
+    @StateObject var watchTimerModel = TimerViewModel()
     
     @State var selectedDetent: PresentationDetent = .large
     @State var isShowListSheet = false
@@ -19,7 +20,8 @@ struct StopWatchView: View {
     var body: some View {
         GeometryReader { proxy in
             VStack {
-                Spacer()
+             //   Text(watchTimerModel.textFieldValue)
+                
                 ring()
                     .frame(width: (proxy.size.width/2))
                 Spacer()
@@ -187,10 +189,9 @@ struct StopWatchView: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
                     Chart() {
-                        
-                        /*  RuleMark(y: .value("Durchschnitt", stepCounterManager.avgSteps(steps: stopWatchManager.mergedTimesArray) ) )
+                       RuleMark(y: .value("Durchschnitt", stopWatchManager.avgTimes() ))
                          .foregroundStyle(.orange.opacity(0.5))
-                         */
+
                         RuleMark(x: .value("ActiveSteps", stopWatchManager.activeDateCicle ) )
                             .foregroundStyle(stopWatchManager.activeisActive ? .white.opacity(1) : .white.opacity(0.2))
                             .offset(stopWatchManager.dragAmount)
@@ -283,19 +284,28 @@ struct StopWatchView: View {
                         let sec = stopWatchManager.mergedTimesArray.map { $0.duration }
                         let min = sec.min() ?? 1000
                         let max = sec.max() ?? 20000
+                        
                         //let consumptionStride = Array(stride(from: min, through: max, by: (max - min)/3))
                         let test = Array(stride(from: min, to: max, by: 5808))
                         AxisMarks(position: .trailing, values: test) { axis in
-                            AxisGridLine(stroke: StrokeStyle(lineWidth: 2,
+                            AxisGridLine(stroke: StrokeStyle(lineWidth: 1,
                                                              lineCap: .butt,
                                                              lineJoin: .bevel,
-                                                             miterLimit: 3,
-                                                             dash: [5],
+                                                             miterLimit: 20,
+                                                             dash: [10],
                                                              dashPhase: 1))
+                            
+                            AxisValueLabel(content: {
+                                if let intValue = axis.as(Int.self) {
+                                    Text("\(intValue / 3600) h")
+                                        .font(.system(size: 10))
+                                        .multilineTextAlignment(.trailing)
+                                }
+                            })
                         }
                         
                     }
-                    .chartYScale(domain: 0...43200)
+                    .chartYScale(domain: stopWatchManager.maxValue(margin: 3600))
                     .chartYScale(range: .plotDimension(padding: 40))
                     .chartXAxis {
                         AxisMarks(values: .stride(by: .day, count: 1)) { value in

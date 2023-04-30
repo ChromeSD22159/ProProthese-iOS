@@ -91,6 +91,19 @@ class StopWatchManager : ObservableObject {
        totalProtheseTimeYesterday = convertSecondsToHrMinuteSec(seconds: YesterdayArray.reduce(0, +) )
        totalProtheseTimeToday = convertSecondsToHrMinuteSec(seconds: TodayArray.reduce(0, +) )
     }
+    
+    func avgTimes() -> Int {
+        let days = mergedTimesArray.count
+        let secs = mergedTimesArray.map { $0.duration }.reduce(0,+)
+        let avg = (Int(secs) / days)
+        return avg
+    }
+    
+    func maxValue(margin: Int) -> ClosedRange<Int> {
+        let maXsecs = mergedTimesArray.map { $0.duration }.max()
+        let withMargin = Int(maXsecs ?? 65000) + margin
+        return 0...withMargin
+    }
 
     func deleteItems(offsets: IndexSet) {
        withAnimation {

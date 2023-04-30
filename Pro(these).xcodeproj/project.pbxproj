@@ -35,7 +35,7 @@
 		B6E3B3E729FD1B5A00341144 /* ProWatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E3B3EC29FD1BE200341144 /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
 		B6E3B3ED29FD1BE200341144 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4829FD0670006CA21E /* TimerViewModel.swift */; };
-		B6E3B3EF29FD1CBC00341144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3B3DE29FD1B5900341144 /* ContentView.swift */; };
+		B6E3B3EF29FD1CBC00341144 /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3B3DE29FD1B5900341144 /* WatchContentView.swift */; };
 		B6EEC4B829FD3FA5004E2F2F /* StepCounterWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */; };
 		B6EEC4B929FD40BE004E2F2F /* HealthKitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491829F6EF5C00BBE3A2 /* HealthKitStore.swift */; };
 		B6EEC4BA29FD40C9004E2F2F /* StepCounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491A29F6EF7600BBE3A2 /* StepCounterManager.swift */; };
@@ -142,12 +142,14 @@
 		B6C16B9329F8779F00B5BD70 /* CircleAnimationInBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAnimationInBackground.swift; sourceTree = "<group>"; };
 		B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProWatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E3B3DC29FD1B5900341144 /* ProWatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProWatchOSApp.swift; sourceTree = "<group>"; };
-		B6E3B3DE29FD1B5900341144 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6E3B3DE29FD1B5900341144 /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
 		B6E3B3E029FD1B5A00341144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E3B3E329FD1B5A00341144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6EEC4B629FD3F39004E2F2F /* ProWatchOS Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ProWatchOS Watch App.entitlements"; sourceTree = "<group>"; };
 		B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterWatch.swift; sourceTree = "<group>"; };
 		B6EEC4C029FD52EA004E2F2F /* ComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationView.swift; sourceTree = "<group>"; };
+		B6EEC4C229FEF222004E2F2F /* ClockKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClockKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/ClockKit.framework; sourceTree = DEVELOPER_DIR; };
+		B6EEC4C729FEF30B004E2F2F /* ProWatchOS-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProWatchOS-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro(these).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F948F029F6ED8500BBE3A2 /* Pro_these_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro_these_App.swift; sourceTree = "<group>"; };
 		B6F948F229F6ED8500BBE3A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -288,9 +290,10 @@
 		B6E3B3DB29FD1B5900341144 /* ProWatchOS Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				B6EEC4C729FEF30B004E2F2F /* ProWatchOS-Watch-App-Info.plist */,
 				B6EEC4B629FD3F39004E2F2F /* ProWatchOS Watch App.entitlements */,
 				B6E3B3DC29FD1B5900341144 /* ProWatchOSApp.swift */,
-				B6E3B3DE29FD1B5900341144 /* ContentView.swift */,
+				B6E3B3DE29FD1B5900341144 /* WatchContentView.swift */,
 				B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */,
 				B6EEC4C029FD52EA004E2F2F /* ComplicationView.swift */,
 				B6E3B3E029FD1B5A00341144 /* Assets.xcassets */,
@@ -414,6 +417,7 @@
 		B6F9492E29F7F92600BBE3A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6EEC4C229FEF222004E2F2F /* ClockKit.framework */,
 				B6F9492F29F7F92600BBE3A2 /* WidgetKit.framework */,
 				B6F9493129F7F92700BBE3A2 /* SwiftUI.framework */,
 			);
@@ -572,7 +576,7 @@
 				B6EEC4BA29FD40C9004E2F2F /* StepCounterManager.swift in Sources */,
 				B6E3B3DD29FD1B5900341144 /* ProWatchOSApp.swift in Sources */,
 				B6EEC4B929FD40BE004E2F2F /* HealthKitStore.swift in Sources */,
-				B6E3B3EF29FD1CBC00341144 /* ContentView.swift in Sources */,
+				B6E3B3EF29FD1CBC00341144 /* WatchContentView.swift in Sources */,
 				B6EEC4B829FD3FA5004E2F2F /* StepCounterWatch.swift in Sources */,
 				B6E3B3EC29FD1BE200341144 /* WatchConnectivityProvider.swift in Sources */,
 				B6EEC4C129FD52EA004E2F2F /* ComplicationView.swift in Sources */,
@@ -666,6 +670,7 @@
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProWatchOS-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ProWatchOS;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Records Health Records Data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
@@ -699,6 +704,7 @@
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProWatchOS-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ProWatchOS;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Records Health Records Data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
