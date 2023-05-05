@@ -42,9 +42,6 @@ struct StopWatchView: View {
                
             }
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    // EditButton()
-                }
                 ToolbarItem {
                     Button(action: { isShowListSheet.toggle() }) {
                         Label("", systemImage: "list.star")
@@ -136,25 +133,28 @@ struct StopWatchView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .foregroundColor(AppConfig().foreground)
+        .foregroundColor(AppConfig().fontColor)
         
         HStack {
             Spacer()
             ZStack {
                 Circle()
-                    .fill(.red.opacity(0.5))
-                    .frame(width: 60)
+                    .strokeBorder(.yellow, lineWidth: 2)
+                    .background(Circle().fill(.white.opacity(0.01)))
+                    .fontWeight(.medium)
+                    .frame(width: 60, height: 60)
                 
                 Button("Stop"){
                     if stopWatchManager.isRunning {
                         stopWatchManager.stop()
                     }
                 }
+                .foregroundColor(.yellow)
             }
             Spacer()
             ZStack {
                 Circle()
-                    .fill(.green.opacity(0.5))
+                    .fill(.yellow)
                     .frame(width: 60)
                 
                 Button("Start"){
@@ -162,11 +162,31 @@ struct StopWatchView: View {
                         stopWatchManager.start()
                     }
                 }
+                .foregroundColor(.black)
+                .fontWeight(.medium)
             }
             Spacer()
+            
+            ZStack {
+                Circle()
+                    .fill(.yellow)
+                    .frame(width: 60)
+                
+                Button("Dummy"){
+                    for index in 1...9 {
+                        stopWatchManager.addDummyTimes(times: index)
+                    }
+                }
+                .foregroundColor(.black)
+                .fontWeight(.medium)
+            }
+            Spacer()
+            
+            
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity)
+        .foregroundColor(AppConfig().fontColor)
     }
     
     @ViewBuilder
@@ -176,9 +196,10 @@ struct StopWatchView: View {
             VStack(alignment: .center){
                 Text(stopWatchManager.totalProtheseTimeYesterday)
                     .font(.system(size: 20))
+                    .foregroundColor(AppConfig().fontLight)
                     .multilineTextAlignment(.center)
                 Text("Gester")
-                    .foregroundColor(.gray)
+                    .foregroundColor(AppConfig().fontColor)
                     .multilineTextAlignment(.center)
             }
             .frame(width: 200)
@@ -186,9 +207,10 @@ struct StopWatchView: View {
             VStack(alignment: .center){
                 Text(stopWatchManager.totalProtheseTimeToday)
                     .font(.system(size: 20))
+                    .foregroundColor(AppConfig().fontLight)
                     .multilineTextAlignment(.center)
                 Text("Heute")
-                    .foregroundColor(.gray)
+                    .foregroundColor(AppConfig().fontColor)
                     .multilineTextAlignment(.center)
             }
             .frame(width: 200)
@@ -230,8 +252,8 @@ struct StopWatchView: View {
                 HStack {
                     Text(stopWatchManager.convertSecondsToHrMinuteSec(seconds: Int(time.duration) ))
                     Spacer()
-                    Text("\(time.timestamp!.formatted(.dateTime.hour().minute())) Uhr -")
-                    Text("\(time.timestamp!.formatted(.dateTime.day().month()))")
+                    Text("\(time.timestamp!.formatted(.dateTime.hour().minute()) ) Uhr -")
+                    Text("\(time.timestamp!.formatted(.dateTime.day().month()) )")
                     
                 }
                 .listRowBackground(Color.white.opacity(0.05))
@@ -259,7 +281,7 @@ struct StopWatchView: View {
                 HStack{
                     Chart() {
                        RuleMark(y: .value("Durchschnitt", stopWatchManager.avgTimes() ))
-                         .foregroundStyle(.orange.opacity(0.5))
+                         .foregroundStyle(Color.orange.opacity(0.5))
 
                         RuleMark(x: .value("ActiveSteps", stopWatchManager.activeDateCicle ) )
                             .foregroundStyle(stopWatchManager.activeisActive ? .white.opacity(1) : .white.opacity(0.2))
@@ -328,7 +350,7 @@ struct StopWatchView: View {
                                     .gesture( DragGesture().onChanged { value in
                                         // find start and end positions of the drag
                                         let start = geometry[proxy.plotAreaFrame].origin.x
-                                        let xStart = value.startLocation.x - start
+                                        //let xStart = value.startLocation.x - start
                                         let xCurrent = value.location.x - start
                                         // map those positions to X-axis values in the chart
                                         if let dateCurrent: Date = proxy.value(atX: xCurrent) {

@@ -163,6 +163,27 @@ class PushNotificationManager : ObservableObject {
         print("Register Notification:  \(identifier)")
     }
     
+    func PushNotificationByAddEvent(identifier: String, title: String, body: String, triggerDate: Date, repeater: Bool) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = UNNotificationSound.default
+        
+        //let comps = Calendar.current.dateComponents([.year, .month, .day], from: triggerDate)
+        print("input: \(triggerDate)")
+        let nextTriggerDate = Calendar.current.date(byAdding: .day, value: -1, to: triggerDate)!
+        let comps = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: nextTriggerDate)
+        print("trigger: \(comps)")
+        let trigger = UNCalendarNotificationTrigger(dateMatching: comps, repeats: repeater)
+
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+
+        // add our notification request
+        UNUserNotificationCenter.current().add(request)
+        
+        print("Register Notification:  \(identifier) für: \(trigger)")
+    }
     
     // MARK: Remove all pending Notifications
     func removeAllPendingNotificationRequests(){

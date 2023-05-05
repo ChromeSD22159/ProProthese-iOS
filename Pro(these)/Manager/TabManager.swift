@@ -9,7 +9,9 @@ import SwiftUI
 
 class TabManager: ObservableObject {
     @Published var currentTab: Tab = .step // StartTab
+    @Published var isSettingSheet: Bool = false
     
+    @AppStorage("startTab") var startTab:Tab = .step
     
     @Published var animation:Bool = false
     @Published var blur:CGFloat = 0

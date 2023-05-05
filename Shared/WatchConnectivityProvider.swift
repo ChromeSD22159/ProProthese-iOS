@@ -7,9 +7,67 @@
 
 import Foundation
 import WatchConnectivity
+import ClockKit
 
+class WatchConnectivityProvider : NSObject, WCSessionDelegate {
+    
+    private var session: WCSession = .default
+    var dataReceived: ((String, Any) -> Void)?
+    
+    init(session: WCSession = .default) {
+        self.session = session
 
-class WatchConnectivityProvider: NSObject {
+        super.init()
+
+        self.session.delegate = self
+        self.connect()
+    }
+    
+    func connect(){
+        guard WCSession.isSupported() else {
+            print("WCSession is not supported")
+            return
+        }
+        
+        session.activate()
+    }
+
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
+
+    #if os(iOS)
+    func sessionDidBecomeInactive(_ session: WCSession) { }
+
+    func sessionDidDeactivate(_ session: WCSession) { }
+    #endif
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        guard dataReceived != nil else {
+            print("Received data, but 'dataReceived' handler is not provided")
+            return
+        }
+        
+        DispatchQueue.main.async {
+            if let dataReceived = self.dataReceived {
+                for pair in message {
+                    dataReceived(pair.key, pair.value)
+                }
+            }
+        }
+    }
+
+    func sendMessage(_ key: String, _ message: String, _ errorHandler: ((Error) -> Void)?) {
+        if session.isReachable {
+            session.sendMessage([key : message], replyHandler: nil) { (error) in
+                print(error.localizedDescription)
+                if let errorHandler = errorHandler {
+                    errorHandler(error)
+                }
+            }
+        }
+    }
+}
+/*
+class WatchConnectivityProvider: NSObject, WCSessionDelegate {
     
     static let shared = WatchConnectivityProvider()
 
@@ -32,16 +90,15 @@ class WatchConnectivityProvider: NSObject {
        
         session.activate()
     }
-
+    
     func send(_ message: [String:Any]) -> Void {
         session.sendMessage(message, replyHandler: nil) { (error) in
             print("Error: ") // \(error.localizedDescription)
         }
     }
-}
 
-extension WatchConnectivityProvider: WCSessionDelegate {
-    
+
+        
     // Receiver
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
        //without reply handler
@@ -70,3 +127,4 @@ extension WatchConnectivityProvider: WCSessionDelegate {
     }
     #endif
 }
+*/

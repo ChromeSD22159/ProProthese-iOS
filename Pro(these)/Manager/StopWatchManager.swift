@@ -8,7 +8,6 @@
 import SwiftUI
 import CoreData
 import ActivityKit
-import LiveViewExtensionExtension
 
 class StopWatchManager : ObservableObject {
     @Published var message = "Not running"
@@ -24,10 +23,10 @@ class StopWatchManager : ObservableObject {
     @Published var totalProtheseTimeYesterday: String = ""
    
     // Live Activity old
-    @State var activity: Activity<Prothesen_widgetAttributes>? = nil
+   // @State var activity: Activity<Prothesen_widgetAttributes>? = nil
     
     // Live Activity new
-    @State var activityTimeTracking: Activity<TimeTrackingAttributes>? = nil
+    //@State var activityTimeTracking: Activity<TimeTrackingAttributes>? = nil
     
     
     // Chart
@@ -63,6 +62,7 @@ class StopWatchManager : ObservableObject {
         let sort = NSSortDescriptor(key: "timestamp", ascending: false)
         requesttimestamps.sortDescriptors = [sort]
         timesArray.removeAll(keepingCapacity: true)
+        mergedTimesArray.removeAll(keepingCapacity: true)
         do {
             timesArray = try PersistenceController.shared.container.viewContext.fetch(requesttimestamps)
             sumTime(timesArray)
@@ -95,6 +95,10 @@ class StopWatchManager : ObservableObject {
     func avgTimes() -> Int {
         let days = mergedTimesArray.count
         let secs = mergedTimesArray.map { $0.duration }.reduce(0,+)
+        
+        guard days != 0 else {
+            return 0
+        }
         let avg = (Int(secs) / days)
         return avg
     }
@@ -157,7 +161,7 @@ class StopWatchManager : ObservableObject {
          isRunning = true
          message = "Is running"
         //LiveActivityStart()
-     }
+ }
     
     func start(){
         if startTime == nil {
@@ -167,9 +171,6 @@ class StopWatchManager : ObservableObject {
             if startTime != nil {
                 UserDefaults.standard.set(Date.now, forKey: "startTime")
             }
-            if AppConfig().showLiveActivity == true {
-                self.LiveActivityStart()
-            }
         }
     }
     
@@ -178,17 +179,11 @@ class StopWatchManager : ObservableObject {
         isRunning = false
         message = "Not running"
         let DateData = UserDefaults.standard.object(forKey: "startTime") as? Date ?? nil
-        var EndTimeString:String = ""
         if DateData != nil {
             
-        var endTime = getDuration(data: DateData!)
-        addTime(time: DateData!, duration: endTime)
-        refetchTimesData()
-        
-        if AppConfig().showLiveActivity == true {
-            self.liveActivityStop(isRunning: isRunning, endTime: EndTimeString)
-        }
-            
+            let endTime = getDuration(data: DateData!)
+            addTime(time: DateData!, duration: endTime)
+            refetchTimesData()
         }
         
         UserDefaults.standard.set(nil, forKey: "startTime")
@@ -198,69 +193,26 @@ class StopWatchManager : ObservableObject {
         let newTime = WearingTimes(context: PersistenceController.shared.container.viewContext)
         newTime.timestamp = time
         newTime.duration = duration
+        
         do {
             try PersistenceController.shared.container.viewContext.save()
+            refetchTimesData()
         } catch {
             let nsError = error as NSError
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
     }
 
+    func addDummyTimes(times: Int) {
+        let date = Calendar.current.date(byAdding: .day, value: -times, to: Date())
+        let duration = Int32.random(in: 1000..<15480)
+        addTime(time: date!, duration: duration)
+    }
+
     func fetchStartTime() -> Date? {
         UserDefaults.standard.object(forKey: "startTime") as? Date
     }
-    
-    func LiveActivityStart(){
-        if ActivityAuthorizationInfo().areActivitiesEnabled {
-            print(ActivityAuthorizationInfo().areActivitiesEnabled)
-            if #available(iOS 16.2, *) {
-                let attributes = TimeTrackingAttributes()
-                guard let startTime else { return }
-                let state = TimeTrackingAttributes.ContentState(isRunning: true, timeStamp: startTime, state: "Zeichnet auf", endTime: "")
-                
-                do {
-                    let res = try? Activity<TimeTrackingAttributes>.request(attributes: attributes, content: ActivityContent(state: state, staleDate: Date()), pushType: nil)
-                    print("Requested Live Activity \(String(describing: res?.id)).")
-                  } catch (let error) {
-                      print("Error requesting pizza delivery Live Activity \(error.localizedDescription).")
-                  }
-                
-              
-            } else {
-                let attributes = Prothesen_widgetAttributes()
-                let state = Prothesen_widgetAttributes.ProthesenTimerStatus(isRunning: true, timeStamp: Date.now, state: "Zeichnet auf", endTime: "" )
-                let res = try? Activity<Prothesen_widgetAttributes>.request(attributes: attributes, contentState: state, pushType: nil)
-                print("Requested a LiveRecordTimer - Live Activity (till 16.1) \(String(describing: res?.id)).")
-            }
-        }
-        
-    }
 
-    func liveActivityStop(isRunning: Bool, endTime: String){
-           if #available(iOS 16.2, *) { // Run code in iOS 16.2 or later.
-               guard let startTime else { return }
-               let state = TimeTrackingAttributes.ContentState(isRunning: isRunning, timeStamp: startTime, state: "Beendet", endTime: endTime)
-
-               Task {
-                   await activityTimeTracking?.end(ActivityContent(state: state, staleDate: Date()), dismissalPolicy: .immediate)
-                   self.startTime = nil
-                  
-               }
-           } else { // Fall back to earlier iOS APIs.
-               let finalDeliveryStatus = Prothesen_widgetAttributes.ContentState(isRunning: isRunning, timeStamp: Date.now, state: "Beendet", endTime: endTime)
-               let finalContent = ActivityContent(state: finalDeliveryStatus, staleDate: nil)
-               
-               Task {
-                   for activity in Activity<Prothesen_widgetAttributes>.activities {
-                       await activity.end(finalContent, dismissalPolicy: .default)
-                       print("Ending the Live Activity: \(activity.id)")
-                       self.startTime = nil
-                   }
-               }
-           }
-      }
-
-    
     func calcChartItemSize() -> CGFloat {
         let days = AppConfig().fetchDays
         let itemSize = (devideSizeWidth / 7)
@@ -268,21 +220,9 @@ class StopWatchManager : ObservableObject {
     }
     
     func convertDates(_ arr: [WearingTimes]) {
-        let start = arr.reversed()
-        var newArray:[ProthesenTimes] = [
-//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -16, to: Date())!, duration: 0),
-//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -15, to: Date())!, duration: 0),
-//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -14, to: Date())!, duration: 0),
-//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -13, to: Date())!, duration: 0),
-//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -12, to: Date())!, duration: 0),
-//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -11, to: Date())!, duration: 0),
-//            ProthesenTimes(date: Calendar.current.date(byAdding: .day, value: -10, to: Date())!, duration: 0),
-        ]
-
-        
         // Groupiert alle Zeiten zu dein Datum und Summiert die Zeiten
         var GroupedAndSumArray:[ProthesenTimes] = []
-        let dictionary = Dictionary(grouping: arr.reversed(), by: { Calendar.current.startOfDay(for: $0.timestamp!) })
+        let dictionary = Dictionary(grouping: arr.reversed(), by: { Calendar.current.startOfDay(for: $0.timestamp ?? Date() ) })
         let _: [()] = dictionary.map { GroupedAndSumArray.append(ProthesenTimes(date: $0.key, duration: $0.value.map({ $0.duration }).reduce(0, +)) ) }
         // Ordnet das Array nach der Zeit
         let sorted = GroupedAndSumArray.sorted { itemA, itemB in
@@ -290,9 +230,7 @@ class StopWatchManager : ObservableObject {
         }
         //
         mergedTimesArray = sorted
-        
-        
-        
+
         var EntryDurationArray:[ProthesenTimes] = []
         var countDownDay = 6
         while countDownDay >= 0 {
@@ -301,6 +239,8 @@ class StopWatchManager : ObservableObject {
             countDownDay -= 1
         } // CREAT ARRAY with Entry durations
         
+        GroupedAndSumArray.removeAll(keepingCapacity: true)
+        EntryDurationArray.removeAll(keepingCapacity: true)
     }
     
 }
@@ -311,3 +251,56 @@ struct ProthesenTimes: Identifiable {
     var duration: Int32
 }
 
+
+/*
+ 
+ func LiveActivityStart(){
+     if ActivityAuthorizationInfo().areActivitiesEnabled {
+         print(ActivityAuthorizationInfo().areActivitiesEnabled)
+         if #available(iOS 16.2, *) {
+             let attributes = TimeTrackingAttributes()
+             guard let startTime else { return }
+             let state = TimeTrackingAttributes.ContentState(isRunning: true, timeStamp: startTime, state: "Zeichnet auf", endTime: "")
+             
+             do {
+                 let res = try? Activity<TimeTrackingAttributes>.request(attributes: attributes, content: ActivityContent(state: state, staleDate: Date()), pushType: nil)
+                 print("Requested Live Activity \(String(describing: res?.id)).")
+               } catch (let error) {
+                   print("Error requesting pizza delivery Live Activity \(error.localizedDescription).")
+               }
+             
+           
+         } else {
+             let attributes = Prothesen_widgetAttributes()
+             let state = Prothesen_widgetAttributes.ProthesenTimerStatus(isRunning: true, timeStamp: Date.now, state: "Zeichnet auf", endTime: "" )
+             let res = try? Activity<Prothesen_widgetAttributes>.request(attributes: attributes, contentState: state, pushType: nil)
+             print("Requested a LiveRecordTimer - Live Activity (till 16.1) \(String(describing: res?.id)).")
+         }
+     }
+     
+ }
+
+ func liveActivityStop(isRunning: Bool, endTime: String){
+        if #available(iOS 16.2, *) { // Run code in iOS 16.2 or later.
+            guard let startTime else { return }
+            let state = TimeTrackingAttributes.ContentState(isRunning: isRunning, timeStamp: startTime, state: "Beendet", endTime: endTime)
+
+            Task {
+                await activityTimeTracking?.end(ActivityContent(state: state, staleDate: Date()), dismissalPolicy: .immediate)
+                self.startTime = nil
+               
+            }
+        } else { // Fall back to earlier iOS APIs.
+            let finalDeliveryStatus = Prothesen_widgetAttributes.ContentState(isRunning: isRunning, timeStamp: Date.now, state: "Beendet", endTime: endTime)
+            let finalContent = ActivityContent(state: finalDeliveryStatus, staleDate: nil)
+            
+            Task {
+                for activity in Activity<Prothesen_widgetAttributes>.activities {
+                    await activity.end(finalContent, dismissalPolicy: .default)
+                    print("Ending the Live Activity: \(activity.id)")
+                    self.startTime = nil
+                }
+            }
+        }
+   }
+ */

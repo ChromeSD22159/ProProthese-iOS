@@ -43,6 +43,11 @@ struct Settings: Identifiable {
         Settings(
             titel: "StopWatch", options: [
                 Options(titel: "Mini StopWatch im Schrittzähler", icon: "stopwatch", desc: "Aktiviere eine mini StopWatch im Schrittzähler", info: "Aktiviere eine mini StopWatch im Schrittzähler", binding: AppConfig().$ShowRecordOnHomeView)
+            ]),
+        
+        Settings(
+            titel: "Terminplaner", options: [
+                Options(titel: "Zeige abgelaufene Termine", icon: "stopwatch", desc: "Zeige alle abgelaufene Termine Sortiert an.", info: "Zeige alle abgelaufene Termine Sortiert an.", binding: AppConfig().$showPastEvents)
             ])
     ]
     

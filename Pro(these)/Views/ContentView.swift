@@ -30,7 +30,8 @@ struct ContentView: View {
                     case .step: StepCounterView()
                     case .timer: StopWatchView()
                     case .map: LocationTracker()
-                    case .more: MoreView()
+                    case .event: Events()
+                    //case .more: MoreView()
                     }
                     
                     TabStack()
@@ -39,5 +40,8 @@ struct ContentView: View {
                 
             }
         }
+        .sheet(isPresented: $tabManager.isSettingSheet, content: {
+            SettingsSheet()
+        })
     }
 }

@@ -19,6 +19,8 @@ class AppConfig: ObservableObject {
     var fontLight:Color     = .gray
     var backgroundLabel     = LinearGradient(colors: [Color(red: 32/255, green: 40/255, blue: 63/255)], startPoint: .top, endPoint: .bottom)
     var backgroundGradient  = LinearGradient(colors: [Color(red: 32/255, green: 40/255, blue: 63/255), Color(red: 4/255, green: 5/255, blue: 8/255)], startPoint: .top, endPoint: .bottom)
+   
+    var backgroundGradientDark  = LinearGradient(colors: [Color(red: 5/255, green: 10/255, blue: 28/255), Color(red: 4/255, green: 5/255, blue: 19/255)], startPoint: .top, endPoint: .bottom)
     
     
     @AppStorage("Days") var fetchDays:Int = 7
@@ -28,7 +30,7 @@ class AppConfig: ObservableObject {
     
     // MARK: PERSONAL
     /// Saves the Username
-    @AppStorage("Username") var username = "name"
+    @AppStorage("Username") var username = "Frederik"
     /// Saves the daily Steptarget
     @AppStorage("targetSteps") var targetSteps = 10000
     
@@ -56,6 +58,44 @@ class AppConfig: ObservableObject {
     @AppStorage("PushNotificationGoodMorning") var PushNotificationGoodMorning = true
     
     /// Live Notification
-    @AppStorage("showLiveActivity") var showLiveActivity                        = true
+    @AppStorage("showLiveActivity") var showLiveActivity = true
+    
+    // MARK: SETTINGS Terminplaner
+    @AppStorage("showPastEvents") var showPastEvents = true
+    
 }
 
+enum Theme: String, CaseIterable, Identifiable {
+    case bubblegum
+    case buttercup
+    case indigo
+    case lavender
+    case magenta
+    case navy
+    case orange
+    case oxblood
+    case periwinkle
+    case poppy
+    case purple
+    case seafoam
+    case sky
+    case tan
+    case teal
+    case yellow
+    
+    var accentColor: Color {
+        switch self {
+        case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
+        case .indigo, .magenta, .navy, .oxblood, .purple: return .white
+        }
+    }
+    var mainColor: Color {
+        Color(rawValue)
+    }
+    var name: String {
+        rawValue.capitalized
+    }
+    var id: String {
+        name
+    }
+}

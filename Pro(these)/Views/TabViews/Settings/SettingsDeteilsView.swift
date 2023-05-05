@@ -54,42 +54,5 @@ struct SettingsDeteilsView: View {
         .padding(.horizontal, 50)
     }
 }
-/*struct SettingsDetailView<Titel: StringProtocol, Content:View>: View {
-    
-    let content:           Content
-    let titel: Titel
-    
-    init(
-        @ViewBuilder _ content: () -> Content,
-        titel: () -> Titel
-    ) {
-        self.content = content()
-        self.titel = titel()
-    }
-    
-    var body: some View {
-        ZStack {
-            AppConfig().backgroundGradient
-                .ignoresSafeArea()
-            
-            ScrollView(showsIndicators: false) {
-                VStack(spacing: 20){
-                    HStack{
-                        Text(titel)
-                            .foregroundColor(.white)
-                    }
-                    
-                    content
-                    
-                }
-                .padding(.top, 80)
-            }
-            .ignoresSafeArea()
-            .padding(.horizontal)
-        }
-    }
-}*/
-
-
 
 

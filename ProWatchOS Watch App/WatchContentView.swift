@@ -20,6 +20,16 @@ struct WatchContentView: View {
                     .tabItem {
                         Label("figure.walk", systemImage: "square.and.pencil")
                     }
+                
+                VStack{
+                    TextField("Enter your name", text: $timerViewModel.textFieldValue)
+                    Button("Send to Phone") {
+                        timerViewModel.sendDataToPhone()
+                    }
+                }
+                .tabItem {
+                    Label("figure.walk", systemImage: "square.and.pencil")
+                }
             }
             .navigationTitle("Pro Prothese")
             .navigationBarTitleDisplayMode(.inline)

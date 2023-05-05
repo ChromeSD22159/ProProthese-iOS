@@ -7,18 +7,22 @@
 
 import SwiftUI
 
-enum Tab: String, CaseIterable {
+enum Tab: String, CaseIterable, Identifiable {
     case step = "Profile"
     case timer = "Stoppuhr"
     case map = "Karte"
-    case more = "Mehr"
+    case event = "Event"
+    //case more = "Mehr"
+    
+    var id: Self { self }
     
     func TabIcon() -> String {
         switch self {
             case .step: return "prothesis"
             case .timer: return "stopwatch"
             case .map: return "location.circle"
-            case .more: return "ellipsis.circle"
+            case .event: return "calendar.circle"
+            //case .more: return "ellipsis.circle"
         }
     }
     
@@ -27,7 +31,8 @@ enum Tab: String, CaseIterable {
             case .step: return "Schritte"
             case .timer: return "Profil"
             case .map: return "GPS Tracking"
-            case .more: return "Mehr"
+            case .event: return "Events"
+            //case .more: return "Mehr"
         }
     }
    

@@ -13,6 +13,8 @@ import HealthKit
 struct StepCounterWatchView: View {
     var healthStore: HealthStore?
     @EnvironmentObject var healthStorage: HealthStorage
+    
+    @Environment(\.scenePhase) private var scenePhase
     @EnvironmentObject var SM: StepCounterManager
     
     @Namespace private var MoodAnimationCounter
@@ -56,6 +58,17 @@ struct StepCounterWatchView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onChange(of: scenePhase, perform: { newScenePhase in
+            
+            switch newScenePhase {
+            case .active:  loadData(days: SM.fetchDays)
+            case .background :  loadData(days: SM.fetchDays)
+            case .inactive:  loadData(days: SM.fetchDays)
+            @unknown default:
+                print("HealthData not reloaded")
+            }
+            
+        })
         .onChange(of: SM.fetchDays){ new in
             loadData(days: new)
         }
@@ -279,7 +292,7 @@ struct StepCounterWatchView: View {
                             .gesture( DragGesture().onChanged { value in
                                 // find start and end positions of the drag
                                 let start = geometry[proxy.plotAreaFrame].origin.x
-                                let xStart = value.startLocation.x - start
+                                //let xStart = value.startLocation.x - start
                                 let xCurrent = value.location.x - start
                                 // map those positions to X-axis values in the chart
                                 if let dateCurrent: Date = proxy.value(atX: xCurrent) {

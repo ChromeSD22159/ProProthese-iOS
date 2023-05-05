@@ -8,10 +8,13 @@
 import Foundation
 import SwiftUI
 import MapKit
+import Charts
 
 struct LocationTracker: View {
     @EnvironmentObject var tabManager: TabManager
     @Environment(\.scenePhase) var scenePhase
+    
+    @StateObject var lvm = LVM()
     
     @StateObject var localManager = LocationManager()
 
@@ -20,28 +23,26 @@ struct LocationTracker: View {
     @State var sheet:Bool = false
     @State var presentationDetent: PresentationDetent = .medium
     
-    @State var timerRecord = false
     @AppStorage("username") var username: String = "Anonymous"
     
     @AppStorage("locationLatitude") var locationLatitude: Double = 47.62356637298501
     @AppStorage("locationLongitude") var locationLongitude: Double = 8.220596441079877
     
+    @State var selectedDetent: PresentationDetent = .large
+    @State var isTracksSheet = false
+    
+
+    
     var favCoordinatesArray: [CLLocationCoordinate2D]  = [
-        CLLocationCoordinate2D(latitude:47.62356637298501, longitude: 8.220596441079877),
-        CLLocationCoordinate2D(latitude:47.62364184109103, longitude: 8.220103769607382),
-        CLLocationCoordinate2D(latitude:47.62451726315878, longitude: 8.219737998362653)
+//        CLLocationCoordinate2D(latitude:47.62356637298501, longitude: 8.220596441079877),
+//        CLLocationCoordinate2D(latitude:47.62364184109103, longitude: 8.220103769607382),
+//        CLLocationCoordinate2D(latitude:47.62451726315878, longitude: 8.219737998362653)
     ]
-    // https://www.andyibanez.com/posts/using-corelocation-with-swiftui/
+    
     var body: some View {
         ZStack() {
-            
-            if timerRecord {
-                Karte(region: localManager.locationRegion!, lineCoordinates: localManager.coordsArray)
-                
-            } else {
-                Karte(region: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude:  locationLatitude, longitude: locationLongitude), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), lineCoordinates: favCoordinatesArray)
-            }
-            
+
+            Karte(region: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude:  locationLatitude, longitude: locationLongitude), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), lineCoordinates: favCoordinatesArray, showCurrentLocation: true)
             
 
             HStack(){
@@ -49,7 +50,7 @@ struct LocationTracker: View {
                 
                 VStack{
                     Button(action: {
-                        sheet.toggle()
+                        isTracksSheet.toggle()
                     }, label: {
                         ZStack {
                             Circle()
@@ -68,19 +69,18 @@ struct LocationTracker: View {
                     .padding([.bottom, .trailing], 20)
                     
                     Button(action: {
-                        print(timerRecord)
                         withAnimation(.easeInOut) {
-                            timerRecord.toggle()
+                            localManager.timerRecord.toggle()
                         }
-                        print(timerRecord)
                         tabManager.currentTab = .map
                         localManager.requestPermission()
-                        localManager.authorizationStatus
-                        if timerRecord == true {
-                            localManager.coordsArray.removeAll(keepingCapacity: true)
+                        
+                        if localManager.startTime == nil {
                             localManager.registerBackgroundTask()
+                            localManager.startRecording()
                         } else {
                             localManager.endBackgroundTaskIfActive()
+                            localManager.stopRecording()
                         }
                     }, label: {
                         ZStack {
@@ -90,10 +90,16 @@ struct LocationTracker: View {
                                 .shadow(color: .white.opacity(0.5), radius: 40, x: 0, y: 0)
                                 .shadow(color: .white.opacity(0.2), radius: 20, x: 0, y: 0)
                                 .shadow(color: .white.opacity(0.1), radius: 10, x: 0, y: 0)
-                            
-                            Image(systemName: "record.circle")
-                                .font(.largeTitle)
-                                .foregroundColor(.white)
+                                
+                            if localManager.startTime == nil {
+                                Image(systemName: "record.circle")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                            } else {
+                                Image(systemName: "stop")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                            }
                                 
                         }
                     })
@@ -103,45 +109,94 @@ struct LocationTracker: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
  
             }
-            .fullSizeTop()
-            .onChange(of: scenePhase, perform: { scenePhase in
-                switch scenePhase {
-                    case .background:
-                      let isTimerRunning = timerRecord != false
-                      let isTaskUnregistered = localManager.backgroundTask == .invalid
-
-                      if isTimerRunning && isTaskUnregistered {
-                          localManager.registerBackgroundTask()
-                      }
-                    case .active:
-                    localManager.endBackgroundTaskIfActive()
-                case .inactive: print("")
-                @unknown default:
-                    print("")
-                }
-            })
+        .sheet(isPresented: $isTracksSheet) {
+            ListTracks()
+                .presentationDetents([.large], selection: $selectedDetent)
+                .presentationDragIndicator(.visible)
         }
+
+        .fullSizeTop()
+        .onChange(of: scenePhase, perform: { scenePhase in
+            switch scenePhase {
+                case .background:
+                let isTimerRunning = localManager.timerRecord != false
+                  let isTaskUnregistered = localManager.backgroundTask == .invalid
+
+                  if isTimerRunning && isTaskUnregistered {
+                      localManager.registerBackgroundTask()
+                  }
+                case .active:
+                localManager.endBackgroundTaskIfActive()
+            case .inactive: print("")
+            @unknown default:
+                print("")
+            }
+        })
+        .onAppear{
+            lvm.fetchLocationData()
+        }
+    }
         
+    
     @ViewBuilder
-    func Karte(region: MKCoordinateRegion, lineCoordinates: [CLLocationCoordinate2D]) -> some View {
-        MapViewer(region: region, lineCoordinates: lineCoordinates)
+    func ListTracks() -> some View {
+        List {
+        
+            ForEach(lvm.LocationArray, id: \.self) { track in
+                HStack {
+                    Text(track.trackID!)
+                        .font(.caption2)
+                    
+                    Text("\(track.latitude)")
+                        .font(.caption2)
+                    
+                    Text("\(track.longitude)")
+                        .font(.caption2)
+                    
+                    Text("\(lvm.speed(track.speed, to: .kmh), specifier: "%.2f")")
+                        .font(.caption2)
+                    Text(track.timestamp!, style: .date)
+                        .font(.caption2)
+                         
+                    Text(track.timestamp!, style: .time)
+                        .font(.caption2)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "trash")
+                        .font(.caption2)
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            lvm.deleteByID(track.trackID!)
+                        }
+                    
+                }
+                .onTapGesture {
+                    isTracksSheet = true
+                }
+                .listRowBackground(Color.white.opacity(0.05))
+            }
+            .onDelete(perform: lvm.deleteItems)
+            
+        }
+        .refreshable {
+            do {
+                lvm.refetchLocationData()
+            }
+        }
+        .background{
+            AppConfig().backgroundGradient
+        }
+        .ignoresSafeArea()
+        .scrollContentBackground(.hidden)
+        .foregroundColor(.white)
+    }
+
+    @ViewBuilder
+    func Karte(region: MKCoordinateRegion, lineCoordinates: [CLLocationCoordinate2D], showCurrentLocation:Bool) -> some View {
+        MapViewer(region: region, lineCoordinates: lineCoordinates, showCurrentLocation: showCurrentLocation)
             .ignoresSafeArea()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .sheet(isPresented: $sheet, content: {
-                List {
-                    ScrollView {
-                        ForEach(lineCoordinates, id: \.latitude) { coords in
-                            HStack {
-                                Text("LanG: \(coords.latitude)")
-                                Spacer()
-                                Text("LanG: \(coords.longitude)")
-                            }
-                        }
-                    }
-                }
-                .presentationDetents([.medium], selection: $presentationDetent)
-                .presentationDragIndicator(.visible)
-            })
     }
 }
 
@@ -149,12 +204,12 @@ struct MapViewer: UIViewRepresentable {
     
     let region: MKCoordinateRegion
     let lineCoordinates: [CLLocationCoordinate2D]
-    
+    let showCurrentLocation: Bool
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
         mapView.region = region
-        mapView.showsUserLocation = true
+        mapView.showsUserLocation = showCurrentLocation
         
         let polyline = MKPolyline(coordinates: lineCoordinates, count: lineCoordinates.count)
         mapView.addOverlay(polyline)
@@ -188,3 +243,4 @@ class Coordinator: NSObject, MKMapViewDelegate {
     }
 
 }
+

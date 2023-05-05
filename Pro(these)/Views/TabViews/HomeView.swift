@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var tabManager: TabManager
+    @EnvironmentObject var appConfig: AppConfig
     var body: some View {
         VStack(spacing: 20){
             
@@ -27,25 +29,28 @@ struct HomeView: View {
     }
         
     @ViewBuilder
-        func Header(name: String, target: Int) -> some View {
-            HStack(){
-                VStack {
-                    Text("Hallo \(AppConfig().username)")
-                        .font(.title3)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    Text("Dein Tagesziel ist für heute \(target) Schritte")
-                        .font(.callout)
-                        .foregroundColor(.gray)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
-                VStack(){
-                    Image(systemName: "info.circle")
-                        .font(.largeTitle)
-                }
+    func Header(name: String, target: Int) -> some View {
+        HStack(){
+            VStack {
+                Text("Hallo \(AppConfig().username)")
+                    .font(.title3)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Dein Tagesziel ist für heute \(target) Schritte")
+                    .font(.callout)
+                    .foregroundColor(.gray)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .padding()
-            .frame(maxWidth: .infinity)
+            VStack(){
+                Image(systemName: "gearshape")
+                    .foregroundColor(appConfig.fontColor)
+                    .onTapGesture {
+                        tabManager.isSettingSheet.toggle()
+                    }
+            }
         }
+        .padding()
+        .frame(maxWidth: .infinity)
+    }
     
     @ViewBuilder
     func carusell(screenSize: GeometryProxy) -> some View {

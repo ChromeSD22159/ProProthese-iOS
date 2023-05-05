@@ -15,7 +15,7 @@ extension Date {
 }
 
 class HealthStore:ObservableObject {
-    
+    @StateObject private var healthStorage = HealthStorage()
     var healthStore: HKHealthStore?
     var query: HKStatisticsCollectionQuery?
     var querySampleQuery : HKSampleQuery?
@@ -81,7 +81,4 @@ class HealthStore:ObservableObject {
         }
         
     }
-    
-    
-    
 }

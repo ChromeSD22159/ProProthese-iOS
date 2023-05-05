@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60DDCAE29FF49B500372957 /* LVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCAD29FF49B500372957 /* LVM.swift */; };
+		B60DDCB02A001D9E00372957 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCAF2A001D9E00372957 /* TrackView.swift */; };
+		B60DDCB32A00606F00372957 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCB22A00606F00372957 /* Events.swift */; };
+		B60DDCB52A00FDA400372957 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCB42A00FDA400372957 /* EventManager.swift */; };
+		B60DDCB72A0301DA00372957 /* DE.strings in Resources */ = {isa = PBXBuildFile; fileRef = B60DDCB62A0301DA00372957 /* DE.strings */; };
+		B60DDCBA2A0302C100372957 /* ENe.strings in Resources */ = {isa = PBXBuildFile; fileRef = B60DDCB92A0302C000372957 /* ENe.strings */; };
+		B60DDCBC2A038DB500372957 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCBB2A038DB500372957 /* ConfirmButton.swift */; };
+		B60DDCBE2A0411F700372957 /* EventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCBD2A0411F700372957 /* EventSection.swift */; };
+		B60DDCC02A04125400372957 /* EventPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCBF2A04125400372957 /* EventPreview.swift */; };
+		B60DDCC22A0412B400372957 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCC12A0412B400372957 /* EventDetailView.swift */; };
+		B60DDCC42A04130300372957 /* EventCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCC32A04130300372957 /* EventCardComponent.swift */; };
+		B60DDCC62A04151200372957 /* EventTaskHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCC52A04151200372957 /* EventTaskHeader.swift */; };
+		B60DDCC82A04180300372957 /* EventTaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCC72A04180300372957 /* EventTaskRow.swift */; };
+		B60DDCCD2A04192300372957 /* ContactSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCCC2A04192300372957 /* ContactSection.swift */; };
+		B60DDCD02A04198800372957 /* ContactPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCCF2A04198800372957 /* ContactPreview.swift */; };
+		B60DDCD22A041A0100372957 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCD12A041A0100372957 /* ContactDetailView.swift */; };
+		B60DDCD42A041AC800372957 /* ContactCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCD32A041AC800372957 /* ContactCardComponent.swift */; };
+		B60DDCD62A041C7300372957 /* EventAddSheetBoby.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCD52A041C7300372957 /* EventAddSheetBoby.swift */; };
+		B60DDCD82A041CFF00372957 /* ContentAddSheetBoby.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCD72A041CFF00372957 /* ContentAddSheetBoby.swift */; };
+		B60DDCE22A04674000372957 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCE12A04674000372957 /* SettingsSheet.swift */; };
 		B612E30B29FA99B300C6BF88 /* SettingToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E30A29FA99B300C6BF88 /* SettingToggleButton.swift */; };
 		B612E30E29FA9BB300C6BF88 /* NavigateTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E30D29FA9BB300C6BF88 /* NavigateTo.swift */; };
 		B612E31029FA9BD400C6BF88 /* NavigateToWithStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E30F29FA9BD400C6BF88 /* NavigateToWithStack.swift */; };
@@ -18,10 +38,27 @@
 		B612E31F29FAAC8E00C6BF88 /* SettingSetStepTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E31E29FAAC8E00C6BF88 /* SettingSetStepTarget.swift */; };
 		B612E32129FABF6F00C6BF88 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E32029FABF6F00C6BF88 /* HeaderComponent.swift */; };
 		B612E32329FAD16500C6BF88 /* LiveActivityStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */; };
+		B63FC11E2A054E320013652B /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491329F6EF0900BBE3A2 /* Step.swift */; };
+		B63FC1202A0568D40013652B /* HealthStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9490C29F6EEB600BBE3A2 /* HealthStorage.swift */; };
+		B63FC1212A0569D00013652B /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCB42A00FDA400372957 /* EventManager.swift */; };
+		B63FC1222A056BD00013652B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */; };
+		B63FC1232A056BF20013652B /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492029F7AB1F00BBE3A2 /* PushNotifications.swift */; };
+		B63FC1322A05B49B0013652B /* test.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = B63FC1292A05B49B0013652B /* test.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B66F2C4029FC50C5006CA21E /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C3F29FC50C5006CA21E /* Counter.swift */; };
 		B66F2C4229FC50E2006CA21E /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */; };
 		B66F2C4629FD0649006CA21E /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
 		B66F2C4929FD0670006CA21E /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4829FD0670006CA21E /* TimerViewModel.swift */; };
+		B6AB581B2A052BB8003D962B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F9492F29F7F92600BBE3A2 /* WidgetKit.framework */; };
+		B6AB581C2A052BB8003D962B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F9493129F7F92700BBE3A2 /* SwiftUI.framework */; };
+		B6AB581F2A052BB8003D962B /* ProthesenWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB581E2A052BB8003D962B /* ProthesenWidgetBundle.swift */; };
+		B6AB58232A052BB8003D962B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AB58222A052BB8003D962B /* Assets.xcassets */; };
+		B6AB58272A052BB8003D962B /* ProthesenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B6AB581A2A052BB8003D962B /* ProthesenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6AB582D2A052C64003D962B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB582B2A052C01003D962B /* Provider.swift */; };
+		B6AB582F2A052CAF003D962B /* ProthesenWidgetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB582E2A052CAF003D962B /* ProthesenWidgetContentView.swift */; };
+		B6AB58312A052DDB003D962B /* Pro_these_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6F948FB29F6ED8700BBE3A2 /* Pro_these_.xcdatamodeld */; };
+		B6AB58322A052DE4003D962B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F948F929F6ED8700BBE3A2 /* Persistence.swift */; };
+		B6AB58332A052DF4003D962B /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492729F7E7D000BBE3A2 /* StopWatchManager.swift */; };
+		B6AB58342A052E3D003D962B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9490E29F6EECC00BBE3A2 /* AppConfig.swift */; };
 		B6C0B6DC29F8FF140071A88E /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C0B6DB29F8FF140071A88E /* LocationTracker.swift */; };
 		B6C0B6DE29F929000071A88E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C0B6DD29F929000071A88E /* LocationManager.swift */; };
 		B6C1285D29FA52870018C71D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C1285C29FA52870018C71D /* HomeView.swift */; };
@@ -64,17 +101,23 @@
 		B6F9492329F7D7AC00BBE3A2 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492229F7D7AC00BBE3A2 /* StopWatchView.swift */; };
 		B6F9492629F7DD2800BBE3A2 /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492529F7DD2800BBE3A2 /* ViewExtention.swift */; };
 		B6F9492829F7E7D000BBE3A2 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492729F7E7D000BBE3A2 /* StopWatchManager.swift */; };
-		B6F9493029F7F92700BBE3A2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F9492F29F7F92600BBE3A2 /* WidgetKit.framework */; };
-		B6F9493229F7F92700BBE3A2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F9493129F7F92700BBE3A2 /* SwiftUI.framework */; };
-		B6F9493529F7F92700BBE3A2 /* LiveViewExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9493429F7F92700BBE3A2 /* LiveViewExtensionBundle.swift */; };
-		B6F9493729F7F92700BBE3A2 /* LiveViewExtensionLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9493629F7F92700BBE3A2 /* LiveViewExtensionLiveActivity.swift */; };
-		B6F9493929F7F92700BBE3A2 /* LiveViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9493829F7F92700BBE3A2 /* LiveViewExtension.swift */; };
-		B6F9493B29F7F92900BBE3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F9493A29F7F92900BBE3A2 /* Assets.xcassets */; };
-		B6F9493F29F7F92900BBE3A2 /* LiveViewExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B6F9492D29F7F92600BBE3A2 /* LiveViewExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B6F9494629F803F300BBE3A2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9490E29F6EECC00BBE3A2 /* AppConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B63FC1302A05B49B0013652B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B63FC1282A05B49B0013652B;
+			remoteInfo = test;
+		};
+		B6AB58252A052BB8003D962B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6AB58192A052BB8003D962B;
+			remoteInfo = ProthesenWidgetExtension;
+		};
 		B6E3B3E529FD1B5A00341144 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
@@ -82,16 +125,20 @@
 			remoteGlobalIDString = B6E3B3D929FD1B5900341144;
 			remoteInfo = "ProWatchOS Watch App";
 		};
-		B6F9493D29F7F92900BBE3A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6F9492C29F7F92600BBE3A2;
-			remoteInfo = LiveViewExtensionExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B63FC1362A05B49C0013652B /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				B63FC1322A05B49B0013652B /* test.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6E3B3EB29FD1B5A00341144 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,11 +152,11 @@
 		};
 		B6F9494329F7F92900BBE3A2 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B6F9493F29F7F92900BBE3A2 /* LiveViewExtensionExtension.appex in Embed Foundation Extensions */,
+				B6AB58272A052BB8003D962B /* ProthesenWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +164,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B60DDCAD29FF49B500372957 /* LVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVM.swift; sourceTree = "<group>"; };
+		B60DDCAF2A001D9E00372957 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		B60DDCB22A00606F00372957 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		B60DDCB42A00FDA400372957 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		B60DDCB62A0301DA00372957 /* DE.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = DE.strings; sourceTree = "<group>"; };
+		B60DDCB92A0302C000372957 /* ENe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ENe.strings; sourceTree = "<group>"; };
+		B60DDCBB2A038DB500372957 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
+		B60DDCBD2A0411F700372957 /* EventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSection.swift; sourceTree = "<group>"; };
+		B60DDCBF2A04125400372957 /* EventPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPreview.swift; sourceTree = "<group>"; };
+		B60DDCC12A0412B400372957 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		B60DDCC32A04130300372957 /* EventCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardComponent.swift; sourceTree = "<group>"; };
+		B60DDCC52A04151200372957 /* EventTaskHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTaskHeader.swift; sourceTree = "<group>"; };
+		B60DDCC72A04180300372957 /* EventTaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTaskRow.swift; sourceTree = "<group>"; };
+		B60DDCCC2A04192300372957 /* ContactSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSection.swift; sourceTree = "<group>"; };
+		B60DDCCF2A04198800372957 /* ContactPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPreview.swift; sourceTree = "<group>"; };
+		B60DDCD12A041A0100372957 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		B60DDCD32A041AC800372957 /* ContactCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardComponent.swift; sourceTree = "<group>"; };
+		B60DDCD52A041C7300372957 /* EventAddSheetBoby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAddSheetBoby.swift; sourceTree = "<group>"; };
+		B60DDCD72A041CFF00372957 /* ContentAddSheetBoby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAddSheetBoby.swift; sourceTree = "<group>"; };
+		B60DDCE12A04674000372957 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
 		B612E30A29FA99B300C6BF88 /* SettingToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleButton.swift; sourceTree = "<group>"; };
 		B612E30D29FA9BB300C6BF88 /* NavigateTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateTo.swift; sourceTree = "<group>"; };
 		B612E30F29FA9BD400C6BF88 /* NavigateToWithStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateToWithStack.swift; sourceTree = "<group>"; };
@@ -128,10 +195,18 @@
 		B612E31E29FAAC8E00C6BF88 /* SettingSetStepTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSetStepTarget.swift; sourceTree = "<group>"; };
 		B612E32029FABF6F00C6BF88 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityStructs.swift; sourceTree = "<group>"; };
+		B63FC1242A057B7A0013652B /* ProthesenWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProthesenWidgetExtension.entitlements; sourceTree = "<group>"; };
+		B63FC1292A05B49B0013652B /* test.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = test.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66F2C3F29FC50C5006CA21E /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
 		B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
 		B66F2C4829FD0670006CA21E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		B6AB581A2A052BB8003D962B /* ProthesenWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ProthesenWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AB581E2A052BB8003D962B /* ProthesenWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProthesenWidgetBundle.swift; sourceTree = "<group>"; };
+		B6AB58222A052BB8003D962B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6AB58242A052BB8003D962B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AB582B2A052C01003D962B /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		B6AB582E2A052CAF003D962B /* ProthesenWidgetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProthesenWidgetContentView.swift; sourceTree = "<group>"; };
 		B6C0B6DB29F8FF140071A88E /* LocationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
 		B6C0B6DD29F929000071A88E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B6C1285B29F99C730018C71D /* LiveViewExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LiveViewExtensionExtension.entitlements; path = "Pro(these)/LiveViewExtensionExtension.entitlements"; sourceTree = "<group>"; };
@@ -175,17 +250,27 @@
 		B6F9492229F7D7AC00BBE3A2 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 		B6F9492529F7DD2800BBE3A2 /* ViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
 		B6F9492729F7E7D000BBE3A2 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
-		B6F9492D29F7F92600BBE3A2 /* LiveViewExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveViewExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F9492F29F7F92600BBE3A2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		B6F9493129F7F92700BBE3A2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		B6F9493429F7F92700BBE3A2 /* LiveViewExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewExtensionBundle.swift; sourceTree = "<group>"; };
-		B6F9493629F7F92700BBE3A2 /* LiveViewExtensionLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewExtensionLiveActivity.swift; sourceTree = "<group>"; };
-		B6F9493829F7F92700BBE3A2 /* LiveViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewExtension.swift; sourceTree = "<group>"; };
-		B6F9493A29F7F92900BBE3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B6F9493C29F7F92900BBE3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B63FC1262A05B49B0013652B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB58172A052BB8003D962B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB581C2A052BB8003D962B /* SwiftUI.framework in Frameworks */,
+				B6AB581B2A052BB8003D962B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6E3B3D729FD1B5900341144 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,23 +285,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6F9492A29F7F92600BBE3A2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6F9493229F7F92700BBE3A2 /* SwiftUI.framework in Frameworks */,
-				B6F9493029F7F92700BBE3A2 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60DDCB12A00604C00372957 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				B60DDCB22A00606F00372957 /* Events.swift */,
+				B60DDCC92A0418BC00372957 /* Components */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		B60DDCB82A03022400372957 /* language */ = {
+			isa = PBXGroup;
+			children = (
+				B60DDCB62A0301DA00372957 /* DE.strings */,
+				B60DDCB92A0302C000372957 /* ENe.strings */,
+			);
+			path = language;
+			sourceTree = "<group>";
+		};
+		B60DDCC92A0418BC00372957 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B60DDCCB2A04191400372957 /* ContactComponents */,
+				B60DDCCA2A0418CD00372957 /* EventComponents */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B60DDCCA2A0418CD00372957 /* EventComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B60DDCC72A04180300372957 /* EventTaskRow.swift */,
+				B60DDCD52A041C7300372957 /* EventAddSheetBoby.swift */,
+				B60DDCC12A0412B400372957 /* EventDetailView.swift */,
+				B60DDCC52A04151200372957 /* EventTaskHeader.swift */,
+				B60DDCC32A04130300372957 /* EventCardComponent.swift */,
+				B60DDCBF2A04125400372957 /* EventPreview.swift */,
+				B60DDCBD2A0411F700372957 /* EventSection.swift */,
+			);
+			path = EventComponents;
+			sourceTree = "<group>";
+		};
+		B60DDCCB2A04191400372957 /* ContactComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B60DDCCC2A04192300372957 /* ContactSection.swift */,
+				B60DDCD72A041CFF00372957 /* ContentAddSheetBoby.swift */,
+				B60DDCD12A041A0100372957 /* ContactDetailView.swift */,
+				B60DDCD32A041AC800372957 /* ContactCardComponent.swift */,
+				B60DDCCF2A04198800372957 /* ContactPreview.swift */,
+			);
+			path = ContactComponents;
+			sourceTree = "<group>";
+		};
 		B612E30C29FA9B7D00C6BF88 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				B612E31D29FAAA5D00C6BF88 /* ContentViewComponents */,
 				B612E31529FA9C2E00C6BF88 /* NavigationStackComponents */,
+				B60DDCBB2A038DB500372957 /* ConfirmButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -237,6 +367,8 @@
 			children = (
 				B6C1285E29FA74A70018C71D /* Settings */,
 				B6F9490529F6EE1C00BBE3A2 /* MoreView.swift */,
+				B60DDCAF2A001D9E00372957 /* TrackView.swift */,
+				B60DDCB12A00604C00372957 /* Events */,
 				B6F9490929F6EE6500BBE3A2 /* StepCounter.swift */,
 				B6C0B6DB29F8FF140071A88E /* LocationTracker.swift */,
 				B6F9492229F7D7AC00BBE3A2 /* StopWatchView.swift */,
@@ -264,6 +396,18 @@
 				B66F2C4829FD0670006CA21E /* TimerViewModel.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		B6AB581D2A052BB8003D962B /* ProthesenWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB581E2A052BB8003D962B /* ProthesenWidgetBundle.swift */,
+				B6AB582E2A052CAF003D962B /* ProthesenWidgetContentView.swift */,
+				B6AB582B2A052C01003D962B /* Provider.swift */,
+				B6AB58222A052BB8003D962B /* Assets.xcassets */,
+				B6AB58242A052BB8003D962B /* Info.plist */,
+			);
+			path = ProthesenWidget;
 			sourceTree = "<group>";
 		};
 		B6C1285E29FA74A70018C71D /* Settings */ = {
@@ -313,11 +457,13 @@
 		B6F948E429F6ED8500BBE3A2 = {
 			isa = PBXGroup;
 			children = (
+				B63FC1242A057B7A0013652B /* ProthesenWidgetExtension.entitlements */,
+				B60DDCB82A03022400372957 /* language */,
 				B66F2C3E29FC5090006CA21E /* Shared */,
 				B6C1285B29F99C730018C71D /* LiveViewExtensionExtension.entitlements */,
 				B6F948EF29F6ED8500BBE3A2 /* Pro(these) */,
-				B6F9493329F7F92700BBE3A2 /* LiveViewExtension */,
 				B6E3B3DB29FD1B5900341144 /* ProWatchOS Watch App */,
+				B6AB581D2A052BB8003D962B /* ProthesenWidget */,
 				B6F9492E29F7F92600BBE3A2 /* Frameworks */,
 				B6F948EE29F6ED8500BBE3A2 /* Products */,
 			);
@@ -327,8 +473,9 @@
 			isa = PBXGroup;
 			children = (
 				B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */,
-				B6F9492D29F7F92600BBE3A2 /* LiveViewExtensionExtension.appex */,
 				B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */,
+				B6AB581A2A052BB8003D962B /* ProthesenWidgetExtension.appex */,
+				B63FC1292A05B49B0013652B /* test.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,9 +489,9 @@
 				B6F9491C29F6EF9300BBE3A2 /* Pro(these).entitlements */,
 				B6F948F029F6ED8500BBE3A2 /* Pro_these_App.swift */,
 				B6F9490429F6EE0D00BBE3A2 /* Views */,
-				B6F9492429F7DD1000BBE3A2 /* Extention */,
 				B6F9491729F6EF4600BBE3A2 /* Manager */,
 				B6F9491029F6EEEE00BBE3A2 /* Model */,
+				B6F9492429F7DD1000BBE3A2 /* Extention */,
 				B6F9490B29F6EE7C00BBE3A2 /* Stores */,
 				B6F948FB29F6ED8700BBE3A2 /* Pro_these_.xcdatamodeld */,
 				B6F948F629F6ED8700BBE3A2 /* Preview Content */,
@@ -364,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F948F229F6ED8500BBE3A2 /* ContentView.swift */,
+				B60DDCE12A04674000372957 /* SettingsSheet.swift */,
 				B6C16B6F29F84CE700B5BD70 /* LaunchScreen.swift */,
 				B612E30C29FA9B7D00C6BF88 /* Components */,
 				B612E31C29FAA9C500C6BF88 /* TabViews */,
@@ -396,10 +544,12 @@
 			children = (
 				B6C16B6D29F84CB600B5BD70 /* TabManager.swift */,
 				B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */,
+				B60DDCB42A00FDA400372957 /* EventManager.swift */,
 				B6C0B6DD29F929000071A88E /* LocationManager.swift */,
 				B6F9491829F6EF5C00BBE3A2 /* HealthKitStore.swift */,
 				B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */,
 				B6F9492029F7AB1F00BBE3A2 /* PushNotifications.swift */,
+				B60DDCAD29FF49B500372957 /* LVM.swift */,
 				B6F9491A29F6EF7600BBE3A2 /* StepCounterManager.swift */,
 				B6F9492729F7E7D000BBE3A2 /* StopWatchManager.swift */,
 			);
@@ -424,21 +574,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B6F9493329F7F92700BBE3A2 /* LiveViewExtension */ = {
-			isa = PBXGroup;
-			children = (
-				B6F9493429F7F92700BBE3A2 /* LiveViewExtensionBundle.swift */,
-				B6F9493629F7F92700BBE3A2 /* LiveViewExtensionLiveActivity.swift */,
-				B6F9493829F7F92700BBE3A2 /* LiveViewExtension.swift */,
-				B6F9493A29F7F92900BBE3A2 /* Assets.xcassets */,
-				B6F9493C29F7F92900BBE3A2 /* Info.plist */,
-			);
-			path = LiveViewExtension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B63FC1282A05B49B0013652B /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63FC1332A05B49C0013652B /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				B63FC1252A05B49B0013652B /* Sources */,
+				B63FC1262A05B49B0013652B /* Frameworks */,
+				B63FC1272A05B49B0013652B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = B63FC1292A05B49B0013652B /* test.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		B6AB58192A052BB8003D962B /* ProthesenWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AB58282A052BB8003D962B /* Build configuration list for PBXNativeTarget "ProthesenWidgetExtension" */;
+			buildPhases = (
+				B6AB58162A052BB8003D962B /* Sources */,
+				B6AB58172A052BB8003D962B /* Frameworks */,
+				B6AB58182A052BB8003D962B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProthesenWidgetExtension;
+			productName = ProthesenWidgetExtension;
+			productReference = B6AB581A2A052BB8003D962B /* ProthesenWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6E3B3E829FD1B5A00341144 /* Build configuration list for PBXNativeTarget "ProWatchOS Watch App" */;
@@ -465,34 +637,19 @@
 				B6F948EB29F6ED8500BBE3A2 /* Resources */,
 				B6F9494329F7F92900BBE3A2 /* Embed Foundation Extensions */,
 				B6E3B3EB29FD1B5A00341144 /* Embed Watch Content */,
+				B63FC1362A05B49C0013652B /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B6F9493E29F7F92900BBE3A2 /* PBXTargetDependency */,
 				B6E3B3E629FD1B5A00341144 /* PBXTargetDependency */,
+				B6AB58262A052BB8003D962B /* PBXTargetDependency */,
+				B63FC1312A05B49B0013652B /* PBXTargetDependency */,
 			);
 			name = "Pro(these)";
 			productName = "Pro(these)";
 			productReference = B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */;
 			productType = "com.apple.product-type.application";
-		};
-		B6F9492C29F7F92600BBE3A2 /* LiveViewExtensionExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B6F9494029F7F92900BBE3A2 /* Build configuration list for PBXNativeTarget "LiveViewExtensionExtension" */;
-			buildPhases = (
-				B6F9492929F7F92600BBE3A2 /* Sources */,
-				B6F9492A29F7F92600BBE3A2 /* Frameworks */,
-				B6F9492B29F7F92600BBE3A2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LiveViewExtensionExtension;
-			productName = LiveViewExtensionExtension;
-			productReference = B6F9492D29F7F92600BBE3A2 /* LiveViewExtensionExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -504,13 +661,16 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					B63FC1282A05B49B0013652B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B6AB58192A052BB8003D962B = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					B6E3B3D929FD1B5900341144 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 					B6F948EC29F6ED8500BBE3A2 = {
-						CreatedOnToolsVersion = 14.2;
-					};
-					B6F9492C29F7F92600BBE3A2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -521,7 +681,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				de,
 			);
 			mainGroup = B6F948E429F6ED8500BBE3A2;
 			productRefGroup = B6F948EE29F6ED8500BBE3A2 /* Products */;
@@ -529,13 +689,29 @@
 			projectRoot = "";
 			targets = (
 				B6F948EC29F6ED8500BBE3A2 /* Pro(these) */,
-				B6F9492C29F7F92600BBE3A2 /* LiveViewExtensionExtension */,
 				B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */,
+				B6AB58192A052BB8003D962B /* ProthesenWidgetExtension */,
+				B63FC1282A05B49B0013652B /* test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B63FC1272A05B49B0013652B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB58182A052BB8003D962B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB58232A052BB8003D962B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6E3B3D829FD1B5900341144 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,21 +726,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F948F829F6ED8700BBE3A2 /* Preview Assets.xcassets in Resources */,
+				B60DDCB72A0301DA00372957 /* DE.strings in Resources */,
 				B6F948F529F6ED8700BBE3A2 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6F9492B29F7F92600BBE3A2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6F9493B29F7F92900BBE3A2 /* Assets.xcassets in Resources */,
+				B60DDCBA2A0302C100372957 /* ENe.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B63FC1252A05B49B0013652B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB58162A052BB8003D962B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB582D2A052C64003D962B /* Provider.swift in Sources */,
+				B6AB58342A052E3D003D962B /* AppConfig.swift in Sources */,
+				B63FC1212A0569D00013652B /* EventManager.swift in Sources */,
+				B6AB582F2A052CAF003D962B /* ProthesenWidgetContentView.swift in Sources */,
+				B63FC1202A0568D40013652B /* HealthStorage.swift in Sources */,
+				B63FC1232A056BF20013652B /* PushNotifications.swift in Sources */,
+				B6AB58332A052DF4003D962B /* StopWatchManager.swift in Sources */,
+				B63FC1222A056BD00013652B /* PushNotificationManager.swift in Sources */,
+				B6AB58322A052DE4003D962B /* Persistence.swift in Sources */,
+				B63FC11E2A054E320013652B /* Step.swift in Sources */,
+				B6AB581F2A052BB8003D962B /* ProthesenWidgetBundle.swift in Sources */,
+				B6AB58312A052DDB003D962B /* Pro_these_.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6E3B3D629FD1B5900341144 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -588,19 +784,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F9491429F6EF0900BBE3A2 /* Step.swift in Sources */,
+				B60DDCC02A04125400372957 /* EventPreview.swift in Sources */,
 				B612E31029FA9BD400C6BF88 /* NavigateToWithStack.swift in Sources */,
 				B6F9490F29F6EECC00BBE3A2 /* AppConfig.swift in Sources */,
+				B60DDCE22A04674000372957 /* SettingsSheet.swift in Sources */,
 				B6F948FA29F6ED8700BBE3A2 /* Persistence.swift in Sources */,
+				B60DDCC62A04151200372957 /* EventTaskHeader.swift in Sources */,
 				B6C1285D29FA52870018C71D /* HomeView.swift in Sources */,
 				B6F9491629F6EF2A00BBE3A2 /* MoreListStaks.swift in Sources */,
+				B60DDCD62A041C7300372957 /* EventAddSheetBoby.swift in Sources */,
 				B6C16B9429F8779F00B5BD70 /* CircleAnimationInBackground.swift in Sources */,
+				B60DDCD22A041A0100372957 /* ContactDetailView.swift in Sources */,
 				B6F9490D29F6EEB600BBE3A2 /* HealthStorage.swift in Sources */,
 				B6C16B6E29F84CB600B5BD70 /* TabManager.swift in Sources */,
 				B6F948F329F6ED8500BBE3A2 /* ContentView.swift in Sources */,
 				B6F948F129F6ED8500BBE3A2 /* Pro_these_App.swift in Sources */,
 				B66F2C4629FD0649006CA21E /* WatchConnectivityProvider.swift in Sources */,
+				B60DDCB32A00606F00372957 /* Events.swift in Sources */,
 				B6F9492829F7E7D000BBE3A2 /* StopWatchManager.swift in Sources */,
 				B66F2C4029FC50C5006CA21E /* Counter.swift in Sources */,
+				B60DDCC42A04130300372957 /* EventCardComponent.swift in Sources */,
+				B60DDCC82A04180300372957 /* EventTaskRow.swift in Sources */,
 				B6F9490629F6EE1C00BBE3A2 /* MoreView.swift in Sources */,
 				B66F2C4929FD0670006CA21E /* TimerViewModel.swift in Sources */,
 				B6F9491B29F6EF7600BBE3A2 /* StepCounterManager.swift in Sources */,
@@ -610,10 +814,18 @@
 				B66F2C4229FC50E2006CA21E /* SessionDelegater.swift in Sources */,
 				B6F9492629F7DD2800BBE3A2 /* ViewExtention.swift in Sources */,
 				B6F9491929F6EF5C00BBE3A2 /* HealthKitStore.swift in Sources */,
+				B60DDCBC2A038DB500372957 /* ConfirmButton.swift in Sources */,
+				B60DDCD42A041AC800372957 /* ContactCardComponent.swift in Sources */,
+				B60DDCD02A04198800372957 /* ContactPreview.swift in Sources */,
+				B60DDCD82A041CFF00372957 /* ContentAddSheetBoby.swift in Sources */,
 				B612E32329FAD16500C6BF88 /* LiveActivityStructs.swift in Sources */,
+				B60DDCC22A0412B400372957 /* EventDetailView.swift in Sources */,
 				B6F9490829F6EE4500BBE3A2 /* TabStack.swift in Sources */,
 				B6C16B7029F84CE700B5BD70 /* LaunchScreen.swift in Sources */,
+				B60DDCBE2A0411F700372957 /* EventSection.swift in Sources */,
+				B60DDCB02A001D9E00372957 /* TrackView.swift in Sources */,
 				B6F9491229F6EEFA00BBE3A2 /* Tab.swift in Sources */,
+				B60DDCB52A00FDA400372957 /* EventManager.swift in Sources */,
 				B6F9492129F7AB1F00BBE3A2 /* PushNotifications.swift in Sources */,
 				B6F9491F29F730DE00BBE3A2 /* PushNotificationManager.swift in Sources */,
 				B612E32129FABF6F00C6BF88 /* HeaderComponent.swift in Sources */,
@@ -626,38 +838,146 @@
 				B612E31929FAA5D800C6BF88 /* PersonalDeteilsView.swift in Sources */,
 				B6C0B6DC29F8FF140071A88E /* LocationTracker.swift in Sources */,
 				B612E30E29FA9BB300C6BF88 /* NavigateTo.swift in Sources */,
+				B60DDCAE29FF49B500372957 /* LVM.swift in Sources */,
+				B60DDCCD2A04192300372957 /* ContactSection.swift in Sources */,
 				B612E30B29FA99B300C6BF88 /* SettingToggleButton.swift in Sources */,
 				B6F948FD29F6ED8700BBE3A2 /* Pro_these_.xcdatamodeld in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6F9492929F7F92600BBE3A2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6F9493929F7F92700BBE3A2 /* LiveViewExtension.swift in Sources */,
-				B6F9494629F803F300BBE3A2 /* AppConfig.swift in Sources */,
-				B6F9493529F7F92700BBE3A2 /* LiveViewExtensionBundle.swift in Sources */,
-				B6F9493729F7F92700BBE3A2 /* LiveViewExtensionLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B63FC1312A05B49B0013652B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B63FC1282A05B49B0013652B /* test */;
+			targetProxy = B63FC1302A05B49B0013652B /* PBXContainerItemProxy */;
+		};
+		B6AB58262A052BB8003D962B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6AB58192A052BB8003D962B /* ProthesenWidgetExtension */;
+			targetProxy = B6AB58252A052BB8003D962B /* PBXContainerItemProxy */;
+		};
 		B6E3B3E629FD1B5A00341144 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */;
 			targetProxy = B6E3B3E529FD1B5A00341144 /* PBXContainerItemProxy */;
 		};
-		B6F9493E29F7F92900BBE3A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B6F9492C29F7F92600BBE3A2 /* LiveViewExtensionExtension */;
-			targetProxy = B6F9493D29F7F92900BBE3A2 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B63FC1342A05B49C0013652B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD275Y62U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = test;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B63FC1352A05B49C0013652B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD275Y62U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = test;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6AB58292A052BB8003D962B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ProthesenWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD275Y62U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProthesenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ProthesenWidget;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Update Healt Data";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.ProthesenWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6AB582A2A052BB8003D962B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ProthesenWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZD275Y62U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProthesenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ProthesenWidget;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Update Healt Data";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.ProthesenWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B6E3B3E929FD1B5A00341144 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -857,8 +1177,9 @@
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Record Healthkit Data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Healthkit Data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Update Healthkit Data";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Local GPS when in use";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Local GPS always";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Local GPS when in use";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Local GPS when always in use";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -896,8 +1217,9 @@
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Record Healthkit Data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Healthkit Data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Update Healthkit Data";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Local GPS when in use";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Local GPS always";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Local GPS when in use";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Local GPS when always in use";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -918,73 +1240,27 @@
 			};
 			name = Release;
 		};
-		B6F9494129F7F92900BBE3A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = LiveViewExtensionExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZD275Y62U7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveViewExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveViewExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
-				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.LiveViewExtension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		B6F9494229F7F92900BBE3A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = LiveViewExtensionExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZD275Y62U7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveViewExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveViewExtension;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
-				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.LiveViewExtension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B63FC1332A05B49C0013652B /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63FC1342A05B49C0013652B /* Debug */,
+				B63FC1352A05B49C0013652B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6AB58282A052BB8003D962B /* Build configuration list for PBXNativeTarget "ProthesenWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AB58292A052BB8003D962B /* Debug */,
+				B6AB582A2A052BB8003D962B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6E3B3E829FD1B5A00341144 /* Build configuration list for PBXNativeTarget "ProWatchOS Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1008,15 +1284,6 @@
 			buildConfigurations = (
 				B6F9490229F6ED8700BBE3A2 /* Debug */,
 				B6F9490329F6ED8700BBE3A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6F9494029F7F92900BBE3A2 /* Build configuration list for PBXNativeTarget "LiveViewExtensionExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B6F9494129F7F92900BBE3A2 /* Debug */,
-				B6F9494229F7F92900BBE3A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

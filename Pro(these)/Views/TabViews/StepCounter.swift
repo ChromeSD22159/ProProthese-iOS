@@ -298,7 +298,7 @@ struct StepCounterView: View {
     @ViewBuilder
     func StepCircle(Double: Double) -> some View {
         ZStack {
-            ring(color: .blue, trim: Double, stroke: 5, delay: 1, image: "a")
+            ring(color: .blue, trim: Double, stroke: 5, delay: 1, image: "")
                 .frame(width: 200)
                 .animation(.easeIn(duration: 1), value: stepCounterManager.drawingRingStroke)
             
@@ -711,9 +711,10 @@ struct StepCounterView: View {
     func ring(color: Color, trim: Double, stroke: Double, delay: Double, image: String?) -> some View {
         // Background ring
         ZStack {
-            Image(systemName: image ?? "figure.walk", variableValue: 5)
-                .opacity(image != nil ? Double(1) : Double(0))
-            
+            if image != "" {
+                Image(systemName: image ?? "figure.walk", variableValue: 5)
+                    .opacity(image != nil ? Double(1) : Double(0))
+            } 
             Circle()
                 .stroke(style: StrokeStyle(lineWidth: stroke))
                 .foregroundStyle(.tertiary)

@@ -36,6 +36,21 @@ struct MoreView: View {
                     }, {
                         VStack(alignment: .leading, spacing: 20){
                             // MARK: Personal Settings
+                            
+                            Picker("Startseite", selection: tabManager.$startTab) {
+                                Text("Step").tag(Tab.step)
+                                Text("StopWatch").tag(Tab.timer)
+                                Text("Map").tag(Tab.map)
+                                Text("Event").tag(Tab.event)
+                                //Text("Mehr").tag(Tab.more)
+                            }
+                            
+                            Picker("Startseite", selection: tabManager.$startTab) {
+                                ForEach(Tab.allCases) { tab in
+                                    Text(tab.rawValue.capitalized)
+                                }
+                            }
+                            
                             NavigateTo( {
                                 StackLink(icon: "figure.walk", buttonText: "Persönliche Einstellungen", foregroundColor: AppConfig().foreground)
                             }, {

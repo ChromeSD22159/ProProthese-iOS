@@ -8,20 +8,21 @@
 import Foundation
 import WatchConnectivity
 
+
 final class TimerViewModel: NSObject, ObservableObject {
     
-    private var watchConnectivityProvider = WatchConnectivityProvider.shared
+    //private var watchConnectivityProvider = WatchConnectivityProvider.shared
+    
+    var syncService = WatchConnectivityProvider()
     
     @Published var textFieldValue: String = "String"
     
     func sendDataToPhone() {
         if (WCSession.default.isReachable) {
-            //watchConnectivityProvider.send(["textFieldValue": textFieldValue])
-            WCSession.default.sendMessage(["textFieldValue": textFieldValue], replyHandler: { dictionary in
-                print(">WC> reply recieved: \(dictionary.first!.value)")
-            }, errorHandler: { error in
-                print(">WC> Error on sending Msg: \(error.localizedDescription)")
-            })
+            
+            syncService.sendMessage("textFieldValue", textFieldValue, { error in })
+  
         }
     }
 }
+
