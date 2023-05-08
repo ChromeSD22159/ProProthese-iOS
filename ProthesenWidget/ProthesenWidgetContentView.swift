@@ -38,12 +38,24 @@ struct SmallWidget: View {
     var screenSize: CGSize
     var body: some View {
         VStack(alignment: .center){
-            VStack{
-                Text("\(convertSecondsToHrMinuteSec(seconds: Int(data.wearingTimes.last?.duration ?? 0)))")
-                    .padding(.top, 10)
-                Text("Heutige getragen")
-                    .font(.caption2)
-                    .foregroundColor(.gray)
+            VStack(alignment: .center){
+                HStack(spacing: 10) {
+                    Spacer()
+                    Image("prothesis")
+                        .font(.largeTitle)
+                    VStack(alignment: .leading){
+                        HStack {
+                            Text(data.lastProthesenTime)
+                                .fontWeight(.black)
+                        }
+                        
+                        Text("Tragezeit heute!")
+                            .foregroundColor(.gray)
+                            .font(.caption2)
+                    }
+                    
+                    Spacer()
+                }
             }
             .frame(maxHeight: .infinity)
             
@@ -51,22 +63,15 @@ struct SmallWidget: View {
             HStack(){
                 WearingChart(data: data)
             }
-            .padding(.horizontal, 10)
+            .padding(.bottom, 10)
             .frame(maxHeight: .infinity)
         }
         .padding(10)
         .widgetURL(URL(string: "Pro-these-://timer"))
+        
+        
+        
     }
-    
-    func convertSecondsToHrMinuteSec(seconds:Int) -> String{
-       let formatter = DateComponentsFormatter()
-       formatter.allowedUnits = [.hour, .minute, .second]
-      //formatter.unitsStyle = .full
-      formatter.unitsStyle = .abbreviated
-      
-       let formattedString = formatter.string(from:TimeInterval(seconds))!
-       return formattedString
-      }
 }
 
 struct MediumWidget: View {
@@ -75,12 +80,28 @@ struct MediumWidget: View {
     var body: some View {
         GeometryReader { proxy in
             VStack(alignment: .center){
-                VStack(alignment: .leading){
-                    Text("\(convertSecondsToHrMinuteSec(seconds: Int(data.wearingTimes.last?.duration ?? 0))) Tragezeit Heute")
-                        .fontWeight(.medium)
+                HStack(spacing: 10){
+                    Image("prothesis")
+                        .font(.largeTitle)
+                    
+                    VStack(alignment: .leading){
+                        HStack {
+                            Text("Deine letzte Aufzeichnung:")
+                            
+                            Text(data.lastProthesenTime)
+                                .fontWeight(.black)
+                        }
+                        .font(.callout)
+                        
+                        Text("Deine letzte Aufzeichnung")
+                            .foregroundColor(.gray)
+                            .font(.caption2)
+                    }
+                    
+                    Spacer()
                 }
-                .frame(maxWidth: proxy.size.width)
                 .padding()
+                
                 
                 HStack(alignment: .top){
                     Chart() {
@@ -95,8 +116,8 @@ struct MediumWidget: View {
                                     .linearGradient(
                                         colors: [
                                             Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0),
-                                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.1),
-                                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.5)
+                                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.2),
+                                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.6)
                                         ],
                                         startPoint: .bottom,
                                         endPoint: .top)
@@ -128,7 +149,7 @@ struct MediumWidget: View {
                             }
            
                     }
-                    .chartYAxis {
+                    /*.chartYAxis {
                         let time = data.wearingTimes.map { $0.duration }
                         let min = time.min() ?? 1000
                         let max = time.max() ?? 20000
@@ -143,25 +164,18 @@ struct MediumWidget: View {
                                                              dashPhase: 1))
                         }
                         
-                    }
+                    } */
+                    .chartYAxis(.hidden)
                     .chartXAxis(.hidden)
                     .chartYScale(range: .plotDimension(padding: 10))
                     .chartXScale(range: .plotDimension(padding: 15))
                     
                 }
+                .padding(.bottom)
                 .frame(maxWidth: .infinity, maxHeight: proxy.size.height / 3.5)
             }
             .frame(width: proxy.size.width, height: proxy.size.height, alignment: .top)
         }
-    }
-    
-    func convertSecondsToHrMinuteSec(seconds:Int) -> String{
-        let formatter = DateComponentsFormatter()
-        formatter.allowedUnits = [.hour, .minute, .second]
-        formatter.unitsStyle = .abbreviated
-      
-        let formattedString = formatter.string(from:TimeInterval(seconds))!
-        return formattedString
     }
 }
 
@@ -176,52 +190,71 @@ struct LargeWidget: View {
 struct WearingChart: View {
     var data: WidgetData
     var body: some View {
-        Chart{
-            ForEach(data.wearingTimes, id: \.id) { t in
-                AreaMark(
-                    x: .value("Dates", t.date),
-                    y: .value("Duration", t.duration)
-                )
-                .interpolationMethod(.catmullRom)
-                .foregroundStyle(
-                    .linearGradient(
-                        colors: [
-                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0),
-                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.1),
-                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.5)
-                        ],
-                        startPoint: .bottom,
-                        endPoint: .top)
-                )
-                
-                LineMark(
-                    x: .value("Dates", t.date),
-                    y: .value("Duration", t.duration)
-                )
-                .interpolationMethod(.catmullRom)
-                .symbol {
-                    ZStack{
-                        Circle()
-                            .fill(.white)
-                            .frame(width: 10)
-                            .shadow(radius: 2)
-                        
+        Chart() {
+
+            ForEach(Array(data.wearingTimes.enumerated()), id: \.offset) { index, time in
+                    AreaMark(
+                        x: .value("Dates", time.date),
+                        y: .value("Steps", time.duration)
+                    )
+                    .interpolationMethod(.catmullRom)
+                    .foregroundStyle(
+                        .linearGradient(
+                            colors: [
+                                Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0),
+                                Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.2),
+                                Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.6)
+                            ],
+                            startPoint: .bottom,
+                            endPoint: .top)
+                    )
+                    
+                    LineMark(
+                        x: .value("Dates", time.date),
+                        y: .value("Steps", time.duration)
+                    )
+                    .interpolationMethod(.catmullRom)
+                    .symbol {
+                        ZStack{
+                            Circle()
+                                .fill(.white)
+                                .frame(width: 10)
+                                .shadow(radius: 2)
+                        }
                     }
+                    .foregroundStyle(
+                        .linearGradient(
+                            colors: [
+                                Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.5),
+                                Color(red: 167/255, green: 178/255, blue: 210/255)
+                            ],
+                            startPoint: .bottom,
+                            endPoint: .top)
+                    )
+                    .lineStyle(.init(lineWidth: 5))
                 }
-                .foregroundStyle(
-                    .linearGradient(
-                        colors: [
-                            Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.5),
-                            Color(red: 167/255, green: 178/255, blue: 210/255)
-                        ],
-                        startPoint: .bottom,
-                        endPoint: .top)
-                )
-                .lineStyle(.init(lineWidth: 5))
-            }
+
         }
-        .chartXAxis(.hidden)
+        /*.chartYAxis {
+            let time = data.wearingTimes.map { $0.duration }
+            let min = time.min() ?? 1000
+            let max = time.max() ?? 20000
+            //let consumptionStride = Array(stride(from: min, through: max, by: (max - min)/3))
+            let test = Array(stride(from: min, to: max, by: 5000))
+            AxisMarks(position: .trailing, values: test) { axis in
+                AxisGridLine(stroke: StrokeStyle(lineWidth: 1,
+                                                 lineCap: .butt,
+                                                 lineJoin: .bevel,
+                                                 miterLimit: 3,
+                                                 dash: [5],
+                                                 dashPhase: 1))
+            }
+            
+        } */
         .chartYAxis(.hidden)
+        .chartXAxis(.hidden)
+        .chartYScale(range: .plotDimension(padding: 10))
+        .chartXScale(range: .plotDimension(padding: 15))
     }
 }
 

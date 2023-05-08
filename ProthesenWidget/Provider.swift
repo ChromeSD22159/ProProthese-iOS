@@ -11,6 +11,7 @@ import CoreData
 
 struct WidgetData: TimelineEntry {
     var date: Date
+    let lastProthesenTime: String
     let wearingTimes: [ProthesenTimes]
 }
 
@@ -20,23 +21,28 @@ struct Provider: TimelineProvider {
     typealias Entry = WidgetData
     
     func placeholder(in context: Context) -> WidgetData {
-        let item = (try? getData()) ?? []
-        return WidgetData(date: Date(), wearingTimes: item)
+        let times = (try? getData(showDays: 7)) ?? []
+        let lastTime = (try? getLastTime()) ?? "no Time"
+      
+        return WidgetData(date: Date(), lastProthesenTime: lastTime, wearingTimes: times)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (WidgetData) -> ()) {
-        let item = (try? getData()) ?? []
-        let entry = WidgetData(date: Date(), wearingTimes: item)
+        let times = (try? getData(showDays: 7)) ?? []
+        let lastTime = (try? getLastTime()) ?? "no Time"
+        let entry = WidgetData(date: Date(), lastProthesenTime: lastTime, wearingTimes: times)
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [WidgetData] = []
         
-        entries.append(WidgetData(date: Date(), wearingTimes: (try? getData()) ?? [] ))
+        let times = (try? getData(showDays: 7)) ?? []
+        let lastTime = (try? getLastTime()) ?? "no Time"
         
-        let nextUpdate = Calendar.current.date(  byAdding: DateComponents(minute: 5), to: Date() )!
+        entries.append(WidgetData(date: Date(), lastProthesenTime: lastTime, wearingTimes: times ))
         
+        let nextUpdate = Calendar.current.date(  byAdding: DateComponents(minute: 1), to: Date() )!
         let timeline = Timeline( entries: entries,  policy: .after(nextUpdate) )
         
 
@@ -55,7 +61,7 @@ extension TimelineProvider {
         return result
     }
     
-    func convertDates(_ arr: [WearingTimes]) throws -> [ProthesenTimes] {
+    func convertDates(_ arr: [WearingTimes], showDays: Int) throws -> [ProthesenTimes] {
         // Groupiert alle Zeiten zu dein Datum und Summiert die Zeiten
         var GroupedAndSumArray:[ProthesenTimes] = []
         let dictionary = Dictionary(grouping: arr.reversed(), by: { Calendar.current.startOfDay(for: $0.timestamp ?? Date() ) })
@@ -64,7 +70,6 @@ extension TimelineProvider {
         let sorted = GroupedAndSumArray.sorted { itemA, itemB in
             return itemA.date > itemB.date
         }
-        //
         
         var EntryDurationArray:[ProthesenTimes] = []
         var countDownDay = 6
@@ -77,8 +82,28 @@ extension TimelineProvider {
         return sorted
     }
 
-    func getData() throws -> [ProthesenTimes] {
+    func getData(showDays: Int) throws -> [ProthesenTimes] {
         let timesArray = try fetchTimesData()
-        return try convertDates(timesArray)
+        
+        return try convertDates(timesArray, showDays: showDays)
     }
+    
+    func getLastTime() throws -> String {
+        let defaultTime:Int32 = 1
+        let timesArray = try fetchTimesData()
+        let convertedTimes = try convertDates(timesArray, showDays: 7)
+        print(convertedTimes)
+        let converted = convertSecondsToHrMinuteSec(seconds: Int(convertedTimes.map{ $0.duration }.first ?? defaultTime))
+        return converted
+    }
+    
+    func convertSecondsToHrMinuteSec(seconds:Int) -> String{
+       let formatter = DateComponentsFormatter()
+       formatter.allowedUnits = [.hour, .minute, .second]
+      //formatter.unitsStyle = .full
+      formatter.unitsStyle = .abbreviated
+      
+       let formattedString = formatter.string(from:TimeInterval(seconds))!
+       return formattedString
+      }
 }

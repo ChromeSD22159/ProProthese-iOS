@@ -43,7 +43,6 @@
 		B63FC1212A0569D00013652B /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCB42A00FDA400372957 /* EventManager.swift */; };
 		B63FC1222A056BD00013652B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */; };
 		B63FC1232A056BF20013652B /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492029F7AB1F00BBE3A2 /* PushNotifications.swift */; };
-		B63FC1322A05B49B0013652B /* test.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = B63FC1292A05B49B0013652B /* test.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B66F2C4029FC50C5006CA21E /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C3F29FC50C5006CA21E /* Counter.swift */; };
 		B66F2C4229FC50E2006CA21E /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */; };
 		B66F2C4629FD0649006CA21E /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
@@ -104,13 +103,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B63FC1302A05B49B0013652B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B63FC1282A05B49B0013652B;
-			remoteInfo = test;
-		};
 		B6AB58252A052BB8003D962B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6F948E529F6ED8500BBE3A2 /* Project object */;
@@ -134,7 +126,6 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				B63FC1322A05B49B0013652B /* test.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +187,6 @@
 		B612E32029FABF6F00C6BF88 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityStructs.swift; sourceTree = "<group>"; };
 		B63FC1242A057B7A0013652B /* ProthesenWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProthesenWidgetExtension.entitlements; sourceTree = "<group>"; };
-		B63FC1292A05B49B0013652B /* test.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = test.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66F2C3F29FC50C5006CA21E /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
 		B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
@@ -255,13 +245,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B63FC1262A05B49B0013652B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6AB58172A052BB8003D962B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,7 +458,6 @@
 				B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */,
 				B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */,
 				B6AB581A2A052BB8003D962B /* ProthesenWidgetExtension.appex */,
-				B63FC1292A05B49B0013652B /* test.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -577,23 +559,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B63FC1282A05B49B0013652B /* test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B63FC1332A05B49C0013652B /* Build configuration list for PBXNativeTarget "test" */;
-			buildPhases = (
-				B63FC1252A05B49B0013652B /* Sources */,
-				B63FC1262A05B49B0013652B /* Frameworks */,
-				B63FC1272A05B49B0013652B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = test;
-			productName = test;
-			productReference = B63FC1292A05B49B0013652B /* test.appex */;
-			productType = "com.apple.product-type.extensionkit-extension";
-		};
 		B6AB58192A052BB8003D962B /* ProthesenWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6AB58282A052BB8003D962B /* Build configuration list for PBXNativeTarget "ProthesenWidgetExtension" */;
@@ -644,7 +609,6 @@
 			dependencies = (
 				B6E3B3E629FD1B5A00341144 /* PBXTargetDependency */,
 				B6AB58262A052BB8003D962B /* PBXTargetDependency */,
-				B63FC1312A05B49B0013652B /* PBXTargetDependency */,
 			);
 			name = "Pro(these)";
 			productName = "Pro(these)";
@@ -661,9 +625,6 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					B63FC1282A05B49B0013652B = {
-						CreatedOnToolsVersion = 14.2;
-					};
 					B6AB58192A052BB8003D962B = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -691,19 +652,11 @@
 				B6F948EC29F6ED8500BBE3A2 /* Pro(these) */,
 				B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */,
 				B6AB58192A052BB8003D962B /* ProthesenWidgetExtension */,
-				B63FC1282A05B49B0013652B /* test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B63FC1272A05B49B0013652B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6AB58182A052BB8003D962B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -735,13 +688,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B63FC1252A05B49B0013652B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6AB58162A052BB8003D962B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -848,11 +794,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B63FC1312A05B49B0013652B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B63FC1282A05B49B0013652B /* test */;
-			targetProxy = B63FC1302A05B49B0013652B /* PBXContainerItemProxy */;
-		};
 		B6AB58262A052BB8003D962B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B6AB58192A052BB8003D962B /* ProthesenWidgetExtension */;
@@ -866,58 +807,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B63FC1342A05B49C0013652B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZD275Y62U7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = test/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = test;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B63FC1352A05B49C0013652B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZD275Y62U7;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = test/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = test;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		B6AB58292A052BB8003D962B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1243,15 +1132,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B63FC1332A05B49C0013652B /* Build configuration list for PBXNativeTarget "test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B63FC1342A05B49C0013652B /* Debug */,
-				B63FC1352A05B49C0013652B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B6AB58282A052BB8003D962B /* Build configuration list for PBXNativeTarget "ProthesenWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
