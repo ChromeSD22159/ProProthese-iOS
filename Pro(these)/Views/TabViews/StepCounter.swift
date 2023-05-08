@@ -261,18 +261,18 @@ struct StepCounterView: View {
             HStack{
                 if AppConfig().ShowRecordOnHomeView == true {
                     Button {
-                        if stopWatchManager.isRunning {
-                            stopWatchManager.stop()
+                        if stopWatchManager.wearingTimerisRunning {
+                            stopWatchManager.wearingTimerStop()
                         } else {
-                            stopWatchManager.start()
+                            stopWatchManager.wearingTimerStart()
                         }
                     } label: {
                         VStack{
-                            if stopWatchManager.isRunning {
+                            if stopWatchManager.wearingTimerisRunning {
                                 Image(systemName: "record.circle")
                                     .font(.largeTitle)
                                     .foregroundColor(.red)
-                                Text(stopWatchManager.fetchStartTime()!, style: .timer)
+                                Text(stopWatchManager.storedStartTime()!, style: .timer)
                                     .font(.caption2)
                                     .padding(.top, 2)
                                     .foregroundColor(.white)

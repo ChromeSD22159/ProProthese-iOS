@@ -85,15 +85,22 @@ struct MediumWidget: View {
                         .font(.largeTitle)
                     
                     VStack(alignment: .leading){
-                        HStack {
-                            Text("Deine letzte Aufzeichnung:")
+                        HStack{
+                            ZStack {
+                                PercentualChangeBadge(final: data.lastTimeInSec , initial: data.avgTimes, type: "small")
+                                    .offset(x: 200, y: 10)
+                                
+                                Text("\(data.lastProthesenTime)")
+                                    .fontWeight(.black)
+                            }
                             
-                            Text(data.lastProthesenTime)
-                                .fontWeight(.black)
+                            Spacer()
+                            
+                            
                         }
                         .font(.callout)
                         
-                        Text("Deine letzte Aufzeichnung")
+                        Text("Prothesenzeit heute")
                             .foregroundColor(.gray)
                             .font(.caption2)
                     }

@@ -12,6 +12,8 @@ import CoreData
 struct WidgetData: TimelineEntry {
     var date: Date
     let lastProthesenTime: String
+    let lastTimeInSec: Double
+    let avgTimes: Double
     let wearingTimes: [ProthesenTimes]
 }
 
@@ -23,14 +25,28 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> WidgetData {
         let times = (try? getData(showDays: 7)) ?? []
         let lastTime = (try? getLastTime()) ?? "no Time"
-      
-        return WidgetData(date: Date(), lastProthesenTime: lastTime, wearingTimes: times)
+        let lastTimeInSec = (try? getLastTimeInSec()) ?? 0
+        
+        let days = times.count
+        let secs = times.map { $0.duration }.reduce(0,+)
+        let avg = (Double(secs) / Double(days))
+        
+        return WidgetData(date: Date(), lastProthesenTime: lastTime, lastTimeInSec: lastTimeInSec, avgTimes: avg, wearingTimes: times)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (WidgetData) -> ()) {
         let times = (try? getData(showDays: 7)) ?? []
         let lastTime = (try? getLastTime()) ?? "no Time"
-        let entry = WidgetData(date: Date(), lastProthesenTime: lastTime, wearingTimes: times)
+        let lastTimeInSec = (try? getLastTimeInSec()) ?? 0
+        
+        let days = times.count
+        let secs = times.map { $0.duration }.reduce(0,+)
+        guard days != 0 else {
+            return
+        }
+        let avg = (Double(secs) / Double(days))
+        
+        let entry = WidgetData(date: Date(), lastProthesenTime: lastTime, lastTimeInSec: lastTimeInSec, avgTimes: avg, wearingTimes: times)
         completion(entry)
     }
 
@@ -39,8 +55,16 @@ struct Provider: TimelineProvider {
         
         let times = (try? getData(showDays: 7)) ?? []
         let lastTime = (try? getLastTime()) ?? "no Time"
+        let lastTimeInSec = (try? getLastTimeInSec()) ?? 0
         
-        entries.append(WidgetData(date: Date(), lastProthesenTime: lastTime, wearingTimes: times ))
+        let days = times.count
+        let secs = times.map { $0.duration }.reduce(0,+)
+        guard days != 0 else {
+            return
+        }
+        let avg = (Double(secs) / Double(days))
+        
+        entries.append(WidgetData(date: Date(), lastProthesenTime: lastTime, lastTimeInSec: lastTimeInSec, avgTimes: avg, wearingTimes: times ))
         
         let nextUpdate = Calendar.current.date(  byAdding: DateComponents(minute: 1), to: Date() )!
         let timeline = Timeline( entries: entries,  policy: .after(nextUpdate) )
@@ -52,7 +76,7 @@ struct Provider: TimelineProvider {
     
 }
 
-
+// MARK: CoreData Extension
 extension TimelineProvider {
     func fetchTimesData() throws -> [WearingTimes] {
         let context = PersistenceController.shared.container.viewContext
@@ -92,8 +116,15 @@ extension TimelineProvider {
         let defaultTime:Int32 = 1
         let timesArray = try fetchTimesData()
         let convertedTimes = try convertDates(timesArray, showDays: 7)
-        print(convertedTimes)
         let converted = convertSecondsToHrMinuteSec(seconds: Int(convertedTimes.map{ $0.duration }.first ?? defaultTime))
+        return converted
+    }
+    
+    func getLastTimeInSec() throws -> Double {
+        let defaultTime:Int32 = 1
+        let timesArray = try fetchTimesData()
+        let convertedTimes = try convertDates(timesArray, showDays: 7)
+        let converted = Double(convertedTimes.map{ $0.duration }.first ?? defaultTime)
         return converted
     }
     
@@ -106,4 +137,5 @@ extension TimelineProvider {
        let formattedString = formatter.string(from:TimeInterval(seconds))!
        return formattedString
       }
+
 }

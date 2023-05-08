@@ -10,24 +10,51 @@ import CoreData
 import ActivityKit
 
 class StopWatchManager : ObservableObject {
-    @Published var message = "Not running"
-    @Published var isRunning = false
-    private var startTime: Date?
-    private var endDate: String = ""
+    // Timer States
+    @Published var wearingTimerMessage = "Not running"
+    @Published var wearingTimerisRunning = false
+    private var wearingTimerStartTime: Date?
     
+    // Stored Timer States
     @Published var timesArray: [WearingTimes] = []
+
+    var waeringTimes: [ProthesenTimes] {
+        var GroupedAndSumArray:[ProthesenTimes] = []
+        let dictionary = Dictionary(grouping: timesArray.reversed(), by: { Calendar.current.startOfDay(for: $0.timestamp ?? Date() ) })
+        let _: [()] = dictionary.map { GroupedAndSumArray.append(ProthesenTimes(date: $0.key, duration: $0.value.map({ $0.duration }).reduce(0, +)) ) }
+        // Ordnet das Array nach der Zeit
+        return GroupedAndSumArray.sorted { itemA, itemB in
+            return itemA.date > itemB.date
+        }
+        
+    }
     
-    @Published var mergedTimesArray:[ProthesenTimes] = []
+    var waeringTimesYesterday: String {
+        let yesterday = timesArray.filter { Calendar.current.isDateInYesterday( $0.timestamp ?? Date()) }
+        return convertSecondsToHrMinuteSec(seconds: yesterday.map { Int($0.duration) }.reduce(0, +))
+    }
     
-    @Published var totalProtheseTimeToday: String = ""
-    @Published var totalProtheseTimeYesterday: String = ""
-   
-    // Live Activity old
-   // @State var activity: Activity<Prothesen_widgetAttributes>? = nil
+    var waeringTimesToday: String {
+        let today = timesArray.filter { Calendar.current.isDateInToday( $0.timestamp ?? Date()) }
+        return convertSecondsToHrMinuteSec(seconds: today.map { Int($0.duration) }.reduce(0, +) )
+    }
     
-    // Live Activity new
-    //@State var activityTimeTracking: Activity<TimeTrackingAttributes>? = nil
+    var waeringTimesTodayInSeconds: Double {
+        let today = timesArray.filter { Calendar.current.isDateInToday( $0.timestamp ?? Date()) }
+        return today.map { Double($0.duration) }.reduce(0, +)
+    }
     
+    var waeringTimesAvgTimes: Int {
+        let days = waeringTimes.count
+        let secs = waeringTimes.map { $0.duration }.reduce(0,+)
+        
+        guard days != 0 else {
+            return 0
+        }
+        let avg = (Int(secs) / days)
+        return avg
+    }
+  
     
     // Chart
     @Published var activeDateCicle: Date = Date()
@@ -37,10 +64,10 @@ class StopWatchManager : ObservableObject {
     var fetchDays:Int = 7
     
     init() {
-       startTime = fetchStartTime()
+        wearingTimerStartTime = storedStartTime()
         
-       if startTime != nil {
-           restart(time: startTime!)
+       if wearingTimerStartTime != nil {
+           restart(time: wearingTimerStartTime!)
        }
     }
     
@@ -50,63 +77,9 @@ class StopWatchManager : ObservableObject {
         requesttimestamps.sortDescriptors = [sort]
         do {
             timesArray = try PersistenceController.shared.container.viewContext.fetch(requesttimestamps)
-            sumTime( try PersistenceController.shared.container.viewContext.fetch(requesttimestamps) )
-            convertDates(try PersistenceController.shared.container.viewContext.fetch(requesttimestamps))
         }catch {
           print("DEBUG: Some error occured while fetching Times")
         }
-    }
-    
-    func refetchTimesData() {
-        let requesttimestamps = NSFetchRequest<WearingTimes>(entityName: "WearingTimes")
-        let sort = NSSortDescriptor(key: "timestamp", ascending: false)
-        requesttimestamps.sortDescriptors = [sort]
-        timesArray.removeAll(keepingCapacity: true)
-        mergedTimesArray.removeAll(keepingCapacity: true)
-        do {
-            timesArray = try PersistenceController.shared.container.viewContext.fetch(requesttimestamps)
-            sumTime(timesArray)
-            convertDates(timesArray)
-        }catch {
-          print("DEBUG: Some error occured while fetching Times")
-        }
-    }
-
-    func sumTime(_ arr: [WearingTimes]) -> Void {
-       var TodayArray = [Int]()
-       var YesterdayArray = [Int]()
-       
-       for time in arr {
-           
-           let int = Int(time.duration )
-       
-           if Calendar.current.isDateInToday( time.timestamp! ) {
-               TodayArray.append(int )
-           }
-           if Calendar.current.isDateInYesterday( time.timestamp! ) {
-               YesterdayArray.append(int )
-               
-           }
-       }
-       totalProtheseTimeYesterday = convertSecondsToHrMinuteSec(seconds: YesterdayArray.reduce(0, +) )
-       totalProtheseTimeToday = convertSecondsToHrMinuteSec(seconds: TodayArray.reduce(0, +) )
-    }
-    
-    func avgTimes() -> Int {
-        let days = mergedTimesArray.count
-        let secs = mergedTimesArray.map { $0.duration }.reduce(0,+)
-        
-        guard days != 0 else {
-            return 0
-        }
-        let avg = (Int(secs) / days)
-        return avg
-    }
-    
-    func maxValue(margin: Int) -> ClosedRange<Int> {
-        let maXsecs = mergedTimesArray.map { $0.duration }.max()
-        let withMargin = Int(maXsecs ?? 65000) + margin
-        return 0...withMargin
     }
 
     func deleteItems(offsets: IndexSet) {
@@ -115,7 +88,6 @@ class StopWatchManager : ObservableObject {
 
            do {
                try PersistenceController.shared.container.viewContext.save()
-               convertDates(timesArray)
            } catch {
                // Replace this implementation with code to handle the error appropriately.
                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -124,16 +96,6 @@ class StopWatchManager : ObservableObject {
            }
        }
     }
-    
-    func IntToDate(int: Int) -> Date {
-          // convert Int to TimeInterval (typealias for Double)
-          let timeInterval = TimeInterval(int)
-
-          // create NSDate from Double (NSTimeInterval)
-          let myNSDate = Date(timeIntervalSince1970: timeInterval)
-          
-          return myNSDate
-      }
       
     func convertSecondsToHrMinuteSec(seconds:Int) -> String{
        let formatter = DateComponentsFormatter()
@@ -146,57 +108,53 @@ class StopWatchManager : ObservableObject {
       }
   
     func getDuration(data: Date) -> Int32 {
-          let elapsed = Date().timeIntervalSince(data)
-            let duration = Int(elapsed)
-          let formatter = DateComponentsFormatter()
-          formatter.unitsStyle = .abbreviated
-          //formatter.allowedUnits = [ .day, .hour, .minute, .second]
-          formatter.allowedUnits = [ .second]
-          //formatter.string(from: duration)
+        let elapsed = Date().timeIntervalSince(data)
+        let duration = Int(elapsed)
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .abbreviated
+        formatter.allowedUnits = [ .second]
         return Int32(duration)
     }
     
     func restart(time: Date){
-         startTime = time
-         isRunning = true
-         message = "Is running"
+        wearingTimerStartTime = time
+        wearingTimerisRunning = true
+        wearingTimerMessage = "Is running"
         //LiveActivityStart()
  }
     
-    func start(){
-        if startTime == nil {
-            startTime = Date.now
-            isRunning = true
-            message = "Is running"
-            if startTime != nil {
+    func wearingTimerStart(){
+        if wearingTimerStartTime == nil {
+            wearingTimerStartTime = Date.now
+            wearingTimerisRunning = true
+            wearingTimerMessage = "Is running"
+            if wearingTimerStartTime != nil {
                 UserDefaults.standard.set(Date.now, forKey: "startTime")
             }
         }
     }
     
-    func stop(){
-        startTime = nil
-        isRunning = false
-        message = "Not running"
+    func wearingTimerStop(){
+        wearingTimerStartTime = nil
+        wearingTimerisRunning = false
+        wearingTimerMessage = "Not running"
         let DateData = UserDefaults.standard.object(forKey: "startTime") as? Date ?? nil
         if DateData != nil {
             
             let endTime = getDuration(data: DateData!)
-            addTime(time: DateData!, duration: endTime)
-            refetchTimesData()
+            addWearingTime(time: DateData!, duration: endTime)
         }
         
         UserDefaults.standard.set(nil, forKey: "startTime")
     }
     
-    func addTime(time: Date, duration: Int32) {
+    func addWearingTime(time: Date, duration: Int32) {
         let newTime = WearingTimes(context: PersistenceController.shared.container.viewContext)
         newTime.timestamp = time
         newTime.duration = duration
-        
+        timesArray.append(newTime)
         do {
             try PersistenceController.shared.container.viewContext.save()
-            refetchTimesData()
         } catch {
             let nsError = error as NSError
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
@@ -206,43 +164,24 @@ class StopWatchManager : ObservableObject {
     func addDummyTimes(times: Int) {
         let date = Calendar.current.date(byAdding: .day, value: -times, to: Date())
         let duration = Int32.random(in: 1000..<15480)
-        addTime(time: date!, duration: duration)
+        addWearingTime(time: date!, duration: duration)
     }
 
-    func fetchStartTime() -> Date? {
+    func storedStartTime() -> Date? {
         UserDefaults.standard.object(forKey: "startTime") as? Date
     }
 
-    func calcChartItemSize() -> CGFloat {
+    func chartCalcItemSize() -> CGFloat {
         let days = AppConfig().fetchDays
         let itemSize = (devideSizeWidth / 7)
         return itemSize * CGFloat(days)
     }
     
-    func convertDates(_ arr: [WearingTimes]) {
-        // Groupiert alle Zeiten zu dein Datum und Summiert die Zeiten
-        var GroupedAndSumArray:[ProthesenTimes] = []
-        let dictionary = Dictionary(grouping: arr.reversed(), by: { Calendar.current.startOfDay(for: $0.timestamp ?? Date() ) })
-        let _: [()] = dictionary.map { GroupedAndSumArray.append(ProthesenTimes(date: $0.key, duration: $0.value.map({ $0.duration }).reduce(0, +)) ) }
-        // Ordnet das Array nach der Zeit
-        let sorted = GroupedAndSumArray.sorted { itemA, itemB in
-            return itemA.date > itemB.date
-        }
-        //
-        mergedTimesArray = sorted
-
-        var EntryDurationArray:[ProthesenTimes] = []
-        var countDownDay = 6
-        while countDownDay >= 0 {
-            let day = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -countDownDay, to: Date())!)
-            EntryDurationArray.append( ProthesenTimes(date: day, duration: 0) )
-            countDownDay -= 1
-        } // CREAT ARRAY with Entry durations
-        
-        GroupedAndSumArray.removeAll(keepingCapacity: true)
-        EntryDurationArray.removeAll(keepingCapacity: true)
+    func chartMaxValue(margin: Int) -> ClosedRange<Int> {
+        let maXsecs = waeringTimes.map { $0.duration }.max()
+        let withMargin = Int(maXsecs ?? 65000) + margin
+        return 0...withMargin
     }
-    
 }
 
 struct ProthesenTimes: Identifiable {
@@ -251,8 +190,13 @@ struct ProthesenTimes: Identifiable {
     var duration: Int32
 }
 
-
 /*
+ 
+ // Live Activity old
+// @State var activity: Activity<Prothesen_widgetAttributes>? = nil
+ 
+ // Live Activity new
+ //@State var activityTimeTracking: Activity<TimeTrackingAttributes>? = nil
  
  func LiveActivityStart(){
      if ActivityAuthorizationInfo().areActivitiesEnabled {

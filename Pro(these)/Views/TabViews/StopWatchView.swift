@@ -68,9 +68,9 @@ struct StopWatchView: View {
         
         ZStack {
             
-            if stopWatchManager.isRunning {
+            if stopWatchManager.wearingTimerisRunning {
                 
-                Text(stopWatchManager.fetchStartTime()!, style: .timer)
+                Text(stopWatchManager.storedStartTime()!, style: .timer)
                     .font(.largeTitle)
                     .fontWeight(.medium)
                     .foregroundColor(.white)
@@ -96,7 +96,7 @@ struct StopWatchView: View {
         HStack{
             Spacer()
             VStack(alignment: .center){
-                Text(stopWatchManager.totalProtheseTimeYesterday)
+                Text(stopWatchManager.waeringTimesYesterday)
                     .font(.system(size: 20))
                     .multilineTextAlignment(.center)
                 Text("Gester")
@@ -106,7 +106,7 @@ struct StopWatchView: View {
             .frame(width: 200)
             Spacer()
             VStack(alignment: .center){
-                Text(stopWatchManager.totalProtheseTimeToday)
+                Text(stopWatchManager.waeringTimesToday)
                     .font(.system(size: 20))
                     .multilineTextAlignment(.center)
                 Text("Heute")
@@ -122,8 +122,8 @@ struct StopWatchView: View {
     @ViewBuilder
     func StopWatch(spacingBottom: CGFloat) -> some View {
         HStack(alignment: .center ,spacing: 50){
-            if stopWatchManager.isRunning {
-                Text( stopWatchManager.fetchStartTime()!, style: .timer )
+            if stopWatchManager.wearingTimerisRunning {
+                Text( stopWatchManager.storedStartTime()!, style: .timer )
                     .font(.system(size: 60))
                     .padding(.bottom, spacingBottom)
             } else {
@@ -145,8 +145,8 @@ struct StopWatchView: View {
                     .frame(width: 60, height: 60)
                 
                 Button("Stop"){
-                    if stopWatchManager.isRunning {
-                        stopWatchManager.stop()
+                    if stopWatchManager.wearingTimerisRunning {
+                        stopWatchManager.wearingTimerStop()
                     }
                 }
                 .foregroundColor(.yellow)
@@ -158,8 +158,8 @@ struct StopWatchView: View {
                     .frame(width: 60)
                 
                 Button("Start"){
-                    if !stopWatchManager.isRunning {
-                        stopWatchManager.start()
+                    if !stopWatchManager.wearingTimerisRunning {
+                        stopWatchManager.wearingTimerStart()
                     }
                 }
                 .foregroundColor(.black)
@@ -193,8 +193,9 @@ struct StopWatchView: View {
     func showProthesisTimes() -> some View {
         HStack{
             Spacer()
+            // Yesterday
             VStack(alignment: .center){
-                Text(stopWatchManager.totalProtheseTimeYesterday)
+                Text(stopWatchManager.waeringTimesYesterday)
                     .font(.system(size: 20))
                     .foregroundColor(AppConfig().fontLight)
                     .multilineTextAlignment(.center)
@@ -204,11 +205,20 @@ struct StopWatchView: View {
             }
             .frame(width: 200)
             Spacer()
+            // Today
             VStack(alignment: .center){
-                Text(stopWatchManager.totalProtheseTimeToday)
-                    .font(.system(size: 20))
-                    .foregroundColor(AppConfig().fontLight)
-                    .multilineTextAlignment(.center)
+                
+                ZStack{
+                    if AppConfig().ShowToDayRecordingPercentageToAvg {
+                        PercentualChangeBadge(final: stopWatchManager.waeringTimesTodayInSeconds , initial: Double(stopWatchManager.waeringTimesAvgTimes), type: "normal")
+                            .offset(x: 0, y: -30)
+                    }
+                    Text(stopWatchManager.waeringTimesToday)
+                        .font(.system(size: 20))
+                        .foregroundColor(AppConfig().fontLight)
+                        .multilineTextAlignment(.center)
+                }
+                
                 Text("Heute")
                     .foregroundColor(AppConfig().fontColor)
                     .multilineTextAlignment(.center)
@@ -224,14 +234,14 @@ struct StopWatchView: View {
             HStack{
                 Spacer()
                 VStack(alignment: .center){
-                    Text(stopWatchManager.totalProtheseTimeYesterday)
+                    Text(stopWatchManager.waeringTimesYesterday)
                         .font(.title)
                     Text("Gester")
                         .foregroundColor(AppConfig().fontLight)
                 }
                 Spacer()
                 VStack(alignment: .center){
-                    Text(stopWatchManager.totalProtheseTimeToday)
+                    Text(stopWatchManager.waeringTimesToday)
                         .font(.title)
                     Text("Heute")
                         .foregroundColor(AppConfig().fontLight)
@@ -263,7 +273,7 @@ struct StopWatchView: View {
         }
         .refreshable {
             do {
-                stopWatchManager.refetchTimesData()
+                stopWatchManager.fetchTimesData()
             }
         }
         .background{
@@ -280,14 +290,14 @@ struct StopWatchView: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
                     Chart() {
-                       RuleMark(y: .value("Durchschnitt", stopWatchManager.avgTimes() ))
+                       RuleMark(y: .value("Durchschnitt", stopWatchManager.waeringTimesAvgTimes ))
                          .foregroundStyle(Color.orange.opacity(0.5))
 
                         RuleMark(x: .value("ActiveSteps", stopWatchManager.activeDateCicle ) )
                             .foregroundStyle(stopWatchManager.activeisActive ? .white.opacity(1) : .white.opacity(0.2))
                             .offset(stopWatchManager.dragAmount)
                         
-                        ForEach(stopWatchManager.mergedTimesArray, id: \.id) { t in
+                        ForEach(stopWatchManager.waeringTimes, id: \.id) { t in
                             AreaMark(
                                 x: .value("Dates", t.date),
                                 y: .value("Steps", t.duration)
@@ -339,7 +349,7 @@ struct StopWatchView: View {
                             .lineStyle(.init(lineWidth: 5))
                         }
                     }
-                    .frame(width: stopWatchManager.calcChartItemSize())
+                    .frame(width: stopWatchManager.chartCalcItemSize())
                     .chartOverlay { proxy in
                         GeometryReader { geometry in
                             ZStack(alignment: .top) {
@@ -372,7 +382,7 @@ struct StopWatchView: View {
                     }
                     //Vertical
                     .chartYAxis {
-                        let sec = stopWatchManager.mergedTimesArray.map { $0.duration }
+                        let sec = stopWatchManager.waeringTimes.map { $0.duration }
                         let min = sec.min() ?? 1000
                         let max = sec.max() ?? 20000
                         
@@ -396,7 +406,7 @@ struct StopWatchView: View {
                         }
                         
                     }
-                    .chartYScale(domain: stopWatchManager.maxValue(margin: 3600))
+                    .chartYScale(domain: stopWatchManager.chartMaxValue(margin: 3600))
                     .chartYScale(range: .plotDimension(padding: 40))
                     .chartXAxis {
                         AxisMarks(values: .stride(by: .day, count: 1)) { value in
@@ -443,7 +453,7 @@ struct StopWatchView: View {
             return
         }
         
-        stopWatchManager.activeDateCicle = stopWatchManager.mergedTimesArray.sorted(by: {
+        stopWatchManager.activeDateCicle = stopWatchManager.waeringTimes.sorted(by: {
             abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date))
         }).first?.date ?? Date()
         

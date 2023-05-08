@@ -46,7 +46,12 @@ class AppConfig: ObservableObject {
     
     ///  LineMark - Show mini Recorder on the StepCounterView
     @AppStorage("ShowRecordOnHomeView") var ShowRecordOnHomeView = true
-
+    
+    ///  LineMark - Show mini Recorder on the StepCounterView
+    @AppStorage("ShowToDayRecordingPercentageToAvg") var ShowToDayRecordingPercentageToAvg = true
+    
+    
+    
     /// BarMarks - Shows a yellow rulemark for Avarage Daildy Steps
     @AppStorage("stepRuleMark") var stepRuleMark = true
     

@@ -42,7 +42,9 @@ struct Settings: Identifiable {
         
         Settings(
             titel: "StopWatch", options: [
-                Options(titel: "Mini StopWatch im Schrittzähler", icon: "stopwatch", desc: "Aktiviere eine mini StopWatch im Schrittzähler", info: "Aktiviere eine mini StopWatch im Schrittzähler", binding: AppConfig().$ShowRecordOnHomeView)
+                Options(titel: "Mini StopWatch im Schrittzähler", icon: "stopwatch", desc: "Aktiviere eine mini StopWatch im Schrittzähler", info: "Aktiviere eine mini StopWatch im Schrittzähler", binding: AppConfig().$ShowRecordOnHomeView),
+                
+                Options(titel: "Prozentuale Tragezeit zum Durchschnitt", icon: "stopwatch", desc: "Prozentuale Tragezeit zum Durchschnitt", info: "Zeige die Prozentuale Tragezeit im Vergleich zur Durchschnittlichen Tragezeit.", binding: AppConfig().$ShowToDayRecordingPercentageToAvg)
             ]),
         
         Settings(
