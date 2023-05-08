@@ -66,7 +66,7 @@ struct PercentualChangeBadge: View {
                     .font(.caption)
                     .fontWeight(.bold)
             }
-            .foregroundColor(foregroundColor)
+            .foregroundColor(backgroundColor)
         }
         
         if type == "normal" {
@@ -82,10 +82,6 @@ struct PercentualChangeBadge: View {
             .foregroundColor(foregroundColor)
             .background(backgroundColor)
             .cornerRadius(20)
-            .onAppear{
-                print("final: \(final)")
-                print("initial: \(initial)")
-            }
         }
            
     }

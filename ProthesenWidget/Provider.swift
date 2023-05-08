@@ -69,8 +69,6 @@ struct Provider: TimelineProvider {
         let nextUpdate = Calendar.current.date(  byAdding: DateComponents(minute: 1), to: Date() )!
         let timeline = Timeline( entries: entries,  policy: .after(nextUpdate) )
         
-
-        //let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
     

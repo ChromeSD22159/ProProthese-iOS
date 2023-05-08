@@ -46,6 +46,7 @@ struct SmallWidget: View {
                     VStack(alignment: .leading){
                         HStack {
                             Text(data.lastProthesenTime)
+                                .font(.caption)
                                 .fontWeight(.black)
                         }
                         
