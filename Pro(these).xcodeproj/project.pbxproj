@@ -49,6 +49,11 @@
 		B63FC1212A0569D00013652B /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCB42A00FDA400372957 /* EventManager.swift */; };
 		B63FC1222A056BD00013652B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */; };
 		B63FC1232A056BF20013652B /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492029F7AB1F00BBE3A2 /* PushNotifications.swift */; };
+		B6525FD52A0AEF8F0024B9D2 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6525FD42A0AEF8F0024B9D2 /* LaunchScreenView.swift */; };
+		B6525FD62A0AFD530024B9D2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491129F6EEFA00BBE3A2 /* Tab.swift */; };
+		B6525FD72A0AFD530024B9D2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491129F6EEFA00BBE3A2 /* Tab.swift */; };
+		B6525FE12A0B02040024B9D2 /* EventPlanerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6525FDF2A0B00F10024B9D2 /* EventPlanerWidget.swift */; };
+		B6525FE22A0B020A0024B9D2 /* EventPlanerWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6525FDB2A0B00370024B9D2 /* EventPlanerWidgetProvider.swift */; };
 		B66F2C4029FC50C5006CA21E /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C3F29FC50C5006CA21E /* Counter.swift */; };
 		B66F2C4229FC50E2006CA21E /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */; };
 		B66F2C4629FD0649006CA21E /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
@@ -58,8 +63,8 @@
 		B6AB581F2A052BB8003D962B /* ProthesenWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB581E2A052BB8003D962B /* ProthesenWidgetBundle.swift */; };
 		B6AB58232A052BB8003D962B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AB58222A052BB8003D962B /* Assets.xcassets */; };
 		B6AB58272A052BB8003D962B /* ProthesenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B6AB581A2A052BB8003D962B /* ProthesenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B6AB582D2A052C64003D962B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB582B2A052C01003D962B /* Provider.swift */; };
-		B6AB582F2A052CAF003D962B /* ProthesenWidgetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB582E2A052CAF003D962B /* ProthesenWidgetContentView.swift */; };
+		B6AB582D2A052C64003D962B /* WearingWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB582B2A052C01003D962B /* WearingWidgetProvider.swift */; };
+		B6AB582F2A052CAF003D962B /* WearingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB582E2A052CAF003D962B /* WearingWidget.swift */; };
 		B6AB58312A052DDB003D962B /* Pro_these_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6F948FB29F6ED8700BBE3A2 /* Pro_these_.xcdatamodeld */; };
 		B6AB58322A052DE4003D962B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F948F929F6ED8700BBE3A2 /* Persistence.swift */; };
 		B6AB58332A052DF4003D962B /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9492729F7E7D000BBE3A2 /* StopWatchManager.swift */; };
@@ -78,6 +83,11 @@
 		B6E3B3EC29FD1BE200341144 /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
 		B6E3B3ED29FD1BE200341144 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4829FD0670006CA21E /* TimerViewModel.swift */; };
 		B6E3B3EF29FD1CBC00341144 /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E3B3DE29FD1B5900341144 /* WatchContentView.swift */; };
+		B6E948942A0A94A300149168 /* RecordWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E948922A0A949C00149168 /* RecordWidgetLiveActivity.swift */; };
+		B6E948962A0AA17A00149168 /* RecordTimerActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E948952A0AA17A00149168 /* RecordTimerActivityWidget.swift */; };
+		B6E948972A0AA17A00149168 /* RecordTimerActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E948952A0AA17A00149168 /* RecordTimerActivityWidget.swift */; };
+		B6E9489A2A0AA38900149168 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E948992A0AA38900149168 /* LiveActivityManager.swift */; };
+		B6E9489B2A0AA38900149168 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E948992A0AA38900149168 /* LiveActivityManager.swift */; };
 		B6EEC4B829FD3FA5004E2F2F /* StepCounterWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */; };
 		B6EEC4B929FD40BE004E2F2F /* HealthKitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491829F6EF5C00BBE3A2 /* HealthKitStore.swift */; };
 		B6EEC4BA29FD40C9004E2F2F /* StepCounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491A29F6EF7600BBE3A2 /* StepCounterManager.swift */; };
@@ -197,6 +207,9 @@
 		B612E32029FABF6F00C6BF88 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityStructs.swift; sourceTree = "<group>"; };
 		B63FC1242A057B7A0013652B /* ProthesenWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProthesenWidgetExtension.entitlements; sourceTree = "<group>"; };
+		B6525FD42A0AEF8F0024B9D2 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		B6525FDB2A0B00370024B9D2 /* EventPlanerWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlanerWidgetProvider.swift; sourceTree = "<group>"; };
+		B6525FDF2A0B00F10024B9D2 /* EventPlanerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlanerWidget.swift; sourceTree = "<group>"; };
 		B66F2C3F29FC50C5006CA21E /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
 		B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
@@ -205,11 +218,10 @@
 		B6AB581E2A052BB8003D962B /* ProthesenWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProthesenWidgetBundle.swift; sourceTree = "<group>"; };
 		B6AB58222A052BB8003D962B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6AB58242A052BB8003D962B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6AB582B2A052C01003D962B /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		B6AB582E2A052CAF003D962B /* ProthesenWidgetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProthesenWidgetContentView.swift; sourceTree = "<group>"; };
+		B6AB582B2A052C01003D962B /* WearingWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearingWidgetProvider.swift; sourceTree = "<group>"; };
+		B6AB582E2A052CAF003D962B /* WearingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearingWidget.swift; sourceTree = "<group>"; };
 		B6C0B6DB29F8FF140071A88E /* LocationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
 		B6C0B6DD29F929000071A88E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		B6C1285B29F99C730018C71D /* LiveViewExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LiveViewExtensionExtension.entitlements; path = "Pro(these)/LiveViewExtensionExtension.entitlements"; sourceTree = "<group>"; };
 		B6C1285C29FA52870018C71D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B6C1285F29FA74CC0018C71D /* SettingsDeteilsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDeteilsView.swift; sourceTree = "<group>"; };
 		B6C16B6D29F84CB600B5BD70 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
@@ -220,6 +232,9 @@
 		B6E3B3DE29FD1B5900341144 /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
 		B6E3B3E029FD1B5A00341144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E3B3E329FD1B5A00341144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6E948922A0A949C00149168 /* RecordWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		B6E948952A0AA17A00149168 /* RecordTimerActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTimerActivityWidget.swift; sourceTree = "<group>"; };
+		B6E948992A0AA38900149168 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
 		B6EEC4B629FD3F39004E2F2F /* ProWatchOS Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ProWatchOS Watch App.entitlements"; sourceTree = "<group>"; };
 		B6EEC4B729FD3FA5004E2F2F /* StepCounterWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterWatch.swift; sourceTree = "<group>"; };
 		B6EEC4C029FD52EA004E2F2F /* ComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationView.swift; sourceTree = "<group>"; };
@@ -382,6 +397,49 @@
 			path = ContentViewComponents;
 			sourceTree = "<group>";
 		};
+		B6525FD82A0AFF9F0024B9D2 /* WearingTimeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB582E2A052CAF003D962B /* WearingWidget.swift */,
+				B6AB582B2A052C01003D962B /* WearingWidgetProvider.swift */,
+			);
+			path = WearingTimeWidget;
+			sourceTree = "<group>";
+		};
+		B6525FD92A0AFFB40024B9D2 /* StepCounterWidget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StepCounterWidget;
+			sourceTree = "<group>";
+		};
+		B6525FDA2A0AFFC40024B9D2 /* EventplanerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B6525FDF2A0B00F10024B9D2 /* EventPlanerWidget.swift */,
+				B6525FDB2A0B00370024B9D2 /* EventPlanerWidgetProvider.swift */,
+			);
+			path = EventplanerWidget;
+			sourceTree = "<group>";
+		};
+		B6525FDD2A0B006E0024B9D2 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B6525FD82A0AFF9F0024B9D2 /* WearingTimeWidget */,
+				B6525FDA2A0AFFC40024B9D2 /* EventplanerWidget */,
+				B6525FD92A0AFFB40024B9D2 /* StepCounterWidget */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B6525FDE2A0B00880024B9D2 /* LiveWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B6E948922A0A949C00149168 /* RecordWidgetLiveActivity.swift */,
+			);
+			path = LiveWidget;
+			sourceTree = "<group>";
+		};
 		B66F2C3E29FC5090006CA21E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +447,8 @@
 				B66F2C4129FC50E2006CA21E /* SessionDelegater.swift */,
 				B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */,
 				B66F2C4829FD0670006CA21E /* TimerViewModel.swift */,
+				B6E948982A0AA37400149168 /* Manager */,
+				B6E948912A0A944F00149168 /* Model */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -397,8 +457,8 @@
 			isa = PBXGroup;
 			children = (
 				B6AB581E2A052BB8003D962B /* ProthesenWidgetBundle.swift */,
-				B6AB582E2A052CAF003D962B /* ProthesenWidgetContentView.swift */,
-				B6AB582B2A052C01003D962B /* Provider.swift */,
+				B6525FDD2A0B006E0024B9D2 /* Widget */,
+				B6525FDE2A0B00880024B9D2 /* LiveWidget */,
 				B6AB58222A052BB8003D962B /* Assets.xcassets */,
 				B6AB58242A052BB8003D962B /* Info.plist */,
 			);
@@ -449,13 +509,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B6E948912A0A944F00149168 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6E948952A0AA17A00149168 /* RecordTimerActivityWidget.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6E948982A0AA37400149168 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B6E948992A0AA38900149168 /* LiveActivityManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		B6F948E429F6ED8500BBE3A2 = {
 			isa = PBXGroup;
 			children = (
 				B63FC1242A057B7A0013652B /* ProthesenWidgetExtension.entitlements */,
 				B60DDCB82A03022400372957 /* language */,
 				B66F2C3E29FC5090006CA21E /* Shared */,
-				B6C1285B29F99C730018C71D /* LiveViewExtensionExtension.entitlements */,
 				B6F948EF29F6ED8500BBE3A2 /* Pro(these) */,
 				B6E3B3DB29FD1B5900341144 /* ProWatchOS Watch App */,
 				B6AB581D2A052BB8003D962B /* ProthesenWidget */,
@@ -505,6 +580,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F948F229F6ED8500BBE3A2 /* ContentView.swift */,
+				B6525FD42A0AEF8F0024B9D2 /* LaunchScreenView.swift */,
 				B60DDCE12A04674000372957 /* SettingsSheet.swift */,
 				B6C16B6F29F84CE700B5BD70 /* LaunchScreen.swift */,
 				B612E30C29FA9B7D00C6BF88 /* Components */,
@@ -706,19 +782,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6AB582D2A052C64003D962B /* Provider.swift in Sources */,
+				B6AB582D2A052C64003D962B /* WearingWidgetProvider.swift in Sources */,
+				B6525FD72A0AFD530024B9D2 /* Tab.swift in Sources */,
 				B6AB58342A052E3D003D962B /* AppConfig.swift in Sources */,
+				B6525FE22A0B020A0024B9D2 /* EventPlanerWidgetProvider.swift in Sources */,
 				B63FC1212A0569D00013652B /* EventManager.swift in Sources */,
-				B6AB582F2A052CAF003D962B /* ProthesenWidgetContentView.swift in Sources */,
+				B6525FE12A0B02040024B9D2 /* EventPlanerWidget.swift in Sources */,
+				B6AB582F2A052CAF003D962B /* WearingWidget.swift in Sources */,
 				B63FC1202A0568D40013652B /* HealthStorage.swift in Sources */,
 				B63FC1232A056BF20013652B /* PushNotifications.swift in Sources */,
 				B6AB58332A052DF4003D962B /* StopWatchManager.swift in Sources */,
 				B63FC1222A056BD00013652B /* PushNotificationManager.swift in Sources */,
 				B6AB58322A052DE4003D962B /* Persistence.swift in Sources */,
+				B6E948942A0A94A300149168 /* RecordWidgetLiveActivity.swift in Sources */,
 				B63FC11E2A054E320013652B /* Step.swift in Sources */,
 				B609A2DC2A093DE300C88BC6 /* PercentualChangeBadge.swift in Sources */,
+				B6E9489B2A0AA38900149168 /* LiveActivityManager.swift in Sources */,
 				B6AB581F2A052BB8003D962B /* ProthesenWidgetBundle.swift in Sources */,
 				B6AB58312A052DDB003D962B /* Pro_these_.xcdatamodeld in Sources */,
+				B6E948972A0AA17A00149168 /* RecordTimerActivityWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +815,7 @@
 				B6EEC4BB29FD40D8004E2F2F /* HealthStorage.swift in Sources */,
 				B6EEC4BA29FD40C9004E2F2F /* StepCounterManager.swift in Sources */,
 				B6E3B3DD29FD1B5900341144 /* ProWatchOSApp.swift in Sources */,
+				B6525FD62A0AFD530024B9D2 /* Tab.swift in Sources */,
 				B6EEC4B929FD40BE004E2F2F /* HealthKitStore.swift in Sources */,
 				B6E3B3EF29FD1CBC00341144 /* WatchContentView.swift in Sources */,
 				B6EEC4B829FD3FA5004E2F2F /* StepCounterWatch.swift in Sources */,
@@ -756,6 +839,7 @@
 				B6F9491629F6EF2A00BBE3A2 /* MoreListStaks.swift in Sources */,
 				B60DDCD62A041C7300372957 /* EventAddSheetBoby.swift in Sources */,
 				B6C16B9429F8779F00B5BD70 /* CircleAnimationInBackground.swift in Sources */,
+				B6E948962A0AA17A00149168 /* RecordTimerActivityWidget.swift in Sources */,
 				B60DDCD22A041A0100372957 /* ContactDetailView.swift in Sources */,
 				B6F9490D29F6EEB600BBE3A2 /* HealthStorage.swift in Sources */,
 				B607D8CA2A09825A0087F414 /* EmailController.swift in Sources */,
@@ -785,8 +869,10 @@
 				B60DDCD02A04198800372957 /* ContactPreview.swift in Sources */,
 				B60DDCD82A041CFF00372957 /* ContentAddSheetBoby.swift in Sources */,
 				B612E32329FAD16500C6BF88 /* LiveActivityStructs.swift in Sources */,
+				B6525FD52A0AEF8F0024B9D2 /* LaunchScreenView.swift in Sources */,
 				B60DDCC22A0412B400372957 /* EventDetailView.swift in Sources */,
 				B6F9490829F6EE4500BBE3A2 /* TabStack.swift in Sources */,
+				B6E9489A2A0AA38900149168 /* LiveActivityManager.swift in Sources */,
 				B6C16B7029F84CE700B5BD70 /* LaunchScreen.swift in Sources */,
 				B60DDCBE2A0411F700372957 /* EventSection.swift in Sources */,
 				B60DDCB02A001D9E00372957 /* TrackView.swift in Sources */,
@@ -842,6 +928,8 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Update Healt Data";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -872,6 +960,8 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Update Healt Data";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -903,6 +993,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = ProWatchOS;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Records Health Records Data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "FK.Pro-these-";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -937,6 +1028,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = ProWatchOS;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Records Health Records Data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Share Health Data";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "FK.Pro-these-";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -11,6 +11,7 @@ import ActivityKit
 import Foundation
 
 class StopWatchManager : ObservableObject {
+    var live = LiveActivityManager()
     // Timer States
     @Published var wearingTimerMessage = "Not running"
     @Published var wearingTimerisRunning = false
@@ -138,6 +139,7 @@ class StopWatchManager : ObservableObject {
             if wearingTimerStartTime != nil {
                 UserDefaults.standard.set(Date.now, forKey: "startTime")
             }
+            live.LiveActivityStart(name: "Name")
         }
     }
     
@@ -150,6 +152,7 @@ class StopWatchManager : ObservableObject {
             
             let endTime = getDuration(data: DateData!)
             addWearingTime(time: DateData!, duration: endTime)
+            live.liveActivityStop(isRunning: wearingTimerisRunning, endTime: String(endTime))
         }
         
         UserDefaults.standard.set(nil, forKey: "startTime")
@@ -189,6 +192,8 @@ class StopWatchManager : ObservableObject {
         let withMargin = Int(maXsecs ?? 65000) + margin
         return 0...withMargin
     }
+    
+    
 }
 
 struct ProthesenTimes: Identifiable {

@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @EnvironmentObject private var tabManager: TabManager
     @EnvironmentObject private var healthStore: HealthStorage
-    
+    @State var activeTab: Tab = .step
     var body: some View {
         
         NavigationView {
@@ -26,22 +26,28 @@ struct ContentView: View {
                 
                 VStack(){
                     
-                    switch tabManager.currentTab {
+                    switch activeTab {
                     case .step: StepCounterView()
                     case .timer: StopWatchView()
-                    case .map: LocationTracker()
+                    //case .map: LocationTracker()
                     case .event: Events()
                     //case .more: MoreView()
                     }
                     
-                    TabStack()
+                    TabStack(activeTab: $activeTab)
+                        
                 }
                 .foregroundColor(AppConfig().foreground)
-                
             }
         }
         .sheet(isPresented: $tabManager.isSettingSheet, content: {
             SettingsSheet()
         })
+        .onOpenURL{ url in
+            activeTab = url.tabIdentifier ?? .step
+        }
+        .onAppear{
+            activeTab = AppConfig().entrySite
+        }
     }
 }

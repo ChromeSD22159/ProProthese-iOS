@@ -40,7 +40,7 @@ struct MoreView: View {
                             Picker("Startseite", selection: tabManager.$startTab) {
                                 Text("Step").tag(Tab.step)
                                 Text("StopWatch").tag(Tab.timer)
-                                Text("Map").tag(Tab.map)
+                                //Text("Map").tag(Tab.map)
                                 Text("Event").tag(Tab.event)
                                 //Text("Mehr").tag(Tab.more)
                             }

@@ -11,20 +11,18 @@ struct Pro_theseApp: App {
     
     let persistenceController = PersistenceController.shared
     let healthStorage = HealthStorage()
-    //let healtkitViewModel = HealthKitViewModel()
     let pushNotificationManager = PushNotificationManager()
     let stepCounterManager = StepCounterManager()
     let stopWatchManager = StopWatchManager()
     let healthStore = HealthStore()
     let tabManager = TabManager()
     let eventManager = EventManager()
-   // var healthStore: HealthStore?
+    let liveActivityManager = LiveActivityManager()
     
     @AppStorage("Days") var fetchDays:Int = 7
     @State private var LaunchScreen = true
     init() {
         pushNotificationManager.registerForPushNotifications()
-    //    healthStore = HealthStore()
     }
     
     
@@ -42,6 +40,7 @@ struct Pro_theseApp: App {
                     .environmentObject(stopWatchManager)
                     .environmentObject(eventManager)
                     .environmentObject(healthStore)
+                    .environmentObject(liveActivityManager)
                     .onChange(of: scenePhase) { newPhase in
                         if newPhase == .active {
                             pushNotificationManager.removeNotificationsWhenAppLoads()
@@ -54,32 +53,10 @@ struct Pro_theseApp: App {
                             }
                         }
                     }
-                
              
-                if LaunchScreen {
-                    ZStack{
-                        Image("LaunchImage")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipped()
-                            .ignoresSafeArea()
-                        
-                        /*
-                         VStack{
-                             HStack{
-                                 Image("prothesis")
-                                     .imageScale(.large)
-                                     .font(Font.system(size: 40, weight: .heavy))
-                                     .foregroundColor(.white)
-                                     .padding(.leading, 20)
-                             }
-                             .frame(alignment: .center)
-                         }
-                         */
+                    if LaunchScreen {
+                        LaunchScreenView()
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                    .ignoresSafeArea()
-                }
 
              
             }
@@ -90,16 +67,18 @@ struct Pro_theseApp: App {
                         LaunchScreen = false
                     }
                 })
-                tabManager.currentTab = tabManager.startTab
             }
+            
         }
     }
-    
 }
 
-extension Publisher where Output: Sequence {
-    public func mapArray<Input, Out>(_ transform: @escaping (Input) -> Out) -> Publishers.Map<Self, [Out]> where Output.Element == Input {
-        map { $0.map { transform($0) } }
-    }
-}
 
+/*
+ 
+ extension Publisher where Output: Sequence {
+     public func mapArray<Input, Out>(_ transform: @escaping (Input) -> Out) -> Publishers.Map<Self, [Out]> where Output.Element == Input {
+         map { $0.map { transform($0) } }
+     }
+ }
+ */

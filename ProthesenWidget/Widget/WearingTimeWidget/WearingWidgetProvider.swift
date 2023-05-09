@@ -17,7 +17,7 @@ struct WidgetData: TimelineEntry {
     let wearingTimes: [ProthesenTimes]
 }
 
-struct Provider: TimelineProvider {
+struct WearingWidgetProvider: TimelineProvider {
     let persistenceController = PersistenceController.shared
     
     typealias Entry = WidgetData

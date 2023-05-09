@@ -72,7 +72,7 @@ struct LocationTracker: View {
                         withAnimation(.easeInOut) {
                             localManager.timerRecord.toggle()
                         }
-                        tabManager.currentTab = .map
+                        
                         localManager.requestPermission()
                         
                         if localManager.startTime == nil {

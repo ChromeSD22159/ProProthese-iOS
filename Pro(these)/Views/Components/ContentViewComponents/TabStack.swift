@@ -11,6 +11,8 @@ struct TabStack: View {
     @Namespace var TabbarAnimation
     
     @EnvironmentObject private var tabManager: TabManager
+   
+    @Binding var activeTab:Tab
     
     var body: some View {
         HStack(spacing: 10){
@@ -31,7 +33,7 @@ struct TabStack: View {
                             .frame(width: 28, height: 28)
                     }
                     
-                    if tabManager.currentTab == tab {
+                    if activeTab == tab {
                         Circle()
                             .fill(.white)
                             .frame(width:5, height: 5)
@@ -41,9 +43,10 @@ struct TabStack: View {
                 }
                 .onTapGesture {
                     withAnimation(.easeInOut){
-                        tabManager.currentTab = tab
+                        activeTab = tab
                     }
                 }
+               
             }
             .frame(maxWidth: .infinity)
             
@@ -56,6 +59,6 @@ struct TabStack: View {
 
 struct TabStack_Previews: PreviewProvider {
     static var previews: some View {
-        TabStack()
+        TabStack(activeTab: .constant(.event))
     }
 }

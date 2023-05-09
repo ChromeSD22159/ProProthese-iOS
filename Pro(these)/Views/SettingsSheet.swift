@@ -23,7 +23,7 @@ struct SettingsSheet: View {
                             Spacer()
 
                             VStack(alignment: .leading, spacing: 20){
-                                // MARK: Personal Settings
+                                // MARK: - Personal Settings
     
                                 NavigateTo( {
                                     StackLink(icon: "figure.walk", buttonText: "Persönliche Einstellungen", foregroundColor: AppConfig().foreground)
@@ -31,7 +31,7 @@ struct SettingsSheet: View {
                                     PersonalDeteilsView(titel: "Persönliche Einstellungen")
                                 })
                                 
-                                // MARK: Mapped Settings
+                                // MARK: - Mapped Settings
                                 ForEach(Settings.items, id: \.id) { setting in
                                     NavigateTo( {
                                         StackLink(icon: "figure.walk", buttonText: setting.titel, foregroundColor: AppConfig().foreground)

@@ -33,7 +33,8 @@ class AppConfig: ObservableObject {
     @AppStorage("Username") var username = "Frederik"
     /// Saves the daily Steptarget
     @AppStorage("targetSteps") var targetSteps = 10000
-    
+    /// Set the Entry Site
+    @AppStorage("EntrySite") var entrySite:Tab = .event
     
     
     // MARK: SETTINGS StepsCount

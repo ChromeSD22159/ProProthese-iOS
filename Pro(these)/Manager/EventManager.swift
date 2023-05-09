@@ -140,7 +140,6 @@ class EventManager: ObservableObject {
         do {
             contacts = try PersistenceController.shared.container.viewContext.fetch(fetchContacts)
             events = try PersistenceController.shared.container.viewContext.fetch(fetchEvents)
-            print(events.count)
             sortAllEvents()
         }catch {
           print("DEBUG: Some error occured while fetching Times")

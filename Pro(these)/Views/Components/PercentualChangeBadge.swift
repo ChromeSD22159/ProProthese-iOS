@@ -53,7 +53,6 @@ struct PercentualChangeBadge: View {
     
     private var output: String {
         let change: Double = (final - initial) / initial
-        print("f: \(final) i: \(initial)")
         return String(format: "%.1f", change * 100)
     }
     

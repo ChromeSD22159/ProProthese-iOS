@@ -1,6 +1,6 @@
 //
-//  ProthesenWidgetContentView.swift
-//  ProthesenWidgetExtension
+//  WearingWidgetContentView.swift
+//  WearingWidgetExtension
 //
 //  Created by Frederik Kohler on 05.05.23.
 //
@@ -9,16 +9,16 @@ import SwiftUI
 import WidgetKit
 import Charts
 
-struct ProthesenWidgetContentView : View {
+struct WearingWidgetContentView : View {
     @Environment(\.widgetFamily) var widgetFamily
     
     var data: WidgetData
 
     var body: some View {
-        switch widgetFamily {
-            case .systemSmall: SmallWidget(data: data)
-            case .systemMedium: MediumWidget(data: data)
-            case .systemLarge: LargeWidget(data: data)
+            switch widgetFamily {
+            case .systemSmall: SmallWidget(data: data).widgetURL(URL(string: "ProProthese://timer")!)
+            case .systemMedium: MediumWidget(data: data).widgetURL(URL(string: "ProProthese://timer")!)
+            case .systemLarge: LargeWidget(data: data).widgetURL(URL(string: "ProProthese://timer")!)
             default: Text("Default")
        }
     }
@@ -33,7 +33,6 @@ struct SmallWidget: View {
         ZStack{
             AppConfig().backgroundGradient
             bg(widgetFamily: widgetFamily)
-            
             VStack(alignment: .center){
                 VStack(alignment: .center){
                     HStack(spacing: 10) {
@@ -65,8 +64,7 @@ struct SmallWidget: View {
                 .frame(maxHeight: .infinity)
             }
             .padding(10)
-            .widgetURL(URL(string: "Pro-these-://timer"))
-
+            
         }
     }
 }
@@ -169,7 +167,7 @@ struct MediumWidget: View {
 
                 }
                 .frame(width: proxy.size.width, height: proxy.size.height)
-              
+                
                 /*
                 GeometryReader { proxy in
                     VStack(alignment: .center){
@@ -501,18 +499,18 @@ struct ProthesenWidget_Previews: PreviewProvider {
     }
 }
 */
-struct ProthesenWidget: Widget {
-    let kind: String = "ProthesenWidget"
+struct WearingWidget: Widget {
+    let kind: String = "WearingWidget"
 
     let persistenceController = PersistenceController.shared
     let stopWatchManager = StopWatchManager()
     let eventManager = EventManager()
     
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            ProthesenWidgetContentView(data: entry)
+        StaticConfiguration(kind: kind, provider: WearingWidgetProvider()) { entry in
+            WearingWidgetContentView(data: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("ProProthese Tragezeiten")
+        .description("Deine Prothesen Tragezeiten immer im Überblick.")
     }
 }
