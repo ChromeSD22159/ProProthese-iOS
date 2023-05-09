@@ -18,7 +18,7 @@ struct EventSection: View {
     
     var body: some View {
         Section(content: {
-            ForEach(data){ item in
+            ForEach(data.sorted(by: { $0.date ?? Date() < $1.date ?? Date() })){ item in
                 NavigateTo({
                     EventPreview(item: item)
                 }, {

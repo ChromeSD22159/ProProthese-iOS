@@ -23,8 +23,8 @@ struct EventCardComponent: View {
                 .padding(.top, 25)
                 .padding(.bottom, 20)
            
-
-            ForEach(item.tasks?.allObjects as? [EventTasks] ?? [], id: \.self) { item in
+            let events = (item.tasks?.allObjects as? [EventTasks]) ?? []
+            ForEach(events.sorted(by: { $0.date ?? Date() < $1.date ?? Date() }), id: \.self) { item in
                 EventTaskRow(task: item, focusedTask: $focusedTask)
             }
             

@@ -8,6 +8,7 @@
 import SwiftUI
 import CoreData
 import ActivityKit
+import Foundation
 
 class StopWatchManager : ObservableObject {
     // Timer States
@@ -74,7 +75,13 @@ class StopWatchManager : ObservableObject {
     func fetchTimesData() {
         let requesttimestamps = NSFetchRequest<WearingTimes>(entityName: "WearingTimes")
         let sort = NSSortDescriptor(key: "timestamp", ascending: false)
+        
+        let startDate = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -7, to: Date())!)
+        let endDate = Calendar.current.date(byAdding: .day, value: 0, to: Date())!
+        let predicate = NSPredicate(format: "timestamp >= %@ AND timestamp < %@", argumentArray: [startDate, endDate] )
+        
         requesttimestamps.sortDescriptors = [sort]
+        requesttimestamps.predicate = predicate
         do {
             timesArray = try PersistenceController.shared.container.viewContext.fetch(requesttimestamps)
         }catch {

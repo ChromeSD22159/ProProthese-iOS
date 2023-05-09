@@ -55,7 +55,8 @@ class PushNotificationManager : ObservableObject {
     ///    }
     /// ```
     func removeNotificationsWhenAppLoads(){
-        removeNotification(identifier: "PROTHESE_COMEBACK_REMINDER")
+        removeNotification(identifier: "PROTHESE_COMEBACK_REMINDER1")
+        removeNotification(identifier: "PROTHESE_COMEBACK_REMINDER2")
     }
     
     func setUpDailyNotifications(){
@@ -185,6 +186,22 @@ class PushNotificationManager : ObservableObject {
         print("Register Notification:  \(identifier) für: \(trigger)")
     }
     
+    func PushNotificationRepeater(identifier: String, title: String, body: String, interval: Double){
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: true)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) {
+            (error: Error?) in
+        }
+        
+        print("Register Notification:  \(identifier) für: \(trigger)")
+    }
+    
     // MARK: Remove all pending Notifications
     func removeAllPendingNotificationRequests(){
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
@@ -194,6 +211,7 @@ class PushNotificationManager : ObservableObject {
     func removeNotification(identifier: String){
         let strIdentifier = identifier
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["\(strIdentifier)"])
+        print("Removed Notification:  \(identifier)")
     }
     
     // MARK: Print all Array for all Registered Notifications
@@ -279,9 +297,9 @@ class PushNotificationManager : ObservableObject {
         UNUserNotificationCenter.current().add(request)
       
     }
+    
+   
 }
-
-
 
 class Random {
 //   Random().int(between: 1, and: 10)

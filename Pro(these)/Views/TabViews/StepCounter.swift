@@ -225,7 +225,7 @@ struct StepCounterView: View {
                 let newStep = Step(count: step.count, date: step.date, dist: nil)
                 newSteps.append(newStep)
             } else {
-                let newStep = Step(count: step.count, date: step.date, dist: distances[index])
+                let newStep = Step(count: step.count, date: step.date, dist: distances[index] ?? nil)
                 newSteps.append(newStep)
             }
             
@@ -371,7 +371,8 @@ struct StepCounterView: View {
                 
                 if AppConfig().stepRuleMark {
                     RuleMark(y: .value("Durchschnitt", stepCounterManager.avgSteps(steps: healthStorage.Steps) ) )
-                        .foregroundStyle(.orange.opacity(0.5))
+                        .foregroundStyle(.yellow)
+                        .lineStyle(StrokeStyle(lineWidth: 0.5, dash: [8]))
                 }
                 
                 RuleMark(x: .value("ActiveSteps", stepCounterManager.activeDateCicle ) )
@@ -504,12 +505,7 @@ struct StepCounterView: View {
                 //let consumptionStride = Array(stride(from: min, through: max, by: (max - min)/3))
                 let test = Array(stride(from: min, to: max, by: 5000))
                 AxisMarks(position: .trailing, values: test) { axis in
-                    AxisGridLine(stroke: StrokeStyle(lineWidth: 2,
-                                                     lineCap: .butt,
-                                                     lineJoin: .bevel,
-                                                     miterLimit: 3,
-                                                     dash: [5],
-                                                     dashPhase: 1))
+                    AxisGridLine(centered: true, stroke: StrokeStyle(lineWidth: 0.3, dash: [10]))
                 }
                 
             }
@@ -520,7 +516,7 @@ struct StepCounterView: View {
                     if value.count > 7 {
                         AxisValueLabel(format: .dateTime.day().month())
                     } else {
-                        AxisValueLabel(format: .dateTime.weekday())
+                        AxisValueLabel(format: .dateTime.weekday(.short))
                     }
                     
                     
@@ -658,12 +654,7 @@ struct StepCounterView: View {
                         AxisMarks(position: .trailing, values: consumptionStride) { axis in
                             let value = consumptionStride[axis.index]
                             //AxisValueLabel("\(value)", centered: true)
-                            AxisGridLine(stroke: StrokeStyle(lineWidth: 2,
-                                                             lineCap: .butt,
-                                                             lineJoin: .bevel,
-                                                             miterLimit: 3,
-                                                             dash: [5],
-                                                             dashPhase: 1))
+                            AxisGridLine(centered: true, stroke: StrokeStyle(lineWidth: 0.3, dash: [10]))
                         }
                     }
                     .chartXAxis {
@@ -673,7 +664,7 @@ struct StepCounterView: View {
                             if value.count > 7 {
                                 AxisValueLabel(format: .dateTime.day().month())
                             } else {
-                                AxisValueLabel(format: .dateTime.weekday())
+                                AxisValueLabel(format: .dateTime.weekday(.short))
                             }
                             
                             

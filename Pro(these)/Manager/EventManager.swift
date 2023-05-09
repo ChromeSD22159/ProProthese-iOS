@@ -14,9 +14,21 @@ class EventManager: ObservableObject {
     @Published var contacts: [Contact] = []
     @Published var events: [Event] = []
     
-    @Published var eventsNextWeek: [Event] = []
-    @Published var eventsnextmonth: [Event] = []
-    @Published var eventsPast: [Event] = []
+    var eventsNextWeek: [Event] {
+        events.filter { $0.date ?? Date() > Date.now && $0.date ?? Date() < Date.now.sevenDaysOut }
+    }
+    
+    var eventsnextmonth: [Event] {
+        events.filter { $0.date ?? Date() > Date.now.sevenDaysOut && $0.date ?? Date() < Date.now.thirtyDaysOut }
+    }
+    
+    var eventsPast: [Event] {
+        events.filter{ $0.date ?? Date() < Date.now }
+    }
+    
+    var eventsAll: [Event] {
+        events.filter{ $0.date ?? Date() > Date.now }
+    }
     
     // sheets
     @Published var isAddContactSheet: Bool = false
@@ -86,7 +98,6 @@ class EventManager: ObservableObject {
         newEvent.tasks = nil
         newEvent.contact = addEventContact
         events.append(newEvent)
-
         do {
             try PersistenceController.shared.container.viewContext.save()
             if let unwrapped = addEventContact?.name! {
@@ -107,6 +118,7 @@ class EventManager: ObservableObject {
             self.addEventTitel = ""
             self.addEventIcon = "bandage.fill"
             self.addEventDate = Date()
+            self.addEventContact = nil
             self.error = ""
             fetchContacts()
             self.isAddEventSheet = false
@@ -137,17 +149,45 @@ class EventManager: ObservableObject {
     
     func sortAllEvents() {
         contacts = contacts
-        eventsPast = events.filter{ $0.date ?? Date() < Date.now }
-        eventsNextWeek = events.filter { $0.date ?? Date() > Date.now && $0.date ?? Date() < Date.now.sevenDaysOut }
-        eventsnextmonth = events.filter { $0.date ?? Date() > Date.now.sevenDaysOut && $0.date ?? Date() < Date.now.thirtyDaysOut }
+        //eventsPast = events.filter{ $0.date ?? Date() < Date.now }
+        //eventsNextWeek = events.filter { $0.date ?? Date() > Date.now && $0.date ?? Date() < Date.now.sevenDaysOut }
+        //eventsnextmonth = events.filter { $0.date ?? Date() > Date.now.sevenDaysOut && $0.date ?? Date() < Date.now.thirtyDaysOut }
     }
-
+    
+    func deleteRecurringEvents(_ recurringEvents: RecurringEvents) {
+        withAnimation {
+            viewContext.delete(recurringEvents)
+            PushNotificationManager().removeNotification(identifier: recurringEvents.identifier ?? "Identifier")
+            do {
+                try viewContext.save()
+                sortAllEvents()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
+    }
+    
     func deleteContact(_ contact: Contact) {
         withAnimation {
             viewContext.delete(contact)
             do {
                 try viewContext.save()
                 fetchContacts()
+                sortAllEvents()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+
+        }
+    }
+    
+    func deleteContactPerson(_ contactPerson: ContactPerson) {
+        withAnimation {
+            viewContext.delete(contactPerson)
+            do {
+                try viewContext.save()
                 sortAllEvents()
             } catch {
                 let nsError = error as NSError
@@ -202,6 +242,20 @@ class EventManager: ObservableObject {
         
         print("\(dFormatter.string(from: newDate)) um \(formatter.string(from: newTime))")
         return "\(dFormatter.string(from: newDate)) um \(formatter.string(from: newTime))"
+    }
+    
+    func getImage(_ img: String) -> String {
+        switch img {
+        case "Klinikum" : return "Hospital"
+        case "Fachklinik" : return "Hospital"
+        case "Hausarzt" : return "Doctor"
+        case "Orthopäde" : return "Doctor"
+        case "Sanitätshaus" : return "Physio"
+        case "Physioterapeut" : return "Physio"
+        case "noImage" : return "Illustration"
+        default:
+            return "Illustration"
+        }
     }
 }
 

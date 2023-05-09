@@ -70,6 +70,7 @@ struct ContentAddSheetBoby: View {
                             Text("Orthopäde").tag("Orthopäde")
                             Text("Sanitätshaus").tag("Sanitätshaus")
                             Text("Physioterapeut").tag("Physioterapeut")
+                            Text("Sonstiges").tag("other")
                         }
                     }
                     .padding(10)

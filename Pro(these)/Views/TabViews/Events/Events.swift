@@ -28,7 +28,7 @@ struct Events: View {
                     ForEach(Array(eventManager.contacts.enumerated()), id: \.1) { (index, contact) in
                         GeometryReader { geo in
                             NavigateTo({
-                                ImageView(image: "Illustration", name: contact.name ?? "Unbekannter Name", titel:  contact.titel ?? "Unbekannter Titel" )
+                                ImageView(image: eventManager.getImage(contact.titel ?? "noImage") , name: contact.name ?? "Unbekannter Name", titel:  contact.titel ?? "Unbekannter Titel" )
                                     .rotation3DEffect(.degrees(-geo.frame(in: .global).minX) / 20, axis: (x: 0, y: 1, z: 0))
                                     .frame(width: 200, height: 250)
                                     .shadow(color: .black.opacity(0.5), radius: 10, x: 5, y: 5)
@@ -59,6 +59,11 @@ struct Events: View {
                 EventSection(titel: "Diesen Monat", data: eventManager.eventsnextmonth)
                     .listRowInsets(EdgeInsets(top: 15, leading: 15, bottom: 15, trailing: 15))
                 
+                if appConfig.showAllEvents {
+                    EventSection(titel: "Alle Termine", data: eventManager.eventsAll)
+                        .listRowInsets(EdgeInsets(top: 15, leading: 15, bottom: 15, trailing: 15))
+                }
+
                 if appConfig.showPastEvents {
                     EventSection(titel: "Vergangene Woche", data: eventManager.eventsPast)
                         .listRowInsets(EdgeInsets(top: 15, leading: 15, bottom: 15, trailing: 15))

@@ -17,7 +17,7 @@ class PushNotifications {
     ]
     
     var ComeBack2:[String: String] = [
-        "identifier" : "PROTHESE_COMEBACK_REMINDER1",
+        "identifier" : "PROTHESE_COMEBACK_REMINDER2",
         "titel": "Wie geht's dir? 🤔",
         "body": "Es ist so Still hier ohne  dich...😢",
         "triggerTimer": "20"

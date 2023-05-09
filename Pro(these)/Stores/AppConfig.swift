@@ -67,7 +67,10 @@ class AppConfig: ObservableObject {
     
     // MARK: SETTINGS Terminplaner
     @AppStorage("showPastEvents") var showPastEvents = true
+    @AppStorage("showAllEvents") var showAllEvents = true
     
+    
+    @AppStorage("debug") var debug = false
 }
 
 enum Theme: String, CaseIterable, Identifiable {

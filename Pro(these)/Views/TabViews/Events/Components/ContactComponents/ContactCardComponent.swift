@@ -69,6 +69,18 @@ struct ContactCardComponent: View {
                         }
                         .foregroundColor(appConfig.fontColor)
                         .padding(.top, 10)
+                        
+                        Spacer ()
+                        
+                        Button {
+                            eventManager.deleteEvent(event)
+                        } label: {
+                            HStack {
+                                Image(systemName: "trash")
+                            }
+                        }
+                        .foregroundColor(appConfig.fontColor)
+                        .padding(.top, 10)
                     }
                     
                 }

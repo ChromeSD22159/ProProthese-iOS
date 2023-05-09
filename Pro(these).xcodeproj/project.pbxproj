@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B607D8C82A096CE80087F414 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607D8C72A096CE80087F414 /* ContactManager.swift */; };
+		B607D8CA2A09825A0087F414 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607D8C92A09825A0087F414 /* EmailController.swift */; };
 		B609A2DB2A093DB100C88BC6 /* PercentualChangeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B609A2DA2A093DB100C88BC6 /* PercentualChangeBadge.swift */; };
 		B609A2DC2A093DE300C88BC6 /* PercentualChangeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B609A2DA2A093DB100C88BC6 /* PercentualChangeBadge.swift */; };
 		B609A2DD2A093DE400C88BC6 /* PercentualChangeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B609A2DA2A093DB100C88BC6 /* PercentualChangeBadge.swift */; };
+		B609A2DF2A09699D00C88BC6 /* ContactPersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B609A2DE2A09699D00C88BC6 /* ContactPersonRow.swift */; };
 		B60DDCAE29FF49B500372957 /* LVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCAD29FF49B500372957 /* LVM.swift */; };
 		B60DDCB02A001D9E00372957 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCAF2A001D9E00372957 /* TrackView.swift */; };
 		B60DDCB32A00606F00372957 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DDCB22A00606F00372957 /* Events.swift */; };
@@ -158,7 +161,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B607D8C72A096CE80087F414 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		B607D8C92A09825A0087F414 /* EmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
 		B609A2DA2A093DB100C88BC6 /* PercentualChangeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentualChangeBadge.swift; sourceTree = "<group>"; };
+		B609A2DE2A09699D00C88BC6 /* ContactPersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPersonRow.swift; sourceTree = "<group>"; };
 		B60DDCAD29FF49B500372957 /* LVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVM.swift; sourceTree = "<group>"; };
 		B60DDCAF2A001D9E00372957 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
 		B60DDCB22A00606F00372957 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
@@ -322,6 +328,7 @@
 				B60DDCCC2A04192300372957 /* ContactSection.swift */,
 				B60DDCD72A041CFF00372957 /* ContentAddSheetBoby.swift */,
 				B60DDCD12A041A0100372957 /* ContactDetailView.swift */,
+				B609A2DE2A09699D00C88BC6 /* ContactPersonRow.swift */,
 				B60DDCD32A041AC800372957 /* ContactCardComponent.swift */,
 				B60DDCCF2A04198800372957 /* ContactPreview.swift */,
 			);
@@ -530,9 +537,11 @@
 			isa = PBXGroup;
 			children = (
 				B6C16B6D29F84CB600B5BD70 /* TabManager.swift */,
+				B607D8C92A09825A0087F414 /* EmailController.swift */,
 				B612E32229FAD16500C6BF88 /* LiveActivityStructs.swift */,
 				B60DDCB42A00FDA400372957 /* EventManager.swift */,
 				B6C0B6DD29F929000071A88E /* LocationManager.swift */,
+				B607D8C72A096CE80087F414 /* ContactManager.swift */,
 				B6F9491829F6EF5C00BBE3A2 /* HealthKitStore.swift */,
 				B6F9491E29F730DE00BBE3A2 /* PushNotificationManager.swift */,
 				B6F9492029F7AB1F00BBE3A2 /* PushNotifications.swift */,
@@ -749,11 +758,13 @@
 				B6C16B9429F8779F00B5BD70 /* CircleAnimationInBackground.swift in Sources */,
 				B60DDCD22A041A0100372957 /* ContactDetailView.swift in Sources */,
 				B6F9490D29F6EEB600BBE3A2 /* HealthStorage.swift in Sources */,
+				B607D8CA2A09825A0087F414 /* EmailController.swift in Sources */,
 				B6C16B6E29F84CB600B5BD70 /* TabManager.swift in Sources */,
 				B609A2DB2A093DB100C88BC6 /* PercentualChangeBadge.swift in Sources */,
 				B6F948F329F6ED8500BBE3A2 /* ContentView.swift in Sources */,
 				B6F948F129F6ED8500BBE3A2 /* Pro_these_App.swift in Sources */,
 				B66F2C4629FD0649006CA21E /* WatchConnectivityProvider.swift in Sources */,
+				B609A2DF2A09699D00C88BC6 /* ContactPersonRow.swift in Sources */,
 				B60DDCB32A00606F00372957 /* Events.swift in Sources */,
 				B6F9492829F7E7D000BBE3A2 /* StopWatchManager.swift in Sources */,
 				B66F2C4029FC50C5006CA21E /* Counter.swift in Sources */,
@@ -761,6 +772,7 @@
 				B60DDCC82A04180300372957 /* EventTaskRow.swift in Sources */,
 				B6F9490629F6EE1C00BBE3A2 /* MoreView.swift in Sources */,
 				B66F2C4929FD0670006CA21E /* TimerViewModel.swift in Sources */,
+				B607D8C82A096CE80087F414 /* ContactManager.swift in Sources */,
 				B6F9491B29F6EF7600BBE3A2 /* StepCounterManager.swift in Sources */,
 				B6C1286029FA74CC0018C71D /* SettingsDeteilsView.swift in Sources */,
 				B612E31B29FAA6AA00C6BF88 /* SettingChangeName.swift in Sources */,

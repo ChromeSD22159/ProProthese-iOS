@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
         <attribute name="icon" optional="YES" attributeType="String"/>
         <attribute name="mail" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="titel" optional="YES" attributeType="String"/>
+        <relationship name="contactPersons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContactPerson" inverseName="contact" inverseEntity="ContactPerson"/>
         <relationship name="events" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Event" inverseName="contact" inverseEntity="Event"/>
+        <relationship name="recurringEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecurringEvents" inverseName="contact" inverseEntity="RecurringEvents"/>
+    </entity>
+    <entity name="ContactPerson" representedClassName="ContactPerson" syncable="YES" codeGenerationType="class">
+        <attribute name="firstname" optional="YES" attributeType="String"/>
+        <attribute name="lastname" optional="YES" attributeType="String"/>
+        <attribute name="mail" optional="YES" attributeType="String"/>
+        <attribute name="mobil" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="contactPersons" inverseEntity="Contact"/>
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
         <attribute name="date" attributeType="Date" defaultDateTimeInterval="704737980" usesScalarValueType="NO"/>
@@ -17,6 +28,7 @@
         <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="EventTasks" inverseName="events" inverseEntity="EventTasks"/>
     </entity>
     <entity name="EventTasks" representedClassName="EventTasks" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="isDone" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="text" optional="YES" attributeType="String"/>
@@ -32,6 +44,13 @@
         <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="trackID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RecurringEvents" representedClassName="RecurringEvents" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="identifier" attributeType="String" defaultValueString="Identifier"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rhymus" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="recurringEvents" inverseEntity="Contact"/>
     </entity>
     <entity name="WearingTimes" representedClassName="WearingTimes" syncable="YES" codeGenerationType="class">
         <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>

@@ -291,7 +291,8 @@ struct StopWatchView: View {
                 HStack{
                     Chart() {
                        RuleMark(y: .value("Durchschnitt", stopWatchManager.waeringTimesAvgTimes ))
-                         .foregroundStyle(Color.orange.opacity(0.5))
+                            .foregroundStyle(.yellow)
+                            .lineStyle(StrokeStyle(lineWidth: 0.5, dash: [8]))
 
                         RuleMark(x: .value("ActiveSteps", stopWatchManager.activeDateCicle ) )
                             .foregroundStyle(stopWatchManager.activeisActive ? .white.opacity(1) : .white.opacity(0.2))
@@ -389,12 +390,7 @@ struct StopWatchView: View {
                         //let consumptionStride = Array(stride(from: min, through: max, by: (max - min)/3))
                         let test = Array(stride(from: min, to: max, by: 5808))
                         AxisMarks(position: .trailing, values: test) { axis in
-                            AxisGridLine(stroke: StrokeStyle(lineWidth: 1,
-                                                             lineCap: .butt,
-                                                             lineJoin: .bevel,
-                                                             miterLimit: 20,
-                                                             dash: [10],
-                                                             dashPhase: 1))
+                            AxisGridLine(centered: true, stroke: StrokeStyle(lineWidth: 0.3, dash: [10]))
                             
                             AxisValueLabel(content: {
                                 if let intValue = axis.as(Int.self) {
@@ -415,7 +411,7 @@ struct StopWatchView: View {
                             if value.count > 7 {
                                 AxisValueLabel(format: .dateTime.day().month())
                             } else {
-                                AxisValueLabel(format: .dateTime.weekday())
+                                AxisValueLabel(format: .dateTime.weekday(.short))
                             }
                             
                             

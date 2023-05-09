@@ -78,8 +78,19 @@ struct Provider: TimelineProvider {
 extension TimelineProvider {
     func fetchTimesData() throws -> [WearingTimes] {
         let context = PersistenceController.shared.container.viewContext
+        
+        let requesttimestamps = NSFetchRequest<WearingTimes>(entityName: "WearingTimes")
+        let sort = NSSortDescriptor(key: "timestamp", ascending: false)
+        
+        let startDate = Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -7, to: Date())!)
+        let endDate = Calendar.current.date(byAdding: .day, value: 0, to: Date())!
+        let predicate = NSPredicate(format: "timestamp >= %@ AND timestamp < %@", argumentArray: [startDate, endDate] )
+        
+        requesttimestamps.sortDescriptors = [sort]
+        requesttimestamps.predicate = predicate
+        
         let WearingTimes = WearingTimes.fetchRequest()
-        let result = try context.fetch(WearingTimes)
+        let result = try context.fetch(requesttimestamps)
         return result
     }
     

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EventDetailView: View {
-
+    @EnvironmentObject var eventManager: EventManager
     @EnvironmentObject var appConfig: AppConfig
     var iconColor: Color
     var item: Event

@@ -42,10 +42,8 @@ struct Pro_theseApp: App {
                     .environmentObject(stopWatchManager)
                     .environmentObject(eventManager)
                     .environmentObject(healthStore)
-                    //.environmentObject(healtkitViewModel)
                     .onChange(of: scenePhase) { newPhase in
                         if newPhase == .active {
-                            //loadData(days: healthStorage.fetchDays)
                             pushNotificationManager.removeNotificationsWhenAppLoads()
                         } else if newPhase == .inactive {
                             
@@ -55,9 +53,6 @@ struct Pro_theseApp: App {
                                 pushNotificationManager.setUpNonPermanentNotifications()
                             }
                         }
-                    }
-                    .onChange(of: fetchDays){ new in
-                       // loadData(days: new)
                     }
                 
              

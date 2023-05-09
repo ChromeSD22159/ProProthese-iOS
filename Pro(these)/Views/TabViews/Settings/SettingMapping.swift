@@ -49,7 +49,8 @@ struct Settings: Identifiable {
         
         Settings(
             titel: "Terminplaner", options: [
-                Options(titel: "Zeige abgelaufene Termine", icon: "stopwatch", desc: "Zeige alle abgelaufene Termine Sortiert an.", info: "Zeige alle abgelaufene Termine Sortiert an.", binding: AppConfig().$showPastEvents)
+                Options(titel: "Zeige abgelaufene Termine", icon: "stopwatch", desc: "Zeige alle abgelaufene Termine Sortiert an.", info: "Zeige alle abgelaufene Termine Sortiert an.", binding: AppConfig().$showPastEvents),
+                Options(titel: "Zeige alle Termine", icon: "stopwatch", desc: "Zeige alle Termine Sortiert an.", info: "Zeige alle Termine Sortiert an.", binding: AppConfig().$showAllEvents)
             ])
     ]
     
