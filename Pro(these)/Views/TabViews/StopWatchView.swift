@@ -1,457 +1,126 @@
 //
-//  StopWatchView.swift
+//  WorkOutEntryView.swift
 //  Pro(these)
 //
-//  Created by Frederik Kohler on 25.04.23.
+//  Created by Frederik Kohler on 19.05.23.
 //
 
 import SwiftUI
-import Charts
 
 struct StopWatchView: View {
-    @EnvironmentObject var stopWatchManager: StopWatchManager
-    @StateObject var watchTimerModel = TimerViewModel()
+    @StateObject var stopWatchProvider = StopWatchProvider()
+    @StateObject var tabManager = TabManager()
+    @StateObject var workoutStatisticViewModel = WorkoutStatisticViewModel()
     
-    @State var selectedDetent: PresentationDetent = .large
-    @State var isShowListSheet = false
-    
-    @State var devideSizeWidth: CGFloat = 0
-    @Namespace var StopWatchbottomID
     var body: some View {
-        GeometryReader { proxy in
-            let screenWidth = proxy.size.width
+        GeometryReader { screen in
+           
+            ZStack{
+                RadialGradient(gradient: Gradient(colors: [
+                    Color(red: 5/255, green: 5/255, blue: 15/255).opacity(0.7),
+                    Color(red: 5/255, green: 5/255, blue: 15/255).opacity(1)
+                ]), center: .center, startRadius: 50, endRadius: 300)
+                    .ignoresSafeArea()
+                
+                VStack(spacing: 20) {
+                    HeaderComponent()
+                        .padding(.top, 20)
+                    
+                    StopWatchRecordView().padding(.horizontal).environmentObject(stopWatchProvider)
+                    
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            
+        }
+    }
+}
+
+struct StopWatchRecordView: View {
+    @EnvironmentObject var stopWatchProvider: StopWatchProvider
+    @EnvironmentObject var tabViewManager: TabManager
+    var body: some View {
+        ZStack {
+
             VStack {
                 
-                VStack{
+                Spacer()
+                
+                HStack{
                     Spacer()
-                    
-                    StopWatch(spacingBottom: 20) //ring()
-                        .foregroundColor(.white)
-                        .padding(.bottom, 20)
-                    
-                    Spacer()
-                    
-                    showProthesisTimes()
-                        .frame(width: (screenWidth/2))
-                        .padding(.bottom, 50)
-
-                    TimerChartScrolling(devideSizeWidth)
-                        .frame(maxWidth: .infinity, maxHeight: 200)
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-               
-            }
-            .toolbar {
-                ToolbarItem {
-                    Button(action: { isShowListSheet.toggle() }) {
-                        Label("", systemImage: "list.star")
+                    if stopWatchProvider.recorderState == .started {
+                        
+                        Text(stopWatchProvider.recorderStartTime!, style: .timer)
+                            .font(.system(size: 50))
+                            .italic()
+                            .fontWeight(.bold)
+                            .fontWeight(.medium)
+                            .foregroundColor(.white)
+                        
                     }
+                    if stopWatchProvider.recorderState == .notStarted {
+                        Text("")
+                            .font(.system(size: 50))
+                    }
+                    Spacer()
                 }
+                
+                HStack(spacing: 15){
+                   Image(systemName: "gear")
+                       .font(.system(size: 20))
+                       .foregroundColor(.black)
+                       .frame(width: 50, height: 50)
+                       .background(
+                           Circle()
+                               .fill(Color.yellow)
+                               .frame(width: 50, height: 50)
+                       )
+                       .onTapGesture {
+                           tabViewManager.isSettingSheet.toggle()
+                       }
+                   
+                    Text( stopWatchProvider.recorderState == .started ? "END" : "START" )
+                        .font(Font.system(size: 20))
+                        .italic()
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .frame(width: 75, height: 75)
+                        .background(
+                           Circle()
+                               .fill(Color.yellow)
+                                .frame(width: 75, height: 75)
+                        )
+                        .onTapGesture {
+                            switch stopWatchProvider.recorderState {
+                            case .started : stopWatchProvider.stopRecording()
+                            case .notStarted:  stopWatchProvider.startRecording()
+                            case .finished:
+                                break
+                            }
+                           
+                        }
+                   
+                   
+                   Image(systemName: "music.note")
+                       .font(.system(size: 20))
+                       .foregroundColor(.black)
+                        .frame(width: 50, height: 50)
+                       .background(
+                           Circle()
+                               .fill(Color.yellow)
+                               .frame(width: 50, height: 50)
+                       )
+               }
+                .padding(.bottom, 30)
             }
-            .sheet(isPresented: $isShowListSheet) {
-                ListSheetContent()
-                    .presentationDetents([.large], selection: $selectedDetent)
-                    .presentationDragIndicator(.visible)
-            }
-            .fullSizeCenter()
             .onAppear{
-                stopWatchManager.devideSizeWidth = proxy.size.width
+                if stopWatchProvider.recorderFetchStartTime() != nil {
+                    stopWatchProvider.recorderState = .started
+                    stopWatchProvider.recorderStartTime = stopWatchProvider.recorderFetchStartTime()
+                }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-    
-    
-    @ViewBuilder
-    func ring() -> some View {
-        let angleGradient = AngularGradient(colors: [.white.opacity(0.5), .blue.opacity(0.5)], center: .center, startAngle: .degrees(-90), endAngle: .degrees(360))
-        
-        ZStack {
-            
-            if stopWatchManager.wearingTimerisRunning {
-                
-                Text(stopWatchManager.storedStartTime()!, style: .timer)
-                    .font(.largeTitle)
-                    .fontWeight(.medium)
-                    .foregroundColor(.white)
-                
-            } else {
-                Text("0:00")
-                    .font(.system(size: 50))
-            }
-            
-            Circle()
-                .stroke(style: StrokeStyle(lineWidth: 5))
-                .foregroundStyle(.white)
-                .overlay {
-                    // Foreground ring
-                    Circle()
-                        .trim(from: 0, to: 0.5 )
-                        .stroke(angleGradient, style: StrokeStyle(lineWidth: 5, lineCap: .round))
-                }
-                .rotationEffect(.degrees(-90))
-        }
-        .padding(.bottom, 20)
-        
-        HStack{
-            Spacer()
-            VStack(alignment: .center){
-                Text(stopWatchManager.waeringTimesYesterday)
-                    .font(.system(size: 20))
-                    .multilineTextAlignment(.center)
-                Text("Gester")
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-            }
-            .frame(width: 200)
-            Spacer()
-            VStack(alignment: .center){
-                Text(stopWatchManager.waeringTimesToday)
-                    .font(.system(size: 20))
-                    .multilineTextAlignment(.center)
-                Text("Heute")
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-            }
-            .frame(width: 200)
-            Spacer()
-        }
-        .padding(.bottom, 20)
-    }
-    
-    @ViewBuilder
-    func StopWatch(spacingBottom: CGFloat) -> some View {
-        HStack(alignment: .center ,spacing: 50){
-            if stopWatchManager.wearingTimerisRunning {
-                Text( stopWatchManager.storedStartTime()!, style: .timer )
-                    .font(.system(size: 60))
-                    .padding(.bottom, spacingBottom)
-            } else {
-                Text("0:00")
-                    .font(.system(size: 60))
-                    .padding(.bottom, spacingBottom)
-            }
-        }
-        .frame(maxWidth: .infinity)
-        .foregroundColor(AppConfig().fontColor)
-        
-        HStack {
-            Spacer()
-            ZStack {
-                Circle()
-                    .strokeBorder(.yellow, lineWidth: 2)
-                    .background(Circle().fill(.white.opacity(0.01)))
-                    .fontWeight(.medium)
-                    .frame(width: 60, height: 60)
-                
-                Button("Stop"){
-                    if stopWatchManager.wearingTimerisRunning {
-                        stopWatchManager.wearingTimerStop()
-                    }
-                }
-                .foregroundColor(.yellow)
-            }
-            Spacer()
-            ZStack {
-                Circle()
-                    .fill(.yellow)
-                    .frame(width: 60)
-                
-                Button("Start"){
-                    if !stopWatchManager.wearingTimerisRunning {
-                        stopWatchManager.wearingTimerStart()
-                    }
-                }
-                .foregroundColor(.black)
-                .fontWeight(.medium)
-            }
-            Spacer()
-            
-            ZStack {
-                Circle()
-                    .fill(.yellow)
-                    .frame(width: 60)
-                
-                Button("Dummy"){
-                    for index in 1...9 {
-                        stopWatchManager.addDummyTimes(times: index)
-                    }
-                }
-                .foregroundColor(.black)
-                .fontWeight(.medium)
-            }
-            Spacer()
-            
-            
-        }
-        .foregroundColor(.white)
-        .frame(maxWidth: .infinity)
-        .foregroundColor(AppConfig().fontColor)
-    }
-    
-    @ViewBuilder
-    func showProthesisTimes() -> some View {
-        HStack{
-            Spacer()
-            // Yesterday
-            VStack(alignment: .center){
-                Text(stopWatchManager.waeringTimesYesterday)
-                    .font(.system(size: 20))
-                    .foregroundColor(AppConfig().fontLight)
-                    .multilineTextAlignment(.center)
-                Text("Gester")
-                    .foregroundColor(AppConfig().fontColor)
-                    .multilineTextAlignment(.center)
-            }
-            .frame(width: 200)
-            Spacer()
-            // Today
-            VStack(alignment: .center){
-                
-                ZStack{
-                    if AppConfig().ShowToDayRecordingPercentageToAvg {
-                        PercentualChangeBadge(final: stopWatchManager.waeringTimesTodayInSeconds , initial: Double(stopWatchManager.waeringTimesAvgTimes), type: "normal")
-                            .offset(x: 0, y: -30)
-                    }
-                    Text(stopWatchManager.waeringTimesToday)
-                        .font(.system(size: 20))
-                        .foregroundColor(AppConfig().fontLight)
-                        .multilineTextAlignment(.center)
-                }
-                
-                Text("Heute")
-                    .foregroundColor(AppConfig().fontColor)
-                    .multilineTextAlignment(.center)
-            }
-            .frame(width: 200)
-            Spacer()
-        }
-    }
-    
-    @ViewBuilder
-    func ListSheetContent() -> some View {
-        List {
-            HStack{
-                Spacer()
-                VStack(alignment: .center){
-                    Text(stopWatchManager.waeringTimesYesterday)
-                        .font(.title)
-                    Text("Gester")
-                        .foregroundColor(AppConfig().fontLight)
-                }
-                Spacer()
-                VStack(alignment: .center){
-                    Text(stopWatchManager.waeringTimesToday)
-                        .font(.title)
-                    Text("Heute")
-                        .foregroundColor(AppConfig().fontLight)
-                }
-                Spacer()
-            }
-            .listRowBackground(Color.white.opacity(0.01))
-            
-            HStack{
-                Text("Aufgezeichnete Zeit")
-                Spacer()
-                Text("Datum")
-            }
-            .listRowBackground(Color.white.opacity(0.2))
-            
-            
-            ForEach(stopWatchManager.timesArray, id: \.timestamp) { time in
-                HStack {
-                    Text(stopWatchManager.convertSecondsToHrMinuteSec(seconds: Int(time.duration) ))
-                    Spacer()
-                    Text("\(time.timestamp!.formatted(.dateTime.hour().minute()) ) Uhr -")
-                    Text("\(time.timestamp!.formatted(.dateTime.day().month()) )")
-                    
-                }
-                .listRowBackground(Color.white.opacity(0.05))
-            }
-            .onDelete(perform: stopWatchManager.deleteItems)
-            
-        }
-        .refreshable {
-            do {
-                stopWatchManager.fetchTimesData()
-            }
-        }
-        .background{
-            AppConfig().backgroundGradient
-        }
-        .ignoresSafeArea()
-        .scrollContentBackground(.hidden)
-        .foregroundColor(.white)
-    }
-    
-    @ViewBuilder
-    func TimerChartScrolling(_ devideSizeWidth: CGFloat) -> some View {
-        ScrollViewReader { value in
-            ScrollView(.horizontal, showsIndicators: false){
-                HStack{
-                    Chart() {
-                       RuleMark(y: .value("Durchschnitt", stopWatchManager.waeringTimesAvgTimes ))
-                            .foregroundStyle(.yellow)
-                            .lineStyle(StrokeStyle(lineWidth: 0.5, dash: [8]))
-
-                        RuleMark(x: .value("ActiveSteps", stopWatchManager.activeDateCicle ) )
-                            .foregroundStyle(stopWatchManager.activeisActive ? .white.opacity(1) : .white.opacity(0.2))
-                            .offset(stopWatchManager.dragAmount)
-                        
-                        ForEach(stopWatchManager.waeringTimes, id: \.id) { t in
-                            AreaMark(
-                                x: .value("Dates", t.date),
-                                y: .value("Steps", t.duration)
-                            )
-                            .interpolationMethod(.catmullRom)
-                            .foregroundStyle(
-                                .linearGradient(
-                                    colors: [
-                                        Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0),
-                                        Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.1),
-                                        Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.5)
-                                    ],
-                                    startPoint: .bottom,
-                                    endPoint: .top)
-                            )
-                            
-                            LineMark(
-                                x: .value("Dates", t.date),
-                                y: .value("Steps", t.duration)
-                            )
-                            .interpolationMethod(.catmullRom)
-                            .symbol {
-                                VStack{
-                                    ZStack{
-                                        Circle()
-                                            .fill(.white)
-                                            .frame(width: 10)
-                                            .shadow(radius: 2)
-                                        
-                                        if stopWatchManager.activeDateCicle == t.date {
-                                            Circle()
-                                                .stroke(Color.white, lineWidth: 2)
-                                                .frame(width: 20)
-                                                .shadow(radius: 2)
-                                        }
-                                    }
-                                }
-                                
-                            }
-                            .foregroundStyle(
-                                .linearGradient(
-                                    colors: [
-                                        Color(red: 167/255, green: 178/255, blue: 210/255).opacity(0.5),
-                                        Color(red: 167/255, green: 178/255, blue: 210/255)
-                                    ],
-                                    startPoint: .bottom,
-                                    endPoint: .top)
-                            )
-                            .lineStyle(.init(lineWidth: 5))
-                        }
-                    }
-                    .frame(width: stopWatchManager.chartCalcItemSize())
-                    .chartOverlay { proxy in
-                        GeometryReader { geometry in
-                            ZStack(alignment: .top) {
-                                Rectangle().fill(.clear).contentShape(Rectangle())
-                                    .onTapGesture { location in
-                                        updateSelectedStep(at: location, proxy: proxy, geometry: geometry)
-                                    }
-                                    .gesture( DragGesture().onChanged { value in
-                                        // find start and end positions of the drag
-                                        let start = geometry[proxy.plotAreaFrame].origin.x
-                                        //let xStart = value.startLocation.x - start
-                                        let xCurrent = value.location.x - start
-                                        // map those positions to X-axis values in the chart
-                                        if let dateCurrent: Date = proxy.value(atX: xCurrent) {
-                                            stopWatchManager.activeDateCicle = dateCurrent //(dateStart, dateCurrent)
-                                            withAnimation(.easeIn(duration: 0.2)){
-                                                stopWatchManager.activeisActive = true
-                                            }
-                                        }
-                                        
-                                        updateSelectedStep(at: CGPoint(x: value.location.x, y: value.location.y) , proxy: proxy, geometry: geometry)
-                                    }.onEnded { value in
-                                        withAnimation(.easeOut(duration: 0.2)){
-                                            stopWatchManager.activeisActive = false
-                                        }
-                                        updateSelectedStep(at: value.predictedEndLocation, proxy: proxy, geometry: geometry)
-                                    } )
-                            }
-                        }
-                    }
-                    //Vertical
-                    .chartYAxis {
-                        let sec = stopWatchManager.waeringTimes.map { $0.duration }
-                        let min = sec.min() ?? 1000
-                        let max = sec.max() ?? 20000
-                        
-                        //let consumptionStride = Array(stride(from: min, through: max, by: (max - min)/3))
-                        let test = Array(stride(from: min, to: max, by: 5808))
-                        AxisMarks(position: .trailing, values: test) { axis in
-                            AxisGridLine(centered: true, stroke: StrokeStyle(lineWidth: 0.3, dash: [10]))
-                            
-                            AxisValueLabel(content: {
-                                if let intValue = axis.as(Int.self) {
-                                    Text("\(intValue / 3600) h")
-                                        .font(.system(size: 10))
-                                        .multilineTextAlignment(.trailing)
-                                }
-                            })
-                        }
-                        
-                    }
-                    .chartYScale(domain: stopWatchManager.chartMaxValue(margin: 3600))
-                    .chartYScale(range: .plotDimension(padding: 40))
-                    .chartXAxis {
-                        AxisMarks(values: .stride(by: .day, count: 1)) { value in
-                            AxisGridLine(stroke: StrokeStyle(lineWidth: 0.3))
-                            
-                            if value.count > 7 {
-                                AxisValueLabel(format: .dateTime.day().month())
-                            } else {
-                                AxisValueLabel(format: .dateTime.weekday(.short))
-                            }
-                            
-                            
-                        }
-                    }
-                    .chartXScale(
-                        range: .plotDimension(startPadding: 60)
-                    )
-                    
-                    Text("").id(StopWatchbottomID)
-                }
-            }
-            .onChange(of: stopWatchManager.fetchDays){ new in
-                withAnimation(.easeInOut(duration: 1)){
-                    value.scrollTo(StopWatchbottomID)
-                    TabManager().currentTab = .timer
-                }
-            }
-            .onAppear{
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
-                    withAnimation(.easeInOut(duration: 1)){
-                        value.scrollTo(StopWatchbottomID)
-                    }
-                }
-            }
-        }
-        .frame(height: 200)
-        .frame(maxWidth: .infinity)
-        .padding(.bottom)
-    }
-    
-    func updateSelectedStep(at location: CGPoint, proxy: ChartProxy, geometry: GeometryProxy) {
-        let xPosition = location.x - geometry[proxy.plotAreaFrame].origin.x
-        guard let date: Date = proxy.value(atX: xPosition) else {
-            return
-        }
-        
-        stopWatchManager.activeDateCicle = stopWatchManager.waeringTimes.sorted(by: {
-            abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date))
-        }).first?.date ?? Date()
-        
-    }
 }
+

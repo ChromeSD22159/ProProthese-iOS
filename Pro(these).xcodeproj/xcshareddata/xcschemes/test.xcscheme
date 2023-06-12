@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B63FC1282A05B49B0013652B"
-               BuildableName = "test.appex"
-               BlueprintName = "test"
-               ReferencedContainer = "container:Pro(these).xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "B6F948EC29F6ED8500BBE3A2"
                BuildableName = "Pro(these).app"
                BlueprintName = "Pro(these)"

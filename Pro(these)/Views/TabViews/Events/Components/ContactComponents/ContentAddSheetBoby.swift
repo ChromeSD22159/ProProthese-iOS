@@ -13,12 +13,28 @@ struct ContentAddSheetBoby: View {
     var titel: String
     var body: some View {
         ZStack{
-            appConfig.backgroundGradient
-                .ignoresSafeArea()
             
             VStack(){
-                Text(titel)
-                    .padding(.top)
+                HStack(alignment: .center) {
+                    
+                    Text(titel)
+                        .padding(.leading)
+                    
+                    Spacer()
+                    
+                    ZStack{
+                        Image(systemName: "xmark")
+                            .font(.title2)
+                            .padding()
+                    }
+                    .onTapGesture{
+                        withAnimation(.easeInOut) {
+                            eventManager.isAddContactSheet.toggle()
+                        }
+                    }
+                }
+                .padding()
+                
                 
                 Form {
                     Section {
@@ -57,20 +73,10 @@ struct ContentAddSheetBoby: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        Picker("Icon", selection: $eventManager.addContactIcon) {
-                            Text("bandage.fill").tag("bandage.fill")
-                            Text("figure.roll").tag("figure.roll")
-                            Text("figure.walk").tag("figure.walk")
-                        }
-                        
                         Picker("Titel", selection: $eventManager.addContactTitel) {
-                            Text("Klinikum").tag("Klinikum")
-                            Text("Fachklinik").tag("Fachklinik")
-                            Text("Hausarzt").tag("Hausarzt")
-                            Text("Orthopäde").tag("Orthopäde")
-                            Text("Sanitätshaus").tag("Sanitätshaus")
-                            Text("Physioterapeut").tag("Physioterapeut")
-                            Text("Sonstiges").tag("other")
+                            ForEach(eventManager.contactTypes, id: \.type) { contact in
+                                Text(contact.type).tag("\(contact.type)")
+                            }
                         }
                     }
                     .padding(10)

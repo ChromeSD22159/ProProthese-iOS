@@ -26,19 +26,7 @@ struct PersonalDeteilsView: View {
                     
                     SettingSetStepTarget()
                     
-                    HStack(){
-                        VStack(){
-                            Image(systemName: "person")
-                                .frame(width: 20, height: 20)
-                                .foregroundColor(.white)
-                        }
-                        .padding(20)
-                        .background(AppConfig().background)
-                        .cornerRadius(10)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.white, lineWidth: 2)
-                        )
+                    VStack(){
                        
                         VStack(alignment: .leading){
                             Text("Startseite")
@@ -48,11 +36,14 @@ struct PersonalDeteilsView: View {
                                 .toggleStyle(SwitchToggleStyle(tint: .green))
                                 .padding(.bottom, 5)
                             
-                            Picker("Flavor", selection: appConfig.$entrySite) {
+                            Picker("Startseite", selection: appConfig.$entrySite) {
                                 ForEach(Tab.allCases, id: \.id) { tab in
                                     Text("\(tab.TabTitle())").tag(tab)
                                 }
                             }
+                            .pickerStyle(.navigationLink)
+                            .tint(.white)
+                           
                         }
                         .padding(.leading)
                         

@@ -18,7 +18,7 @@ struct EventSection: View {
     
     var body: some View {
         Section(content: {
-            ForEach(data.sorted(by: { $0.date ?? Date() < $1.date ?? Date() })){ item in
+            ForEach(data.sorted(by: { $0.startDate ?? Date() < $1.startDate ?? Date() })){ item in
                 NavigateTo({
                     EventPreview(item: item)
                 }, {
@@ -33,12 +33,15 @@ struct EventSection: View {
                 
                 Spacer()
                    
-                Button(action: { eventManager.isAddEventSheet.toggle() }, label: {
-                    Label("Termin hinzufügen", systemImage: "plus")
-                        .font(.caption2)
-                        .fontWeight(.medium)
-                        .padding(.trailing, 20)
-                })
+                Button(
+                    action: {
+                        eventManager.openAddEventSheet(date: Date())
+                    }, label: {
+                        Label("Termin hinzufügen", systemImage: "plus")
+                            .font(.caption2)
+                            .fontWeight(.medium)
+                            .padding(.trailing, 20)
+                    })
             }
         })
         .tint(appConfig.fontColor)

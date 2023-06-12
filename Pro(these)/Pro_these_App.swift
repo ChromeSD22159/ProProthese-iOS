@@ -12,15 +12,15 @@ struct Pro_theseApp: App {
     let persistenceController = PersistenceController.shared
     let healthStorage = HealthStorage()
     let pushNotificationManager = PushNotificationManager()
-    let stepCounterManager = StepCounterManager()
-    let stopWatchManager = StopWatchManager()
-    let healthStore = HealthStore()
     let tabManager = TabManager()
     let eventManager = EventManager()
-    let liveActivityManager = LiveActivityManager()
-    
+    let cal = MoodCalendar()
+    let workoutStatisticViewModel = WorkoutStatisticViewModel()
+    let painViewModel = PainViewModel()
     @AppStorage("Days") var fetchDays:Int = 7
     @State private var LaunchScreen = true
+    @StateObject private var loginViewModel = LoginViewModel()
+    
     init() {
         pushNotificationManager.registerForPushNotifications()
     }
@@ -29,39 +29,52 @@ struct Pro_theseApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack{
-                
-                ContentView()
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                    .environmentObject(AppConfig())
-                    .environmentObject(TabManager())
-                    .environmentObject(healthStorage)
-                    .environmentObject(stepCounterManager)
-                    .environmentObject(pushNotificationManager)
-                    .environmentObject(stopWatchManager)
-                    .environmentObject(eventManager)
-                    .environmentObject(healthStore)
-                    .environmentObject(liveActivityManager)
-                    .onChange(of: scenePhase) { newPhase in
-                        if newPhase == .active {
-                            pushNotificationManager.removeNotificationsWhenAppLoads()
-                        } else if newPhase == .inactive {
+                if loginViewModel.appUnlocked {
+                    ContentView(loc: LocationProvider.shared.getLocation())
+                        .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                        .environmentObject(AppConfig())
+                        .environmentObject(TabManager())
+                        .environmentObject(healthStorage)
+                        .environmentObject(pushNotificationManager)
+                        .environmentObject(eventManager)
+                        .environmentObject(cal)
+                        .environmentObject(workoutStatisticViewModel)
+                        .environmentObject(painViewModel)
+                        .onChange(of: scenePhase) { newPhase in
+                            if newPhase == .active {
+                                pushNotificationManager.removeNotificationsWhenAppLoads()
+                                
+                            } else if newPhase == .inactive {
                             
-                        } else if newPhase == .background {
-                            print("APP changed to Background")
-                            if !AppConfig().PushNotificationDisable {
-                                pushNotificationManager.setUpNonPermanentNotifications()
+                            } else if newPhase == .background {
+                                print("APP changed to Background")
+                                loginViewModel.appUnlocked = false
+                                if !AppConfig().PushNotificationDisable {
+                                    pushNotificationManager.setUpNonPermanentNotifications()
+                                }
+                              
                             }
                         }
-                    }
+                
+                } else {
+                    LoginScreen()
+                        .onChange(of: scenePhase) { newPhase in
+                            if newPhase == .active {
+                                loginViewModel.requestBiometricUnlock(type: .faceID)
+                            } 
+                        }
+                        .environmentObject(loginViewModel)
+                }
+                
+                
              
-                    if LaunchScreen {
-                        LaunchScreenView()
-                    }
+                if LaunchScreen {
+                    LaunchScreenView()
+                }
 
              
             }
             .onAppear{
-                stopWatchManager.fetchTimesData()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
                     withAnimation(.easeOut(duration: 2.0)) {
                         LaunchScreen = false
@@ -72,13 +85,3 @@ struct Pro_theseApp: App {
         }
     }
 }
-
-
-/*
- 
- extension Publisher where Output: Sequence {
-     public func mapArray<Input, Out>(_ transform: @escaping (Input) -> Out) -> Publishers.Map<Self, [Out]> where Output.Element == Input {
-         map { $0.map { transform($0) } }
-     }
- }
- */

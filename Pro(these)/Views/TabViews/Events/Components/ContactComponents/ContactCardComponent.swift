@@ -19,7 +19,8 @@ struct ContactCardComponent: View {
             ForEach(contact.events?.allObjects as? [Event] ?? [] , id: \.self) { event in //
                 VStack(alignment: .leading, spacing: 10){
                     HStack(spacing: 20) {
-                        Image(systemName: event.icon ?? "Unbekanntes Icon")
+                        
+                        Image(systemName: eventManager.getIcon(event.contact?.titel ?? "other"))
                             .font(.title)
                             .foregroundColor(color)
 
@@ -29,10 +30,10 @@ struct ContactCardComponent: View {
                                 .fontWeight(.medium)
                                 
                             HStack{
-                                Text(event.date ?? Date(), style: .date)
+                                Text(event.startDate ?? Date(), style: .date)
                                     .foregroundColor(appConfig.fontLight)
                                     .font(.caption2)
-                                Text(event.date ?? Date(), style: .time)
+                                Text(event.startDate ?? Date(), style: .time)
                                     .foregroundColor(appConfig.fontLight)
                                     .font(.caption2)
                             }
@@ -47,6 +48,7 @@ struct ContactCardComponent: View {
                     }
                     
                     HStack{
+                        // FIXME: - Confirm BTN
                         Button {
                             let newTask = EventTasks(context: managedObjectContext)
                             newTask.isDone = false
@@ -92,7 +94,7 @@ struct ContactCardComponent: View {
             HStack{
  
                 Confirm(message: "\( contact.name ?? "" ) löschen? \n \n Es werden alle dazugehörigen Termine \n und Notizen gelöscht!", buttonText: "\(contact.name ?? "Termin") löschen", buttonIcon: "trash", content: {
-                    Button("Löschen") { eventManager.deleteContact(contact) }
+                    Button("Löschen") { eventManager.deleteContact(contact) }.foregroundColor(.red)
                 })
                 
                 Spacer()

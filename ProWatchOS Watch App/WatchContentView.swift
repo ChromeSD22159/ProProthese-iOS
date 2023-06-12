@@ -6,39 +6,44 @@
 //
 
 import SwiftUI
-
-// WATCH
+import WatchKit
 
 struct WatchContentView: View {
-    @ObservedObject var timerViewModel = TimerViewModel()
-
-    
+    @EnvironmentObject private var workoutManager: WorkoutManager
     var body: some View {
         NavigationStack {
             TabView{
-                StepCounterWatchView()
+
+                ChartView()
                     .tabItem {
-                        Label("figure.walk", systemImage: "square.and.pencil")
+                        Label("Chart", systemImage: "chart.bar.fill")
                     }
+                    .navigationTitle("Pro Prothese")
                 
-                VStack{
-                    TextField("Enter your name", text: $timerViewModel.textFieldValue)
-                    Button("Send to Phone") {
-                        timerViewModel.sendDataToPhone()
+                FitnessView()
+                    .tabItem {
+                        Label("Tracking", systemImage: "figure.walk")
                     }
+                    .navigationTitle("Pro Prothese Workout")
+                
+                if workoutManager.running {
+                    NowPlayingView()
+                        .tabItem {
+                            Label("Now Playing", systemImage: "play")
+                        }
+                        .navigationTitle("Pro Prothese Workout")
                 }
-                .tabItem {
-                    Label("figure.walk", systemImage: "square.and.pencil")
-                }
+                
             }
-            .navigationTitle("Pro Prothese")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
 
+
 struct WatchContentView_Previews: PreviewProvider {
     static var previews: some View {
         WatchContentView()
+            .environment(\.locale, Locale(identifier: "de"))
     }
 }

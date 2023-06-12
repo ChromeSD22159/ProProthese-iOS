@@ -23,10 +23,10 @@ struct EventTaskHeader: View {
                     .fontWeight(.medium)
                     
                 HStack{
-                    Text(item.date ?? Date(), style: .date)
+                    Text(item.startDate ?? Date(), style: .date)
                         .foregroundColor(appConfig.fontLight)
                         .font(.caption2)
-                    Text(item.date ?? Date(), style: .time)
+                    Text(item.startDate ?? Date(), style: .time)
                         .foregroundColor(appConfig.fontLight)
                         .font(.caption2)
                 }

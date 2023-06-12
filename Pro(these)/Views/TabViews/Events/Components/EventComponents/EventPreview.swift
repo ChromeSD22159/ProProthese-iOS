@@ -9,10 +9,11 @@ import SwiftUI
 
 struct EventPreview: View {
     @EnvironmentObject private var appConfig: AppConfig
+    @EnvironmentObject var eventManager: EventManager
     var item: Event
     var body: some View {
         HStack(spacing: 20) {
-            Image(systemName: item.icon ?? "")
+            Image(systemName: eventManager.getIcon(item.contact?.titel ?? "") )
                 .font(.title)
                 .foregroundColor(.yellow)
             
@@ -24,10 +25,10 @@ struct EventPreview: View {
                 }
                 
                 HStack{
-                    Text(item.date ?? Date(), style: .date)
+                    Text(item.startDate ?? Date(), style: .date)
                         .foregroundColor(appConfig.fontLight)
                         .font(.caption2)
-                    Text(item.date ?? Date(), style: .time)
+                    Text(item.startDate ?? Date(), style: .time)
                         .foregroundColor(appConfig.fontLight)
                         .font(.caption2)
                     

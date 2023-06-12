@@ -60,12 +60,16 @@ struct SettingSetStepTarget: View {
     }
     
     func reduceSteps(input: Int) {
-        let newT = input - 500
-        appConfig.targetSteps = newT
+        if appConfig.targetSteps >= 1500 {
+            let newT = input - 500
+            appConfig.targetSteps = newT
+        }
     }
     
     func maximizeSteps(input: Int) {
-        let newT = input + 500
-        appConfig.targetSteps = newT
+        if appConfig.targetSteps <= 49500 {
+            let newT = input + 500
+            appConfig.targetSteps = newT
+        }
     }
 }

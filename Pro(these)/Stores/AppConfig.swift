@@ -8,29 +8,32 @@
 import SwiftUI
 import Combine
 import Foundation
+import CoreLocation
 
 class AppConfig: ObservableObject {
+    
+    static let shared = AppConfig()
+    
     let minVersion: String = "0.0.1"
-    
-    
+
     var background          = Color(red: 32/255, green: 40/255, blue: 63/255)
     var foreground          = Color(red: 167/255, green: 178/255, blue: 210/255)
     var fontColor:Color     = .white
     var fontLight:Color     = .gray
     var backgroundLabel     = LinearGradient(colors: [Color(red: 32/255, green: 40/255, blue: 63/255)], startPoint: .top, endPoint: .bottom)
     var backgroundGradient  = LinearGradient(colors: [Color(red: 32/255, green: 40/255, blue: 63/255), Color(red: 4/255, green: 5/255, blue: 8/255)], startPoint: .top, endPoint: .bottom)
-   
+    var backgroundRadial    = RadialGradient(gradient: Gradient(colors: [ Color(red: 5/255, green: 5/255, blue: 15/255).opacity(0.7), Color(red: 5/255, green: 5/255, blue: 15/255).opacity(1) ]), center: .center, startRadius: 50, endRadius: 300)
     var backgroundGradientDark  = LinearGradient(colors: [Color(red: 5/255, green: 10/255, blue: 28/255), Color(red: 4/255, green: 5/255, blue: 19/255)], startPoint: .top, endPoint: .bottom)
     
-    
     @AppStorage("Days") var fetchDays:Int = 7
-    
-    /// Shows the App Name
-    var AppName = "Pro Prothese"
-    
+
     // MARK: PERSONAL
     /// Saves the Username
     @AppStorage("Username") var username = "Frederik"
+    
+    /// Saves the Username
+    @AppStorage("UserPin") var userPin:String = ""
+    
     /// Saves the daily Steptarget
     @AppStorage("targetSteps") var targetSteps = 10000
     /// Set the Entry Site
@@ -72,6 +75,16 @@ class AppConfig: ObservableObject {
     
     
     @AppStorage("debug") var debug = false
+    
+    
+    // MARK: - Global Strings
+    /// Shows the App Name
+    var AppName = "Pro Prothese"
+    var EventTitelUnknown = "Prothese App - Unbekanter Termin"
+    var ContactTitelUnknown = "Prothese App - Unbekanter Kontakt"
+    
+    
+    
 }
 
 enum Theme: String, CaseIterable, Identifiable {

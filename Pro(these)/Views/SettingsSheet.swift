@@ -13,10 +13,11 @@ struct SettingsSheet: View {
     var body: some View {
         NavigationView {
             ZStack {
-                appConfig.backgroundGradient
+                AppConfig.shared.backgroundRadial
                     .ignoresSafeArea()
             
                 VStack{
+                    
                     ScrollView(showsIndicators: false) {
                         VStack(spacing: 20) {
                             
@@ -59,7 +60,7 @@ struct SettingsSheet: View {
     @ViewBuilder
     func DetailView(title: String, backgroundColor: LinearGradient, foregroundColor: Color) -> some View {
         ZStack {
-            backgroundColor
+            AppConfig.shared.backgroundRadial
                 .ignoresSafeArea()
             
             ScrollView(showsIndicators: false) {

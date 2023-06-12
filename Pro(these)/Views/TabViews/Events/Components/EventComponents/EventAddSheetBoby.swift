@@ -14,18 +14,36 @@ struct EventAddSheetBoby: View {
     var titel: String
     var body: some View {
         ZStack{
-            appConfig.backgroundGradient
-                .ignoresSafeArea()
             
             VStack(){
-                Text(titel)
+                HStack(alignment: .center) {
+                    
+                    Text(titel)
+                        .padding(.leading)
+                    
+                    Spacer()
+                    
+                    ZStack{
+                        Image(systemName: "xmark")
+                            .font(.title2)
+                            .padding()
+                    }
+                    .onTapGesture{
+                        withAnimation(.easeInOut) {
+                            eventManager.isAddEventSheet.toggle()
+                        }
+                    }
+                }
+                .padding()
+               
+                
                 HStack {
                    Spacer()
                    Form {
-                       VStack(spacing: 10) {
+                       VStack(spacing: 20) {
                            VStack(alignment: .leading){
                                TextField(
-                                   "Z.b. Stump-Kontrolle",
+                                   "z.B. Stumpf-Kontrolle",
                                    text: $eventManager.addEventTitel
                                )
                                .padding(.vertical)
@@ -39,45 +57,60 @@ struct EventAddSheetBoby: View {
                                    .multilineTextAlignment(.leading)
                            }
                            
-                           Grid {
-                               GridRow {
-                                   GeometryReader { proxy in
-                                       HStack {
-                                           ForEach(eventManager.contacts , id: \.id){ contact in
-                                               Text(contact.name!).tag(contact)
-                                                   .padding(10)
-                                                   .background(contact != eventManager.addEventContact ? .white.opacity(0) : .white.opacity(0.2))
-                                                   .border( contact != eventManager.addEventContact ? .white.opacity(0.1) : .white.opacity(0.5) , width: 1)
-                                                   .onTapGesture {
-                                                       eventManager.addEventContact = contact
-                                                       eventManager.addEventIcon = contact.icon!
-                                               }
-                                               .frame(width: proxy.size.width * 0.3)
-                                           }
-                                       }
-                                   }
-                                   .frame(maxWidth: .infinity)
+                           Picker("Kontakt", selection: $eventManager.addEventContact) {
+                               Text("Bitte wählen").tag(Optional<Contact>(nil))
+                               ForEach(eventManager.contacts , id: \.id){ contact in
+                                   Text(contact.name!).tag(Optional<Contact>(contact))
+                                      
                                }
                            }
+                           .pickerStyle(.menu)
+                           .listRowBackground(Color.white.opacity(0.05))
+                           .accentColor(.white)
                            
                            DatePicker(
-                               "Datum",
-                               selection: $eventManager.addEventDate,
-                               displayedComponents: [.date]
+                              "Beginn",
+                              selection: $eventManager.addEventStarDate,
+                              displayedComponents: [.date, .hourAndMinute]
                            )
-                           .datePickerStyle(.graphical)
+                           .datePickerStyle(.compact)
                            .listRowBackground(Color.white.opacity(0.05))
+                           .accentColor(.white)
+                           .tint(.white)
                            
                            DatePicker(
-                               "Zeit",
-                               selection: $eventManager.addEventDate,
-                               displayedComponents: [.hourAndMinute]
+                               "Ende",
+                               selection: $eventManager.addEventEndDate,
+                               displayedComponents: [.date, .hourAndMinute]
                            )
-                           .datePickerStyle(.graphical)
+                           .datePickerStyle(.compact)
                            .listRowBackground(Color.white.opacity(0.05))
+                           .accentColor(.white)
+                           .tint(.white)
+                       
                            
                            Toggle("Benachtigung zum Termin senden", isOn: $eventManager.sendEventNotofication)
                                .listRowBackground(Color.white.opacity(0.05))
+                           
+                           if eventManager.sendEventNotofication {
+                               Picker("Benachrichtigen", selection: $eventManager.addEventAlarm) {
+                                   
+                                   ForEach(eventManager.alarms, id: \.text) { alarm in
+                                       Text(alarm.text).tag(alarm.ekAlarm)
+                                   }
+                                   
+                                  /* Text("10 Minuten vorher").tag(-600)
+                                   Text("30 Minuten vorher").tag(-1800)
+                                   Text("1 Stunde vorher").tag(-3600)
+                                   Text("2 Stunde vorher").tag(-7200)
+                                   Text("1 Tag vorher").tag(-86400)
+                                   Text("2 Tag vorher").tag(-172800)
+                                   Text("3 Tag vorher").tag(-259200)*/
+                               }
+                               .pickerStyle(.menu)
+                               .listRowBackground(Color.white.opacity(0.05))
+                               .accentColor(.white)
+                           }
                                         
                            Text("Es wird eine Erinnerung zu dem Termin 24 Stunden vor dem Termin gesendet.")
                                .fixedSize(horizontal: false, vertical: true)
@@ -97,7 +130,6 @@ struct EventAddSheetBoby: View {
                                Spacer()
                                
                                Button("Speichern") {
-                                   print("submit")
                                    eventManager.addEvent()
                                }
                                .padding()
@@ -114,6 +146,9 @@ struct EventAddSheetBoby: View {
             .padding(.vertical, 20)
             .scrollContentBackground(.hidden)
             .foregroundColor(.white)
+            .onChange(of: eventManager.addEventStarDate){ newDate in
+                eventManager.addEventEndDate = Calendar.current.date(byAdding: .minute, value: 30, to: newDate)!
+            }
             
         }
         .fullSizeTop()

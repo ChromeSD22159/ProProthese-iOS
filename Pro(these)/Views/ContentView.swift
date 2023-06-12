@@ -7,47 +7,131 @@
 
 import SwiftUI
 import CoreData
+import MapKit
 
 struct ContentView: View {
+    var loc:MKCoordinateRegion
+    
+    @State private var RecordViewRegion = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 47.62369790077433, longitude: 8.22015741916841),
+            latitudinalMeters: 750, longitudinalMeters: 750
+    )
     
     @EnvironmentObject private var tabManager: TabManager
     @EnvironmentObject private var healthStore: HealthStorage
-    @State var activeTab: Tab = .step
+    
+    @State var activeTab: Tab = .healthCenter
+    @State var activeSubTab: SubTab = .event
+    @State var overlay = false
+    
+    @State var showSubTab = false
+    
     var body: some View {
         
-        NavigationView {
-            ZStack {
-                AppConfig().backgroundGradient
-                    .ignoresSafeArea()
-                
-                CircleAnimationInBackground(delay: 1, duration: 2)
-                    .opacity(0.2)
-                    .ignoresSafeArea()
-                
-                VStack(){
+        GeometryReader { proxy in
+            NavigationView {
+                ZStack {
+                    // Background Darkblue
+                    AppConfig.shared.background
                     
-                    switch activeTab {
-                    case .step: StepCounterView()
-                    case .timer: StopWatchView()
-                    //case .map: LocationTracker()
-                    case .event: Events()
-                    //case .more: MoreView()
+                    // Background Darkblue with transparent RadialGradient
+                    AppConfig.shared.backgroundRadial
+                        .ignoresSafeArea()
+                    
+                    // Background Circle Animation
+                    CircleAnimationInBackground(delay: 1, duration: 2)
+                        .opacity(0.2)
+                        .ignoresSafeArea()
+                    
+                    // Map only Show when StopWatch View is Active
+                    if activeTab == .stopWatch {
+                        Map(coordinateRegion: $RecordViewRegion, showsUserLocation: true)
+                        
+                        // overlay
+                        RadialGradient(gradient: Gradient(colors: [
+                            Color(red: 5/255, green: 5/255, blue: 15/255).opacity(0.5),
+                            Color(red: 5/255, green: 5/255, blue: 15/255) //Color(red: 32/255, green: 40/255, blue: 63/255).opacity(1)
+                        ]), center: .center, startRadius: 50, endRadius: 300)
+                            .ignoresSafeArea()
                     }
                     
-                    TabStack(activeTab: $activeTab)
+                    // Content
+                    VStack(){
+                        switch activeTab {
+                            case .event: Events().padding(.bottom, 10)
+                            case .healthCenter: WorkOutEntryView().padding(.bottom, 10)
+                            //case .feeling: FeelingView().padding(.bottom, 10)
+                           
+                            case .stopWatch: StopWatchView().padding(.bottom, 10)
+                            case .add: FeelingView().padding(.bottom, 10)
+                            case .pain: PainEntry().padding(.bottom, 10)
+                        }
                         
+                        Spacer(minLength: 70)
+                    }
+                    .foregroundColor(AppConfig().foreground)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                    
+                    // Navigation
+                    VStack(){
+                        if showSubTab {
+                            ZStack{
+                                Color.black.ignoresSafeArea().opacity(showSubTab ? 0.5 : 0)
+                                AppConfig.shared.backgroundRadial.ignoresSafeArea().opacity(showSubTab ? 0.5 : 0)
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                            .background(Material.ultraThinMaterial.opacity(showSubTab ? 0.5 : 0))
+                            .ignoresSafeArea().opacity(showSubTab ? 1 : 0)
+                                .onTapGesture{
+                                    withAnimation(.easeInOut(duration: 0.3)){
+                                        showSubTab.toggle()
+                                    }
+                                }
+                        } else {
+                            Spacer()
+                        }
+                        
+                        // NavBar
+                        TabStack(activeTab: $activeTab, activeSubTab: $activeSubTab, showSubTab: $showSubTab)
+                            .frame(height: 70)
+                    }
+                    .foregroundColor(AppConfig().foreground)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                    
+                    // Header blur
+                    HeaderBackgroundBlurTop()
                 }
-                .foregroundColor(AppConfig().foreground)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
-        .sheet(isPresented: $tabManager.isSettingSheet, content: {
+        // Settings Sheet
+        .blurredSheet(.init(.ultraThinMaterial), show: $tabManager.isSettingSheet, onDismiss: {}, content: {
             SettingsSheet()
         })
+        // Deeplink from Widget
         .onOpenURL{ url in
-            activeTab = url.tabIdentifier ?? .step
+            activeTab = url.tabIdentifier ?? .healthCenter
         }
+        // Overlay
+        .overlay(overlay ? Launch_Screen().opacity(1) : Launch_Screen().opacity(0), alignment: .topTrailing)
+        // Set EntryView from User Settings
         .onAppear{
             activeTab = AppConfig().entrySite
         }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.userDidTakeScreenshotNotification)) { _ in
+            overlay.toggle()
+           
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
+                overlay.toggle()
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIScreen.capturedDidChangeNotification)) { _ in
+            overlay.toggle()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
+                overlay.toggle()
+            }
+        }
     }
+    
+    
 }

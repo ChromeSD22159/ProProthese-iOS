@@ -6,9 +6,9 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="titel" optional="YES" attributeType="String"/>
-        <relationship name="contactPersons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContactPerson" inverseName="contact" inverseEntity="ContactPerson"/>
+        <relationship name="contactPersons" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ContactPerson" inverseName="contact" inverseEntity="ContactPerson"/>
         <relationship name="events" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Event" inverseName="contact" inverseEntity="Event"/>
-        <relationship name="recurringEvents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecurringEvents" inverseName="contact" inverseEntity="RecurringEvents"/>
+        <relationship name="recurringEvents" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecurringEvents" inverseName="contact" inverseEntity="RecurringEvents"/>
     </entity>
     <entity name="ContactPerson" representedClassName="ContactPerson" syncable="YES" codeGenerationType="class">
         <attribute name="firstname" optional="YES" attributeType="String"/>
@@ -20,9 +20,10 @@
         <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="contactPersons" inverseEntity="Contact"/>
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
-        <attribute name="date" attributeType="Date" defaultDateTimeInterval="704737980" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="eventID" optional="YES" attributeType="String"/>
         <attribute name="icon" attributeType="String" defaultValueString=""/>
+        <attribute name="startDate" attributeType="Date" defaultDateTimeInterval="704737980" usesScalarValueType="NO"/>
         <attribute name="titel" attributeType="String" defaultValueString=""/>
         <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="events" inverseEntity="Contact"/>
         <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="EventTasks" inverseName="events" inverseEntity="EventTasks"/>
@@ -34,6 +35,10 @@
         <attribute name="text" optional="YES" attributeType="String"/>
         <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="tasks" inverseEntity="Event"/>
     </entity>
+    <entity name="Feeling" representedClassName="Feeling" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
@@ -44,6 +49,22 @@
         <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="trackID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Pain" representedClassName="Pain" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="painIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="painDrugs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PainDrug" inverseName="pain" inverseEntity="PainDrug"/>
+        <relationship name="painReasons" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PainReason" inverseName="pains" inverseEntity="PainReason"/>
+    </entity>
+    <entity name="PainDrug" representedClassName="PainDrug" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="pain" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pain" inverseName="painDrugs" inverseEntity="Pain"/>
+    </entity>
+    <entity name="PainReason" representedClassName="PainReason" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="pains" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pain" inverseName="painReasons" inverseEntity="Pain"/>
     </entity>
     <entity name="RecurringEvents" representedClassName="RecurringEvents" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
