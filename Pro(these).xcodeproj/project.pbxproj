@@ -266,7 +266,7 @@
 		B6EEC4B629FD3F39004E2F2F /* ProWatchOS Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ProWatchOS Watch App.entitlements"; sourceTree = "<group>"; };
 		B6EEC4C229FEF222004E2F2F /* ClockKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClockKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/ClockKit.framework; sourceTree = DEVELOPER_DIR; };
 		B6EEC4C729FEF30B004E2F2F /* ProWatchOS-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProWatchOS-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro(these).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F948ED29F6ED8500BBE3A2 /* Pro-these-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro-these-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F948F029F6ED8500BBE3A2 /* Pro_these_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro_these_App.swift; sourceTree = "<group>"; };
 		B6F948F229F6ED8500BBE3A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6F948F429F6ED8700BBE3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -622,7 +622,7 @@
 		B6F948EE29F6ED8500BBE3A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */,
+				B6F948ED29F6ED8500BBE3A2 /* Pro-these-.app */,
 				B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */,
 			);
 			name = Products;
@@ -756,9 +756,9 @@
 			productReference = B6E3B3DA29FD1B5900341144 /* ProWatchOS Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B6F948EC29F6ED8500BBE3A2 /* Pro(these) */ = {
+		B6F948EC29F6ED8500BBE3A2 /* Pro-these- */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6F9490129F6ED8700BBE3A2 /* Build configuration list for PBXNativeTarget "Pro(these)" */;
+			buildConfigurationList = B6F9490129F6ED8700BBE3A2 /* Build configuration list for PBXNativeTarget "Pro-these-" */;
 			buildPhases = (
 				B6F948E929F6ED8500BBE3A2 /* Sources */,
 				B6F948EA29F6ED8500BBE3A2 /* Frameworks */,
@@ -772,9 +772,9 @@
 			dependencies = (
 				B6E3B3E629FD1B5A00341144 /* PBXTargetDependency */,
 			);
-			name = "Pro(these)";
+			name = "Pro-these-";
 			productName = "Pro(these)";
-			productReference = B6F948ED29F6ED8500BBE3A2 /* Pro(these).app */;
+			productReference = B6F948ED29F6ED8500BBE3A2 /* Pro-these-.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -785,7 +785,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					B6E3B3D929FD1B5900341144 = {
 						CreatedOnToolsVersion = 14.2;
@@ -802,13 +802,14 @@
 			knownRegions = (
 				en,
 				de,
+				Base,
 			);
 			mainGroup = B6F948E429F6ED8500BBE3A2;
 			productRefGroup = B6F948EE29F6ED8500BBE3A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6F948EC29F6ED8500BBE3A2 /* Pro(these) */,
+				B6F948EC29F6ED8500BBE3A2 /* Pro-these- */,
 				B6E3B3D929FD1B5900341144 /* ProWatchOS Watch App */,
 			);
 		};
@@ -1052,6 +1053,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1112,6 +1114,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1168,6 +1171,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Pro(these)/Pro(these).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1176,6 +1180,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pro-these--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pro Prothese";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Calendar ";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use FaceId vor unlock";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Record Healthkit Data";
@@ -1215,6 +1221,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Pro(these)/Pro(these).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1223,6 +1230,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pro-these--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pro Prothese";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Calendar ";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use FaceId vor unlock";
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Record Healthkit Data";
@@ -1277,7 +1286,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6F9490129F6ED8700BBE3A2 /* Build configuration list for PBXNativeTarget "Pro(these)" */ = {
+		B6F9490129F6ED8700BBE3A2 /* Build configuration list for PBXNativeTarget "Pro-these-" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6F9490229F6ED8700BBE3A2 /* Debug */,
