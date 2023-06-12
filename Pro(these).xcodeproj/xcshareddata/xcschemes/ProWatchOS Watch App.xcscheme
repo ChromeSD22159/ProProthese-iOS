@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B6F948EC29F6ED8500BBE3A2"
-               BuildableName = "Pro(these).app"
-               BlueprintName = "Pro(these)"
+               BuildableName = "Pro-these-.app"
+               BlueprintName = "Pro-these-"
                ReferencedContainer = "container:Pro(these).xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
