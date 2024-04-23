@@ -1,0 +1,36 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Feeling/AddFeelingSheetBody.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "How are you doing?"
+      },
+      {
+        "comment": "",
+        "key": "Hey! Has anything\nchanged?"
+      },
+      {
+        "comment": "",
+        "key": "Hey! How are you\nfeeling today?"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Edit"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": ""
+      }
+    ]
+  },
+  "version": 1
+}

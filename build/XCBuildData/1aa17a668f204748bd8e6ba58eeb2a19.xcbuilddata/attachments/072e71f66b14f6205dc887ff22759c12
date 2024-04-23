@@ -1,0 +1,58 @@
+{
+  "" : {
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ProthesesIntentsUI-master.dia",
+    "emit-module-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ProthesesIntentsUI-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ProthesesIntentsUI-master-emit-module.dia",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ProthesesIntentsUI-master.swiftdeps"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/ChartData.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/ChartData~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/StepsByHour.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/StepsByHour~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Workout.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/Workout~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProthesesIntentsUI/IntentViewController.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/IntentViewController~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Shared/WatchConnectivityProvider.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphonesimulator/ProthesesIntentsUI.build/Objects-normal-asan/arm64/WatchConnectivityProvider~partial.swiftmodule"
+  }
+}

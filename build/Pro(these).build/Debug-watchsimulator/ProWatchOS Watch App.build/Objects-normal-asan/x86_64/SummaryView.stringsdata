@@ -1,0 +1,24 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProWatchOS Watch App/Tabs/Fitness/SummaryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Saving workout"
+      },
+      {
+        "comment": "",
+        "key": "Summary"
+      },
+      {
+        "comment": "",
+        "key": "Activity Rings"
+      },
+      {
+        "comment": "",
+        "key": "Done"
+      }
+    ]
+  },
+  "version": 1
+}

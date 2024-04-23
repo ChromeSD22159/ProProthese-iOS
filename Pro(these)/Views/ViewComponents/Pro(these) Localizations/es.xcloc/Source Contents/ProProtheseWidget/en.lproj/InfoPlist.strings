@@ -1,0 +1,12 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "ProProtheseWidget";
+/* Bundle name */
+"CFBundleName" = "ProProtheseWidgetExtension";
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "ProProtheseWidgetExtension wants to save your active readings";
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "ProProtheseWidgetExtension wants to access your active readings";
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "ProProtheseWidgetExtension wants to change your active readings";
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "";

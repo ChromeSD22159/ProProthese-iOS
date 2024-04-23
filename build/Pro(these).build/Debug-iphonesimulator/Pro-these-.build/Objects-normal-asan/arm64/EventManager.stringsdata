@@ -1,0 +1,88 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/ViewManager/Events/EventManager.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Hospital"
+      },
+      {
+        "comment": "",
+        "key": "Specialist Clinic"
+      },
+      {
+        "comment": "",
+        "key": "family doctor"
+      },
+      {
+        "comment": "",
+        "key": "orthopedist"
+      },
+      {
+        "comment": "",
+        "key": "Health insurance"
+      },
+      {
+        "comment": "",
+        "key": "Medical supply store"
+      },
+      {
+        "comment": "",
+        "key": "Physiotherapist"
+      },
+      {
+        "comment": "",
+        "key": "Psychiatrist"
+      },
+      {
+        "comment": "",
+        "key": "Psychologist"
+      },
+      {
+        "comment": "",
+        "key": "Others"
+      },
+      {
+        "comment": "",
+        "key": "10 minutes before"
+      },
+      {
+        "comment": "",
+        "key": "30 minutes before"
+      },
+      {
+        "comment": "",
+        "key": "1 hours before"
+      },
+      {
+        "comment": "",
+        "key": "2 hours before"
+      },
+      {
+        "comment": "",
+        "key": "1 day before"
+      },
+      {
+        "comment": "",
+        "key": "2 days before"
+      },
+      {
+        "comment": "",
+        "key": "3 days before"
+      },
+      {
+        "comment": "",
+        "key": "Please provide a contact!"
+      },
+      {
+        "comment": "",
+        "key": "Please enter an appointment description!"
+      }
+    ]
+  },
+  "version": 1
+}

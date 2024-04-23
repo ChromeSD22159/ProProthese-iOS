@@ -1,0 +1,20 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Settings/SettingsDeteilsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Zeige erfüllte Tagesziele Schrittüberischt Schrittüberischt"
+      },
+      {
+        "comment": "",
+        "key": "Zeigt den Record Button auch auf der Schrittüberischt an."
+      },
+      {
+        "comment": "",
+        "key": "Page Header"
+      }
+    ]
+  },
+  "version": 1
+}

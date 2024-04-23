@@ -1,0 +1,40 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewComponents/LoginScreen.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Enter the code"
+      },
+      {
+        "comment": "",
+        "key": "FaceID"
+      },
+      {
+        "comment": "",
+        "key": "Create Pin Code"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      },
+      {
+        "comment": "",
+        "key": "Del"
+      },
+      {
+        "comment": "",
+        "key": "Reset"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "Login with Face ID"
+      }
+    ]
+  },
+  "version": 1
+}

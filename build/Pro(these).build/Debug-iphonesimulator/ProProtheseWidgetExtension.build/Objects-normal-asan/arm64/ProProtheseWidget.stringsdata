@@ -1,0 +1,28 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Widgets/ProProtheseWidget.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Small Widget"
+      },
+      {
+        "comment": "",
+        "key": "Large Widget"
+      },
+      {
+        "comment": "",
+        "key": "Default"
+      },
+      {
+        "comment": "",
+        "key": "My Widget"
+      },
+      {
+        "comment": "",
+        "key": "This is an example widget."
+      }
+    ]
+  },
+  "version": 1
+}

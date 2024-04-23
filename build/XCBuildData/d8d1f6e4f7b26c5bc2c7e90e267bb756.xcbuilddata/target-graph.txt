@@ -1,0 +1,42 @@
+Target dependency graph (16 targets)
+Target 'Pro-these-' in project 'Pro(these)'
+➜ Explicit dependency on target 'ProWatchOS Watch App' in project 'Pro(these)'
+➜ Explicit dependency on target 'ProProtheseWidgetExtension' in project 'Pro(these)'
+➜ Explicit dependency on target 'ProthesesIntentsUI' in project 'Pro(these)'
+➜ Explicit dependency on target 'ProthesesIntents' in project 'Pro(these)'
+➜ Implicit dependency on target 'Pods-Pro-these-' in project 'Pods' via file 'Pods_Pro_these_.framework' in build phase 'Link Binary'
+➜ Implicit dependency on target 'Alamofire' in project 'Pods' via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'PromisesObjC' in project 'Pods' via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'GoogleUtilities' in project 'Pods' via options '-framework GoogleUtilities' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'Promises' in project 'Pods' via options '-framework Promise' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'nanopb' in project 'Pods' via options '-framework nanopb' in build setting 'OTHER_LDFLAGS'
+Target 'Pods-Pro-these-' in project 'Pods'
+➜ Explicit dependency on target 'Alamofire' in project 'Pods'
+➜ Explicit dependency on target 'Google-Mobile-Ads-SDK' in project 'Pods'
+➜ Explicit dependency on target 'GoogleAppMeasurement' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUserMessagingPlatform' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+➜ Explicit dependency on target 'Promises' in project 'Pods'
+➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+➜ Explicit dependency on target 'nanopb' in project 'Pods'
+Target 'Promises' in project 'Pods' (no dependencies)
+Target 'Google-Mobile-Ads-SDK' in project 'Pods'
+➜ Explicit dependency on target 'GoogleAppMeasurement' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUserMessagingPlatform' in project 'Pods'
+Target 'GoogleUserMessagingPlatform' in project 'Pods' (no dependencies)
+Target 'GoogleAppMeasurement' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+➜ Explicit dependency on target 'nanopb' in project 'Pods'
+Target 'nanopb' in project 'Pods' (no dependencies)
+Target 'GoogleUtilities' in project 'Pods'
+➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+Target 'PromisesObjC' in project 'Pods' (no dependencies)
+Target 'Alamofire' in project 'Pods' (no dependencies)
+Target 'ProthesesIntents' in project 'Pro(these)' (no dependencies)
+Target 'ProthesesIntentsUI' in project 'Pro(these)' (no dependencies)
+Target 'ProProtheseWidgetExtension' in project 'Pro(these)' (no dependencies)
+Target 'ProWatchOS Watch App' in project 'Pro(these)'
+➜ Explicit dependency on target 'ProProtheseWatchComplicationExtension' in project 'Pro(these)'
+➜ Explicit dependency on target 'StopWatchComplicationExtension' in project 'Pro(these)'
+Target 'StopWatchComplicationExtension' in project 'Pro(these)' (no dependencies)
+Target 'ProProtheseWatchComplicationExtension' in project 'Pro(these)' (no dependencies)

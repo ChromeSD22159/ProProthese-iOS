@@ -1,0 +1,18 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/HandlerStates.swift":
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/HandlerStates.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/HandlerStates.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/HandlerStates.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/HandlerStates.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/HandlerStates.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/String.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/String.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/String.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/String.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/String.o"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/String.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/StepsByHour.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/StepsByHour.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/StepsByHour.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/StepsByHour.o"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/StepsByHour.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/StepsByHour.d"

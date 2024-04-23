@@ -1,0 +1,44 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Weekly Report"
+      },
+      {
+        "comment": "",
+        "key": "%lld Steps"
+      },
+      {
+        "comment": "",
+        "key": "⌀ Steps"
+      },
+      {
+        "comment": "",
+        "key": "%@ hrs. %@ mins."
+      },
+      {
+        "comment": "",
+        "key": "Total Wearingtime"
+      },
+      {
+        "comment": "",
+        "key": "⌀ Wearingtime"
+      },
+      {
+        "comment": "",
+        "key": "%@ km"
+      },
+      {
+        "comment": "",
+        "key": "Total Distance"
+      },
+      {
+        "comment": "",
+        "key": "Done!"
+      }
+    ]
+  },
+  "version": 1
+}

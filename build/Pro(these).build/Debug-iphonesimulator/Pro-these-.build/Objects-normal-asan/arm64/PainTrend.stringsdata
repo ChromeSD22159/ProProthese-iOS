@@ -1,0 +1,28 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Home/Pain/PainTrend.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Weekly Pain Trend"
+      },
+      {
+        "comment": "",
+        "key": "Montly Pain Trend"
+      },
+      {
+        "comment": "",
+        "key": "Your Pain trend compared to the week before."
+      },
+      {
+        "comment": "",
+        "key": "Your Pain trend compared to the month before."
+      },
+      {
+        "comment": "",
+        "key": "%@ %lld%%"
+      }
+    ]
+  },
+  "version": 1
+}

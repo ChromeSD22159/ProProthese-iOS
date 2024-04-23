@@ -1,0 +1,12 @@
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "Pró Prótese quer salvar suas métricas ativas";
+
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "Pró Prótese quer acessar suas métricas ativas";
+
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "Pró Prótese wants to change your active metrics";
+
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "Pró Prótese precisa de acesso à sua localização para acompanhar seus treinos";
+

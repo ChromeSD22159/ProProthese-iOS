@@ -1,0 +1,24 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Home/Steps/StepTargetReached.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Achieved step goals"
+      },
+      {
+        "comment": "",
+        "key": "Did you reach your step goal in the last %lld days?"
+      },
+      {
+        "comment": "",
+        "key": "%lld%%"
+      },
+      {
+        "comment": "",
+        "key": "%lldx"
+      }
+    ]
+  },
+  "version": 1
+}

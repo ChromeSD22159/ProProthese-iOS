@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>INEnums</key>
+	<array/>
+	<key>INIntentDefinitionModelVersion</key>
+	<string>1.2</string>
+	<key>INIntentDefinitionNamespace</key>
+	<string>yZSr7A</string>
+	<key>INIntentDefinitionSystemVersion</key>
+	<string>22G91</string>
+	<key>INIntentDefinitionToolsBuildVersion</key>
+	<string>15A240d</string>
+	<key>INIntentDefinitionToolsVersion</key>
+	<string>15.0</string>
+	<key>INIntents</key>
+	<array>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>generic</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescription</key>
+			<string>Start prosthesis timer</string>
+			<key>INIntentDescriptionID</key>
+			<string>cXqulJ</string>
+			<key>INIntentHash</key>
+			<integer>4029988193776907245</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Start prosthesis timer</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>r0knNY</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>StartProthesenTimer</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSubtitle</key>
+					<string>Start prosthesis timer</string>
+					<key>INIntentParameterCombinationSubtitleID</key>
+					<string>vayn4B</string>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Start prosthesis timer</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>gsNqMZ</string>
+				</dict>
+			</dict>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Prosthesis timer has started</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>d4W2CX</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Prosthesis timer has started</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>ttM0xC</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Prosthesis timer could not be started</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>LwQxRS</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Prosthesis timer could not be started</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>bfEftQ</string>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Start prosthesis timer</string>
+			<key>INIntentTitleID</key>
+			<string>bBaTPl</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Do</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>generic</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescription</key>
+			<string>Stop prosthesis timer</string>
+			<key>INIntentDescriptionID</key>
+			<string>AbS8yk</string>
+			<key>INIntentHash</key>
+			<integer>789486851746057219</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Stop prosthesis timer</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>uFdZBu</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>StopProthesenTimer</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationIsPrimary</key>
+					<true/>
+					<key>INIntentParameterCombinationSubtitle</key>
+					<string>Stop prosthesis timer</string>
+					<key>INIntentParameterCombinationSubtitleID</key>
+					<string>E9FbBd</string>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Stop prosthesis timer</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>iTK4Dz</string>
+				</dict>
+			</dict>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Prosthesis timer has stopped</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>d4W2CX</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Prosthesis timer has stopped</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>dxWXfc</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Prosthesis timer could not be stopped</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>LwQxRS</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Prosthesis timer could not be stopped</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>U5s3h9</string>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Stop prosthesis timer</string>
+			<key>INIntentTitleID</key>
+			<string>81uxx2</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Do</string>
+		</dict>
+	</array>
+	<key>INTypes</key>
+	<array/>
+</dict>
+</plist>

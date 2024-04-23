@@ -1,0 +1,17 @@
+{
+  "images" : [
+    {
+      "locale" : "pt-PT",
+      "idiom" : "iphone",
+      "filename" : "background3_pt-PT.jpg",
+      "scale" : "1x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}

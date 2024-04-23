@@ -1,0 +1,51 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Pro Prothese";
+
+/* Bundle name */
+"CFBundleName" = "Pro Prothese";
+
+/* Privacy - NFC Scan Usage Description */
+"NFCReaderUsageDescription" = "Pro Prothese möchte auf NFC-Tags zugreifen, um sie lesen zu können.";
+
+/* Privacy - Calendars Usage Description */
+"NSCalendarsUsageDescription" = "Pro Prothese möchte auf Ihren Kalender zugreifen und Einträge erstellen oder löschen.";
+
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Pro Prothese möchte die Kamera verwenden";
+
+/* Privacy - Contacts Usage Description */
+"NSContactsUsageDescription" = "Pro Prothese möchte auf Ihre Kontakte zugreifen und neue Kontaktpersonen erstellen.";
+
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Die Prothesen App möchte die App per FaceID entsperren";
+
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "Die Prothesen App möchte auf Ihre aktiven Messwerte zugreifen";
+
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "Die Prothesen App möchte auf Ihre aktiven Messwerte zugreifen";
+
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "Die Prothesen App möchte auf Ihre aktiven Messwerte zugreifen";
+
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Die Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen";
+
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Die Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Die Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen";
+
+/* Privacy - Motion Usage Description */
+"NSMotionUsageDescription" = "Pro Prothese möchte auf Schrittzahlen zugreifen, damit diese ausgelesen werden können.";
+
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "Die Prothesen App  möchte Schnappschüsse in Ihrer Foto-App speichern";
+
+/* Privacy - Siri Usage Description */
+"NSSiriUsageDescription" = "Pro Prothese möchte Zugriff haben, damit Sie mit Siri sprechen können.";
+
+/* Privacy - Tracking Usage Description */
+"NSUserTrackingUsageDescription" = "Pro Prothese wird verwendet, um Ihnen personalisierte Werbung zu liefern.";
+

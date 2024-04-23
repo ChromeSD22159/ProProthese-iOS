@@ -1,0 +1,176 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Events/Components/ContactComponents/ContactDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Contact Person"
+      },
+      {
+        "comment": "",
+        "key": "Add Contact person!"
+      },
+      {
+        "comment": "",
+        "key": "No contact available."
+      },
+      {
+        "comment": "",
+        "key": "Repeating notifications"
+      },
+      {
+        "comment": "",
+        "key": "No notifications available."
+      },
+      {
+        "comment": "",
+        "key": "delete '%@'?"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Delete"
+      },
+      {
+        "comment": "",
+        "key": "Events"
+      },
+      {
+        "comment": "",
+        "key": "Salutation"
+      },
+      {
+        "comment": "",
+        "key": "---"
+      },
+      {
+        "comment": "",
+        "key": "Mister"
+      },
+      {
+        "comment": "",
+        "key": "Woman"
+      },
+      {
+        "comment": "",
+        "key": "Import Contact"
+      },
+      {
+        "comment": "",
+        "key": "%@ %@"
+      },
+      {
+        "comment": "",
+        "key": "First name:"
+      },
+      {
+        "comment": "",
+        "key": "Max"
+      },
+      {
+        "comment": "",
+        "key": "First name"
+      },
+      {
+        "comment": "",
+        "key": "Last name:"
+      },
+      {
+        "comment": "",
+        "key": "Musterman"
+      },
+      {
+        "comment": "",
+        "key": "Last name"
+      },
+      {
+        "comment": "",
+        "key": "Phone:"
+      },
+      {
+        "comment": "",
+        "key": "Phone Nr."
+      },
+      {
+        "comment": "",
+        "key": "040 / 1234"
+      },
+      {
+        "comment": "",
+        "key": "Mobilphone:"
+      },
+      {
+        "comment": "",
+        "key": "Mobilphone Nr."
+      },
+      {
+        "comment": "",
+        "key": "0174 / 123 456"
+      },
+      {
+        "comment": "",
+        "key": "E-Mail:"
+      },
+      {
+        "comment": "",
+        "key": "info@email.de"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "Add repeating events"
+      },
+      {
+        "comment": "",
+        "key": "Please enter a name!"
+      },
+      {
+        "comment": "",
+        "key": "Name:"
+      },
+      {
+        "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "Rhythm"
+      },
+      {
+        "comment": "",
+        "key": "Weekly"
+      },
+      {
+        "comment": "",
+        "key": "Monthly"
+      },
+      {
+        "comment": "",
+        "key": "Quarterly"
+      },
+      {
+        "comment": "",
+        "key": "Half-yearly"
+      },
+      {
+        "comment": "",
+        "key": "Date:"
+      },
+      {
+        "comment": "",
+        "key": "Zeit:"
+      }
+    ]
+  },
+  "version": 1
+}

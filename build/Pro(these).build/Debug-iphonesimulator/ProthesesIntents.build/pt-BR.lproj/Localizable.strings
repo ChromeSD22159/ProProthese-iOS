@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Everyday Prosthesis</key>
+	<string>Prótese Diária</string>
+	<key>Everyday Prosthesis Liner</key>
+	<string>Liner de prótese diário</string>
+	<key>Maintaince of the Everyday Prosthesis</key>
+	<string>Manutenção da Prótese Diária</string>
+	<key>Maintaince of the Replacement Prosthesis</key>
+	<string>Manutenção da prótese de substituição</string>
+	<key>Maintaince of the Sports Prosthesis</key>
+	<string>Manutenção da prótese esportiva</string>
+	<key>Maintaince of the Waterproof Prosthesis</key>
+	<string>Manutenção da Prótese Impermeável</string>
+	<key>No Prosthesis</key>
+	<string>Sem prótese</string>
+	<key>No Prosthesis Liner</key>
+	<string>Sem liner de prótese</string>
+	<key>Order your liner for the Everyday Prosthesis in good time!</key>
+	<string>Encomende atempadamente o seu liner para a Prótese Everyday!</string>
+	<key>Order your liner for the Replacement Prosthesis in good time!</key>
+	<string>Encomende atempadamente o seu liner para a prótese de substituição!</string>
+	<key>Order your liner for the Sports Prosthesis in good time!</key>
+	<string>Encomende atempadamente o seu liner para a prótese desportiva!</string>
+	<key>Order your liner for the Waterproof Prosthesis in good time!</key>
+	<string>Encomende atempadamente o seu liner para a Prótese Impermeável!</string>
+	<key>Replacement Prosthesis</key>
+	<string>Prótese de substituição</string>
+	<key>Replacement Prosthesis Liner</key>
+	<string>Liner protético de reposição</string>
+	<key>Sports Prosthesis</key>
+	<string>Prótese esportiva</string>
+	<key>Sports Prosthesis Liner</key>
+	<string>Liner de Prótese Esportiva</string>
+	<key>The next maintenance appointment for your Everyday Prosthesis!</key>
+	<string>A próxima consulta de manutenção para a sua Prótese Diária!</string>
+	<key>The next maintenance appointment for your Replacement Prosthesis!</key>
+	<string>A próxima consulta de manutenção da sua prótese de substituição!</string>
+	<key>The next maintenance appointment for your Sports Prosthesis!</key>
+	<string>A próxima consulta de manutenção da sua prótese desportiva!</string>
+	<key>The next maintenance appointment for your Waterproof Prosthesis!</key>
+	<string>A próxima consulta de manutenção da sua Prótese Impermeável!</string>
+	<key>Waterproof Prosthesis</key>
+	<string>Prótese impermeável</string>
+	<key>Waterproof Prosthesis Liner</key>
+	<string>Liner de dentadura impermeáveis</string>
+</dict>
+</plist>

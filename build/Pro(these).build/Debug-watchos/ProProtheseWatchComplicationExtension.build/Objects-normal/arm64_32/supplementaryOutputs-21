@@ -1,0 +1,18 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Theme.swift":
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Theme.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Theme.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Theme.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Theme.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Theme.swiftdeps"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Int.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Int.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Int.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Int.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Int.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Int.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Date.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Date.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Date.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Date.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Date.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/Date.swiftconstvalues"

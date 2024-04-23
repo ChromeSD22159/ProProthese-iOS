@@ -1,0 +1,60 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Events/Components/EventComponents/EventAddSheetBoby.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@ edit"
+      },
+      {
+        "comment": "",
+        "key": "Contact"
+      },
+      {
+        "comment": "",
+        "key": "Beginning"
+      },
+      {
+        "comment": "",
+        "key": "End"
+      },
+      {
+        "comment": "",
+        "key": "Send appointment notification"
+      },
+      {
+        "comment": "",
+        "key": "Notification"
+      },
+      {
+        "comment": "",
+        "key": "A reminder about the appointment will be sent 24 hours before the appointment."
+      },
+      {
+        "comment": "",
+        "key": "e.g. control"
+      },
+      {
+        "comment": "",
+        "key": "Please choose"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "Create new appointment"
+      },
+      {
+        "comment": "",
+        "key": "notify"
+      }
+    ]
+  },
+  "version": 1
+}

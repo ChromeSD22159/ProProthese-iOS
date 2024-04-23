@@ -1,0 +1,64 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Events/Components/EventComponents/EventSection.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "This Month"
+      },
+      {
+        "comment": "",
+        "key": "Next Month"
+      },
+      {
+        "comment": "",
+        "key": "This Week"
+      },
+      {
+        "comment": "",
+        "key": "Next Week"
+      },
+      {
+        "comment": "",
+        "key": "Last week"
+      },
+      {
+        "comment": "",
+        "key": "All appointments"
+      },
+      {
+        "comment": "",
+        "key": "Past appointments"
+      },
+      {
+        "comment": "",
+        "key": "(%lld)"
+      },
+      {
+        "comment": "",
+        "key": "Termin"
+      },
+      {
+        "comment": "",
+        "key": "No events for this month!"
+      },
+      {
+        "comment": "",
+        "key": "No events for next month!"
+      },
+      {
+        "comment": "",
+        "key": "No events for this week!"
+      },
+      {
+        "comment": "",
+        "key": "No events for next week!"
+      },
+      {
+        "comment": "",
+        "key": "There were no events last week!"
+      }
+    ]
+  },
+  "version": 1
+}

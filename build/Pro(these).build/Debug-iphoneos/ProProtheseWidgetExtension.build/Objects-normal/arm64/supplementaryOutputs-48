@@ -1,0 +1,48 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Widgets/ProProtheseWidgetPain.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidgetPain.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidgetPain.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidgetPain.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidgetPain.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidgetPain.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/DerivedSources/CoreDataGenerated/Pro_these_/BackgroundTaskItem+CoreDataClass.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataClass.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataClass.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataClass.dia"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataClass.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataClass.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/DerivedSources/CoreDataGenerated/Pro_these_/Contact+CoreDataProperties.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataProperties.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataProperties.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataProperties.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataProperties.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataProperties.swiftdeps"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/DerivedSources/CoreDataGenerated/Pro_these_/Contact+CoreDataClass.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataClass.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataClass.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataClass.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataClass.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Contact+CoreDataClass.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Prothesis.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Prothesis.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Prothesis.dia"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Prothesis.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Prothesis.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/Prothesis.swiftdeps"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/UrlExtension.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/UrlExtension.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/UrlExtension.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/UrlExtension.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/UrlExtension.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/UrlExtension.o"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/DerivedSources/CoreDataGenerated/Pro_these_/BackgroundTaskItem+CoreDataProperties.swift":
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataProperties.dia"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataProperties.swiftconstvalues"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataProperties.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataProperties.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/BackgroundTaskItem+CoreDataProperties.o"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Widgets/ProProtheseWidget.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidget.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidget.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidget.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidget.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProProtheseWidgetExtension.build/Objects-normal/arm64/ProProtheseWidget.swiftdeps"

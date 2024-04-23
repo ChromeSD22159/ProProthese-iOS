@@ -1,0 +1,57 @@
+Target dependency graph (20 targets)
+ProProtheseWidgetExtension in Pro(these), no dependencies
+PromisesObjC in Pods, no dependencies
+GoogleUtilities in Pods, depends on:
+PromisesObjC in Pods (explicit)
+nanopb in Pods, no dependencies
+GoogleAppMeasurement in Pods, depends on:
+GoogleUtilities in Pods (explicit)
+nanopb in Pods (explicit)
+GoogleUserMessagingPlatform in Pods, no dependencies
+Google-Mobile-Ads-SDK in Pods, depends on:
+GoogleAppMeasurement in Pods (explicit)
+GoogleUserMessagingPlatform in Pods (explicit)
+Promises in Pods, no dependencies
+Pods-Pro-these- in Pods, depends on:
+Google-Mobile-Ads-SDK in Pods (explicit)
+GoogleAppMeasurement in Pods (explicit)
+GoogleUserMessagingPlatform in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+Promises in Pods (explicit)
+PromisesObjC in Pods (explicit)
+nanopb in Pods (explicit)
+Pro-these- in Pro(these), depends on:
+ProProtheseWidgetExtension in Pro(these) (explicit)
+Pods-Pro-these- in Pods (implicit dependency via file 'Pods_Pro_these_.framework' in build phase 'Link Binary')
+PromisesObjC in Pods (implicit dependency via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS')
+GoogleUtilities in Pods (implicit dependency via options '-framework GoogleUtilities' in build setting 'OTHER_LDFLAGS')
+Promises in Pods (implicit dependency via options '-framework Promise' in build setting 'OTHER_LDFLAGS')
+nanopb in Pods (implicit dependency via options '-framework nanopb' in build setting 'OTHER_LDFLAGS')
+ProProtheseWidgetExtension in Pro(these), no dependencies
+PromisesObjC in Pods, no dependencies
+GoogleUtilities in Pods, depends on:
+PromisesObjC in Pods (explicit)
+nanopb in Pods, no dependencies
+GoogleAppMeasurement in Pods, depends on:
+GoogleUtilities in Pods (explicit)
+nanopb in Pods (explicit)
+GoogleUserMessagingPlatform in Pods, no dependencies
+Google-Mobile-Ads-SDK in Pods, depends on:
+GoogleAppMeasurement in Pods (explicit)
+GoogleUserMessagingPlatform in Pods (explicit)
+Promises in Pods, no dependencies
+Pods-Pro-these- in Pods, depends on:
+Google-Mobile-Ads-SDK in Pods (explicit)
+GoogleAppMeasurement in Pods (explicit)
+GoogleUserMessagingPlatform in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+Promises in Pods (explicit)
+PromisesObjC in Pods (explicit)
+nanopb in Pods (explicit)
+Pro-these- in Pro(these), depends on:
+ProProtheseWidgetExtension in Pro(these) (explicit)
+Pods-Pro-these- in Pods (implicit dependency via file 'Pods_Pro_these_.framework' in build phase 'Link Binary')
+PromisesObjC in Pods (implicit dependency via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS')
+GoogleUtilities in Pods (implicit dependency via options '-framework GoogleUtilities' in build setting 'OTHER_LDFLAGS')
+Promises in Pods (implicit dependency via options '-framework Promise' in build setting 'OTHER_LDFLAGS')
+nanopb in Pods (implicit dependency via options '-framework nanopb' in build setting 'OTHER_LDFLAGS')

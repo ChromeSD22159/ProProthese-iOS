@@ -1,0 +1,68 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Notification/PushNotifications_OLD.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "We haven't seen you today 😢"
+      },
+      {
+        "comment": "",
+        "key": "Come back soon, it will be exciting ✌️"
+      },
+      {
+        "comment": "",
+        "key": "How are you doing? 🤔"
+      },
+      {
+        "comment": "",
+        "key": "It's so quiet here without you...😢"
+      },
+      {
+        "comment": "",
+        "key": "Start the day well 🦾 🦾"
+      },
+      {
+        "comment": "",
+        "key": "Think of your prosthesis diary and behave in your time. ✌️"
+      },
+      {
+        "comment": "",
+        "key": "Good morning motivation 🦾 🦾"
+      },
+      {
+        "comment": "",
+        "key": "Happiness is not a goal. Happiness is a way of life. Be happy today and share it with us... ✌️"
+      },
+      {
+        "comment": "",
+        "key": "have a good morning 😃"
+      },
+      {
+        "comment": "",
+        "key": "Don't go where the path may lead you, go where there is no path and write down your notes. ✌️"
+      },
+      {
+        "comment": "",
+        "key": "Pro Prothese"
+      },
+      {
+        "comment": "",
+        "key": "Hey! How are you feeling today? ✌️"
+      },
+      {
+        "comment": "",
+        "key": "Hey! A new day, new experiences, don't you want to save them? ✌️"
+      },
+      {
+        "comment": "",
+        "key": "Tell me about your day 🦾 🦾"
+      },
+      {
+        "comment": "",
+        "key": "Don't leave a blank page in your prosthesis diary. ✌️"
+      }
+    ]
+  },
+  "version": 1
+}

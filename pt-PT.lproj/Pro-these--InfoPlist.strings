@@ -1,0 +1,33 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Prótese Pró";
+
+/* Privacy - Calendars Usage Description */
+"NSCalendarsUsageDescription" = "Prótese Pró gostaria de acessar sua agenda e criar ou excluir entradas.";
+
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Prótese Pró quer desbloquear o app via FaceID";
+
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "Prótese Pró quer salvar suas leituras ativas";
+
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "Prótese Pró quer acessar suas leituras ativas";
+
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "Prótese Pró quer mudar suas leituras ativas";
+
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Prótese Pró requer acesso à sua localização para monitorar seus treinos";
+
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Prótese Pró requer acesso à sua localização para monitorar seus treinos";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Prótese Pró requer acesso à sua localização para monitorar seus treinos";
+
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "Prótese Pró quer salvar fotos no seu aplicativo de fotos";
+
+/* Privacy - Tracking Usage Description */
+"NSUserTrackingUsageDescription" = "O Prótese Pró será usado para entregar anúncios personalizados para você.";
+

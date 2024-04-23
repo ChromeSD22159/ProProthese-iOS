@@ -1,0 +1,30 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/Concurrency.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Concurrency.swiftconstvalues"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Concurrency.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Concurrency.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Concurrency.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Concurrency.o"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/HTTPHeaders.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.o"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/HTTPHeaders.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift":
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/DispatchQueue+Alamofire.dia"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/DispatchQueue+Alamofire.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/DispatchQueue+Alamofire.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/DispatchQueue+Alamofire.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/DispatchQueue+Alamofire.swiftdeps"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/Combine.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Combine.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Combine.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Combine.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Combine.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/Combine.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/EventMonitor.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/EventMonitor.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/EventMonitor.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/EventMonitor.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/EventMonitor.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Alamofire.build/Objects-normal/arm64/EventMonitor.d"

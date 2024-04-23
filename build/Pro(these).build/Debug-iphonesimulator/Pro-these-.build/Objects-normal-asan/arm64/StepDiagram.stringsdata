@@ -1,0 +1,52 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Home/Steps/StepDiagram.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Weekly Steps Chart"
+      },
+      {
+        "comment": "",
+        "key": "Step history of the last 8 weeks."
+      },
+      {
+        "comment": "",
+        "key": "Estimated steps"
+      },
+      {
+        "comment": "",
+        "key": "- -"
+      },
+      {
+        "comment": "",
+        "key": "%lld step goal"
+      },
+      {
+        "comment": "",
+        "key": "⌀ %lld steps"
+      },
+      {
+        "comment": "",
+        "key": "Weekly Target"
+      },
+      {
+        "comment": "",
+        "key": "Weekly Avg Target"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Steps"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      }
+    ]
+  },
+  "version": 1
+}

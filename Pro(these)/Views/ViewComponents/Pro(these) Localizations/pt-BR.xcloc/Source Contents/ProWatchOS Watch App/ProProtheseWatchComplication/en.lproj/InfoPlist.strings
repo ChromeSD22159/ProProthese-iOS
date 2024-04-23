@@ -1,0 +1,14 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "ProProtheseWatchComplication";
+/* Bundle name */
+"CFBundleName" = "ProProtheseWatchComplicationExtension";
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "ProProtheseWatchComplicationExtension wants to save your active readings";
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "ProProtheseWatchComplicationExtension wants to access your active readings";
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "ProProtheseWatchComplicationExtension wants to change your active readings";
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "";
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "ProProtheseWatchComplicationExtension needs access to their location to track their workouts";

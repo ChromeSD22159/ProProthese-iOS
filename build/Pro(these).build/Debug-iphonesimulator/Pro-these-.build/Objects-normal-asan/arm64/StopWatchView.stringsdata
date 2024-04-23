@@ -1,0 +1,44 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/StopWatchView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "°C"
+      },
+      {
+        "comment": "",
+        "key": "°F"
+      },
+      {
+        "comment": "",
+        "key": "Your daily goal for today is %lld steps."
+      },
+      {
+        "comment": "",
+        "key": "END"
+      },
+      {
+        "comment": "",
+        "key": "START"
+      },
+      {
+        "comment": "",
+        "key": "View your prosthesis timer on your lock screen and Dynamic Island."
+      },
+      {
+        "comment": "",
+        "key": "Show"
+      },
+      {
+        "comment": "",
+        "key": "Don't Show"
+      },
+      {
+        "comment": "",
+        "key": "Select a prostheses for which you want to start the timer."
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,62 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "a053fa3ff6c486462b6f2efac02922b676e6de7c111f01225244a1226b052935"
+    }
+  ],
+  "containerPath" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these).xcworkspace",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator16.4",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/DerivedData/Pro(these)/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/DerivedData/Pro(these)/Build/Products",
+      "derivedDataPath" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/DerivedData/Pro(these)/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/DerivedData/Pro(these)/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/DerivedData/Pro(these)/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone15,2",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "16.4",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone15,2",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "F6193FB4-F171-48FD-A849-0C3C0B1B7125",
+          "TARGET_DEVICE_MODEL" : "iPhone15,2",
+          "TARGET_DEVICE_OS_VERSION" : "16.4",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

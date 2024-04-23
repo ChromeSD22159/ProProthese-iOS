@@ -1,0 +1,18 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/healthStoreProvider.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/healthStoreProvider.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/healthStoreProvider.swiftconstvalues"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/healthStoreProvider.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/healthStoreProvider.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/healthStoreProvider.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/ChartData.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/ChartData.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/ChartData.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/ChartData.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/ChartData.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/ChartData.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/AppConfig.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/AppConfig.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/AppConfig.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/AppConfig.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/AppConfig.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64_32/AppConfig.swiftconstvalues"

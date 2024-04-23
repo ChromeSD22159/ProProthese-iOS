@@ -1,0 +1,18 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/ChartDataPacked.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/ChartDataPacked.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/ChartDataPacked.o"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/ChartDataPacked.dia"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/ChartDataPacked.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/ChartDataPacked.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/UrlExtension.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/UrlExtension.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/UrlExtension.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/UrlExtension.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/UrlExtension.swiftconstvalues"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/UrlExtension.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/DoubleExtention.swift":
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/DoubleExtention.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/DoubleExtention.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/DoubleExtention.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/DoubleExtention.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/DoubleExtention.d"

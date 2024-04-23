@@ -1,0 +1,490 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Everyday Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alltagsprothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótesis de uso diario"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótese Diária"
+          }
+        }
+      }
+    },
+    "Everyday Prosthesis Liner" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alltags-Prothesenliner"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liners de prótesis de uso diario"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liner de prótese diário"
+          }
+        }
+      }
+    },
+    "Maintaince of the Everyday Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wartung der Alltagsprothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenimiento de la prótesis diaria"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manutenção da Prótese Diária"
+          }
+        }
+      }
+    },
+    "Maintaince of the Replacement Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wartung der Ersatzprothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenimiento de la Prótesis de Reemplazo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manutenção da prótese de substituição"
+          }
+        }
+      }
+    },
+    "Maintaince of the Sports Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wartung der der Sportprothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenimiento de la Prótesis Deportiva"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manutenção da prótese esportiva"
+          }
+        }
+      }
+    },
+    "Maintaince of the Waterproof Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wartung der wasserfesten Prothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenimiento de la Prótesis Impermeable"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manutenção da Prótese Impermeável"
+          }
+        }
+      }
+    },
+    "No Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Prothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No prótesis"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem prótese"
+          }
+        }
+      }
+    },
+    "No Prosthesis Liner" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Prothesenliner"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No liner para prótesis"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem liner de prótese"
+          }
+        }
+      }
+    },
+    "Order your liner for the Everyday Prosthesis in good time!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestelle rechtzeitig deinen Liner für die Alltagsprothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Pide a tiempo tu liner para la prótesis Everyday!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encomende atempadamente o seu liner para a Prótese Everyday!"
+          }
+        }
+      }
+    },
+    "Order your liner for the Replacement Prosthesis in good time!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestelle rechtzeitig deinen Liner für die Ersatzprothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Solicite a tiempo su liner para la prótesis de repuesto!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encomende atempadamente o seu liner para a prótese de substituição!"
+          }
+        }
+      }
+    },
+    "Order your liner for the Sports Prosthesis in good time!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestelle rechtzeitig deinen Liner für die Sportprothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Pide tu liner para la prótesis deportiva a tiempo!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encomende atempadamente o seu liner para a prótese desportiva!"
+          }
+        }
+      }
+    },
+    "Order your liner for the Waterproof Prosthesis in good time!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestelle rechtzeitig deinen Liner für die wasserdichte Prothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Pide tu liner para la prótesis impermeable a tiempo!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encomende atempadamente o seu liner para a Prótese Impermeável!"
+          }
+        }
+      }
+    },
+    "Replacement Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ersatzprothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótesis de reemplazo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótese de substituição"
+          }
+        }
+      }
+    },
+    "Replacement Prosthesis Liner" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ersatz-Prothesenliner"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liner de prótesis de repuesto"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liner protético de reposição"
+          }
+        }
+      }
+    },
+    "Sports Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sportprothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótesis Deportiva"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótese esportiva"
+          }
+        }
+      }
+    },
+    "Sports Prosthesis Liner" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sportprothesenliner"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liner de prótesis deportivas"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liner de Prótese Esportiva"
+          }
+        }
+      }
+    },
+    "The next maintenance appointment for your Everyday Prosthesis!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der nächste Wartungstermin für deine Alltagsprothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡La próxima cita de mantenimiento para tu Prótesis de Cada Día!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A próxima consulta de manutenção para a sua Prótese Diária!"
+          }
+        }
+      }
+    },
+    "The next maintenance appointment for your Replacement Prosthesis!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der nächste Wartungstermin für Ihre Ersatzprothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡La próxima cita de mantenimiento para tu Prótesis de Reemplazo!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A próxima consulta de manutenção da sua prótese de substituição!"
+          }
+        }
+      }
+    },
+    "The next maintenance appointment for your Sports Prosthesis!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der nächste Wartungstermin für deine Sportprothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡La próxima cita de mantenimiento para tu Prótesis Deportiva!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A próxima consulta de manutenção da sua prótese desportiva!"
+          }
+        }
+      }
+    },
+    "The next maintenance appointment for your Waterproof Prosthesis!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der nächste Wartungstermin für deine wasserfeste Prothese!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡La próxima cita de mantenimiento para tu Prótesis Impermeable!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A próxima consulta de manutenção da sua Prótese Impermeável!"
+          }
+        }
+      }
+    },
+    "Waterproof Prosthesis" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wasserfeste Prothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótesis impermeable"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prótese impermeável"
+          }
+        }
+      }
+    },
+    "Waterproof Prosthesis Liner" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prothesenliner für Wasserfeste Prothese"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liner impermeable para prótesis"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liner de dentadura impermeáveis"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

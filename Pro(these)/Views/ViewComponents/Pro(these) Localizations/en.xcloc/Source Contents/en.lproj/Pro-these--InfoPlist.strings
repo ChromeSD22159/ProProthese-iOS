@@ -1,0 +1,24 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Pro Prothese";
+/* Bundle name */
+"CFBundleName" = "Pro-these-";
+/* Privacy - Calendars Usage Description */
+"NSCalendarsUsageDescription" = "Prostheses App would like to access your calendar and create or delete entries.";
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Pro-these- wants to unlock the app via FaceID";
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "Pro-these- wants to save your active readings";
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "Pro-these- wants to access your active readings";
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "Pro-these- wants to change your active readings";
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen";
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen";
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "Pro-these- wants to save snapshots in your Photo App";
+/* Privacy - Tracking Usage Description */
+"NSUserTrackingUsageDescription" = "This identifier will be used to deliver personalized ads to you.";

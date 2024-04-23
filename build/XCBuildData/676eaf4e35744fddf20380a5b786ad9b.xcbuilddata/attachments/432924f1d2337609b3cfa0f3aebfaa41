@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promises-master.dia",
+    "emit-module-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promises-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promises-master-emit-module.dia",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promises-master.swiftdeps"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Promises/Promise/Promise.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Promises/Promise/Promise+Extras.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphoneos/Promises.build/Objects-normal/arm64/Promise+Extras~partial.swiftmodule"
+  }
+}

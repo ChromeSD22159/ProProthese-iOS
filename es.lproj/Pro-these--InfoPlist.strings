@@ -1,0 +1,51 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Pro Prótesis ";
+
+/* Bundle name */
+"CFBundleName" = "Pro Prótesis ";
+
+/* Privacy - NFC Scan Usage Description */
+"NFCReaderUsageDescription" = "Pro Prótesis desea acceder para leer etiquetas NFC.";
+
+/* Privacy - Calendars Usage Description */
+"NSCalendarsUsageDescription" = "Pro Prótesis desea acceder a su calendario y crear o eliminar entradas.";
+
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Pro Prótesis quiere usar la cámara";
+
+/* Privacy - Contacts Usage Description */
+"NSContactsUsageDescription" = "Pro Prótesis desea acceder a sus contactos y crear nuevas personas de contacto.";
+
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Pro Prótesis quiere desbloquear la aplicación a través de FaceID";
+
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "Pro Prótesis quiere guardar sus lecturas activas";
+
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "Pro Prótesis quiere acceder a sus lecturas activas";
+
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "Pro Prótesis quiere cambiar sus lecturas activas";
+
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Pro Prótesis requiere acceso a su ubicación para realizar un seguimiento de sus entrenamientos";
+
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Pro Prótesis requiere acceso a su ubicación para realizar un seguimiento de sus entrenamientos";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Pro Prótesis requiere acceso a su ubicación para realizar un seguimiento de sus entrenamientos";
+
+/* Privacy - Motion Usage Description */
+"NSMotionUsageDescription" = "A Pro Prótesis le gustaría acceder al recuento de pasos para poder leerlo.";
+
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "Pro Prótesis quiere guardar instantáneas en su aplicación de fotos";
+
+/* Privacy - Siri Usage Description */
+"NSSiriUsageDescription" = "Pro Prótesis quiere acceso para poder hablar con Siri.";
+
+/* Privacy - Tracking Usage Description */
+"NSUserTrackingUsageDescription" = "Pro Prótesis se utilizará para enviarle anuncios personalizados.";
+

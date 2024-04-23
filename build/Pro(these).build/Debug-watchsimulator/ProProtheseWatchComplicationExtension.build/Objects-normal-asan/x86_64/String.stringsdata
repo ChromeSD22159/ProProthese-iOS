@@ -1,0 +1,96 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/String.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Everyday Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Waterproof Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Replacement Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Sports Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "No Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Everyday Prosthesis Liner"
+      },
+      {
+        "comment": "",
+        "key": "Waterproof Prosthesis Liner"
+      },
+      {
+        "comment": "",
+        "key": "Replacement Prosthesis Liner"
+      },
+      {
+        "comment": "",
+        "key": "Sports Prosthesis Liner"
+      },
+      {
+        "comment": "",
+        "key": "No Prosthesis Liner"
+      },
+      {
+        "comment": "",
+        "key": "Order your liner for the Everyday Prosthesis in good time!"
+      },
+      {
+        "comment": "",
+        "key": "Order your liner for the Waterproof Prosthesis in good time!"
+      },
+      {
+        "comment": "",
+        "key": "Order your liner for the Replacement Prosthesis in good time!"
+      },
+      {
+        "comment": "",
+        "key": "Order your liner for the Sports Prosthesis in good time!"
+      },
+      {
+        "comment": "",
+        "key": "The next maintenance appointment for your Everyday Prosthesis!"
+      },
+      {
+        "comment": "",
+        "key": "The next maintenance appointment for your Waterproof Prosthesis!"
+      },
+      {
+        "comment": "",
+        "key": "The next maintenance appointment for your Replacement Prosthesis!"
+      },
+      {
+        "comment": "",
+        "key": "The next maintenance appointment for your Sports Prosthesis!"
+      },
+      {
+        "comment": "",
+        "key": "Maintaince of the Everyday Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Maintaince of the Waterproof Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Maintaince of the Replacement Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Maintaince of the Sports Prosthesis"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,18 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/StepsByHour.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/StepsByHour.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/StepsByHour.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/StepsByHour.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/StepsByHour.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/StepsByHour.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/HandlerStates.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/HandlerStates.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/HandlerStates.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/HandlerStates.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/HandlerStates.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/HandlerStates.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/ChartDataPacked.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/ChartDataPacked.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/ChartDataPacked.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/ChartDataPacked.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/ChartDataPacked.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64_32/ChartDataPacked.d"

@@ -1,0 +1,36 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Home/WeeklyReports/ReportFeeldingProtheseDiagram.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Prostheses Mood Chart"
+      },
+      {
+        "comment": "",
+        "key": "Your mood progression in the prosthesis comparison."
+      },
+      {
+        "comment": "",
+        "key": "You have not entered any moods in the current period."
+      },
+      {
+        "comment": "",
+        "key": "Prothese"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Feeling"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      }
+    ]
+  },
+  "version": 1
+}

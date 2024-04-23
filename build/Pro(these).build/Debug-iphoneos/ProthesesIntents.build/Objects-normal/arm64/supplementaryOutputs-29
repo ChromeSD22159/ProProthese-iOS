@@ -1,0 +1,42 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/DoubleExtention.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/DoubleExtention.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/DoubleExtention.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/DoubleExtention.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/DoubleExtention.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/DoubleExtention.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/ChartData.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/ChartData.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/ChartData.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/ChartData.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/ChartData.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/ChartData.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProthesesIntents/IntentHandler.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/IntentHandler.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/IntentHandler.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/IntentHandler.dia"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/IntentHandler.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/IntentHandler.o"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/Persistence.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Persistence.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Persistence.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Persistence.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Persistence.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Persistence.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/AppConfig.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/AppConfig.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/AppConfig.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/AppConfig.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/AppConfig.o"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/AppConfig.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/StepsByHour.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/StepsByHour.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/StepsByHour.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/StepsByHour.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/StepsByHour.dia"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/StepsByHour.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Calendar.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Calendar.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Calendar.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Calendar.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Calendar.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Calendar.o"

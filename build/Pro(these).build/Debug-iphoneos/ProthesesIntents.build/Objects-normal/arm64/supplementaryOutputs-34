@@ -1,0 +1,36 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/DerivedSources/CoreDataGenerated/Pro_these_/Pain+CoreDataProperties.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataProperties.swiftconstvalues"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataProperties.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataProperties.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataProperties.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/DerivedSources/CoreDataGenerated/Pro_these_/Pain+CoreDataClass.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataClass.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataClass.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataClass.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataClass.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Pain+CoreDataClass.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/DerivedSources/CoreDataGenerated/Pro_these_/PainDrug+CoreDataClass.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataClass.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataClass.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataClass.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataClass.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataClass.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/DerivedSources/CoreDataGenerated/Pro_these_/PainDrug+CoreDataProperties.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataProperties.dia"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataProperties.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataProperties.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainDrug+CoreDataProperties.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/DerivedSources/CoreDataGenerated/Pro_these_/PainReason+CoreDataClass.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainReason+CoreDataClass.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainReason+CoreDataClass.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainReason+CoreDataClass.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainReason+CoreDataClass.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/PainReason+CoreDataClass.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/DerivedSources/CoreDataGenerated/Pro_these_/Locations+CoreDataProperties.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Locations+CoreDataProperties.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Locations+CoreDataProperties.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Locations+CoreDataProperties.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Locations+CoreDataProperties.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-iphoneos/ProthesesIntents.build/Objects-normal/arm64/Locations+CoreDataProperties.d"

@@ -1,0 +1,18 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Theme.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Theme.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Theme.dia"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Theme.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Theme.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Theme.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Shared/WatchConnectivityProvider.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.swiftconstvalues"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.swiftdeps"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Int.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Int.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Int.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Int.d"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Int.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/StopWatchComplicationExtension.build/Objects-normal/arm64/Int.o"

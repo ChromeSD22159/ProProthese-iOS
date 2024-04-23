@@ -1,0 +1,24 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Notification/ComebackReminderNotifications.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "We haven't seen you today 😢"
+      },
+      {
+        "comment": "",
+        "key": "Come back soon, it will be exciting ✌️"
+      },
+      {
+        "comment": "",
+        "key": "How are you doing? 🤔"
+      },
+      {
+        "comment": "",
+        "key": "It's so quiet here without you...😢"
+      }
+    ]
+  },
+  "version": 1
+}

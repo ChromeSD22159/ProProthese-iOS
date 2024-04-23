@@ -1,0 +1,24 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Home/Steps/StepsAvarage.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Average Daily Steps"
+      },
+      {
+        "comment": "",
+        "key": "Comparison with the week before."
+      },
+      {
+        "comment": "",
+        "key": "Ø %@ Steps"
+      },
+      {
+        "comment": "",
+        "key": "%@%@%%"
+      }
+    ]
+  },
+  "version": 1
+}

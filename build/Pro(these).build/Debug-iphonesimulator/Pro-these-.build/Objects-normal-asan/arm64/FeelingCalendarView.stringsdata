@@ -1,0 +1,40 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Feeling/FeelingCalendarView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Entries from: "
+      },
+      {
+        "comment": "",
+        "key": "Delete entry from %@ "
+      },
+      {
+        "comment": "",
+        "key": "To edit this entry??"
+      },
+      {
+        "comment": "",
+        "key": "Delete Entry?"
+      },
+      {
+        "comment": "",
+        "key": "Add"
+      }
+    ]
+  },
+  "version": 1
+}

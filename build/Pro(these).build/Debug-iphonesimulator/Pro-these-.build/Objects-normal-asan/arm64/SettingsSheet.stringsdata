@@ -1,0 +1,84 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewComponents/SheetViews/SettingsSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings"
+      },
+      {
+        "comment": "",
+        "key": "Suggestion for improvement"
+      },
+      {
+        "comment": "",
+        "key": "Personal Settings"
+      },
+      {
+        "comment": "",
+        "key": "More settings"
+      },
+      {
+        "comment": "",
+        "key": "Manage Prostheses and Liners"
+      },
+      {
+        "comment": "",
+        "key": "Rate the app"
+      },
+      {
+        "comment": "",
+        "key": "Setup Assistant"
+      },
+      {
+        "comment": "",
+        "key": "Log in"
+      },
+      {
+        "comment": "",
+        "key": "System"
+      },
+      {
+        "comment": "",
+        "key": "Password"
+      },
+      {
+        "comment": "",
+        "key": "OK"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Please enter your username and password."
+      },
+      {
+        "comment": "",
+        "key": "Debug"
+      },
+      {
+        "comment": "",
+        "key": "Even more functions"
+      },
+      {
+        "comment": "",
+        "key": "Update to unlock all Pro functionality"
+      },
+      {
+        "comment": "",
+        "key": "Pro Prothese APP v%@"
+      },
+      {
+        "comment": "",
+        "key": "Prothese APP v%@"
+      },
+      {
+        "comment": "",
+        "key": "© Frederik Kohler %@"
+      }
+    ]
+  },
+  "version": 1
+}

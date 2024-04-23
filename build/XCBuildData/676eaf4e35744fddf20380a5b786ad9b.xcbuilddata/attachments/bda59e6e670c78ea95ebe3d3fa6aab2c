@@ -1,0 +1,198 @@
+{
+  "" : {
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplicationExtension-master.dia",
+    "emit-module-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplicationExtension-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplicationExtension-master-emit-module.dia",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplicationExtension-master.swiftdeps"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Calendar.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Calendar~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Date.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Date~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/DoubleExtention.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/DoubleExtention~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Int.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Int~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/String.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/String~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/UrlExtension.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/UrlExtension~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/healthStoreProvider.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/healthStoreProvider~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Theme.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Theme~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/AppConfig.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/AppConfig~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/HandlerStates.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/HandlerStates~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/ChartData.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartData~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/ChartDataPacked.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ChartDataPacked~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/StepsByHour.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/StepsByHour~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Tab.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Tab~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Workout.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/Workout~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProWatchOS Watch App/Manager/WorkoutManager.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WorkoutManager~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProWatchOS Watch App/ProProtheseWatchComplication/ProProtheseWatchComplication.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/ProProtheseWatchComplication~partial.swiftmodule"
+  },
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Shared/WatchConnectivityProvider.swift" : {
+    "const-values" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.swiftconstvalues",
+    "dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.d",
+    "diagnostics" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.dia",
+    "index-unit-output-path" : "/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.o",
+    "llvm-bc" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.bc",
+    "object" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.o",
+    "swift-dependencies" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider.swiftdeps",
+    "swiftmodule" : "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchos/ProProtheseWatchComplicationExtension.build/Objects-normal/arm64/WatchConnectivityProvider~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,14 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "StopWatchComplication";
+/* Bundle name */
+"CFBundleName" = "StopWatchComplicationExtension";
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "StopWatchComplicationExtension wants to save your active metrics";
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "StopWatchComplicationExtension wants to access your active metrics";
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "StopWatchComplicationExtension wants to change your active metrics";
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "";
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "StopWatchComplicationExtension needs access to their location to track their workouts";

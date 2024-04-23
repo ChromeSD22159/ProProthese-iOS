@@ -1,0 +1,28 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Widgets/ProProtheseWidgetPain.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Hey, are you in pain today?"
+      },
+      {
+        "comment": "",
+        "key": "Large Widget"
+      },
+      {
+        "comment": "",
+        "key": "Default"
+      },
+      {
+        "comment": "",
+        "key": "Phantom limb pains?"
+      },
+      {
+        "comment": "",
+        "key": "Document your pain quickly and easily."
+      }
+    ]
+  },
+  "version": 1
+}

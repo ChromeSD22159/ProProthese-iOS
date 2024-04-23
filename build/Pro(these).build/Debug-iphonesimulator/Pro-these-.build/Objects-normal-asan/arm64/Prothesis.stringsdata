@@ -1,0 +1,64 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Prothesis.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Everyday Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Waterproof Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Replacement Prosthesis"
+      },
+      {
+        "comment": "",
+        "key": "Sport Prostheses"
+      },
+      {
+        "comment": "",
+        "key": "No Prostheses"
+      },
+      {
+        "comment": "",
+        "key": "Everyday"
+      },
+      {
+        "comment": "",
+        "key": "Waterproof"
+      },
+      {
+        "comment": "",
+        "key": "Replacement"
+      },
+      {
+        "comment": "",
+        "key": "Sports"
+      },
+      {
+        "comment": "",
+        "key": "No Kind"
+      },
+      {
+        "comment": "",
+        "key": "Above knee Prothesis"
+      },
+      {
+        "comment": "",
+        "key": "Below knee Prothesis"
+      },
+      {
+        "comment": "",
+        "key": "No Type"
+      },
+      {
+        "comment": "",
+        "key": "none"
+      }
+    ]
+  },
+  "version": 1
+}

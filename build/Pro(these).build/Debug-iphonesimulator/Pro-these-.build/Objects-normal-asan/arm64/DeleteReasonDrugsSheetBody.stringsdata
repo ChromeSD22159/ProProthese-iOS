@@ -1,0 +1,32 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Pain/DeleteReasonDrugsSheetBody.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Manage parameters"
+      },
+      {
+        "comment": "",
+        "key": "Pain reasons:"
+      },
+      {
+        "comment": "",
+        "key": "No reasons available"
+      },
+      {
+        "comment": "",
+        "key": "The parameters “reasons” and “painkillers” can be deleted here. Editing is not possible. The parameters can be recreated when editing or creating the pain record."
+      },
+      {
+        "comment": "",
+        "key": "Painkiller:"
+      },
+      {
+        "comment": "",
+        "key": "No painkillers available"
+      }
+    ]
+  },
+  "version": 1
+}

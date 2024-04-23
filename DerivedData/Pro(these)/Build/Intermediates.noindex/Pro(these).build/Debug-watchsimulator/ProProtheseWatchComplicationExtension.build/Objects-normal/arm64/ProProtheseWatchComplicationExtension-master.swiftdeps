@@ -1,0 +1,16 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "64f578a1af595dd8995de37167868d52242d0ee164350017fd91a8290bccdc28"
+build_start_time: [1693263628, 986447000]
+build_end_time: [1693263629, 136911000]
+inputs:
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Date.swift": !private [1693257878, 216673424]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/healthStoreProvider.swift": !private [1693257878, 220068397]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/AppConfig.swift": !private [1693257878, 223574699]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Stores/HandlerStates.swift": !private [1693257878, 223705320]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Tab.swift": !private [1693257878, 249505021]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Theme.swift": !private [1693257878, 249716514]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewModel/Workout.swift": !private [1693257878, 249937965]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProWatchOS Watch App/Manager/WorkoutManager.swift": !private [1693257878, 271855751]
+  ? "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProWatchOS Watch App/ProProtheseWatchComplication/ProProtheseWatchComplication.swift"
+  : !private [1693257878, 276882796]
+  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Shared/WatchConnectivityProvider.swift": !private [1693257878, 283697574]

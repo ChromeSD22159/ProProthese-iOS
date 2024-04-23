@@ -1,0 +1,28 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Widgets/ProProtheseWidgetFeeling.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Hey, how are you feeling today?"
+      },
+      {
+        "comment": "",
+        "key": "Large Widget"
+      },
+      {
+        "comment": "",
+        "key": "Default"
+      },
+      {
+        "comment": "",
+        "key": "How are you doing?"
+      },
+      {
+        "comment": "",
+        "key": "Enter it quickly how the prosthesis is doing today."
+      }
+    ]
+  },
+  "version": 1
+}

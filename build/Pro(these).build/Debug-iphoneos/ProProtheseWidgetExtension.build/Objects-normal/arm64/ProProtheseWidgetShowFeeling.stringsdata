@@ -1,0 +1,40 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Widgets/ProProtheseWidgetShowFeeling.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Hey, how are you feeling today?"
+      },
+      {
+        "comment": "",
+        "key": "Pro Prothese"
+      },
+      {
+        "comment": "",
+        "key": "%@, %@"
+      },
+      {
+        "comment": "",
+        "key": "This is how you feel today with your prosthesis."
+      },
+      {
+        "comment": "",
+        "key": "Default"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      },
+      {
+        "comment": "",
+        "key": "Feelings at a glance"
+      },
+      {
+        "comment": "",
+        "key": "See your feelings"
+      }
+    ]
+  },
+  "version": 1
+}

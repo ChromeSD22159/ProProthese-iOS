@@ -1,0 +1,76 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Events/Components/ContactComponents/ContentAddSheetBoby.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "The contact details refer to the general contact information such as \"Headquarters\". You can add additional contacts later."
+      },
+      {
+        "comment": "",
+        "key": "Edit Contact"
+      },
+      {
+        "comment": "",
+        "key": "Import Contact"
+      },
+      {
+        "comment": "",
+        "key": "%@ %@"
+      },
+      {
+        "comment": "",
+        "key": "Name:"
+      },
+      {
+        "comment": "",
+        "key": "Name"
+      },
+      {
+        "comment": "",
+        "key": "Phone:"
+      },
+      {
+        "comment": "",
+        "key": "Phone"
+      },
+      {
+        "comment": "",
+        "key": "E-Mail:"
+      },
+      {
+        "comment": "",
+        "key": "Description"
+      },
+      {
+        "comment": "",
+        "key": "Titel"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "New Contact"
+      },
+      {
+        "comment": "",
+        "key": "pro"
+      },
+      {
+        "comment": "",
+        "key": "Add even more contacts"
+      },
+      {
+        "comment": "",
+        "key": "In the free version of our app you can add and manage up to three contacts."
+      }
+    ]
+  },
+  "version": 1
+}

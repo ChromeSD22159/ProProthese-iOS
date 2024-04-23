@@ -1,0 +1,120 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Settings/SettingMapping.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Pedometer"
+      },
+      {
+        "comment": "",
+        "key": "Show step goal"
+      },
+      {
+        "comment": "",
+        "key": "Show goal steps in chart background."
+      },
+      {
+        "comment": "",
+        "key": "View average daily steps"
+      },
+      {
+        "comment": "",
+        "key": "Show the average daily steps in the chart background."
+      },
+      {
+        "comment": "",
+        "key": "App badge"
+      },
+      {
+        "comment": "",
+        "key": "View currrent steps in app badge."
+      },
+      {
+        "comment": "",
+        "key": "Personal organizer"
+      },
+      {
+        "comment": "",
+        "key": "View all expired appointments"
+      },
+      {
+        "comment": "",
+        "key": "All expired dates in the event list view."
+      },
+      {
+        "comment": "",
+        "key": "View all expired appointments from the last week"
+      },
+      {
+        "comment": "",
+        "key": "Show all expired appointments of the last week in the event list view."
+      },
+      {
+        "comment": "",
+        "key": "Security"
+      },
+      {
+        "comment": "",
+        "key": "Protect your data with FaceID"
+      },
+      {
+        "comment": "",
+        "key": "Enable FaceID verification when launching the app."
+      },
+      {
+        "comment": "",
+        "key": "Notifications"
+      },
+      {
+        "comment": "",
+        "key": "Allow comeback reminder"
+      },
+      {
+        "comment": "",
+        "key": "Reminds you daily to keep your data up to date in the app."
+      },
+      {
+        "comment": "",
+        "key": "Daily mood reminder push notification"
+      },
+      {
+        "comment": "",
+        "key": "Reminds you daily the set time, the day of your daily mood."
+      },
+      {
+        "comment": "",
+        "key": "Good morning wishes"
+      },
+      {
+        "comment": "",
+        "key": "Allow the app to wish you a good start to the day"
+      },
+      {
+        "comment": "",
+        "key": "Weekly reports"
+      },
+      {
+        "comment": "",
+        "key": "Get notified when a new weekly report is available."
+      },
+      {
+        "comment": "",
+        "key": "Daily progress"
+      },
+      {
+        "comment": "",
+        "key": "Get notified about your daily progress."
+      },
+      {
+        "comment": "",
+        "key": "Goal achieved"
+      },
+      {
+        "comment": "",
+        "key": "Get notified when a step goal is reached."
+      }
+    ]
+  },
+  "version": 1
+}

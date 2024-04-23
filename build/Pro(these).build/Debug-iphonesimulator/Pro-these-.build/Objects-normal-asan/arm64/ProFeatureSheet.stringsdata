@@ -1,0 +1,184 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewComponents/SheetViews/ProFeatureSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Try it for 7 days for free"
+      },
+      {
+        "comment": "",
+        "key": "1,99€ - Monthly"
+      },
+      {
+        "comment": "",
+        "key": "19,99€ - Yearly"
+      },
+      {
+        "comment": "",
+        "key": "Get your premium subscription!"
+      },
+      {
+        "comment": "",
+        "key": "ProFeature and ProWidgets"
+      },
+      {
+        "comment": "",
+        "key": "With an upgrade to the premium version,\nthe app gets even better!"
+      },
+      {
+        "comment": "",
+        "key": "Manage unlimited contacts"
+      },
+      {
+        "comment": "",
+        "key": "More premium widgets"
+      },
+      {
+        "comment": "",
+        "key": "Premium statistics"
+      },
+      {
+        "comment": "",
+        "key": "Premium support for users"
+      },
+      {
+        "comment": "",
+        "key": "Participation in further development"
+      },
+      {
+        "comment": "",
+        "key": "100% ad-free"
+      },
+      {
+        "comment": "",
+        "key": "Premium options"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      },
+      {
+        "comment": "",
+        "key": "Restore"
+      },
+      {
+        "comment": "",
+        "key": "Auto Renewal. Cancellable at any time."
+      },
+      {
+        "comment": "",
+        "key": "data protection"
+      },
+      {
+        "comment": "",
+        "key": "Terms of Use"
+      },
+      {
+        "comment": "",
+        "key": "Cross-device sync"
+      },
+      {
+        "comment": "",
+        "key": "iCloud sync"
+      },
+      {
+        "comment": "",
+        "key": "Standard statistics"
+      },
+      {
+        "comment": "",
+        "key": "Advanced statistics"
+      },
+      {
+        "comment": "",
+        "key": "More widget"
+      },
+      {
+        "comment": "",
+        "key": "Advanced Widget function"
+      },
+      {
+        "comment": "",
+        "key": "Unlimited contacts"
+      },
+      {
+        "comment": "",
+        "key": "Insights and trends"
+      },
+      {
+        "comment": "",
+        "key": "Premium membership"
+      },
+      {
+        "comment": "",
+        "key": "Monthly"
+      },
+      {
+        "comment": "",
+        "key": "Supporter"
+      },
+      {
+        "comment": "",
+        "key": "Annually"
+      },
+      {
+        "comment": "",
+        "key": "Unknown ID"
+      },
+      {
+        "comment": "",
+        "key": "Month"
+      },
+      {
+        "comment": "",
+        "key": "Year"
+      },
+      {
+        "comment": "",
+        "key": "Unknown"
+      },
+      {
+        "comment": "",
+        "key": "🎁 save %lld%%"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "* 14-day free trial"
+      },
+      {
+        "comment": "",
+        "key": "A single premium membership is available on each platform (iOS, watchOS).\n\nFamily sharing allows you and up to five other family members to use Pro Prosthesis."
+      },
+      {
+        "comment": "",
+        "key": "Show less"
+      },
+      {
+        "comment": "",
+        "key": "View all"
+      },
+      {
+        "comment": "",
+        "key": "Trail"
+      },
+      {
+        "comment": "",
+        "key": "Free"
+      },
+      {
+        "comment": "",
+        "key": "Pro"
+      },
+      {
+        "comment": "",
+        "key": "*"
+      }
+    ]
+  },
+  "version": 1
+}

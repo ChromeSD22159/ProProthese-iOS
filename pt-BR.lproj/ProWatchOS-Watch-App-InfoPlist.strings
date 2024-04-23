@@ -1,0 +1,21 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Prótese Pró ";
+
+/* Bundle name */
+"CFBundleName" = "Aplicativo Prótese Pró Watch";
+
+/* Privacy - Health Records Usage Description */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "Prótese Pró gostaria de salvar suas leituras ativas";
+
+/* Privacy - Health Share Usage Description */
+"NSHealthShareUsageDescription" = "Prótese Pró quer acessar suas leituras ativas";
+
+/* Privacy - Health Update Usage Description */
+"NSHealthUpdateUsageDescription" = "Prótese Pró quer mudar suas leituras ativas";
+
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Prótese Pró precisa de acesso à sua localização para acompanhar seus treinos";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Prótese Pró precisa de acesso à sua localização para acompanhar seus treinos";
+

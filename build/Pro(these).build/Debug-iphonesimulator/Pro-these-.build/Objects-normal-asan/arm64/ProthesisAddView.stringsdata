@@ -1,0 +1,72 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/ViewComponents/SheetViews/SetupSheet/ProthesisAddView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Your Prosthesis?"
+      },
+      {
+        "comment": "",
+        "key": "Add your first Prosthetics"
+      },
+      {
+        "comment": "",
+        "key": "Add another Prosthetics"
+      },
+      {
+        "comment": "",
+        "key": "Add your first Prosthesis liner"
+      },
+      {
+        "comment": "",
+        "key": "Add another Prosthesis liner"
+      },
+      {
+        "comment": "",
+        "key": "What type of prosthesis would you like to add?"
+      },
+      {
+        "comment": "",
+        "key": "What kind of prosthesis would you like to add?"
+      },
+      {
+        "comment": "",
+        "key": "Your Prosthetic:"
+      },
+      {
+        "comment": "",
+        "key": "Kind: "
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Type: "
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Last Maintage:"
+      },
+      {
+        "comment": "",
+        "key": "Maintage Interval:"
+      },
+      {
+        "comment": "",
+        "key": "%lld Months"
+      },
+      {
+        "comment": "",
+        "key": "Add"
+      }
+    ]
+  },
+  "version": 1
+}

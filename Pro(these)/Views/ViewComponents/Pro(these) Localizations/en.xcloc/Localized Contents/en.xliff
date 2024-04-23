@@ -1,0 +1,3746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <target>%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ %@" xml:space="preserve">
+        <source>%@ %@</source>
+        <target>%@ %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ %lld%%" xml:space="preserve">
+        <source>%@ %lld%%</source>
+        <target>%@ %lld%%</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ (%@)" xml:space="preserve">
+        <source>%@ (%@)</source>
+        <target>%@ (%@)</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ - %@" xml:space="preserve">
+        <source>%@ - %@</source>
+        <target>%@ - %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ Steps" xml:space="preserve">
+        <source>%@ Steps</source>
+        <target>%@ Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ edit" xml:space="preserve">
+        <source>%@ edit</source>
+        <target>%@ edit</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ hrs. %@ mins." xml:space="preserve">
+        <source>%@ hrs. %@ mins.</source>
+        <target>%@ hrs. %@ mins.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ k" xml:space="preserve">
+        <source>%@ k</source>
+        <target>%@ k</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ km" xml:space="preserve">
+        <source>%@ km</source>
+        <target>%@ km</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ steps today" xml:space="preserve">
+        <source>%@ steps today</source>
+        <target>%@ steps today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ steps yesterday" xml:space="preserve">
+        <source>%@ steps yesterday</source>
+        <target>%@ steps yesterday</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@%%" xml:space="preserve">
+        <source>%@%%</source>
+        <target>%@%%</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@%@%%" xml:space="preserve">
+        <source>%@%@%%</source>
+        <target>%@%@%%</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@:%@h" xml:space="preserve">
+        <source>%@:%@h</source>
+        <target>%@:%@h</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@h" xml:space="preserve">
+        <source>%@h</source>
+        <target>%@h</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@km" xml:space="preserve">
+        <source>%@km</source>
+        <target>%@km</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld" xml:space="preserve">
+        <source>%lld</source>
+        <target>%lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Day" xml:space="preserve">
+        <source>%lld Day</source>
+        <target>%lld Day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Days" xml:space="preserve">
+        <source>%lld Days</source>
+        <target>%lld Days</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Months" xml:space="preserve">
+        <source>%lld Months</source>
+        <target>%lld Months</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Mths." xml:space="preserve">
+        <source>%lld Mths.</source>
+        <target>%lld Mths.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Step" xml:space="preserve">
+        <source>%lld Step</source>
+        <target>%lld Step</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Steps" xml:space="preserve">
+        <source>%lld Steps</source>
+        <target>%lld Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Yrs, %lld Mths, %lld Days" xml:space="preserve">
+        <source>%lld Yrs, %lld Mths, %lld Days</source>
+        <target>%lld Yrs, %lld Mths, %lld Days</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld daily step goal" xml:space="preserve">
+        <source>%lld daily step goal</source>
+        <target>%lld daily step goal</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld day ago" xml:space="preserve">
+        <source>%lld day ago</source>
+        <target>%lld day ago</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld days ago" xml:space="preserve">
+        <source>%lld days ago</source>
+        <target>%lld days ago</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld months interval" xml:space="preserve">
+        <source>%lld months interval</source>
+        <target>%lld months interval</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld pain index" xml:space="preserve">
+        <source>%lld pain index</source>
+        <target>%lld pain index</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld step goal" xml:space="preserve">
+        <source>%lld step goal</source>
+        <target>%lld step goal</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld%%" xml:space="preserve">
+        <source>%lld%%</source>
+        <target>%lld%%</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lldx" xml:space="preserve">
+        <source>%lldx</source>
+        <target>%lldx</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="(%@)" xml:space="preserve">
+        <source>(%@)</source>
+        <target>(%@)</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="(%lld)" xml:space="preserve">
+        <source>(%lld)</source>
+        <target>(%lld)</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="**%@:%@h**" xml:space="preserve">
+        <source>**%@:%@h**</source>
+        <target>**%@:%@h**</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="**%@km**" xml:space="preserve">
+        <source>**%@km**</source>
+        <target>**%@km**</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="**%lld floors**" xml:space="preserve">
+        <source>**%lld floors**</source>
+        <target>**%lld floors**</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="**%lld**" xml:space="preserve">
+        <source>**%lld**</source>
+        <target>**%lld**</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="+" xml:space="preserve">
+        <source>+</source>
+        <target>+</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="-" xml:space="preserve">
+        <source>-</source>
+        <target>-</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="- -" xml:space="preserve">
+        <source>- -</source>
+        <target>- -</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="---" xml:space="preserve">
+        <source>---</source>
+        <target>---</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0 Days" xml:space="preserve">
+        <source>0 Days</source>
+        <target>0 Days</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="1 day before" xml:space="preserve">
+        <source>1 day before</source>
+        <target>1 day before</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="1 hours before" xml:space="preserve">
+        <source>1 hours before</source>
+        <target>1 hours before</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="1,99€ - Monthly" xml:space="preserve">
+        <source>1,99€ - Monthly</source>
+        <target>1,99€ - Monthly</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="2 days before" xml:space="preserve">
+        <source>2 days before</source>
+        <target>2 days before</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="2 hours before" xml:space="preserve">
+        <source>2 hours before</source>
+        <target>2 hours before</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="3 days before" xml:space="preserve">
+        <source>3 days before</source>
+        <target>3 days before</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="10 minutes before" xml:space="preserve">
+        <source>10 minutes before</source>
+        <target>10 minutes before</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="19,99€ - Yearly" xml:space="preserve">
+        <source>19,99€ - Yearly</source>
+        <target>19,99€ - Yearly</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="30 minutes before" xml:space="preserve">
+        <source>30 minutes before</source>
+        <target>30 minutes before</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="040 / 1234" xml:space="preserve">
+        <source>040 / 1234</source>
+        <target>040 / 1234</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="100% ad-free" xml:space="preserve">
+        <source>100% ad-free</source>
+        <target>100% ad-free</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0174 / 123 456" xml:space="preserve">
+        <source>0174 / 123 456</source>
+        <target>0174 / 123 456</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="A little Motivation for a great day 🦾 🦾" xml:space="preserve">
+        <source>A little Motivation for a great day 🦾 🦾</source>
+        <target>A little Motivation for a great day 🦾 🦾</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="A reminder about the appointment will be sent 24 hours before the appointment." xml:space="preserve">
+        <source>A reminder about the appointment will be sent 24 hours before the appointment.</source>
+        <target>A reminder about the appointment will be sent 24 hours before the appointment.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Above knee Prothesis" xml:space="preserve">
+        <source>Above knee Prothesis</source>
+        <target>Above knee Prothesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Access Permissions" xml:space="preserve">
+        <source>Access Permissions</source>
+        <target>Access Permissions</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Achieved step goals" xml:space="preserve">
+        <source>Achieved step goals</source>
+        <target>Achieved step goals</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Action:" xml:space="preserve">
+        <source>Action:</source>
+        <target>Action:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Activity Rings" xml:space="preserve">
+        <source>Activity Rings</source>
+        <target>Activity Rings</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add" xml:space="preserve">
+        <source>Add</source>
+        <target>Add</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add &#10; Contact" xml:space="preserve">
+        <source>Add 
+ Contact</source>
+        <target>Add 
+ Contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Contact" xml:space="preserve">
+        <source>Add Contact</source>
+        <target>Add Contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Contact person!" xml:space="preserve">
+        <source>Add Contact person!</source>
+        <target>Add Contact person!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Note" xml:space="preserve">
+        <source>Add Note</source>
+        <target>Add Note</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Prosthetics" xml:space="preserve">
+        <source>Add Prosthetics</source>
+        <target>Add Prosthetics</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Prosthetics liners" xml:space="preserve">
+        <source>Add Prosthetics liners</source>
+        <target>Add Prosthetics liners</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add another Prosthesis liner" xml:space="preserve">
+        <source>Add another Prosthesis liner</source>
+        <target>Add another Prosthesis liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add another Prosthetics" xml:space="preserve">
+        <source>Add another Prosthetics</source>
+        <target>Add another Prosthetics</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add repeating events" xml:space="preserve">
+        <source>Add repeating events</source>
+        <target>Add repeating events</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add your first Prosthesis liner" xml:space="preserve">
+        <source>Add your first Prosthesis liner</source>
+        <target>Add your first Prosthesis liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add your first Prosthetics" xml:space="preserve">
+        <source>Add your first Prosthetics</source>
+        <target>Add your first Prosthetics</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Administer" xml:space="preserve">
+        <source>Administer</source>
+        <target>Administer</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="All" xml:space="preserve">
+        <source>All</source>
+        <target>All</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="All Weekly Reports" xml:space="preserve">
+        <source>All Weekly Reports</source>
+        <target>All Weekly Reports</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="All appointments" xml:space="preserve">
+        <source>All appointments</source>
+        <target>All appointments</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="All entries from %@" xml:space="preserve">
+        <source>All entries from %@</source>
+        <target>All entries from %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="All expired dates in the event list view." xml:space="preserve">
+        <source>All expired dates in the event list view.</source>
+        <target>All expired dates in the event list view.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="All reports" xml:space="preserve">
+        <source>All reports</source>
+        <target>All reports</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Allow comeback reminder" xml:space="preserve">
+        <source>Allow comeback reminder</source>
+        <target>Allow comeback reminder</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Allow the app to wish you a good start to the day" xml:space="preserve">
+        <source>Allow the app to wish you a good start to the day</source>
+        <target>Allow the app to wish you a good start to the day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Amputated since %@" xml:space="preserve">
+        <source>Amputated since %@</source>
+        <target>Amputated since %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Amputation day" xml:space="preserve">
+        <source>Amputation day</source>
+        <target>Amputation day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Amputation day." xml:space="preserve">
+        <source>Amputation day.</source>
+        <target>Amputation day.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Amputee" xml:space="preserve">
+        <source>Amputee</source>
+        <target>Amputee</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Amputee day counter" xml:space="preserve">
+        <source>Amputee day counter</source>
+        <target>Amputee day counter</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="App badge" xml:space="preserve">
+        <source>App badge</source>
+        <target>App badge</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="AppDelegate Trigger" xml:space="preserve">
+        <source>AppDelegate Trigger</source>
+        <target>AppDelegate Trigger</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Auto Renewal. Cancellable at any time." xml:space="preserve">
+        <source>Auto Renewal. Cancellable at any time.</source>
+        <target>Auto Renewal. Cancellable at any time.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Average" xml:space="preserve">
+        <source>Average</source>
+        <target>Average</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Average Daily Steps" xml:space="preserve">
+        <source>Average Daily Steps</source>
+        <target>Average Daily Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Average wearing time this week" xml:space="preserve">
+        <source>Average wearing time this week</source>
+        <target>Average wearing time this week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Beginning" xml:space="preserve">
+        <source>Beginning</source>
+        <target>Beginning</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Below knee Prothesis" xml:space="preserve">
+        <source>Below knee Prothesis</source>
+        <target>Below knee Prothesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Calender" xml:space="preserve">
+        <source>Calender</source>
+        <target>Calender</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>Cancel</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Cause of pain" xml:space="preserve">
+        <source>Cause of pain</source>
+        <target>Cause of pain</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Change" xml:space="preserve">
+        <source>Change</source>
+        <target>Change</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Change Maintenance Interval" xml:space="preserve">
+        <source>Change Maintenance Interval</source>
+        <target>Change Maintenance Interval</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Change background" xml:space="preserve">
+        <source>Change background</source>
+        <target>Change background</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Change indicator color" xml:space="preserve">
+        <source>Change indicator color</source>
+        <target>Change indicator color</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Chart" xml:space="preserve">
+        <source>Chart</source>
+        <target>Chart</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Choose" xml:space="preserve">
+        <source>Choose</source>
+        <target>Choose</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Come back soon, it will be exciting ✌️" xml:space="preserve">
+        <source>Come back soon, it will be exciting ✌️</source>
+        <target>Come back soon, it will be exciting ✌️</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Compare the steps you have taken with your daily goal." xml:space="preserve">
+        <source>Compare the steps you have taken with your daily goal.</source>
+        <target>Compare the steps you have taken with your daily goal.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Compare your progress against your set goal." xml:space="preserve">
+        <source>Compare your progress against your set goal.</source>
+        <target>Compare your progress against your set goal.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Compared to the previous week." xml:space="preserve">
+        <source>Compared to the previous week.</source>
+        <target>Compared to the previous week.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Comparison with the previous week." xml:space="preserve">
+        <source>Comparison with the previous week.</source>
+        <target>Comparison with the previous week.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Comparison with the week before." xml:space="preserve">
+        <source>Comparison with the week before.</source>
+        <target>Comparison with the week before.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Comparison with yesterday." xml:space="preserve">
+        <source>Comparison with yesterday.</source>
+        <target>Comparison with yesterday.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Congratulations on reaching your goal for the day 🥳" xml:space="preserve">
+        <source>Congratulations on reaching your goal for the day 🥳</source>
+        <target>Congratulations on reaching your goal for the day 🥳</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Congratulations, %@! 🥳" xml:space="preserve">
+        <source>Congratulations, %@! 🥳</source>
+        <target>Congratulations, %@! 🥳</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Congratulations, you have reached your daily goal! You walked more than %lld steps today. 🥳 🥳" xml:space="preserve">
+        <source>Congratulations, you have reached your daily goal! You walked more than %lld steps today. 🥳 🥳</source>
+        <target>Congratulations, you have reached your daily goal! You walked more than %lld steps today. 🥳 🥳</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Contact" xml:space="preserve">
+        <source>Contact</source>
+        <target>Contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Contact Person" xml:space="preserve">
+        <source>Contact Person</source>
+        <target>Contact Person</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Create Pin Code" xml:space="preserve">
+        <source>Create Pin Code</source>
+        <target>Create Pin Code</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Create new appointment" xml:space="preserve">
+        <source>Create new appointment</source>
+        <target>Create new appointment</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Daily Steps Goal" xml:space="preserve">
+        <source>Daily Steps Goal</source>
+        <target>Daily Steps Goal</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Daily mood reminder push notification" xml:space="preserve">
+        <source>Daily mood reminder push notification</source>
+        <target>Daily mood reminder push notification</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Data protection" xml:space="preserve">
+        <source>Data protection</source>
+        <target>Data protection</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Date" xml:space="preserve">
+        <source>Date</source>
+        <target>Date</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Date Interval:" xml:space="preserve">
+        <source>Date Interval:</source>
+        <target>Date Interval:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Date:" xml:space="preserve">
+        <source>Date:</source>
+        <target>Date:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Dates" xml:space="preserve">
+        <source>Dates</source>
+        <target>Dates</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Day" xml:space="preserve">
+        <source>Day</source>
+        <target>Day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Day counter since amputation" xml:space="preserve">
+        <source>Day counter since amputation</source>
+        <target>Day counter since amputation</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Debug" xml:space="preserve">
+        <source>Debug</source>
+        <target>Debug</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Del" xml:space="preserve">
+        <source>Del</source>
+        <target>Del</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete" xml:space="preserve">
+        <source>Delete</source>
+        <target>Delete</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete %@?" xml:space="preserve">
+        <source>Delete %@?</source>
+        <target>Delete %@?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete %@? &#10; &#10; All associated appointments &#10; and notes will be deleted!" xml:space="preserve">
+        <source>Delete %@? 
+ 
+ All associated appointments 
+ and notes will be deleted!</source>
+        <target>Delete %@? 
+ 
+ All associated appointments 
+ and notes will be deleted!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete %d?" xml:space="preserve">
+        <source>Delete %d?</source>
+        <target>Delete %d?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete '%@ %@'?" xml:space="preserve">
+        <source>Delete '%@ %@'?</source>
+        <target>Delete '%@ %@'?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete All Stored BackgroundTaskItems" xml:space="preserve">
+        <source>Delete All Stored BackgroundTaskItems</source>
+        <target>Delete All Stored BackgroundTaskItems</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete Contact" xml:space="preserve">
+        <source>Delete Contact</source>
+        <target>Delete Contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete Entry?" xml:space="preserve">
+        <source>Delete Entry?</source>
+        <target>Delete Entry?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete all entries" xml:space="preserve">
+        <source>Delete all entries</source>
+        <target>Delete all entries</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete entry" xml:space="preserve">
+        <source>Delete entry</source>
+        <target>Delete entry</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete entry from %@ " xml:space="preserve">
+        <source>Delete entry from %@ </source>
+        <target>Delete entry from %@ </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete painkillers?" xml:space="preserve">
+        <source>Delete painkillers?</source>
+        <target>Delete painkillers?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete reason?" xml:space="preserve">
+        <source>Delete reason?</source>
+        <target>Delete reason?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete the event '%@'?" xml:space="preserve">
+        <source>Delete the event '%@'?</source>
+        <target>Delete the event '%@'?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Did you reach your step goal in the last %lld days?" xml:space="preserve">
+        <source>Did you reach your step goal in the last %lld days?</source>
+        <target>Did you reach your step goal in the last %lld days?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Distance" xml:space="preserve">
+        <source>Distance</source>
+        <target>Distance</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Do you feel any pain?" xml:space="preserve">
+        <source>Do you feel any pain?</source>
+        <target>Do you feel any pain?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Document the feeling with your prosthesis." xml:space="preserve">
+        <source>Document the feeling with your prosthesis.</source>
+        <target>Document the feeling with your prosthesis.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Don't Show" xml:space="preserve">
+        <source>Don't Show</source>
+        <target>Don't Show</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Don't go where the path may lead you, go where there is no path and write down your notes. ✌️" xml:space="preserve">
+        <source>Don't go where the path may lead you, go where there is no path and write down your notes. ✌️</source>
+        <target>Don't go where the path may lead you, go where there is no path and write down your notes. ✌️</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Don't leave a blank page in your prosthesis diary. ✌️" xml:space="preserve">
+        <source>Don't leave a blank page in your prosthesis diary. ✌️</source>
+        <target>Don't leave a blank page in your prosthesis diary. ✌️</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Done" xml:space="preserve">
+        <source>Done</source>
+        <target>Done</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Done!" xml:space="preserve">
+        <source>Done!</source>
+        <target>Done!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Du bist %@, __%@__ km gelaufen. Das sind __%@__ als der Durchschnitt der Woche." xml:space="preserve">
+        <source>Du bist %@, __%@__ km gelaufen. Das sind __%@__ als der Durchschnitt der Woche.</source>
+        <target>Du bist %@, __%@__ km gelaufen. Das sind __%@__ als der Durchschnitt der Woche.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="E-Mail:" xml:space="preserve">
+        <source>E-Mail:</source>
+        <target>E-Mail:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="E.g.: Ibuprofen, Tillidin, Lyrica..." xml:space="preserve">
+        <source>E.g.: Ibuprofen, Tillidin, Lyrica...</source>
+        <target>E.g.: Ibuprofen, Tillidin, Lyrica...</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="END" xml:space="preserve">
+        <source>END</source>
+        <target>END</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Edit" xml:space="preserve">
+        <source>Edit</source>
+        <target>Edit</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Edit contact" xml:space="preserve">
+        <source>Edit contact</source>
+        <target>Edit contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Edit pain entry" xml:space="preserve">
+        <source>Edit pain entry</source>
+        <target>Edit pain entry</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enable FaceID verification when launching the app." xml:space="preserve">
+        <source>Enable FaceID verification when launching the app.</source>
+        <target>Enable FaceID verification when launching the app.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="End" xml:space="preserve">
+        <source>End</source>
+        <target>End</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter the Brand Name" xml:space="preserve">
+        <source>Enter the Brand Name</source>
+        <target>Enter the Brand Name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter the Product Name" xml:space="preserve">
+        <source>Enter the Product Name</source>
+        <target>Enter the Product Name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter the code" xml:space="preserve">
+        <source>Enter the code</source>
+        <target>Enter the code</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Entries from: " xml:space="preserve">
+        <source>Entries from: </source>
+        <target>Entries from: </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Entry Site" xml:space="preserve">
+        <source>Entry Site</source>
+        <target>Entry Site</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Error loading AppGroup" xml:space="preserve">
+        <source>Error loading AppGroup</source>
+        <target>Error loading AppGroup</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Even more functions" xml:space="preserve">
+        <source>Even more functions</source>
+        <target>Even more functions</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Events" xml:space="preserve">
+        <source>Events</source>
+        <target>Events</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Everyday" xml:space="preserve">
+        <source>Everyday</source>
+        <target>Everyday</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Everyday&#10;Prosthesis" xml:space="preserve">
+        <source>Everyday
+Prosthesis</source>
+        <target>Everyday
+Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Everyday Prosthesis" xml:space="preserve">
+        <source>Everyday Prosthesis</source>
+        <target>Everyday Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Everyday Prosthesis Liner" xml:space="preserve">
+        <source>Everyday Prosthesis Liner</source>
+        <target>Everyday Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="FaceID" xml:space="preserve">
+        <source>FaceID</source>
+        <target>FaceID</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Feeling" xml:space="preserve">
+        <source>Feeling</source>
+        <target>Feeling</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Find out how many days you've been amputee." xml:space="preserve">
+        <source>Find out how many days you've been amputee.</source>
+        <target>Find out how many days you've been amputee.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Find out how your last week was. 💪" xml:space="preserve">
+        <source>Find out how your last week was. 💪</source>
+        <target>Find out how your last week was. 💪</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="First day with prosthesis." xml:space="preserve">
+        <source>First day with prosthesis.</source>
+        <target>First day with prosthesis.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="First name" xml:space="preserve">
+        <source>First name</source>
+        <target>First name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="First name:" xml:space="preserve">
+        <source>First name:</source>
+        <target>First name:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="GPS Location" xml:space="preserve">
+        <source>GPS Location</source>
+        <target>GPS Location</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="GPS recording:" xml:space="preserve">
+        <source>GPS recording:</source>
+        <target>GPS recording:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Get last liner?:" xml:space="preserve">
+        <source>Get last liner?:</source>
+        <target>Get last liner?:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Get notified when a new weekly report is available." xml:space="preserve">
+        <source>Get notified when a new weekly report is available.</source>
+        <target>Get notified when a new weekly report is available.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Get your premium subscription!" xml:space="preserve">
+        <source>Get your premium subscription!</source>
+        <target>Get your premium subscription!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Getting started" xml:space="preserve">
+        <source>Getting started</source>
+        <target>Getting started</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Good evening%@!" xml:space="preserve">
+        <source>Good evening%@!</source>
+        <target>Good evening%@!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Good morning motivation 🦾 🦾" xml:space="preserve">
+        <source>Good morning motivation 🦾 🦾</source>
+        <target>Good morning motivation 🦾 🦾</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Good morning out there! 👋" xml:space="preserve">
+        <source>Good morning out there! 👋</source>
+        <target>Good morning out there! 👋</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Good morning%@!" xml:space="preserve">
+        <source>Good morning%@!</source>
+        <target>Good morning%@!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Good morning, %@! 👋" xml:space="preserve">
+        <source>Good morning, %@! 👋</source>
+        <target>Good morning, %@! 👋</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Great progress today!" xml:space="preserve">
+        <source>Great progress today!</source>
+        <target>Great progress today!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Great, half would be done! You have now reached more than 50% of the daily goal. 🥳 🥳" xml:space="preserve">
+        <source>Great, half would be done! You have now reached more than 50% of the daily goal. 🥳 🥳</source>
+        <target>Great, half would be done! You have now reached more than 50% of the daily goal. 🥳 🥳</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Half-yearly" xml:space="preserve">
+        <source>Half-yearly</source>
+        <target>Half-yearly</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Happiness is not a goal. Happiness is a way of life. Be happy today and share it with us... ✌️" xml:space="preserve">
+        <source>Happiness is not a goal. Happiness is a way of life. Be happy today and share it with us... ✌️</source>
+        <target>Happiness is not a goal. Happiness is a way of life. Be happy today and share it with us... ✌️</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Haptic Feedback" xml:space="preserve">
+        <source>Haptic Feedback</source>
+        <target>Haptic Feedback</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Health insurance" xml:space="preserve">
+        <source>Health insurance</source>
+        <target>Health insurance</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="HealthKit" xml:space="preserve">
+        <source>HealthKit</source>
+        <target>HealthKit</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="HealthKit Querys" xml:space="preserve">
+        <source>HealthKit Querys</source>
+        <target>HealthKit Querys</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hello %@!" xml:space="preserve">
+        <source>Hello %@!</source>
+        <target>Hello %@!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hello!" xml:space="preserve">
+        <source>Hello!</source>
+        <target>Hello!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hello%@!" xml:space="preserve">
+        <source>Hello%@!</source>
+        <target>Hello%@!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hello...?!&#10;What may we call you? " xml:space="preserve">
+        <source>Hello...?!
+What may we call you? </source>
+        <target>Hello...?!
+What may we call you? </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hey! A new day, new experiences, don't you want to save them? ✌️" xml:space="preserve">
+        <source>Hey! A new day, new experiences, don't you want to save them? ✌️</source>
+        <target>Hey! A new day, new experiences, don't you want to save them? ✌️</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hey! Describe" xml:space="preserve">
+        <source>Hey! Describe</source>
+        <target>Hey! Describe</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hey! How are you&#10;feeling today?" xml:space="preserve">
+        <source>Hey! How are you
+feeling today?</source>
+        <target>Hey! How are you
+feeling today?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hey! How are you feeling today? ✌️" xml:space="preserve">
+        <source>Hey! How are you feeling today? ✌️</source>
+        <target>Hey! How are you feeling today? ✌️</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hide information" xml:space="preserve">
+        <source>Hide information</source>
+        <target>Hide information</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Highest" xml:space="preserve">
+        <source>Highest</source>
+        <target>Highest</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Home" xml:space="preserve">
+        <source>Home</source>
+        <target>Home</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hospital" xml:space="preserve">
+        <source>Hospital</source>
+        <target>Hospital</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hour" xml:space="preserve">
+        <source>Hour</source>
+        <target>Hour</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How are you doing?" xml:space="preserve">
+        <source>How are you doing?</source>
+        <target>How are you doing?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How are you doing? 🤔" xml:space="preserve">
+        <source>How are you doing? 🤔</source>
+        <target>How are you doing? 🤔</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How many steps would you like to walk a day?" xml:space="preserve">
+        <source>How many steps would you like to walk a day?</source>
+        <target>How many steps would you like to walk a day?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="If no authorization window appears, all access can be granted under &quot;Settings &gt; Prosthesis&quot;." xml:space="preserve">
+        <source>If no authorization window appears, all access can be granted under "Settings &gt; Prosthesis".</source>
+        <target>If no authorization window appears, all access can be granted under "Settings &gt; Prosthesis".</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Infomation" xml:space="preserve">
+        <source>Infomation</source>
+        <target>Infomation</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Instagram" xml:space="preserve">
+        <source>Instagram</source>
+        <target>Instagram</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="It's so quiet here without you...😢" xml:space="preserve">
+        <source>It's so quiet here without you...😢</source>
+        <target>It's so quiet here without you...😢</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Just two steps away." xml:space="preserve">
+        <source>Just two steps away.</source>
+        <target>Just two steps away.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Keep it up! 👏" xml:space="preserve">
+        <source>Keep it up! 👏</source>
+        <target>Keep it up! 👏</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Keep it up! 🥳" xml:space="preserve">
+        <source>Keep it up! 🥳</source>
+        <target>Keep it up! 🥳</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Keep track of your phantom limb pain." xml:space="preserve">
+        <source>Keep track of your phantom limb pain.</source>
+        <target>Keep track of your phantom limb pain.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Kein Kontakt vorhanden!" xml:space="preserve">
+        <source>No contact available!</source>
+        <target>No contact available!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Kind: " xml:space="preserve">
+        <source>Kind: </source>
+        <target>Kind: </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Kontakt" xml:space="preserve">
+        <source>Contact</source>
+        <target>Contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Kontakt &#10; hinzufügen" xml:space="preserve">
+        <source>Kontakt 
+ hinzufügen</source>
+        <target>Kontakt 
+ hinzufügen</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Kontakt hinzufügen" xml:space="preserve">
+        <source>Add Contact</source>
+        <target>Add Contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last Liner: %@" xml:space="preserve">
+        <source>Last Liner: %@</source>
+        <target>Last Liner: %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last Maintage:" xml:space="preserve">
+        <source>Last Maintage:</source>
+        <target>Last Maintage:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last maintenance" xml:space="preserve">
+        <source>Last maintenance</source>
+        <target>Last maintenance</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last name" xml:space="preserve">
+        <source>Last name</source>
+        <target>Last name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last name:" xml:space="preserve">
+        <source>Last name:</source>
+        <target>Last name:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last report:" xml:space="preserve">
+        <source>Last report:</source>
+        <target>Last report:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last week" xml:space="preserve">
+        <source>Last week</source>
+        <target>Last week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Liners for your Prostheses" xml:space="preserve">
+        <source>Liners for your Prostheses</source>
+        <target>Liners for your Prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Log in" xml:space="preserve">
+        <source>Log in</source>
+        <target>Log in</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Login with Face ID" xml:space="preserve">
+        <source>Login with Face ID</source>
+        <target>Login with Face ID</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Lowest" xml:space="preserve">
+        <source>Lowest</source>
+        <target>Lowest</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintage Interval:" xml:space="preserve">
+        <source>Maintage Interval:</source>
+        <target>Maintage Interval:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Everyday Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Everyday Prosthesis</source>
+        <target>Maintaince of the Everyday Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Replacement Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Replacement Prosthesis</source>
+        <target>Maintaince of the Replacement Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Sports Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Sports Prosthesis</source>
+        <target>Maintaince of the Sports Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Waterproof Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Waterproof Prosthesis</source>
+        <target>Maintaince of the Waterproof Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintenance due" xml:space="preserve">
+        <source>Maintenance due</source>
+        <target>Maintenance due</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintenance interval" xml:space="preserve">
+        <source>Maintenance interval</source>
+        <target>Maintenance interval</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintenance was another day" xml:space="preserve">
+        <source>Maintenance was another day</source>
+        <target>Maintenance was another day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintenance was today" xml:space="preserve">
+        <source>Maintenance was today</source>
+        <target>Maintenance was today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Manage Prostheses and Liners" xml:space="preserve">
+        <source>Manage Prostheses and Liners</source>
+        <target>Manage Prostheses and Liners</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Manage Prosthesis &amp; Liners" xml:space="preserve">
+        <source>Manage Prosthesis &amp; Liners</source>
+        <target>Manage Prosthesis &amp; Liners</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Manage all your Prosthesis" xml:space="preserve">
+        <source>Manage all your Prosthesis</source>
+        <target>Manage all your Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Manage all your Prosthesis-Liners" xml:space="preserve">
+        <source>Manage all your Prosthesis-Liners</source>
+        <target>Manage all your Prosthesis-Liners</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Manage parameters" xml:space="preserve">
+        <source>Manage parameters</source>
+        <target>Manage parameters</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Manage unlimited contacts" xml:space="preserve">
+        <source>Manage unlimited contacts</source>
+        <target>Manage unlimited contacts</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Max" xml:space="preserve">
+        <source>Max</source>
+        <target>Max</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Medical supply store" xml:space="preserve">
+        <source>Medical supply store</source>
+        <target>Medical supply store</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Mister" xml:space="preserve">
+        <source>Mister</source>
+        <target>Mister</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Mobilphone Nr." xml:space="preserve">
+        <source>Mobilphone Nr.</source>
+        <target>Mobilphone Nr.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Mobilphone:" xml:space="preserve">
+        <source>Mobilphone:</source>
+        <target>Mobilphone:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Monthly" xml:space="preserve">
+        <source>Monthly</source>
+        <target>Monthly</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Montly Mood Trend" xml:space="preserve">
+        <source>Montly Mood Trend</source>
+        <target>Montly Mood Trend</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Montly Pain Trend" xml:space="preserve">
+        <source>Montly Pain Trend</source>
+        <target>Montly Pain Trend</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Mood Chart" xml:space="preserve">
+        <source>Mood Chart</source>
+        <target>Mood Chart</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Moods" xml:space="preserve">
+        <source>Moods</source>
+        <target>Moods</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="More premium widgets" xml:space="preserve">
+        <source>More premium widgets</source>
+        <target>More premium widgets</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="More settings" xml:space="preserve">
+        <source>More settings</source>
+        <target>More settings</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="More than %lld steps. 🥳 🎉" xml:space="preserve">
+        <source>More than %lld steps. 🥳 🎉</source>
+        <target>More than %lld steps. 🥳 🎉</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Musterman" xml:space="preserve">
+        <source>Musterman</source>
+        <target>Musterman</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="My progress with the Pro Prosthesis App. https://www.prothese.pro/store" xml:space="preserve">
+        <source>My progress with the Pro Prosthesis App. https://www.prothese.pro/store</source>
+        <target>My progress with the Pro Prosthesis App. https://www.prothese.pro/store</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Name" xml:space="preserve">
+        <source>Name</source>
+        <target>Name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Name:" xml:space="preserve">
+        <source>Name:</source>
+        <target>Name:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Neuer Grund" xml:space="preserve">
+        <source>Neuer Grund</source>
+        <target>Neuer Grund</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="New Contact" xml:space="preserve">
+        <source>New Contact</source>
+        <target>New Contact</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="News" xml:space="preserve">
+        <source>News</source>
+        <target>News</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Next Month" xml:space="preserve">
+        <source>Next Month</source>
+        <target>Next Month</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Next Week" xml:space="preserve">
+        <source>Next Week</source>
+        <target>Next Week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No&#10;Prosthesis" xml:space="preserve">
+        <source>No
+Prosthesis</source>
+        <target>No
+Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Feeling Found" xml:space="preserve">
+        <source>No Feeling Found</source>
+        <target>No Feeling Found</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Kind" xml:space="preserve">
+        <source>No Kind</source>
+        <target>No Kind</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Painkiller" xml:space="preserve">
+        <source>No Painkiller</source>
+        <target>No Painkiller</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Prostheses" xml:space="preserve">
+        <source>No Prostheses</source>
+        <target>No Prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Prosthesis" xml:space="preserve">
+        <source>No Prosthesis</source>
+        <target>No Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Prosthesis Liner" xml:space="preserve">
+        <source>No Prosthesis Liner</source>
+        <target>No Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Prosthesis-Liner avaible!" xml:space="preserve">
+        <source>No Prosthesis-Liner avaible!</source>
+        <target>No Prosthesis-Liner avaible!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Type" xml:space="preserve">
+        <source>No Type</source>
+        <target>No Type</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No appointment" xml:space="preserve">
+        <source>No appointment</source>
+        <target>No appointment</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No contact available!" xml:space="preserve">
+        <source>No contact available!</source>
+        <target>No contact available!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No contact available." xml:space="preserve">
+        <source>No contact available.</source>
+        <target>No contact available.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No dates available." xml:space="preserve">
+        <source>No dates available.</source>
+        <target>No dates available.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No events for next month!" xml:space="preserve">
+        <source>No events for next month!</source>
+        <target>No events for next month!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No events for next week!" xml:space="preserve">
+        <source>No events for next week!</source>
+        <target>No events for next week!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No events for this month!" xml:space="preserve">
+        <source>No events for this month!</source>
+        <target>No events for this month!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No events for this week!" xml:space="preserve">
+        <source>No events for this week!</source>
+        <target>No events for this week!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No notes available!" xml:space="preserve">
+        <source>No notes available!</source>
+        <target>No notes available!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No notifications available." xml:space="preserve">
+        <source>No notifications available.</source>
+        <target>No notifications available.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No pain recorded!" xml:space="preserve">
+        <source>No pain recorded!</source>
+        <target>No pain recorded!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No painkillers available" xml:space="preserve">
+        <source>No painkillers available</source>
+        <target>No painkillers available</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No prostheses with maintenance dates available!" xml:space="preserve">
+        <source>No prostheses with maintenance dates available!</source>
+        <target>No prostheses with maintenance dates available!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No reasons available" xml:space="preserve">
+        <source>No reasons available</source>
+        <target>No reasons available</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Notification" xml:space="preserve">
+        <source>Notification</source>
+        <target>Notification</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Notification Handler States" xml:space="preserve">
+        <source>Notification Handler States</source>
+        <target>Notification Handler States</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Notification Menus" xml:space="preserve">
+        <source>Notification Menus</source>
+        <target>Notification Menus</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Notifications" xml:space="preserve">
+        <source>Notifications</source>
+        <target>Notifications</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Notiz" xml:space="preserve">
+        <source>Notiz</source>
+        <target>Notiz</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Now Playing" xml:space="preserve">
+        <source>Now Playing</source>
+        <target>Now Playing</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Number of entries" xml:space="preserve">
+        <source>Number of entries</source>
+        <target>Number of entries</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>OK</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="On what date did you get your first prosthesis?" xml:space="preserve">
+        <source>On what date did you get your first prosthesis?</source>
+        <target>On what date did you get your first prosthesis?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="One to Many" xml:space="preserve">
+        <source>One to Many</source>
+        <target>One to Many</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="One to One" xml:space="preserve">
+        <source>One to One</source>
+        <target>One to One</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Options" xml:space="preserve">
+        <source>Options</source>
+        <target>Options</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Everyday Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Everyday Prosthesis in good time!</source>
+        <target>Order your liner for the Everyday Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Replacement Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Replacement Prosthesis in good time!</source>
+        <target>Order your liner for the Replacement Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Sports Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Sports Prosthesis in good time!</source>
+        <target>Order your liner for the Sports Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Waterproof Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Waterproof Prosthesis in good time!</source>
+        <target>Order your liner for the Waterproof Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liners for the your prostheses in time!" xml:space="preserve">
+        <source>Order your liners for the your prostheses in time!</source>
+        <target>Order your liners for the your prostheses in time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Orderable" xml:space="preserve">
+        <source>Orderable</source>
+        <target>Orderable</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Others" xml:space="preserve">
+        <source>Others</source>
+        <target>Others</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Page Header" xml:space="preserve">
+        <source>Page Header</source>
+        <target>Page Header</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pain" xml:space="preserve">
+        <source>Pain</source>
+        <target>Pain</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pain Chart" xml:space="preserve">
+        <source>Pain Chart</source>
+        <target>Pain Chart</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pain assessment" xml:space="preserve">
+        <source>Pain assessment</source>
+        <target>Pain assessment</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pain reasons:" xml:space="preserve">
+        <source>Pain reasons:</source>
+        <target>Pain reasons:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Painkiller" xml:space="preserve">
+        <source>Painkiller</source>
+        <target>Painkiller</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Painkiller:" xml:space="preserve">
+        <source>Painkiller:</source>
+        <target>Painkiller:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pains" xml:space="preserve">
+        <source>Pains</source>
+        <target>Pains</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Participation in further development" xml:space="preserve">
+        <source>Participation in further development</source>
+        <target>Participation in further development</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Password" xml:space="preserve">
+        <source>Password</source>
+        <target>Password</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Past appointments" xml:space="preserve">
+        <source>Past appointments</source>
+        <target>Past appointments</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pedometer" xml:space="preserve">
+        <source>Pedometer</source>
+        <target>Pedometer</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Personal Settings" xml:space="preserve">
+        <source>Personal Settings</source>
+        <target>Personal Settings</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Personal organizer" xml:space="preserve">
+        <source>Personal organizer</source>
+        <target>Personal organizer</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Phone" xml:space="preserve">
+        <source>Phone</source>
+        <target>Phone</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Phone Nr." xml:space="preserve">
+        <source>Phone Nr.</source>
+        <target>Phone Nr.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Phone:" xml:space="preserve">
+        <source>Phone:</source>
+        <target>Phone:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Physiotherapist" xml:space="preserve">
+        <source>Physiotherapist</source>
+        <target>Physiotherapist</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please choose" xml:space="preserve">
+        <source>Please choose</source>
+        <target>Please choose</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please enter a name!" xml:space="preserve">
+        <source>Please enter a name!</source>
+        <target>Please enter a name!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please enter an appointment description!" xml:space="preserve">
+        <source>Please enter an appointment description!</source>
+        <target>Please enter an appointment description!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please enter your first name." xml:space="preserve">
+        <source>Please enter your first name.</source>
+        <target>Please enter your first name.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please enter your username and password." xml:space="preserve">
+        <source>Please enter your username and password.</source>
+        <target>Please enter your username and password.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please provide a contact!" xml:space="preserve">
+        <source>Please provide a contact!</source>
+        <target>Please provide a contact!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Premium options" xml:space="preserve">
+        <source>Premium options</source>
+        <target>Premium options</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Premium statistics" xml:space="preserve">
+        <source>Premium statistics</source>
+        <target>Premium statistics</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Premium support for users" xml:space="preserve">
+        <source>Premium support for users</source>
+        <target>Premium support for users</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pro Prothese" xml:space="preserve">
+        <source>Pro Prothese</source>
+        <target>Pro Prothese</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pro Prothese APP v%@" xml:space="preserve">
+        <source>Pro Prothese APP v%@</source>
+        <target>Pro Prothese APP v%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pro Prothese Setup" xml:space="preserve">
+        <source>Pro Prothese Setup</source>
+        <target>Pro Prothese Setup</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pro Prothese Workout" xml:space="preserve">
+        <source>Pro Prothese Workout</source>
+        <target>Pro Prothese Workout</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ProFeature and ProWidgets" xml:space="preserve">
+        <source>ProFeature and ProWidgets</source>
+        <target>ProFeature and ProWidgets</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Progress of wearing times." xml:space="preserve">
+        <source>Progress of wearing times.</source>
+        <target>Progress of wearing times.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prostheses Mood Chart" xml:space="preserve">
+        <source>Prostheses Mood Chart</source>
+        <target>Prostheses Mood Chart</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prostheses Pain Chart" xml:space="preserve">
+        <source>Prostheses Pain Chart</source>
+        <target>Prostheses Pain Chart</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prostheses you have worn in the last %lld days." xml:space="preserve">
+        <source>Prostheses you have worn in the last %lld days.</source>
+        <target>Prostheses you have worn in the last %lld days.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis" xml:space="preserve">
+        <source>Prosthesis</source>
+        <target>Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis &amp; Liners" xml:space="preserve">
+        <source>Prosthesis &amp; Liners</source>
+        <target>Prosthesis &amp; Liners</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis Liner" xml:space="preserve">
+        <source>Prosthesis Liner</source>
+        <target>Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis liner" xml:space="preserve">
+        <source>Prosthesis liner</source>
+        <target>Prosthesis liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis maintenance" xml:space="preserve">
+        <source>Prosthesis maintenance</source>
+        <target>Prosthesis maintenance</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis wearing time" xml:space="preserve">
+        <source>Prosthesis wearing time</source>
+        <target>Prosthesis wearing time</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthetic liner" xml:space="preserve">
+        <source>Prosthetic liner</source>
+        <target>Prosthetic liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Protect your data with FaceID" xml:space="preserve">
+        <source>Protect your data with FaceID</source>
+        <target>Protect your data with FaceID</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prothese" xml:space="preserve">
+        <source>Prothese</source>
+        <target>Prothese</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prothese APP v%@" xml:space="preserve">
+        <source>Prothese APP v%@</source>
+        <target>Prothese APP v%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Psychiatrist" xml:space="preserve">
+        <source>Psychiatrist</source>
+        <target>Psychiatrist</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Psychologist" xml:space="preserve">
+        <source>Psychologist</source>
+        <target>Psychologist</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Push Notification" xml:space="preserve">
+        <source>Push Notification</source>
+        <target>Push Notification</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quarterly" xml:space="preserve">
+        <source>Quarterly</source>
+        <target>Quarterly</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Rate the app" xml:space="preserve">
+        <source>Rate the app</source>
+        <target>Rate the app</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reason" xml:space="preserve">
+        <source>Reason</source>
+        <target>Reason</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Received another day" xml:space="preserve">
+        <source>Received another day</source>
+        <target>Received another day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Recieved today" xml:space="preserve">
+        <source>Recieved today</source>
+        <target>Recieved today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Recommend app" xml:space="preserve">
+        <source>Recommend app</source>
+        <target>Recommend app</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reminder: The next maintenance of your %@ is due in 2 weeks." xml:space="preserve">
+        <source>Reminder: The next maintenance of your %@ is due in 2 weeks.</source>
+        <target>Reminder: The next maintenance of your %@ is due in 2 weeks.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reminder: The next maintenance of your %@ is due in 4 weeks." xml:space="preserve">
+        <source>Reminder: The next maintenance of your %@ is due in 4 weeks.</source>
+        <target>Reminder: The next maintenance of your %@ is due in 4 weeks.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reminder: The next maintenance of your %@ is overdue. Is there a delay? 😔" xml:space="preserve">
+        <source>Reminder: The next maintenance of your %@ is overdue. Is there a delay? 😔</source>
+        <target>Reminder: The next maintenance of your %@ is overdue. Is there a delay? 😔</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reminds you daily the set time, the day of your daily mood." xml:space="preserve">
+        <source>Reminds you daily the set time, the day of your daily mood.</source>
+        <target>Reminds you daily the set time, the day of your daily mood.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reminds you daily to keep your data up to date in the app." xml:space="preserve">
+        <source>Reminds you daily to keep your data up to date in the app.</source>
+        <target>Reminds you daily to keep your data up to date in the app.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Repeating notifications" xml:space="preserve">
+        <source>Repeating notifications</source>
+        <target>Repeating notifications</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Replacement" xml:space="preserve">
+        <source>Replacement</source>
+        <target>Replacement</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Replacement&#10;Prosthesis" xml:space="preserve">
+        <source>Replacement
+Prosthesis</source>
+        <target>Replacement
+Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Replacement Prosthesis" xml:space="preserve">
+        <source>Replacement Prosthesis</source>
+        <target>Replacement Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Replacement Prosthesis Liner" xml:space="preserve">
+        <source>Replacement Prosthesis Liner</source>
+        <target>Replacement Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Required Permissions" xml:space="preserve">
+        <source>Required Permissions</source>
+        <target>Required Permissions</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reset" xml:space="preserve">
+        <source>Reset</source>
+        <target>Reset</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reset Half State" xml:space="preserve">
+        <source>Reset Half State</source>
+        <target>Reset Half State</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reset step goal 50% reached message Date" xml:space="preserve">
+        <source>Reset step goal 50% reached message Date</source>
+        <target>Reset step goal 50% reached message Date</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Reset step goal reached message Date" xml:space="preserve">
+        <source>Reset step goal reached message Date</source>
+        <target>Reset step goal reached message Date</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Restore" xml:space="preserve">
+        <source>Restore</source>
+        <target>Restore</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Rhythm" xml:space="preserve">
+        <source>Rhythm</source>
+        <target>Rhythm</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="START" xml:space="preserve">
+        <source>START</source>
+        <target>START</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Salutation" xml:space="preserve">
+        <source>Salutation</source>
+        <target>Salutation</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Save" xml:space="preserve">
+        <source>Save</source>
+        <target>Save</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Saving workout" xml:space="preserve">
+        <source>Saving workout</source>
+        <target>Saving workout</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Security" xml:space="preserve">
+        <source>Security</source>
+        <target>Security</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Select a photo" xml:space="preserve">
+        <source>Select a photo</source>
+        <target>Select a photo</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Select a prostheses for which you want to start the timer." xml:space="preserve">
+        <source>Select a prostheses for which you want to start the timer.</source>
+        <target>Select a prostheses for which you want to start the timer.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Send appointment notification" xml:space="preserve">
+        <source>Send appointment notification</source>
+        <target>Send appointment notification</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set FirstLaunchDate to -1 Day" xml:space="preserve">
+        <source>Set FirstLaunchDate to -1 Day</source>
+        <target>Set FirstLaunchDate to -1 Day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set FirstLaunchDate to now" xml:space="preserve">
+        <source>Set FirstLaunchDate to now</source>
+        <target>Set FirstLaunchDate to now</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set LastLaunchDate -33h" xml:space="preserve">
+        <source>Set LastLaunchDate -33h</source>
+        <target>Set LastLaunchDate -33h</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set Report -1 Day" xml:space="preserve">
+        <source>Set Report -1 Day</source>
+        <target>Set Report -1 Day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set interval" xml:space="preserve">
+        <source>Set interval</source>
+        <target>Set interval</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <target>Settings</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Setup Assistant" xml:space="preserve">
+        <source>Setup Assistant</source>
+        <target>Setup Assistant</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Share" xml:space="preserve">
+        <source>Share</source>
+        <target>Share</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Share your progress" xml:space="preserve">
+        <source>Share your progress</source>
+        <target>Share your progress</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Show" xml:space="preserve">
+        <source>Show</source>
+        <target>Show</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Show all expired appointments of the last week in the event list view." xml:space="preserve">
+        <source>Show all expired appointments of the last week in the event list view.</source>
+        <target>Show all expired appointments of the last week in the event list view.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Show goal steps in chart background." xml:space="preserve">
+        <source>Show goal steps in chart background.</source>
+        <target>Show goal steps in chart background.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Show step goal" xml:space="preserve">
+        <source>Show step goal</source>
+        <target>Show step goal</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Show the average daily steps in the chart background." xml:space="preserve">
+        <source>Show the average daily steps in the chart background.</source>
+        <target>Show the average daily steps in the chart background.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Specialist Clinic" xml:space="preserve">
+        <source>Specialist Clinic</source>
+        <target>Specialist Clinic</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sport Prostheses" xml:space="preserve">
+        <source>Sport Prostheses</source>
+        <target>Sport Prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sports" xml:space="preserve">
+        <source>Sports</source>
+        <target>Sports</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sports&#10;Prosthesis" xml:space="preserve">
+        <source>Sports
+Prosthesis</source>
+        <target>Sports
+Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sports Prosthesis" xml:space="preserve">
+        <source>Sports Prosthesis</source>
+        <target>Sports Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sports Prosthesis Liner" xml:space="preserve">
+        <source>Sports Prosthesis Liner</source>
+        <target>Sports Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Start" xml:space="preserve">
+        <source>Start</source>
+        <target>Start</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Start the day well 🦾 🦾" xml:space="preserve">
+        <source>Start the day well 🦾 🦾</source>
+        <target>Start the day well 🦾 🦾</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="States" xml:space="preserve">
+        <source>States</source>
+        <target>States</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Statistic" xml:space="preserve">
+        <source>Statistic</source>
+        <target>Statistic</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Step Trend" xml:space="preserve">
+        <source>Step Trend</source>
+        <target>Step Trend</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Step history of the last 8 weeks." xml:space="preserve">
+        <source>Step history of the last 8 weeks.</source>
+        <target>Step history of the last 8 weeks.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Step progress" xml:space="preserve">
+        <source>Step progress</source>
+        <target>Step progress</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Steps" xml:space="preserve">
+        <source>Steps</source>
+        <target>Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Steps compared to the previous month." xml:space="preserve">
+        <source>Steps compared to the previous month.</source>
+        <target>Steps compared to the previous month.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Steps compared to yesterday." xml:space="preserve">
+        <source>Steps compared to yesterday.</source>
+        <target>Steps compared to yesterday.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Steps from last week" xml:space="preserve">
+        <source>Steps from last week</source>
+        <target>Steps from last week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Steps this week" xml:space="preserve">
+        <source>Steps this week</source>
+        <target>Steps this week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Stop the timer on your iPhone." xml:space="preserve">
+        <source>Stop the timer on your iPhone.</source>
+        <target>Stop the timer on your iPhone.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Suggestion for improvement" xml:space="preserve">
+        <source>Suggestion for improvement</source>
+        <target>Suggestion for improvement</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Summary" xml:space="preserve">
+        <source>Summary</source>
+        <target>Summary</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Support" xml:space="preserve">
+        <source>Support</source>
+        <target>Support</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Support us" xml:space="preserve">
+        <source>Support us</source>
+        <target>Support us</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Supporter subscription" xml:space="preserve">
+        <source>Supporter subscription</source>
+        <target>Supporter subscription</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="System" xml:space="preserve">
+        <source>System</source>
+        <target>System</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="System access" xml:space="preserve">
+        <source>System access</source>
+        <target>System access</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Task:" xml:space="preserve">
+        <source>Task:</source>
+        <target>Task:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Task`s" xml:space="preserve">
+        <source>Task`s</source>
+        <target>Task`s</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Tell me about your day 🦾 🦾" xml:space="preserve">
+        <source>Tell me about your day 🦾 🦾</source>
+        <target>Tell me about your day 🦾 🦾</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Termin" xml:space="preserve">
+        <source>Termin</source>
+        <target>Termin</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Terms of Use" xml:space="preserve">
+        <source>Terms of Use</source>
+        <target>Terms of Use</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The contact details refer to the general contact information such as &quot;Headquarters&quot;. You can add additional contacts later." xml:space="preserve">
+        <source>The contact details refer to the general contact information such as "Headquarters". You can add additional contacts later.</source>
+        <target>The contact details refer to the general contact information such as "Headquarters". You can add additional contacts later.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Everyday Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Everyday Prosthesis!</source>
+        <target>The next maintenance appointment for your Everyday Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Replacement Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Replacement Prosthesis!</source>
+        <target>The next maintenance appointment for your Replacement Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Sports Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Sports Prosthesis!</source>
+        <target>The next maintenance appointment for your Sports Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Waterproof Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Waterproof Prosthesis!</source>
+        <target>The next maintenance appointment for your Waterproof Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The pain recorder is available in the current version. A more detailed recording is planned, in combination with a medication plan/reminder. In addition, a PDF creation of the documented data is planned, which can be easily shared or emailed to the appropriate contacts. In addition, other widgets and statistics are created." xml:space="preserve">
+        <source>The pain recorder is available in the current version. A more detailed recording is planned, in combination with a medication plan/reminder. In addition, a PDF creation of the documented data is planned, which can be easily shared or emailed to the appropriate contacts. In addition, other widgets and statistics are created.</source>
+        <target>The pain recorder is available in the current version. A more detailed recording is planned, in combination with a medication plan/reminder. In addition, a PDF creation of the documented data is planned, which can be easily shared or emailed to the appropriate contacts. In addition, other widgets and statistics are created.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The parameters “reasons” and “painkillers” can be deleted here. Editing is not possible. The parameters can be recreated when editing or creating the pain record." xml:space="preserve">
+        <source>The parameters “reasons” and “painkillers” can be deleted here. Editing is not possible. The parameters can be recreated when editing or creating the pain record.</source>
+        <target>The parameters “reasons” and “painkillers” can be deleted here. Editing is not possible. The parameters can be recreated when editing or creating the pain record.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The summary of your current progress for the last week is now available." xml:space="preserve">
+        <source>The summary of your current progress for the last week is now available.</source>
+        <target>The summary of your current progress for the last week is now available.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The time goes by so fast" xml:space="preserve">
+        <source>The time goes by so fast</source>
+        <target>The time goes by so fast</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The weekly wear time" xml:space="preserve">
+        <source>The weekly wear time</source>
+        <target>The weekly wear time</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="There were no events last week!" xml:space="preserve">
+        <source>There were no events last week!</source>
+        <target>There were no events last week!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Think of your prosthesis diary and behave in your time. ✌️" xml:space="preserve">
+        <source>Think of your prosthesis diary and behave in your time. ✌️</source>
+        <target>Think of your prosthesis diary and behave in your time. ✌️</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This Month" xml:space="preserve">
+        <source>This Month</source>
+        <target>This Month</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This Week" xml:space="preserve">
+        <source>This Week</source>
+        <target>This Week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Times" xml:space="preserve">
+        <source>Times</source>
+        <target>Times</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Titel" xml:space="preserve">
+        <source>Titel</source>
+        <target>Titel</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="To edit this entry??" xml:space="preserve">
+        <source>To edit this entry??</source>
+        <target>To edit this entry??</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today" xml:space="preserve">
+        <source>Today</source>
+        <target>Today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Today's wearing time" xml:space="preserve">
+        <source>Today's wearing time</source>
+        <target>Today's wearing time</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Total %@km" xml:space="preserve">
+        <source>Total %@km</source>
+        <target>Total %@km</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Total Distance" xml:space="preserve">
+        <source>Total Distance</source>
+        <target>Total Distance</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Total Wearingtime" xml:space="preserve">
+        <source>Total Wearingtime</source>
+        <target>Total Wearingtime</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Tracking" xml:space="preserve">
+        <source>Tracking</source>
+        <target>Tracking</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Trends" xml:space="preserve">
+        <source>Trends</source>
+        <target>Trends</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Try it for 7 days for free" xml:space="preserve">
+        <source>Try it for 7 days for free</source>
+        <target>Try it for 7 days for free</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Type: " xml:space="preserve">
+        <source>Type: </source>
+        <target>Type: </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Unbegrenzt Kontakten Verwalten" xml:space="preserve">
+        <source>Manage unlimited contacts</source>
+        <target>Manage unlimited contacts</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Update to unlock all Pro functionality" xml:space="preserve">
+        <source>Update to unlock all Pro functionality</source>
+        <target>Update to unlock all Pro functionality</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="View all expired appointments" xml:space="preserve">
+        <source>View all expired appointments</source>
+        <target>View all expired appointments</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="View all expired appointments from the last week" xml:space="preserve">
+        <source>View all expired appointments from the last week</source>
+        <target>View all expired appointments from the last week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="View average daily steps" xml:space="preserve">
+        <source>View average daily steps</source>
+        <target>View average daily steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="View currrent steps in app badge." xml:space="preserve">
+        <source>View currrent steps in app badge.</source>
+        <target>View currrent steps in app badge.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="View your prosthesis timer on your lock screen and Dynamic Island." xml:space="preserve">
+        <source>View your prosthesis timer on your lock screen and Dynamic Island.</source>
+        <target>View your prosthesis timer on your lock screen and Dynamic Island.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="WOW, you've already walked %lld steps today, that's more than half of your daily goal. 🥳 👏" xml:space="preserve">
+        <source>WOW, you've already walked %lld steps today, that's more than half of your daily goal. 🥳 👏</source>
+        <target>WOW, you've already walked %lld steps today, that's more than half of your daily goal. 🥳 👏</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Waterproof" xml:space="preserve">
+        <source>Waterproof</source>
+        <target>Waterproof</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Waterproof&#10;Prosthesis" xml:space="preserve">
+        <source>Waterproof
+Prosthesis</source>
+        <target>Waterproof
+Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Waterproof Prosthesis" xml:space="preserve">
+        <source>Waterproof Prosthesis</source>
+        <target>Waterproof Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Waterproof Prosthesis Liner" xml:space="preserve">
+        <source>Waterproof Prosthesis Liner</source>
+        <target>Waterproof Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="We haven't seen you today 😢" xml:space="preserve">
+        <source>We haven't seen you today 😢</source>
+        <target>We haven't seen you today 😢</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="We'll help you set up the app!" xml:space="preserve">
+        <source>We'll help you set up the app!</source>
+        <target>We'll help you set up the app!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wearing time" xml:space="preserve">
+        <source>Wearing time</source>
+        <target>Wearing time</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wearing times chart" xml:space="preserve">
+        <source>Wearing times chart</source>
+        <target>Wearing times chart</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Week: **%@**" xml:space="preserve">
+        <source>Week: **%@**</source>
+        <target>Week: **%@**</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly" xml:space="preserve">
+        <source>Weekly</source>
+        <target>Weekly</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly Avg Target" xml:space="preserve">
+        <source>Weekly Avg Target</source>
+        <target>Weekly Avg Target</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly Avg Wearing Time" xml:space="preserve">
+        <source>Weekly Avg Wearing Time</source>
+        <target>Weekly Avg Wearing Time</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly Mood Trend" xml:space="preserve">
+        <source>Weekly Mood Trend</source>
+        <target>Weekly Mood Trend</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly Pain Trend" xml:space="preserve">
+        <source>Weekly Pain Trend</source>
+        <target>Weekly Pain Trend</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly Report" xml:space="preserve">
+        <source>Weekly Report</source>
+        <target>Weekly Report</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly Steps Chart" xml:space="preserve">
+        <source>Weekly Steps Chart</source>
+        <target>Weekly Steps Chart</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly Target" xml:space="preserve">
+        <source>Weekly Target</source>
+        <target>Weekly Target</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly progress report" xml:space="preserve">
+        <source>Weekly progress report</source>
+        <target>Weekly progress report</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly report" xml:space="preserve">
+        <source>Weekly report</source>
+        <target>Weekly report</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weekly reports" xml:space="preserve">
+        <source>Weekly reports</source>
+        <target>Weekly reports</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Welcome to Pro Prosthesis!" xml:space="preserve">
+        <source>Welcome to Pro Prosthesis!</source>
+        <target>Welcome to Pro Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What date was&#10;your amputation?" xml:space="preserve">
+        <source>What date was
+your amputation?</source>
+        <target>What date was
+your amputation?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What is the name of the liner model?" xml:space="preserve">
+        <source>What is the name of the liner model?</source>
+        <target>What is the name of the liner model?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What kind of prosthesis would you like to add?" xml:space="preserve">
+        <source>What kind of prosthesis would you like to add?</source>
+        <target>What kind of prosthesis would you like to add?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What purpose would you like to add?" xml:space="preserve">
+        <source>What purpose would you like to add?</source>
+        <target>What purpose would you like to add?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What type of prosthesis would you like to add?" xml:space="preserve">
+        <source>What type of prosthesis would you like to add?</source>
+        <target>What type of prosthesis would you like to add?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What was your last pain?" xml:space="preserve">
+        <source>What was your last pain?</source>
+        <target>What was your last pain?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What's the name of the manufacturer?" xml:space="preserve">
+        <source>What's the name of the manufacturer?</source>
+        <target>What's the name of the manufacturer?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="When BG Task is running" xml:space="preserve">
+        <source>When BG Task is running</source>
+        <target>When BG Task is running</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="With an upgrade to the premium &#10; version, the app gets even better!" xml:space="preserve">
+        <source>With an upgrade to the premium 
+ version, the app gets even better!</source>
+        <target>With an upgrade to the premium 
+ version, the app gets even better!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="With an upgrade to the premium version, the app gets even better!" xml:space="preserve">
+        <source>With an upgrade to the premium version, the app gets even better!</source>
+        <target>With an upgrade to the premium version, the app gets even better!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="With the subscription you support the continuous development of the prosthesis app! &#10; at €9.99 per year!" xml:space="preserve">
+        <source>With the subscription you support the continuous development of the prosthesis app! 
+ at €9.99 per year!</source>
+        <target>With the subscription you support the continuous development of the prosthesis app! 
+ at €9.99 per year!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Woman" xml:space="preserve">
+        <source>Woman</source>
+        <target>Woman</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Workouts" xml:space="preserve">
+        <source>Workouts</source>
+        <target>Workouts</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Worn prostheses" xml:space="preserve">
+        <source>Worn prostheses</source>
+        <target>Worn prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wöchentlich" xml:space="preserve">
+        <source>Weekly</source>
+        <target>Weekly</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You are still %lld days in the test phase. During this time you can test some pro features for free." xml:space="preserve">
+        <source>You are still %lld days in the test phase. During this time you can test some pro features for free.</source>
+        <target>You are still %lld days in the test phase. During this time you can test some pro features for free.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You can apply for your new liner for your %@ in 3 days." xml:space="preserve">
+        <source>You can apply for your new liner for your %@ in 3 days.</source>
+        <target>You can apply for your new liner for your %@ in 3 days.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You didn't even stop by yesterday. Just get back into your plan today." xml:space="preserve">
+        <source>You didn't even stop by yesterday. Just get back into your plan today.</source>
+        <target>You didn't even stop by yesterday. Just get back into your plan today.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have an appointment at %@ on %@ at %@ ✌️. Come by and have a look at your notes. 😉" xml:space="preserve">
+        <source>You have an appointment at %1$@ on %2$@ at %3$@ ✌️. Come by and have a look at your notes. 😉</source>
+        <target>You have an appointment at %1$@ on %2$@ at %3$@ ✌️. Come by and have a look at your notes. 😉</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not entered any moods in the current period." xml:space="preserve">
+        <source>You have not entered any moods in the current period.</source>
+        <target>You have not entered any moods in the current period.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not entered any moods yet" xml:space="preserve">
+        <source>You have not entered any moods yet</source>
+        <target>You have not entered any moods yet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not entered any pain in the current period." xml:space="preserve">
+        <source>You have not entered any pain in the current period.</source>
+        <target>You have not entered any pain in the current period.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not entered any pains yet" xml:space="preserve">
+        <source>You have not entered any pains yet</source>
+        <target>You have not entered any pains yet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not saved any Prosthesis" xml:space="preserve">
+        <source>You have not saved any Prosthesis</source>
+        <target>You have not saved any Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not saved any Prosthesis-Liners" xml:space="preserve">
+        <source>You have not saved any Prosthesis-Liners</source>
+        <target>You have not saved any Prosthesis-Liners</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not yet added any moods to your prostheses" xml:space="preserve">
+        <source>You have not yet added any moods to your prostheses</source>
+        <target>You have not yet added any moods to your prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not yet added any pains to your prostheses" xml:space="preserve">
+        <source>You have not yet added any pains to your prostheses</source>
+        <target>You have not yet added any pains to your prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have now tested the app for more than 14 days free of charge. If you want to continue using the Pro features, you need a Pro subscription!" xml:space="preserve">
+        <source>You have now tested the app for more than 14 days free of charge. If you want to continue using the Pro features, you need a Pro subscription!</source>
+        <target>You have now tested the app for more than 14 days free of charge. If you want to continue using the Pro features, you need a Pro subscription!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have reached your goal today!" xml:space="preserve">
+        <source>You have reached your goal today!</source>
+        <target>You have reached your goal today!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have the premium subscription!" xml:space="preserve">
+        <source>You have the premium subscription!</source>
+        <target>You have the premium subscription!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You walked an average of %lld steps per day this week. That's  %lld fewer steps than last week." xml:space="preserve">
+        <source>You walked an average of %lld steps per day this week. That's  %lld fewer steps than last week.</source>
+        <target>You walked an average of %lld steps per day this week. That's  %lld fewer steps than last week.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You walked an average of %lld steps per day this week. These are %lld steps more as last week." xml:space="preserve">
+        <source>You walked an average of %lld steps per day this week. These are %lld steps more as last week.</source>
+        <target>You walked an average of %lld steps per day this week. These are %lld steps more as last week.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You've already reached 50% of your daily step goal." xml:space="preserve">
+        <source>You've already reached 50% of your daily step goal.</source>
+        <target>You've already reached 50% of your daily step goal.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your Pain history this week." xml:space="preserve">
+        <source>Your Pain history this week.</source>
+        <target>Your Pain history this week.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your Pain trend compared to the month before." xml:space="preserve">
+        <source>Your Pain trend compared to the month before.</source>
+        <target>Your Pain trend compared to the month before.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your Pain trend compared to the week before." xml:space="preserve">
+        <source>Your Pain trend compared to the week before.</source>
+        <target>Your Pain trend compared to the week before.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your Prosthesis-Liners?" xml:space="preserve">
+        <source>Your Prosthesis-Liners?</source>
+        <target>Your Prosthesis-Liners?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your Prosthesis?" xml:space="preserve">
+        <source>Your Prosthesis?</source>
+        <target>Your Prosthesis?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your Prosthetic:" xml:space="preserve">
+        <source>Your Prosthetic:</source>
+        <target>Your Prosthetic:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your amputation date is required for your statistics." xml:space="preserve">
+        <source>Your amputation date is required for your statistics.</source>
+        <target>Your amputation date is required for your statistics.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your appointments and notes at a glance." xml:space="preserve">
+        <source>Your appointments and notes at a glance.</source>
+        <target>Your appointments and notes at a glance.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your daily goal for today is %lld steps." xml:space="preserve">
+        <source>Your daily goal for today is %lld steps.</source>
+        <target>Your daily goal for today is %lld steps.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your first name" xml:space="preserve">
+        <source>Your first name</source>
+        <target>Your first name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your mood history this week." xml:space="preserve">
+        <source>Your mood history this week.</source>
+        <target>Your mood history this week.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your mood progression in the prosthesis comparison." xml:space="preserve">
+        <source>Your mood progression in the prosthesis comparison.</source>
+        <target>Your mood progression in the prosthesis comparison.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your mood trend compared to the month before." xml:space="preserve">
+        <source>Your mood trend compared to the month before.</source>
+        <target>Your mood trend compared to the month before.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your mood trend compared to the week before." xml:space="preserve">
+        <source>Your mood trend compared to the week before.</source>
+        <target>Your mood trend compared to the week before.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your next liner for your %@ can now be requested." xml:space="preserve">
+        <source>Your next liner for your %@ can now be requested.</source>
+        <target>Your next liner for your %@ can now be requested.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your pain progression in the prosthesis comparison." xml:space="preserve">
+        <source>Your pain progression in the prosthesis comparison.</source>
+        <target>Your pain progression in the prosthesis comparison.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your personal weekly report" xml:space="preserve">
+        <source>Your personal weekly report</source>
+        <target>Your personal weekly report</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your progress and activities at a glance." xml:space="preserve">
+        <source>Your progress and activities at a glance.</source>
+        <target>Your progress and activities at a glance.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your statistics" xml:space="preserve">
+        <source>Your statistics</source>
+        <target>Your statistics</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your step goal" xml:space="preserve">
+        <source>Your step goal</source>
+        <target>Your step goal</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your step trend compared over the last %lld weeks." xml:space="preserve">
+        <source>Your step trend compared over the last %lld weeks.</source>
+        <target>Your step trend compared over the last %lld weeks.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your steps today" xml:space="preserve">
+        <source>Your steps today</source>
+        <target>Your steps today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your weekly progress compared to the previous week." xml:space="preserve">
+        <source>Your weekly progress compared to the previous week.</source>
+        <target>Your weekly progress compared to the previous week.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your weekly progress is available" xml:space="preserve">
+        <source>Your weekly progress is available</source>
+        <target>Your weekly progress is available</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Zeige erfüllte Tagesziele Schrittüberischt Schrittüberischt" xml:space="preserve">
+        <source>Zeige erfüllte Tagesziele Schrittüberischt Schrittüberischt</source>
+        <target>Zeige erfüllte Tagesziele Schrittüberischt Schrittüberischt</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Zeige erfüllte Tagesziele an" xml:space="preserve">
+        <source>Zeige erfüllte Tagesziele an</source>
+        <target>Zeige erfüllte Tagesziele an</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Zeigt den Record Button auch auf der Schrittüberischt an." xml:space="preserve">
+        <source>Zeigt den Record Button auch auf der Schrittüberischt an.</source>
+        <target>Zeigt den Record Button auch auf der Schrittüberischt an.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Zeit:" xml:space="preserve">
+        <source>Time:</source>
+        <target>Time:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="addFeeling" xml:space="preserve">
+        <source>addFeeling</source>
+        <target>addFeeling</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="andrer Grund" xml:space="preserve">
+        <source>andrer Grund</source>
+        <target>andrer Grund</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="blue" xml:space="preserve">
+        <source>Blue</source>
+        <target>Blue</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="change your mood" xml:space="preserve">
+        <source>change your mood</source>
+        <target>change your mood</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="cold" xml:space="preserve">
+        <source>cold</source>
+        <target>cold</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="data protection" xml:space="preserve">
+        <source>data protection</source>
+        <target>data protection</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="date" xml:space="preserve">
+        <source>date</source>
+        <target>date</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="delete '%@'?" xml:space="preserve">
+        <source>delete '%@'?</source>
+        <target>delete '%@'?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="done" xml:space="preserve">
+        <source>done</source>
+        <target>done</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="e.g. control" xml:space="preserve">
+        <source>e.g. control</source>
+        <target>e.g. control</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="e.g.: weather, cold, heat..." xml:space="preserve">
+        <source>e.g.: weather, cold, heat...</source>
+        <target>e.g.: weather, cold, heat...</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="end" xml:space="preserve">
+        <source>end</source>
+        <target>end</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="entries:" xml:space="preserve">
+        <source>entries:</source>
+        <target>entries:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="family doctor" xml:space="preserve">
+        <source>family doctor</source>
+        <target>family doctor</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="generated: %@ %@" xml:space="preserve">
+        <source>generated: %@ %@</source>
+        <target>generated: %@ %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="good morning wishes" xml:space="preserve">
+        <source>good morning wishes</source>
+        <target>good morning wishes</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="green" xml:space="preserve">
+        <source>Green</source>
+        <target>Green</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="have a good morning 😃" xml:space="preserve">
+        <source>have a good morning 😃</source>
+        <target>have a good morning 😃</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="healthCenter" xml:space="preserve">
+        <source>healthCenter</source>
+        <target>healthCenter</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="healthStore HKObserverQuery Errors" xml:space="preserve">
+        <source>healthStore HKObserverQuery Errors</source>
+        <target>healthStore HKObserverQuery Errors</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="healthStore Provider Errors" xml:space="preserve">
+        <source>healthStore Provider Errors</source>
+        <target>healthStore Provider Errors</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="in %lld Mths, %lld Days" xml:space="preserve">
+        <source>in %lld Mths, %lld Days</source>
+        <target>in %lld Mths, %lld Days</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="in %lld day" xml:space="preserve">
+        <source>in %lld day</source>
+        <target>in %lld day</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="in %lld days" xml:space="preserve">
+        <source>in %lld days</source>
+        <target>in %lld days</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="info@email.de" xml:space="preserve">
+        <source>info@email.de</source>
+        <target>info@email.de</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="next" xml:space="preserve">
+        <source>next</source>
+        <target>next</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="none" xml:space="preserve">
+        <source>none</source>
+        <target>none</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="notify" xml:space="preserve">
+        <source>notify</source>
+        <target>notify</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="orange" xml:space="preserve">
+        <source>Orange</source>
+        <target>Orange</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="orthopedist" xml:space="preserve">
+        <source>orthopedist</source>
+        <target>orthopedist</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="other painkillers" xml:space="preserve">
+        <source>other painkillers</source>
+        <target>other painkillers</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="other reason" xml:space="preserve">
+        <source>other reason</source>
+        <target>other reason</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="prosthesis day." xml:space="preserve">
+        <source>prosthesis day.</source>
+        <target>prosthesis day.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="since %@" xml:space="preserve">
+        <source>since %@</source>
+        <target>since %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="statistics" xml:space="preserve">
+        <source>statistics</source>
+        <target>statistics</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="value" xml:space="preserve">
+        <source>value</source>
+        <target>value</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="warmth" xml:space="preserve">
+        <source>warmth</source>
+        <target>warmth</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="weather" xml:space="preserve">
+        <source>weather</source>
+        <target>weather</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="your pain!" xml:space="preserve">
+        <source>your pain!</source>
+        <target>your pain!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="© Frederik Kohler %@" xml:space="preserve">
+        <source>© Frederik Kohler %@</source>
+        <target>© Frederik Kohler %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ø %@ Steps" xml:space="preserve">
+        <source>Ø %@ Steps</source>
+        <target>Ø %@ Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ø %@ hrs. %@ mins." xml:space="preserve">
+        <source>Ø %@ hrs. %@ mins.</source>
+        <target>Ø %@ hrs. %@ mins.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ %@:%@h" xml:space="preserve">
+        <source>⌀ %@:%@h</source>
+        <target>⌀ %@:%@h</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ %@km " xml:space="preserve">
+        <source>⌀ %@km </source>
+        <target>⌀ %@km </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ %lld" xml:space="preserve">
+        <source>⌀ %lld</source>
+        <target>⌀ %lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ %lld steps" xml:space="preserve">
+        <source>⌀ %lld steps</source>
+        <target>⌀ %lld steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ %lld steps a day this week" xml:space="preserve">
+        <source>⌀ %lld steps a day this week</source>
+        <target>⌀ %lld steps a day this week</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ Pain value" xml:space="preserve">
+        <source>⌀ Pain value</source>
+        <target>⌀ Pain value</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ Steps" xml:space="preserve">
+        <source>⌀ Steps</source>
+        <target>⌀ Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="⌀ Wearingtime" xml:space="preserve">
+        <source>⌀ Wearingtime</source>
+        <target>⌀ Wearingtime</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="en.lproj/Pro-these--InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Pro Prothese</source>
+        <target>Pro Prothese</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Pro-these-</source>
+        <target>Pro-these-</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCalendarsUsageDescription" xml:space="preserve">
+        <source>Prostheses App would like to access your calendar and create or delete entries.</source>
+        <target>Prostheses App would like to access your calendar and create or delete entries.</target>
+        <note>Privacy - Calendars Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSFaceIDUsageDescription" xml:space="preserve">
+        <source>Pro-these- wants to unlock the app via FaceID</source>
+        <target>Pro-these- wants to unlock the app via FaceID</target>
+        <note>Privacy - Face ID Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthClinicalHealthRecordsShareUsageDescription" xml:space="preserve">
+        <source>Pro-these- wants to save your active readings</source>
+        <target>Pro-these- wants to save your active readings</target>
+        <note>Privacy - Health Records Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthShareUsageDescription" xml:space="preserve">
+        <source>Pro-these- wants to access your active readings</source>
+        <target>Pro-these- wants to access your active readings</target>
+        <note>Privacy - Health Share Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthUpdateUsageDescription" xml:space="preserve">
+        <source>Pro-these- wants to change your active readings</source>
+        <target>Pro-these- wants to change your active readings</target>
+        <note>Privacy - Health Update Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysAndWhenInUseUsageDescription" xml:space="preserve">
+        <source>Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen</source>
+        <target>Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen</target>
+        <note>Privacy - Location Always and When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysUsageDescription" xml:space="preserve">
+        <source>Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen</source>
+        <target>Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen</target>
+        <note>Privacy - Location Always Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen</source>
+        <target>Prothesen App benötigt Zugriff auf ihren Standort, um ihre Workouts nachzuverfolgen</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryAddUsageDescription" xml:space="preserve">
+        <source>Pro-these- wants to save snapshots in your Photo App</source>
+        <target>Pro-these- wants to save snapshots in your Photo App</target>
+        <note>Privacy - Photo Library Additions Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSUserTrackingUsageDescription" xml:space="preserve">
+        <source>This identifier will be used to deliver personalized ads to you.</source>
+        <target>This identifier will be used to deliver personalized ads to you.</target>
+        <note>Privacy - Tracking Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="en.lproj/ProWatchOS-Watch-App-InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Pro Prothese </source>
+        <target>Pro Prothese </target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>ProWatchOS Watch App</source>
+        <target>ProWatchOS Watch App</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHealthClinicalHealthRecordsShareUsageDescription" xml:space="preserve">
+        <source>ProWatchOS Watch App would like to save your active readings</source>
+        <target>ProWatchOS Watch App would like to save your active readings</target>
+        <note>Privacy - Health Records Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthShareUsageDescription" xml:space="preserve">
+        <source>ProWatchOS Watch App wants to access your active readings</source>
+        <target>ProWatchOS Watch App wants to access your active readings</target>
+        <note>Privacy - Health Share Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthUpdateUsageDescription" xml:space="preserve">
+        <source>ProWatchOS Watch App wants to change your active readings</source>
+        <target>ProWatchOS Watch App wants to change your active readings</target>
+        <note>Privacy - Health Update Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysAndWhenInUseUsageDescription" xml:space="preserve">
+        <source>Prothesen App needs access to their location to track their workouts</source>
+        <target>Prothesen App needs access to their location to track their workouts</target>
+        <note>Privacy - Location Always and When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>ProWatchOS Watch App needs access to their location to track their workouts</source>
+        <target>ProWatchOS Watch App needs access to their location to track their workouts</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ProProtheseWidget/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>ProProtheseWidget</source>
+        <target>ProProtheseWidget</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>ProProtheseWidgetExtension</source>
+        <target>ProProtheseWidgetExtension</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHealthClinicalHealthRecordsShareUsageDescription" xml:space="preserve">
+        <source>ProProtheseWidgetExtension wants to save your active readings</source>
+        <target>ProProtheseWidgetExtension wants to save your active readings</target>
+        <note>Privacy - Health Records Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthShareUsageDescription" xml:space="preserve">
+        <source>ProProtheseWidgetExtension wants to access your active readings</source>
+        <target>ProProtheseWidgetExtension wants to access your active readings</target>
+        <note>Privacy - Health Share Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthUpdateUsageDescription" xml:space="preserve">
+        <source>ProProtheseWidgetExtension wants to change your active readings</source>
+        <target>ProProtheseWidgetExtension wants to change your active readings</target>
+        <note>Privacy - Health Update Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <target/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ProProtheseWidget/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <target>%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ %@" xml:space="preserve">
+        <source>%@ %@</source>
+        <target>%@ %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ Steps" xml:space="preserve">
+        <source>%@ Steps</source>
+        <target>%@ Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@, %@" xml:space="preserve">
+        <source>%@, %@</source>
+        <target>%@, %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld" xml:space="preserve">
+        <source>%lld</source>
+        <target>%lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Steps" xml:space="preserve">
+        <source>%lld Steps</source>
+        <target>%lld Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Above knee Prothesis" xml:space="preserve">
+        <source>Above knee Prothesis</source>
+        <target>Above knee Prothesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Below knee Prothesis" xml:space="preserve">
+        <source>Below knee Prothesis</source>
+        <target>Below knee Prothesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Check your prosthesis timer." xml:space="preserve">
+        <source>Check your prosthesis timer.</source>
+        <target>Check your prosthesis timer.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Default" xml:space="preserve">
+        <source>Default</source>
+        <target>Default</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Document your pain quickly and easily." xml:space="preserve">
+        <source>Document your pain quickly and easily.</source>
+        <target>Document your pain quickly and easily.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter it quickly how the prosthesis is doing today." xml:space="preserve">
+        <source>Enter it quickly how the prosthesis is doing today.</source>
+        <target>Enter it quickly how the prosthesis is doing today.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Everyday" xml:space="preserve">
+        <source>Everyday</source>
+        <target>Everyday</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Everyday Prosthesis" xml:space="preserve">
+        <source>Everyday Prosthesis</source>
+        <target>Everyday Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Everyday Prosthesis Liner" xml:space="preserve">
+        <source>Everyday Prosthesis Liner</source>
+        <target>Everyday Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Feelings at a glance" xml:space="preserve">
+        <source>Feelings at a glance</source>
+        <target>Feelings at a glance</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hey, are you in pain today?" xml:space="preserve">
+        <source>Hey, are you in pain today?</source>
+        <target>Hey, are you in pain today?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hey, how are you feeling today?" xml:space="preserve">
+        <source>Hey, how are you feeling today?</source>
+        <target>Hey, how are you feeling today?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How are you doing?" xml:space="preserve">
+        <source>How are you doing?</source>
+        <target>How are you doing?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Large Widget" xml:space="preserve">
+        <source>Large Widget</source>
+        <target>Large Widget</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Everyday Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Everyday Prosthesis</source>
+        <target>Maintaince of the Everyday Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Replacement Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Replacement Prosthesis</source>
+        <target>Maintaince of the Replacement Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Sports Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Sports Prosthesis</source>
+        <target>Maintaince of the Sports Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maintaince of the Waterproof Prosthesis" xml:space="preserve">
+        <source>Maintaince of the Waterproof Prosthesis</source>
+        <target>Maintaince of the Waterproof Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="My Widget" xml:space="preserve">
+        <source>My Widget</source>
+        <target>My Widget</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Kind" xml:space="preserve">
+        <source>No Kind</source>
+        <target>No Kind</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Prostheses" xml:space="preserve">
+        <source>No Prostheses</source>
+        <target>No Prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Prosthesis" xml:space="preserve">
+        <source>No Prosthesis</source>
+        <target>No Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Prosthesis Liner" xml:space="preserve">
+        <source>No Prosthesis Liner</source>
+        <target>No Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Type" xml:space="preserve">
+        <source>No Type</source>
+        <target>No Type</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Everyday Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Everyday Prosthesis in good time!</source>
+        <target>Order your liner for the Everyday Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Replacement Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Replacement Prosthesis in good time!</source>
+        <target>Order your liner for the Replacement Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Sports Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Sports Prosthesis in good time!</source>
+        <target>Order your liner for the Sports Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Order your liner for the Waterproof Prosthesis in good time!" xml:space="preserve">
+        <source>Order your liner for the Waterproof Prosthesis in good time!</source>
+        <target>Order your liner for the Waterproof Prosthesis in good time!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Phantom limb pains?" xml:space="preserve">
+        <source>Phantom limb pains?</source>
+        <target>Phantom limb pains?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pro Feature" xml:space="preserve">
+        <source>Pro Feature</source>
+        <target>Pro Feature</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Pro Prothese" xml:space="preserve">
+        <source>Pro Prothese</source>
+        <target>Pro Prothese</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis time today" xml:space="preserve">
+        <source>Prosthesis time today</source>
+        <target>Prosthesis time today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis wearing time" xml:space="preserve">
+        <source>Prosthesis wearing time</source>
+        <target>Prosthesis wearing time</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Prosthesis wearing times" xml:space="preserve">
+        <source>Prosthesis wearing times</source>
+        <target>Prosthesis wearing times</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Replacement" xml:space="preserve">
+        <source>Replacement</source>
+        <target>Replacement</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Replacement Prosthesis" xml:space="preserve">
+        <source>Replacement Prosthesis</source>
+        <target>Replacement Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Replacement Prosthesis Liner" xml:space="preserve">
+        <source>Replacement Prosthesis Liner</source>
+        <target>Replacement Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="See your daily progress everywhere" xml:space="preserve">
+        <source>See your daily progress everywhere</source>
+        <target>See your daily progress everywhere</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="See your feelings" xml:space="preserve">
+        <source>See your feelings</source>
+        <target>See your feelings</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Small Widget" xml:space="preserve">
+        <source>Small Widget</source>
+        <target>Small Widget</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sport Prostheses" xml:space="preserve">
+        <source>Sport Prostheses</source>
+        <target>Sport Prostheses</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sports" xml:space="preserve">
+        <source>Sports</source>
+        <target>Sports</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sports Prosthesis" xml:space="preserve">
+        <source>Sports Prosthesis</source>
+        <target>Sports Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sports Prosthesis Liner" xml:space="preserve">
+        <source>Sports Prosthesis Liner</source>
+        <target>Sports Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Steps today" xml:space="preserve">
+        <source>Steps today</source>
+        <target>Steps today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Stop wearing your prostheses." xml:space="preserve">
+        <source>Stop wearing your prostheses.</source>
+        <target>Stop wearing your prostheses.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Everyday Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Everyday Prosthesis!</source>
+        <target>The next maintenance appointment for your Everyday Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Replacement Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Replacement Prosthesis!</source>
+        <target>The next maintenance appointment for your Replacement Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Sports Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Sports Prosthesis!</source>
+        <target>The next maintenance appointment for your Sports Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The next maintenance appointment for your Waterproof Prosthesis!" xml:space="preserve">
+        <source>The next maintenance appointment for your Waterproof Prosthesis!</source>
+        <target>The next maintenance appointment for your Waterproof Prosthesis!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is an example widget." xml:space="preserve">
+        <source>This is an example widget.</source>
+        <target>This is an example widget.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is how you feel today with your prosthesis." xml:space="preserve">
+        <source>This is how you feel today with your prosthesis.</source>
+        <target>This is how you feel today with your prosthesis.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Time: %@" xml:space="preserve">
+        <source>Time: %@</source>
+        <target>Time: %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Waterproof" xml:space="preserve">
+        <source>Waterproof</source>
+        <target>Waterproof</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Waterproof Prosthesis" xml:space="preserve">
+        <source>Waterproof Prosthesis</source>
+        <target>Waterproof Prosthesis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Waterproof Prosthesis Liner" xml:space="preserve">
+        <source>Waterproof Prosthesis Liner</source>
+        <target>Waterproof Prosthesis Liner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="none" xml:space="preserve">
+        <source>none</source>
+        <target>none</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ProWatchOS Watch App/ProProtheseWatchComplication/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>ProProtheseWatchComplication</source>
+        <target>ProProtheseWatchComplication</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>ProProtheseWatchComplicationExtension</source>
+        <target>ProProtheseWatchComplicationExtension</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHealthClinicalHealthRecordsShareUsageDescription" xml:space="preserve">
+        <source>ProProtheseWatchComplicationExtension wants to save your active readings</source>
+        <target>ProProtheseWatchComplicationExtension wants to save your active readings</target>
+        <note>Privacy - Health Records Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthShareUsageDescription" xml:space="preserve">
+        <source>ProProtheseWatchComplicationExtension wants to access your active readings</source>
+        <target>ProProtheseWatchComplicationExtension wants to access your active readings</target>
+        <note>Privacy - Health Share Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthUpdateUsageDescription" xml:space="preserve">
+        <source>ProProtheseWatchComplicationExtension wants to change your active readings</source>
+        <target>ProProtheseWatchComplicationExtension wants to change your active readings</target>
+        <note>Privacy - Health Update Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <target/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+      <trans-unit id="NSLocationUsageDescription" xml:space="preserve">
+        <source>ProProtheseWatchComplicationExtension needs access to their location to track their workouts</source>
+        <target>ProProtheseWatchComplicationExtension needs access to their location to track their workouts</target>
+        <note>Privacy - Location Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ProWatchOS Watch App/ProProtheseWatchComplication/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="%lld" xml:space="preserve">
+        <source>%lld</source>
+        <target>%lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld%% vom Ziel" xml:space="preserve">
+        <source>%lld%% vom Ziel</source>
+        <target>%lld%% vom Ziel</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Speed" xml:space="preserve">
+        <source>Speed</source>
+        <target>Speed</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Steps today" xml:space="preserve">
+        <source>Steps today</source>
+        <target>Steps today</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is an example widget." xml:space="preserve">
+        <source>This is an example widget.</source>
+        <target>This is an example widget.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="default" xml:space="preserve">
+        <source>default</source>
+        <target>default</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="🦿" xml:space="preserve">
+        <source>🦿</source>
+        <target>🦿</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ProWatchOS Watch App/StopWatchComplication/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>StopWatchComplication</source>
+        <target>StopWatchComplication</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>StopWatchComplicationExtension</source>
+        <target>StopWatchComplicationExtension</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHealthClinicalHealthRecordsShareUsageDescription" xml:space="preserve">
+        <source>StopWatchComplicationExtension wants to save your active metrics</source>
+        <target>StopWatchComplicationExtension wants to save your active metrics</target>
+        <note>Privacy - Health Records Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthShareUsageDescription" xml:space="preserve">
+        <source>StopWatchComplicationExtension wants to access your active metrics</source>
+        <target>StopWatchComplicationExtension wants to access your active metrics</target>
+        <note>Privacy - Health Share Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHealthUpdateUsageDescription" xml:space="preserve">
+        <source>StopWatchComplicationExtension wants to change your active metrics</source>
+        <target>StopWatchComplicationExtension wants to change your active metrics</target>
+        <note>Privacy - Health Update Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <target/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+      <trans-unit id="NSLocationUsageDescription" xml:space="preserve">
+        <source>StopWatchComplicationExtension needs access to their location to track their workouts</source>
+        <target>StopWatchComplicationExtension needs access to their location to track their workouts</target>
+        <note>Privacy - Location Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ProWatchOS Watch App/StopWatchComplication/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0" build-num="15A240d"/>
+    </header>
+    <body>
+      <trans-unit id=" " xml:space="preserve">
+        <source> </source>
+        <target> </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@:%@:%@" xml:space="preserve">
+        <source>%@:%@:%@</source>
+        <target>%@:%@:%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld Steps" xml:space="preserve">
+        <source>%lld Steps</source>
+        <target>%lld Steps</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Start and end your prosthetic times quickly." xml:space="preserve">
+        <source>Start and end your prosthetic times quickly.</source>
+        <target>Start and end your prosthetic times quickly.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="T" xml:space="preserve">
+        <source>T</source>
+        <target>T</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="default" xml:space="preserve">
+        <source>default</source>
+        <target>default</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="prosthesis timer" xml:space="preserve">
+        <source>prosthesis timer</source>
+        <target>prosthesis timer</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="🦿" xml:space="preserve">
+        <source>🦿</source>
+        <target>🦿</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

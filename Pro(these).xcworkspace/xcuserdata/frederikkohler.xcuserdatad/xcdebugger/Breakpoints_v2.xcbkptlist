@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E840CBAD-C3CB-4B91-974F-F41A126A1646"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63341772-9776-468B-B0BD-EBAC7C558FAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pro(these)/Views/TabViews/Pain/PainEntry.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1451"
+            endingLineNumber = "1451"
+            landmarkName = "BarView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pro(these)/Views/TabViews/Pain/PainEntry.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1409"
+            endingLineNumber = "1409"
+            landmarkName = "getAllProthesesWearedToday(date:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - 527e96d7be0db4c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pro_these_.PainDetailView.getAllProthesesWearedToday(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; Swift.Array&lt;Pro_these_.ProthesenTimes&gt;"
+                  moduleName = "Pro-these-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/frederikkohler/Desktop/MyApps%20Development/Pro-these-/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1409"
+                  endingLineNumber = "1409"
+                  offsetFromSymbolStart = "4168">
+               </Location>
+               <Location
+                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - 527e96d7be0db4c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pro_these_.PainDetailView.getAllProthesesWearedToday(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; Swift.Array&lt;Pro_these_.ProthesenTimes&gt;"
+                  moduleName = "Pro-these-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/frederikkohler/Desktop/MyApps%20Development/Pro-these-/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1409"
+                  endingLineNumber = "1409"
+                  offsetFromSymbolStart = "4120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,24 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/Result+Alamofire.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Result+Alamofire.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Result+Alamofire.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Result+Alamofire.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Result+Alamofire.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Result+Alamofire.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/RetryPolicy.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/RetryPolicy.swiftconstvalues"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/RetryPolicy.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/RetryPolicy.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/RetryPolicy.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/RetryPolicy.dia"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/ServerTrustEvaluation.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ServerTrustEvaluation.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ServerTrustEvaluation.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ServerTrustEvaluation.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ServerTrustEvaluation.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ServerTrustEvaluation.o"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/ResponseSerialization.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ResponseSerialization.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ResponseSerialization.dia"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ResponseSerialization.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ResponseSerialization.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/ResponseSerialization.d"

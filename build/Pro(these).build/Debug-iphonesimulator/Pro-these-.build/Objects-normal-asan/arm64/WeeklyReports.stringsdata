@@ -1,0 +1,56 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Home/WeeklyReports/WeeklyReports.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "All Weekly Reports"
+      },
+      {
+        "comment": "",
+        "key": "%@ %lld%%"
+      },
+      {
+        "comment": "",
+        "key": "%lld Steps"
+      },
+      {
+        "comment": "",
+        "key": "⌀ Steps"
+      },
+      {
+        "comment": "",
+        "key": "%@ hrs. %@ mins."
+      },
+      {
+        "comment": "",
+        "key": "Total Wearingtime"
+      },
+      {
+        "comment": "",
+        "key": "⌀ Wearingtime"
+      },
+      {
+        "comment": "",
+        "key": "%@ km"
+      },
+      {
+        "comment": "",
+        "key": "Total Distance"
+      },
+      {
+        "comment": "",
+        "key": "generated: %@ %@"
+      },
+      {
+        "comment": "",
+        "key": "Delete"
+      },
+      {
+        "comment": "",
+        "key": "Weekly report"
+      }
+    ]
+  },
+  "version": 1
+}

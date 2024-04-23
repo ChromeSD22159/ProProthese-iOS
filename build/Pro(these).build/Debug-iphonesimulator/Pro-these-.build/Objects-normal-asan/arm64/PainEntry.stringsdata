@@ -1,0 +1,220 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Pain/PainEntry.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Keep track of your phantom limb pain."
+      },
+      {
+        "comment": "",
+        "key": "Statistics"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "⌀ Pain value"
+      },
+      {
+        "comment": "",
+        "key": "Number of entries"
+      },
+      {
+        "comment": "",
+        "key": "No Reason"
+      },
+      {
+        "comment": "",
+        "key": "No Painkiller"
+      },
+      {
+        "comment": "",
+        "key": "Enter current pain"
+      },
+      {
+        "comment": "",
+        "key": "Document your current pain"
+      },
+      {
+        "comment": "",
+        "key": "entries:"
+      },
+      {
+        "comment": "",
+        "key": "Administer"
+      },
+      {
+        "comment": "",
+        "key": "The pain recorder is available in the current version. A more detailed recording is planned, in combination with a medication plan/reminder. In addition, a PDF creation of the documented data is planned, which can be easily shared or emailed to the appropriate contacts. In addition, other widgets and statistics are created."
+      },
+      {
+        "comment": "",
+        "key": "No pain recorded!"
+      },
+      {
+        "comment": "",
+        "key": "Pain average per reason"
+      },
+      {
+        "comment": "",
+        "key": "Reason"
+      },
+      {
+        "comment": "",
+        "key": "Pain"
+      },
+      {
+        "comment": "",
+        "key": "Pain assessment"
+      },
+      {
+        "comment": "",
+        "key": "What was your last pain?"
+      },
+      {
+        "comment": "",
+        "key": "Lowest"
+      },
+      {
+        "comment": "",
+        "key": "Average"
+      },
+      {
+        "comment": "",
+        "key": "Highest"
+      },
+      {
+        "comment": "",
+        "key": "Find your pain connections"
+      },
+      {
+        "comment": "",
+        "key": "Highest Steps: %lld"
+      },
+      {
+        "comment": "",
+        "key": "Quality: %lld%%"
+      },
+      {
+        "comment": "",
+        "key": "Mostly weather:"
+      },
+      {
+        "comment": "",
+        "key": "Highest Temperature: %lld °C"
+      },
+      {
+        "comment": "",
+        "key": "Highest Temperature: %lld °F"
+      },
+      {
+        "comment": "",
+        "key": "Highest Pressures: %lld hPa"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Delete reason?"
+      },
+      {
+        "comment": "",
+        "key": "weather"
+      },
+      {
+        "comment": "",
+        "key": "cold"
+      },
+      {
+        "comment": "",
+        "key": "warmth"
+      },
+      {
+        "comment": "",
+        "key": "Delete %@?"
+      },
+      {
+        "comment": "",
+        "key": "Delete painkillers?"
+      },
+      {
+        "comment": "",
+        "key": "Delete entry"
+      },
+      {
+        "comment": "",
+        "key": "%lld pain index"
+      },
+      {
+        "comment": "",
+        "key": "Delete %d?"
+      },
+      {
+        "comment": "",
+        "key": "Pain from %@"
+      },
+      {
+        "comment": "",
+        "key": "Saved data"
+      },
+      {
+        "comment": "",
+        "key": "%@ Steps"
+      },
+      {
+        "comment": "",
+        "key": "No step data"
+      },
+      {
+        "comment": "",
+        "key": "°C"
+      },
+      {
+        "comment": "",
+        "key": "°F"
+      },
+      {
+        "comment": "",
+        "key": "No weather data"
+      },
+      {
+        "comment": "",
+        "key": "%@ hPa"
+      },
+      {
+        "comment": "",
+        "key": "No pressure data"
+      },
+      {
+        "comment": "",
+        "key": "00 hrs. 01 mins."
+      },
+      {
+        "comment": "",
+        "key": "%@ hrs. %@ mins."
+      },
+      {
+        "comment": "",
+        "key": "No time"
+      },
+      {
+        "comment": "",
+        "key": "No prosthetic data"
+      },
+      {
+        "comment": "",
+        "key": "Prostheses worn on %@"
+      },
+      {
+        "comment": "",
+        "key": "%@ hrs. %@ mins. %@ sec."
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameWidgetBackground</string>
+			<key>relativePath</key>
+			<string>./WidgetBackground.colorset</string>
+			<key>swiftSymbol</key>
+			<string>widgetBackground</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameProLabel</string>
+			<key>relativePath</key>
+			<string>./ProLabel.imageset</string>
+			<key>swiftSymbol</key>
+			<string>proLabel</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChartFeeling1</string>
+			<key>relativePath</key>
+			<string>./chart_feeling_1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chartFeeling1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChartFeeling2</string>
+			<key>relativePath</key>
+			<string>./chart_feeling_2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chartFeeling2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChartFeeling3</string>
+			<key>relativePath</key>
+			<string>./chart_feeling_3.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chartFeeling3</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChartFeeling4</string>
+			<key>relativePath</key>
+			<string>./chart_feeling_4.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chartFeeling4</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameChartFeeling5</string>
+			<key>relativePath</key>
+			<string>./chart_feeling_5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>chartFeeling5</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDistance</string>
+			<key>relativePath</key>
+			<string>./distance.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>distance</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFeeling1</string>
+			<key>relativePath</key>
+			<string>./Feelings/feeling_1.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>feeling1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFeeling2</string>
+			<key>relativePath</key>
+			<string>./Feelings/feeling_2.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>feeling2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFeeling3</string>
+			<key>relativePath</key>
+			<string>./Feelings/feeling_3.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>feeling3</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFeeling4</string>
+			<key>relativePath</key>
+			<string>./Feelings/feeling_4.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>feeling4</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFeeling5</string>
+			<key>relativePath</key>
+			<string>./Feelings/feeling_5.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>feeling5</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFigureProthese</string>
+			<key>relativePath</key>
+			<string>./figure.prothese.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>figureProthese</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFigureProtheseMotion</string>
+			<key>relativePath</key>
+			<string>./figure.prothese.motion.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>figureProtheseMotion</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameFigureSteps</string>
+			<key>relativePath</key>
+			<string>./figure.steps.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>figureSteps</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePain</string>
+			<key>relativePath</key>
+			<string>./pain.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>pain</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameProtheseAbove</string>
+			<key>relativePath</key>
+			<string>./prothese.above.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>protheseAbove</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameProtheseBelow</string>
+			<key>relativePath</key>
+			<string>./prothese.below.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>protheseBelow</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/ProProtheseWidget/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameProtheseLiner</string>
+			<key>relativePath</key>
+			<string>./prothese.liner.symbolset</string>
+			<key>swiftSymbol</key>
+			<string>protheseLiner</string>
+		</dict>
+	</array>
+</dict>
+</plist>

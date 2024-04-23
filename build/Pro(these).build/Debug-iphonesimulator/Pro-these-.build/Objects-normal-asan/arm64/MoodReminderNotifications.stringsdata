@@ -1,0 +1,28 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Notification/MoodReminderNotifications.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Pro Prothese"
+      },
+      {
+        "comment": "",
+        "key": "Hey! How are you feeling today? ✌️"
+      },
+      {
+        "comment": "",
+        "key": "Hey! A new day, new experiences, don't you want to save them? ✌️"
+      },
+      {
+        "comment": "",
+        "key": "Tell me about your day 🦾 🦾"
+      },
+      {
+        "comment": "",
+        "key": "Don't leave a blank page in your prosthesis diary. ✌️"
+      }
+    ]
+  },
+  "version": 1
+}

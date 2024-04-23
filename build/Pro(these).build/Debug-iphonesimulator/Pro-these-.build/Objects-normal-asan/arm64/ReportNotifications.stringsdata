@@ -1,0 +1,24 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Notification/ReportNotifications.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Your weekly progress is available"
+      },
+      {
+        "comment": "",
+        "key": "The summary of your current progress for the last week is now available."
+      },
+      {
+        "comment": "",
+        "key": "Your personal weekly report"
+      },
+      {
+        "comment": "",
+        "key": "Find out how your last week was. 💪"
+      }
+    ]
+  },
+  "version": 1
+}

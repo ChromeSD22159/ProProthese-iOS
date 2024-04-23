@@ -1,0 +1,18 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Shared/WatchConnectivityProvider.swift":
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/WatchConnectivityProvider.d"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/WatchConnectivityProvider.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/WatchConnectivityProvider.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/WatchConnectivityProvider.dia"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/WatchConnectivityProvider.swiftdeps"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Manager/Theme.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Theme.swiftdeps"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Theme.d"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Theme.dia"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Theme.o"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Theme.swiftconstvalues"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Extention/Int.swift":
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Int.dia"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Int.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Int.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Int.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pro(these).build/Debug-watchsimulator/StopWatchComplicationExtension.build/Objects-normal-asan/x86_64/Int.d"

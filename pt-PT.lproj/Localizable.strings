@@ -1,0 +1,2076 @@
+/* No comment provided by engineer. */
+"-" = "-";
+
+/* No comment provided by engineer. */
+"- -" = "- -";
+
+/* No comment provided by engineer. */
+"*" = "*";
+
+/* No comment provided by engineer. */
+"* 14-day free trial" = "* Teste gratuito de 14 dias";
+
+/* No comment provided by engineer. */
+"**%lld floors**" = "**%lld andares ocupados**";
+
+/* No comment provided by engineer. */
+"%.0f Steps" = "%.0f etapas";
+
+/* No comment provided by engineer. */
+"%.1f Darkness" = "Escurecer %.1f";
+
+/* No comment provided by engineer. */
+"%@ - %@" = "%@ - %@";
+
+/* No comment provided by engineer. */
+"%@ %lld%%" = "%@ %lld%%";
+
+/* No comment provided by engineer. */
+"%@ edit" = "%@ editar";
+
+/* No comment provided by engineer. */
+"%@ hrs. %@ mins." = "%@ h. %@ min.";
+
+/* No comment provided by engineer. */
+"%@ hrs. %@ mins. %@ sec." = "%@ horas. %@ minutos. %@ seg.";
+
+/* No comment provided by engineer. */
+"%@ k" = "%@ k";
+
+/* No comment provided by engineer. */
+"%@ Steps" = "%@ Passos";
+
+/* No comment provided by engineer. */
+"%@ steps today" = "%@ passos hoje";
+
+/* No comment provided by engineer. */
+"%@ steps yesterday" = "%@ passos ontem";
+
+/* No comment provided by engineer. */
+"%@%@%%" = "%@%@%%";
+
+/* No comment provided by engineer. */
+"%@%%" = "%@%%";
+
+/* No comment provided by engineer. */
+"%@%% less than the day before!" = "%@%% menos que no dia anterior!";
+
+/* No comment provided by engineer. */
+"%@%% more than the day before!" = "%@%% mais que no dia anterior!";
+
+/* No comment provided by engineer. */
+"%@h" = "%@h";
+
+/* No comment provided by engineer. */
+"%lld daily step goal" = "%lld meta de passos diários";
+
+/* No comment provided by engineer. */
+"%lld Day" = "%lld dia";
+
+/* No comment provided by engineer. */
+"%lld day ago" = "%lld dia atrás";
+
+/* No comment provided by engineer. */
+"%lld Days" = "%lld dias";
+
+/* No comment provided by engineer. */
+"%lld days ago" = "%lld dias atrás";
+
+/* No comment provided by engineer. */
+"%lld Months" = "%lld meses";
+
+/* No comment provided by engineer. */
+"%lld months interval" = "Intervalo de %lld meses";
+
+/* No comment provided by engineer. */
+"%lld Mths." = "%lld meses.";
+
+/* No comment provided by engineer. */
+"%lld pain index" = "%lld índice de dor";
+
+/* No comment provided by engineer. */
+"%lld Step" = "%lld Etapa";
+
+/* No comment provided by engineer. */
+"%lld step goal" = "%lld meta de passos";
+
+/* No comment provided by engineer. */
+"%lld Steps" = "%lld Etapas";
+
+/* No comment provided by engineer. */
+"%lld Yrs, %lld Mths, %lld Days" = "%lld anos, %lld meses, %lld dias";
+
+/* No comment provided by engineer. */
+"%lldx" = "%lldx";
+
+/* No comment provided by engineer. */
+"⌀ %@:%@h" = "⌀ %@:%@h";
+
+/* No comment provided by engineer. */
+"⌀ %lld steps" = "⌀ %lld etapas";
+
+/* No comment provided by engineer. */
+"⌀ %lld steps a day this week" = "⌀ %lld passos por dia esta semana";
+
+/* No comment provided by engineer. */
+"⌀ Pain value" = "⌀ Valor da dor";
+
+/* No comment provided by engineer. */
+"⌀ Steps" = "⌀ Passos";
+
+/* No comment provided by engineer. */
+"⌀ Wearingtime" = "⌀ Tempo de uso";
+
+/* No comment provided by engineer. */
+"🎁 save %lld%%" = "🎁 economize %lld%%";
+
+/* No comment provided by engineer. */
+"0 Days" = "0 dias";
+
+/* No comment provided by engineer. */
+"1 day before" = "1 dia antes";
+
+/* No comment provided by engineer. */
+"1 hours before" = "1 hora antes";
+
+/* No comment provided by engineer. */
+"1,99€ - Monthly" = "1,99€ - Mensal";
+
+/* No comment provided by engineer. */
+"2 days before" = "2 dias antes";
+
+/* No comment provided by engineer. */
+"2 hours before" = "2 horas antes";
+
+/* No comment provided by engineer. */
+"3 days before" = "3 dias antes";
+
+/* No comment provided by engineer. */
+"10 minutes before" = "10 minutos antes";
+
+/* No comment provided by engineer. */
+"19,99€ - Yearly" = "19,99€ - Anual";
+
+/* No comment provided by engineer. */
+"30 minutes before" = "30 minutos antes";
+
+/* No comment provided by engineer. */
+"100% ad-free" = "100% livre de anúncios";
+
+/* No comment provided by engineer. */
+"A little Motivation for a great day 🦾 🦾" = "Um pouco de motivação para um ótimo dia 🦾 🦾";
+
+/* No comment provided by engineer. */
+"A reminder about the appointment will be sent 24 hours before the appointment." = "Um lembrete sobre o agendamento será enviado 24 horas antes do agendamento.";
+
+/* No comment provided by engineer. */
+"A single premium membership is available on each platform (iOS, watchOS).\n\nFamily sharing allows you and up to five other family members to use Pro Prosthesis." = "Uma única assinatura premium está disponível em cada plataforma (iOS, watchOS).\n\nO compartilhamento familiar permite que você e até cinco outros membros da família usem o Pro Prótese.";
+
+/* No comment provided by engineer. */
+"Above knee Prothesis" = "Prótese acima do joelho";
+
+/* No comment provided by engineer. */
+"Access Permissions" = "Permissões de acesso";
+
+/* No comment provided by engineer. */
+"Achieved step goals" = "Alterar a cor do indicador Metas de etapas alcançadas";
+
+/* No comment provided by engineer. */
+"Action:" = "Ação:";
+
+/* No comment provided by engineer. */
+"Activity Rings" = "Anéis de atividades";
+
+/* No comment provided by engineer. */
+"Add" = "Adicionar";
+
+/* No comment provided by engineer. */
+"Add \n Contact" = "Adicionar\n Contato";
+
+/* No comment provided by engineer. */
+"Add another Prosthesis liner" = "Adicione outro liner de prótese";
+
+/* No comment provided by engineer. */
+"Add another Prosthetics" = "Adicionar outra prótese";
+
+/* No comment provided by engineer. */
+"Add Contact person!" = "Adicionar pessoa de contato!";
+
+/* No comment provided by engineer. */
+"Add even more contacts" = "Adicione ainda mais contatos";
+
+/* No comment provided by engineer. */
+"Add event" = "Adicionar compromisso";
+
+/* No comment provided by engineer. */
+"Add Note" = "Adicionar nota";
+
+/* No comment provided by engineer. */
+"Add Prosthetics" = "Adicionar próteses";
+
+/* No comment provided by engineer. */
+"Add Prosthetics liners" = "Adicionar Liner protéticos";
+
+/* No comment provided by engineer. */
+"Add repeating events" = "Adicione eventos repetidos";
+
+/* No comment provided by engineer. */
+"Add your first Prosthesis liner" = "Adicione seu primeiro liner de prótese";
+
+/* No comment provided by engineer. */
+"Add your first Prosthetics" = "Adicione sua primeira prótese";
+
+/* No comment provided by engineer. */
+"Administer" = "Administrador";
+
+/* No comment provided by engineer. */
+"Advanced statistics" = "Estatísticas avançadas";
+
+/* No comment provided by engineer. */
+"Advanced Widget function" = "Função Widget Avançada";
+
+/* No comment provided by engineer. */
+"Air pressure" = "Pressão do ar";
+
+/* No comment provided by engineer. */
+"All" = "Todos";
+
+/* No comment provided by engineer. */
+"All appointments" = "Todos os compromissos";
+
+/* No comment provided by engineer. */
+"All expired dates in the event list view." = "Todas as datas expiradas na visualização da lista de eventos.";
+
+/* No comment provided by engineer. */
+"All reports" = "Todos os relatórios";
+
+/* No comment provided by engineer. */
+"All Weekly Reports" = "Todos os relatórios semanais";
+
+/* No comment provided by engineer. */
+"Allow comeback reminder" = "Permitir lembrete de retorno";
+
+/* No comment provided by engineer. */
+"Allow the app to wish you a good start to the day" = "Permita que o aplicativo lhe deseje um bom começo de dia";
+
+/* No comment provided by engineer. */
+"Amputated since %@" = "Amputado desde %@";
+
+/* No comment provided by engineer. */
+"Amputation day" = "Dia da amputação";
+
+/* No comment provided by engineer. */
+"Amputation day." = "Dia de amputação.";
+
+/* No comment provided by engineer. */
+"Amputee" = "Amputado";
+
+/* No comment provided by engineer. */
+"Amputee day counter" = "Contador de dias para amputados";
+
+/* No comment provided by engineer. */
+"Annually" = "Anualmente";
+
+/* No comment provided by engineer. */
+"App badge" = "Selo do aplicativo";
+
+/* No comment provided by engineer. */
+"App changelog" = "Registro de alterações";
+
+/* No comment provided by engineer. */
+"App Settings" = "Configurações do aplicativo";
+
+/* No comment provided by engineer. */
+"Auto Renewal. Cancellable at any time." = "Auto Renewal. Cancellable at any time.";
+
+/* No comment provided by engineer. */
+"Average" = "Média";
+
+/* No comment provided by engineer. */
+"Average Daily Steps" = "Média de passos diários";
+
+/* No comment provided by engineer. */
+"Average wearing time this week" = "Tempo médio de uso esta semana";
+
+/* No comment provided by engineer. */
+"Background" = "Fundo";
+
+/* No comment provided by engineer. */
+"Background Overlay" = "Sobreposição de fundo";
+
+/* No comment provided by engineer. */
+"Beginning" = "Começo";
+
+/* No comment provided by engineer. */
+"Below knee Prothesis" = "Prótese abaixo do joelho";
+
+/* No comment provided by engineer. */
+"blue" = "Azul";
+
+/* No comment provided by engineer. */
+"Bold" = "Negrito";
+
+/* No comment provided by engineer. */
+"Bottom-Left" = "Inferior esquerdo";
+
+/* No comment provided by engineer. */
+"Bottom-Right" = "Canto inferior direito";
+
+/* No comment provided by engineer. */
+"Calender" = "Calendário";
+
+/* No comment provided by engineer. */
+"Call" = "chamar";
+
+/* No comment provided by engineer. */
+"Cancel" = "Cancelar";
+
+/* No comment provided by engineer. */
+"Cause of pain" = "Causa da dor";
+
+/* No comment provided by engineer. */
+"Change" = "Mudar";
+
+/* No comment provided by engineer. */
+"Change background" = "Mude o fundo";
+
+/* No comment provided by engineer. */
+"Change Maintenance Interval" = "Alterar intervalo de manutenção";
+
+/* No comment provided by engineer. */
+"Chart" = "Gráfico";
+
+/* No comment provided by engineer. */
+"Choose" = "Escolher";
+
+/* No comment provided by engineer. */
+"Choose a prosthesis." = "Escolha uma prótese.";
+
+/* No comment provided by engineer. */
+"Choose an image" = "Escolha uma foto";
+
+/* No comment provided by engineer. */
+"Choose option" = "Escolha a opção";
+
+/* No comment provided by engineer. */
+"cold" = "Frio";
+
+/* No comment provided by engineer. */
+"Color scheme" = "Esquema de cores";
+
+/* No comment provided by engineer. */
+"Come back soon, it will be exciting ✌️" = "Volte logo, será emocionante ✌️";
+
+/* No comment provided by engineer. */
+"Compare the steps you have taken with your daily goal." = "Compare os passos que você deu com sua meta diária.";
+
+/* No comment provided by engineer. */
+"Compare your progress against your set goal." = "Compare seu progresso com sua meta definida.";
+
+/* No comment provided by engineer. */
+"Compared to the previous week." = "Em comparação com a semana anterior.";
+
+/* No comment provided by engineer. */
+"Comparison with the previous week." = "Comparação com a semana anterior.";
+
+/* No comment provided by engineer. */
+"Comparison with the week before." = "Comparação com a semana anterior.";
+
+/* No comment provided by engineer. */
+"Comparison with yesterday." = "Comparação com ontem.";
+
+/* No comment provided by engineer. */
+"Congratulations on reaching your goal for the day 🥳" = "Parabéns por alcançar sua meta do dia 🥳";
+
+/* No comment provided by engineer. */
+"Congratulations, %@! 🥳" = "Parabéns, %@! 🥳";
+
+/* No comment provided by engineer. */
+"Congratulations, you have reached your daily goal! You walked more than %lld steps today. 🥳 🥳" = "Parabéns, você atingiu sua meta diária! Você caminhou mais de %lld passos hoje. 🥳 🥳";
+
+/* No comment provided by engineer. */
+"Contact" = "Contato";
+
+/* No comment provided by engineer. */
+"Contact Person" = "Pessoa de contato";
+
+/* No comment provided by engineer. */
+"Content" = "Contente";
+
+/* No comment provided by engineer. */
+"Create new appointment" = "Criar novo compromisso";
+
+/* No comment provided by engineer. */
+"Create Pin Code" = "Criar código PIN";
+
+/* No comment provided by engineer. */
+"Cross-device sync" = "Sincronização entre dispositivos";
+
+/* No comment provided by engineer. */
+"Daily mood reminder push notification" = "Notificação push de lembrete diário de humor";
+
+/* No comment provided by engineer. */
+"Daily progress" = "Progresso diário";
+
+/* No comment provided by engineer. */
+"Daily stair goal" = "Meta diária de escada";
+
+/* No comment provided by engineer. */
+"Daily Steps Goal" = "Meta de passos diários";
+
+/* No comment provided by engineer. */
+"Darken the bottom background" = "Escureça o fundo inferior";
+
+/* No comment provided by engineer. */
+"Darken the upper background" = "Escureça o fundo superior";
+
+/* No comment provided by engineer. */
+"data protection" = "Proteção de dados";
+
+/* No comment provided by engineer. */
+"Data protection" = "Proteção de dados";
+
+/* No comment provided by engineer. */
+"Data type:" = "Tipo de dados:";
+
+/* No comment provided by engineer. */
+"date" = "data";
+
+/* No comment provided by engineer. */
+"Date" = "Data";
+
+/* No comment provided by engineer. */
+"Date Interval:" = "Intervalo de data:";
+
+/* No comment provided by engineer. */
+"Date:" = "Data:";
+
+/* No comment provided by engineer. */
+"Dates" = "datas";
+
+/* No comment provided by engineer. */
+"Day" = "Dia";
+
+/* No comment provided by engineer. */
+"Day counter since amputation" = "Contador de dias desde a amputação";
+
+/* No comment provided by engineer. */
+"Delete" = "Excluir";
+
+/* No comment provided by engineer. */
+"Delete '%@ %@'?" = "Excluir '%@ %@'?";
+
+/* No comment provided by engineer. */
+"delete '%@'?" = "excluir '%@'?";
+
+/* No comment provided by engineer. */
+"Delete %@?" = "Excluir %@?";
+
+/* No comment provided by engineer. */
+"Delete %@? \n \n All associated appointments \n and notes will be deleted!" = "Excluir %@?\n \n Todos os compromissos associados\n e as notas serão excluídas!";
+
+/* No comment provided by engineer. */
+"Delete %d?" = "Excluir %d?";
+
+/* No comment provided by engineer. */
+"Delete All Stored BackgroundTaskItems" = "Excluir todos os BackgroundTaskItems armazenados";
+
+/* No comment provided by engineer. */
+"Delete Contact" = "Excluir contato";
+
+/* No comment provided by engineer. */
+"Delete entry" = "Excluir entrada";
+
+/* No comment provided by engineer. */
+"Delete entry from %@ " = "Excluir entrada de %@";
+
+/* No comment provided by engineer. */
+"Delete Entry?" = "Excluir entrada?";
+
+/* No comment provided by engineer. */
+"Delete painkillers?" = "Excluir analgésicos?";
+
+/* No comment provided by engineer. */
+"Delete reason?" = "Excluir motivo?";
+
+/* No comment provided by engineer. */
+"Delete the event '%@'?" = "Excluir o evento '%@'?";
+
+/* No comment provided by engineer. */
+"Description" = "Descrição";
+
+/* No comment provided by engineer. */
+"Did you reach your step goal in the last %lld days?" = "Você atingiu sua meta de passos nos últimos %lld dias?";
+
+/* No comment provided by engineer. */
+"did you wear?" = "você usou?";
+
+/* No comment provided by engineer. */
+"Distance" = "Distância";
+
+/* No comment provided by engineer. */
+"Do you feel any pain?" = "Você sente alguma dor?";
+
+/* No comment provided by engineer. */
+"Document the feeling with your prosthesis." = "Documente a sensação com sua prótese.";
+
+/* No comment provided by engineer. */
+"Document your current pain" = "Documente sua dor atual";
+
+/* No comment provided by engineer. */
+"Don't go where the path may lead you, go where there is no path and write down your notes. ✌️" = "Não vá aonde o caminho pode te levar, vá aonde não há caminho e faça anotações. ✌️";
+
+/* No comment provided by engineer. */
+"Don't leave a blank page in your prosthesis diary. ✌️" = "Não deixe uma página em branco na sua agenda de próteses. ✌️";
+
+/* No comment provided by engineer. */
+"Don't Show" = "Não mostre";
+
+/* No comment provided by engineer. */
+"done" = "feito";
+
+/* No comment provided by engineer. */
+"Done" = "Feito";
+
+/* No comment provided by engineer. */
+"Done!" = "Feito!";
+
+/* No comment provided by engineer. */
+"E-Mail:" = "E-mail:";
+
+/* No comment provided by engineer. */
+"e.g. control" = "por exemplo. ao controle";
+
+/* No comment provided by engineer. */
+"E.g.: Ibuprofen, Tillidin, Pregabalin..." = "Ex.: Ibuprofeno, Tillidin, Pregabalin...";
+
+/* No comment provided by engineer. */
+"e.g.: weather, cold, heat..." = "ex.: clima, frio, calor...";
+
+/* No comment provided by engineer. */
+"Edit" = "Editar";
+
+/* No comment provided by engineer. */
+"Edit '%@'?" = "Editar '%@'?";
+
+/* No comment provided by engineer. */
+"Edit contact" = "Editar Contato";
+
+/* No comment provided by engineer. */
+"Edit Contact" = "Editar contato";
+
+/* No comment provided by engineer. */
+"Edit pain entry" = "Editar entrada de dor";
+
+/* No comment provided by engineer. */
+"Empty" = "Vazio";
+
+/* No comment provided by engineer. */
+"Enable FaceID verification when launching the app." = "Ative a verificação FaceID ao iniciar o aplicativo.";
+
+/* No comment provided by engineer. */
+"end" = "fim";
+
+/* No comment provided by engineer. */
+"End" = "Fim";
+
+/* No comment provided by engineer. */
+"END" = "FIM";
+
+/* No comment provided by engineer. */
+"Enter current pain" = "Digite a dor atual";
+
+/* No comment provided by engineer. */
+"Enter the Brand Name" = "Insira o nome da marca";
+
+/* No comment provided by engineer. */
+"Enter the code" = "Digite o código";
+
+/* No comment provided by engineer. */
+"Enter the Product Name" = "Insira o nome do produto";
+
+/* No comment provided by engineer. */
+"Entries from: " = "Inscrições de:";
+
+/* No comment provided by engineer. */
+"entries:" = "Entradas:";
+
+/* No comment provided by engineer. */
+"Error loading AppGroup" = "Erro ao carregar o AppGroup";
+
+/* No comment provided by engineer. */
+"Estimated steps" = "Etapas estimadas";
+
+/* No comment provided by engineer. */
+"Even more functions" = "Ainda mais funções";
+
+/* No comment provided by engineer. */
+"Events" = "Eventos";
+
+/* No comment provided by engineer. */
+"Everyday" = "Cada dia";
+
+/* No comment provided by engineer. */
+"Everyday\nProsthesis" = "Prótese Diária";
+
+/* No comment provided by engineer. */
+"Everyday Prosthesis" = "Prótese Diária";
+
+/* No comment provided by engineer. */
+"Everyday Prosthesis Liner" = "Liner de prótese diário";
+
+/* No comment provided by engineer. */
+"FaceID" = "ID facial";
+
+/* No comment provided by engineer. */
+"family doctor" = "médico da família";
+
+/* No comment provided by engineer. */
+"Feeling" = "Sentimento";
+
+/* No comment provided by engineer. */
+"Find out how many days you've been amputee." = "Descubra há quantos dias você está amputado.";
+
+/* No comment provided by engineer. */
+"Find out how your last week was. 💪" = "Descubra como foi sua última semana. 💪";
+
+/* No comment provided by engineer. */
+"Find your pain connections" = "Encontre suas conexões de dor";
+
+/* No comment provided by engineer. */
+"First day with prosthesis." = "Primeiro dia com prótese.";
+
+/* No comment provided by engineer. */
+"First name" = "Primeiro nome";
+
+/* No comment provided by engineer. */
+"First name:" = "Primeiro nome:";
+
+/* No comment provided by engineer. */
+"Follow on social media" = "Acompanhe nas redes sociais";
+
+/* No comment provided by engineer. */
+"Font Weigt" = "Estilo de escrita";
+
+/* No comment provided by engineer. */
+"Fontsize: %.0f px" = "Tamanho da fonte:% .0f px";
+
+/* No comment provided by engineer. */
+"Free" = "Livre";
+
+/* No comment provided by engineer. */
+"further" = "mais";
+
+/* No comment provided by engineer. */
+"generated: %@ %@" = "gerado: %@ %@";
+
+/* No comment provided by engineer. */
+"Get last liner?:" = "Obter o último Liner?:";
+
+/* No comment provided by engineer. */
+"Get notified about your daily progress." = "Seja notificado sobre seu progresso diário.";
+
+/* No comment provided by engineer. */
+"Get notified when a new weekly report is available." = "Seja notificado quando um novo relatório semanal estiver disponível.";
+
+/* No comment provided by engineer. */
+"Get notified when a step goal is reached." = "Seja notificado quando uma meta de passos for atingida.";
+
+/* No comment provided by engineer. */
+"Get Pro" = "atualizar para profissional";
+
+/* No comment provided by engineer. */
+"Get your premium subscription!" = "Obtenha sua assinatura premium!";
+
+/* No comment provided by engineer. */
+"Getting started" = "Começando";
+
+/* No comment provided by engineer. */
+"Goal achieved" = "Objetivo alcançado";
+
+/* No comment provided by engineer. */
+"Good evening%@!" = "Boa noite%@!";
+
+/* No comment provided by engineer. */
+"Good morning motivation 🦾 🦾" = "Bom dia motivação 🦾 🦾";
+
+/* No comment provided by engineer. */
+"Good morning out there! 👋" = "Bom dia aí! 👋";
+
+/* No comment provided by engineer. */
+"Good morning wishes" = "Bom dia desejos";
+
+/* No comment provided by engineer. */
+"Good morning, %@! 👋" = "Bom dia, %@! 👋";
+
+/* No comment provided by engineer. */
+"Good morning%@!" = "Bom dia%@!";
+
+/* No comment provided by engineer. */
+"GPS Location" = "Localização GPS";
+
+/* No comment provided by engineer. */
+"GPS recording:" = "Gravação GPS:";
+
+/* No comment provided by engineer. */
+"Great progress today!" = "Grande progresso hoje!";
+
+/* No comment provided by engineer. */
+"Great, half done! You have now reached more than 50% of your step goal. 🥳 🥳" = "Ótimo, meio feito! Agora você atingiu mais de 50% de sua meta de passos. 🥳 🥳";
+
+/* No comment provided by engineer. */
+"Great, your goal has been achieved! Your daily goal of at least %lld stairs has been reached.🥳 🥳" = "Ótimo, seu objetivo foi alcançado! Sua meta diária de pelo menos %lld escadas foi alcançada.🥳 🥳";
+
+/* No comment provided by engineer. */
+"green" = "Verde";
+
+/* No comment provided by engineer. */
+"Half-yearly" = "Semestralmente";
+
+/* No comment provided by engineer. */
+"Happiness is not a goal. Happiness is a way of life. Be happy today and share it with us... ✌️" = "A felicidade não é uma meta. A felicidade é um modo de vida. Seja feliz hoje e compartilhe conosco... ✌️";
+
+/* No comment provided by engineer. */
+"Haptic Feedback" = "Feedback tátil";
+
+/* No comment provided by engineer. */
+"have a good morning 😃" = "tenha um bom dia 😃";
+
+/* No comment provided by engineer. */
+"Health insurance" = "Plano de saúde";
+
+/* No comment provided by engineer. */
+"Hello %@!" = "Olá %@!";
+
+/* No comment provided by engineer. */
+"Hello!" = "Olá!";
+
+/* No comment provided by engineer. */
+"Hello...?!\nWhat may we call you? " = "Olá...?!\nComo podemos chamá-lo?";
+
+/* No comment provided by engineer. */
+"Hello%@!" = "Olá%@!";
+
+/* No comment provided by engineer. */
+"Hey! A new day, new experiences, don't you want to save them? ✌️" = "Ei! Um novo dia, novas experiências, não quer guardá-las? ✌️";
+
+/* No comment provided by engineer. */
+"Hey! Describe\nyour pain!" = "Ei! Descreva\nsua dor!";
+
+/* No comment provided by engineer. */
+"Hey! Has anything\nchanged?" = "Ei! Tem alguma coisa\nmudado?";
+
+/* No comment provided by engineer. */
+"Hey! How are you\nfeeling today?" = "Ei! Como vai\nsentindo hoje?";
+
+/* No comment provided by engineer. */
+"Hey! How are you feeling today? ✌️" = "Ei! Como você está se sentindo hoje? ✌️";
+
+/* No comment provided by engineer. */
+"Hide information" = "Ocultar informações";
+
+/* No comment provided by engineer. */
+"Highest" = "Altíssima";
+
+/* No comment provided by engineer. */
+"Home" = "Lar";
+
+/* No comment provided by engineer. */
+"Hospital" = "Hospital";
+
+/* No comment provided by engineer. */
+"Hour" = "hora";
+
+/* No comment provided by engineer. */
+"How are you doing?" = "Como vai?";
+
+/* No comment provided by engineer. */
+"How are you doing? 🤔" = "Como vai? 🤔";
+
+/* No comment provided by engineer. */
+"How many steps would you like to walk a day?" = "Quantos passos você gostaria de dar por dia?";
+
+/* No comment provided by engineer. */
+"iCloud sync" = "Sincronização do iCloud";
+
+/* No comment provided by engineer. */
+"If no authorization window appears, all access can be granted under \"Settings > Prosthesis\"." = "Se não aparecer nenhuma janela de autorização, todo o acesso pode ser concedido em \"Configurações > Pro Prótese\".";
+
+/* No comment provided by engineer. */
+"Import Contact" = "Importar contato";
+
+/* No comment provided by engineer. */
+"in %lld day" = "em %lld dia";
+
+/* No comment provided by engineer. */
+"in %lld days" = "em %lld dias";
+
+/* No comment provided by engineer. */
+"in %lld Mths, %lld Days" = "em %lld meses, %lld dias";
+
+/* No comment provided by engineer. */
+"In order to use the NFC functionality for timer control, you must first register your prostheses and liners in the app. By entering your prostheses under \"Prostheses and Liners\", you allow the app to configure individual timers for each type of prosthesis." = "Para utilizar a funcionalidade NFC para controle de temporizador, você deve primeiro cadastrar suas próteses e liners no aplicativo. Ao inserir suas próteses em \"Próteses e Liners\", você permite que o aplicativo configure temporizadores individuais para cada tipo de prótese.";
+
+/* No comment provided by engineer. */
+"In the free version of our app you can add and manage up to three contacts." = "Na versão gratuita do nosso aplicativo você pode adicionar e gerenciar até três contatos.";
+
+/* No comment provided by engineer. */
+"info@email.de" = "info@email.pt";
+
+/* No comment provided by engineer. */
+"Infomation" = "Informação";
+
+/* No comment provided by engineer. */
+"Insights and trends" = "Insights e tendências";
+
+/* No comment provided by engineer. */
+"Instagram" = "Instagram";
+
+/* No comment provided by engineer. */
+"Internet connection via mobile network" = "Conexão com a Internet via rede móvel";
+
+/* No comment provided by engineer. */
+"Internet connection via WiFi" = "Conexão com a Internet via Wi-Fi";
+
+/* No comment provided by engineer. */
+"It's so quiet here without you...😢" = "Está tão quieto aqui sem você...😢";
+
+/* No comment provided by engineer. */
+"Just two steps away." = "A apenas dois passos de distância.";
+
+/* No comment provided by engineer. */
+"Keep it up! 👏" = "Mantem! 👏";
+
+/* No comment provided by engineer. */
+"Keep it up! 🥳" = "Mantem! 🥳";
+
+/* No comment provided by engineer. */
+"Keep track of your phantom limb pain." = "Acompanhe sua dor no membro fantasma.";
+
+/* No comment provided by engineer. */
+"Kein Kontakt vorhanden!" = "Nenhum contato disponível!";
+
+/* No comment provided by engineer. */
+"Kind: " = "Tipo:";
+
+/* No comment provided by engineer. */
+"Kontakt" = "Contato";
+
+/* No comment provided by engineer. */
+"Kontakt \n hinzufügen" = "Contato\n hinzufügen";
+
+/* No comment provided by engineer. */
+"Kontakt hinzufügen" = "Adicionar contato";
+
+/* No comment provided by engineer. */
+"Last Liner: %@" = "Última liner: %@";
+
+/* No comment provided by engineer. */
+"Last Maintage:" = "Última manutenção:";
+
+/* No comment provided by engineer. */
+"Last maintenance" = "Última manutenção";
+
+/* No comment provided by engineer. */
+"Last Month" = "Mês passado";
+
+/* No comment provided by engineer. */
+"Last name" = "Sobrenome";
+
+/* No comment provided by engineer. */
+"Last name:" = "Sobrenome:";
+
+/* No comment provided by engineer. */
+"Last report:" = "Último relatório:";
+
+/* No comment provided by engineer. */
+"Last week" = "Semana passada";
+
+/* No comment provided by engineer. */
+"Last Week" = "Semana passada";
+
+/* No comment provided by engineer. */
+"Liners for your Prostheses" = "Liners para suas próteses";
+
+/* No comment provided by engineer. */
+"Location" = "Localização";
+
+/* No comment provided by engineer. */
+"Location Icon" = "Ícone de localização";
+
+/* No comment provided by engineer. */
+"Log in" = "Conecte-se";
+
+/* No comment provided by engineer. */
+"Login with Face ID" = "Faça login com ID facial";
+
+/* No comment provided by engineer. */
+"Logo" = "Logotipo";
+
+/* No comment provided by engineer. */
+"low" = "baixo";
+
+/* No comment provided by engineer. */
+"Lowest" = "Mais baixo";
+
+/* No comment provided by engineer. */
+"Maintage Interval:" = "Intervalo de manutenção:";
+
+/* No comment provided by engineer. */
+"Maintaince of the Everyday Prosthesis" = "Manutenção da Prótese Diária";
+
+/* No comment provided by engineer. */
+"Maintaince of the Replacement Prosthesis" = "Manutenção da Prótese de Substituição";
+
+/* No comment provided by engineer. */
+"Maintaince of the Sports Prosthesis" = "Manutenção da Prótese Esportiva";
+
+/* No comment provided by engineer. */
+"Maintaince of the Waterproof Prosthesis" = "Manutenção da Prótese Impermeável";
+
+/* No comment provided by engineer. */
+"Maintenance due" = "Manutenção devida";
+
+/* No comment provided by engineer. */
+"Maintenance interval" = "Intervalo de manutenção";
+
+/* No comment provided by engineer. */
+"Maintenance was another day" = "Manutenção foi outro dia";
+
+/* No comment provided by engineer. */
+"Maintenance was today" = "Manutenção foi hoje";
+
+/* No comment provided by engineer. */
+"Manage all your Prosthesis" = "Gerencie todas as suas próteses";
+
+/* No comment provided by engineer. */
+"Manage all your Prosthesis-Liners" = "Gerencie todos os seus revestimentos de prótese";
+
+/* No comment provided by engineer. */
+"Manage parameters" = "Gerenciar parâmetros";
+
+/* No comment provided by engineer. */
+"Manage Prostheses and Liners" = "Gerenciar próteses e revestimentos";
+
+/* No comment provided by engineer. */
+"Manage Prosthesis & Liners" = "Gerenciar próteses e Liners";
+
+/* No comment provided by engineer. */
+"Manage unlimited contacts" = "Gerencie contatos ilimitados";
+
+/* No comment provided by engineer. */
+"Max" = "John";
+
+/* No comment provided by engineer. */
+"Medical supply store" = "Loja de suprimentos médicos";
+
+/* No comment provided by engineer. */
+"Mister" = "senhor";
+
+/* No comment provided by engineer. */
+"Mobil" = "Móvel";
+
+/* No comment provided by engineer. */
+"Mobilphone Nr." = "Número do celular";
+
+/* No comment provided by engineer. */
+"Mobilphone:" = "Celular:";
+
+/* No comment provided by engineer. */
+"Month" = "Mês";
+
+/* No comment provided by engineer. */
+"Monthly" = "Por mês";
+
+/* No comment provided by engineer. */
+"Montly Mood Trend" = "Tendência de humor mensal";
+
+/* No comment provided by engineer. */
+"Montly Pain Trend" = "Tendência mensal de dor";
+
+/* No comment provided by engineer. */
+"Mood Chart" = "Gráfico de humor";
+
+/* No comment provided by engineer. */
+"Moods" = "Humores";
+
+/* No comment provided by engineer. */
+"More premium widgets" = "Mais widgets premium";
+
+/* No comment provided by engineer. */
+"More settings" = "Mais configurações";
+
+/* No comment provided by engineer. */
+"More than %lld steps. 🥳 🎉" = "Mais de %lld etapas. 🥳 🎉";
+
+/* No comment provided by engineer. */
+"More widget" = "Mais widgets";
+
+/* No comment provided by engineer. */
+"Most pain at %lld °C" = "Maior dor a %lld °C";
+
+/* No comment provided by engineer. */
+"Most pain at %lld °F" = "Maior dor a %lld °F";
+
+/* No comment provided by engineer. */
+"Most pain at %lld hPa" = "Maior dor em %lld hPa";
+
+/* No comment provided by engineer. */
+"Most pain with high activity" = "Maior dor com alta atividade";
+
+/* No comment provided by engineer. */
+"Most pain with low activity" = "Maior dor com baixa atividade";
+
+/* No comment provided by engineer. */
+"Mostly at midday" = "Principalmente ao meio-dia";
+
+/* No comment provided by engineer. */
+"Mostly in the afternoon" = "Principalmente à tarde";
+
+/* No comment provided by engineer. */
+"Mostly in the evening" = "Principalmente à noite";
+
+/* No comment provided by engineer. */
+"Mostly in the morning" = "Principalmente pela manhã";
+
+/* No comment provided by engineer. */
+"Mostly in the night" = "Principalmente à noite";
+
+/* No comment provided by engineer. */
+"Musterman" = "Doe";
+
+/* No comment provided by engineer. */
+"My progress with the Pro Prosthesis App. https://www.prothese.pro/store" = "Meu progresso com o aplicativo Prótese Pró. https://www.prothese.pro/";
+
+/* No comment provided by engineer. */
+"Name" = "inhame";
+
+/* No comment provided by engineer. */
+"Name:" = "Nome:";
+
+/* No comment provided by engineer. */
+"New Contact" = "Novo contato";
+
+/* No comment provided by engineer. */
+"News" = "Ontem";
+
+/* No comment provided by engineer. */
+"next" = "próximo";
+
+/* No comment provided by engineer. */
+"Next Month" = "Próximo mês";
+
+/* No comment provided by engineer. */
+"Next Week" = "Semana que vem";
+
+/* No comment provided by engineer. */
+"NFC settings and management" = "Configurações e gerenciamento de NFC";
+
+/* No comment provided by engineer. */
+"Describe for a prosthesis" = "Descreva para uma prótese";
+
+/* No comment provided by engineer. */
+"NFC tag name" = "Nome da etiqueta NFC";
+
+/* No comment provided by engineer. */
+"Describe universally" = "Descreva universalmente";
+
+/* No comment provided by engineer. */
+"No\nProsthesis" = "Não\nPrótese";
+
+/* No comment provided by engineer. */
+"No change from the previous day!" = "Nenhuma alteração em relação ao dia anterior!";
+
+/* No comment provided by engineer. */
+"No contact available." = "Nenhum contato disponível.";
+
+/* No comment provided by engineer. */
+"No dates available." = "Não há datas disponíveis.";
+
+/* No comment provided by engineer. */
+"No Email" = "Nenhum e-mail";
+
+/* No comment provided by engineer. */
+"No events for next month!" = "Não há eventos para o próximo mês!";
+
+/* No comment provided by engineer. */
+"No events for next week!" = "Não há eventos para a próxima semana!";
+
+/* No comment provided by engineer. */
+"No events for this month!" = "Não há eventos para este mês!";
+
+/* No comment provided by engineer. */
+"No events for this week!" = "Não há eventos para esta semana!";
+
+/* No comment provided by engineer. */
+"No Feeling Found" = "Nenhum sentimento encontrado";
+
+/* No comment provided by engineer. */
+"No Internet connection" = "Sem conexão com a Internet";
+
+/* No comment provided by engineer. */
+"No Kind" = "Nenhum tipo";
+
+/* No comment provided by engineer. */
+"No notes available!" = "Nenhuma nota disponível!";
+
+/* No comment provided by engineer. */
+"No notifications available." = "Nenhuma notificação disponível.";
+
+/* No comment provided by engineer. */
+"No pain recorded!" = "Nenhuma dor registrada!";
+
+/* No comment provided by engineer. */
+"No Painkiller" = "Sem analgésico";
+
+/* No comment provided by engineer. */
+"No painkillers available" = "Não há analgésicos disponíveis";
+
+/* No comment provided by engineer. */
+"No Phone" = "Sem telefone";
+
+/* No comment provided by engineer. */
+"No pressure data" = "Sem dados de pressão";
+
+/* No comment provided by engineer. */
+"No Prostheses" = "Sem próteses";
+
+/* No comment provided by engineer. */
+"No prostheses with maintenance dates available!" = "Não há próteses com datas de manutenção disponíveis!";
+
+/* No comment provided by engineer. */
+"No Prosthesis" = "Sem prótese";
+
+/* No comment provided by engineer. */
+"No prosthesis found" = "Nenhuma prótese encontrada";
+
+/* No comment provided by engineer. */
+"No Prosthesis Liner" = "Sem liner de prótese";
+
+/* No comment provided by engineer. */
+"No Prosthesis-Liner avaible!" = "Nenhum liner de prótese disponível!";
+
+/* No comment provided by engineer. */
+"No prosthetic data" = "Sem dados protéticos";
+
+/* No comment provided by engineer. */
+"No Reason" = "Sem razão";
+
+/* No comment provided by engineer. */
+"No reasons available" = "Não há motivos disponíveis";
+
+/* No comment provided by engineer. */
+"No step data" = "Nenhum dado de etapa";
+
+/* No comment provided by engineer. */
+"No time" = "Não há tempo";
+
+/* No comment provided by engineer. */
+"No Type" = "Nenhum tipo";
+
+/* No comment provided by engineer. */
+"No weather data" = "Não há dados meteorológicos";
+
+/* No comment provided by engineer. */
+"Notification" = "Notificação";
+
+/* No comment provided by engineer. */
+"Notification Menus" = "Menus de notificação";
+
+/* No comment provided by engineer. */
+"Notifications" = "Notificações";
+
+/* No comment provided by engineer. */
+"notify" = "notificar";
+
+/* No comment provided by engineer. */
+"Now Playing" = "Agora jogando";
+
+/* No comment provided by engineer. */
+"Number of entries" = "Número de entradas";
+
+/* No comment provided by engineer. */
+"Ø %@ hrs. %@ mins." = "Ø %@ horas. %@ minutos.";
+
+/* No comment provided by engineer. */
+"Ø %@ Steps" = "Ø %@ Passos";
+
+/* No comment provided by engineer. */
+"On what date did you get your first prosthesis?" = "Em que data você ganhou sua primeira prótese?";
+
+/* No comment provided by engineer. */
+"One to Many" = "Um para muitos";
+
+/* No comment provided by engineer. */
+"One to One" = "Um a um";
+
+/* No comment provided by engineer. */
+"Options" = "Opções";
+
+/* No comment provided by engineer. */
+"orange" = "Laranja";
+
+/* No comment provided by engineer. */
+"Order your liner for the Everyday Prosthesis in good time!" = "Encomende atempadamente o seu liner para a prótese diário!";
+
+/* No comment provided by engineer. */
+"Order your liner for the Replacement Prosthesis in good time!" = "Encomende atempadamente o seu liner para a Prótese de Substituição!";
+
+/* No comment provided by engineer. */
+"Order your liner for the Sports Prosthesis in good time!" = "Encomende atempadamente o seu liner para a Prótese Desportiva!";
+
+/* No comment provided by engineer. */
+"Order your liner for the Waterproof Prosthesis in good time!" = "Encomende atempadamente o seu liner para a Prótese Impermeável!";
+
+/* No comment provided by engineer. */
+"Order your liners for the your prostheses in time!" = "Encomende os seus liners para as suas próteses a tempo!";
+
+/* No comment provided by engineer. */
+"Orderable" = "Encomendável";
+
+/* No comment provided by engineer. */
+"orthopedist" = "Ortopedista";
+
+/* No comment provided by engineer. */
+"other painkillers" = "outros analgésicos";
+
+/* No comment provided by engineer. */
+"other reason" = "Outra razão";
+
+/* No comment provided by engineer. */
+"Others" = "Outros";
+
+/* No comment provided by engineer. */
+"Page Header" = "Cabeçalho da página";
+
+/* No comment provided by engineer. */
+"Pain" = "Dor";
+
+/* No comment provided by engineer. */
+"Pain assessment" = "Avaliação da dor";
+
+/* No comment provided by engineer. */
+"Pain average per reason" = "Média de dor por motivo";
+
+/* No comment provided by engineer. */
+"Pain Chart" = "Gráfico de dor";
+
+/* No comment provided by engineer. */
+"Pain from %@" = "Dor de %@";
+
+/* No comment provided by engineer. */
+"Pain reasons:" = "Razões da dor:";
+
+/* No comment provided by engineer. */
+"Painkiller" = "Analgésico";
+
+/* No comment provided by engineer. */
+"Painkiller:" = "Analgésico:";
+
+/* No comment provided by engineer. */
+"Pains" = "Dores";
+
+/* No comment provided by engineer. */
+"Participation in further development" = "Participação em desenvolvimento adicional";
+
+/* No comment provided by engineer. */
+"Password" = "Senha";
+
+/* No comment provided by engineer. */
+"Past appointments" = "Compromissos anteriores";
+
+/* No comment provided by engineer. */
+"Pedometer" = "Pedômetro";
+
+/* No comment provided by engineer. */
+"Personal organizer" = "Organizador pessoal";
+
+/* No comment provided by engineer. */
+"Personal Settings" = "Configurações pessoais";
+
+/* No comment provided by engineer. */
+"Phone" = "Telefone";
+
+/* No comment provided by engineer. */
+"Phone Nr." = "Número de telefone.";
+
+/* No comment provided by engineer. */
+"Phone:" = "Telefone:";
+
+/* No comment provided by engineer. */
+"Physiotherapist" = "Fisioterapeuta";
+
+/* No comment provided by engineer. */
+"Please choose" = "Por favor escolha";
+
+/* No comment provided by engineer. */
+"Please enter a name!" = "Por favor insira um nome!";
+
+/* No comment provided by engineer. */
+"Please enter an appointment description!" = "Por favor, insira uma descrição do compromisso!";
+
+/* No comment provided by engineer. */
+"Please enter an DeepLink." = "Por favor, insira o DeepLink.";
+
+/* No comment provided by engineer. */
+"Please enter your first name." = "Por favor entre com seu primeiro nome.";
+
+/* No comment provided by engineer. */
+"Please enter your username and password." = "Por favor insira seu nome de usuário e senha.";
+
+/* No comment provided by engineer. */
+"Please provide a contact!" = "Forneça um contato!";
+
+/* No comment provided by engineer. */
+"Premium membership" = "Assinatura especial";
+
+/* No comment provided by engineer. */
+"Premium options" = "Opções premium";
+
+/* No comment provided by engineer. */
+"Premium statistics" = "Estatísticas premium";
+
+/* No comment provided by engineer. */
+"Premium support for users" = "Suporte premium para usuários";
+
+/* No comment provided by engineer. */
+"previous" = "anterior";
+
+/* No comment provided by engineer. */
+"Previous" = "Anterior";
+
+/* No comment provided by engineer. */
+"Pro" = "Pró";
+
+/* No comment provided by engineer. */
+"PRO" = "PRÓ";
+
+/* No comment provided by engineer. */
+"Pro Prosthesis on Instagram" = "Prótese Pró no Instagram";
+
+/* No comment provided by engineer. */
+"Pro Prothese" = "Prótese Pró";
+
+/* No comment provided by engineer. */
+"Pro Prothese APP v%@" = "Prótese Pro v%@";
+
+/* No comment provided by engineer. */
+"Pro Prothese Setup" = "Configuração do Prótese Pró";
+
+/* No comment provided by engineer. */
+"Pro Prothese v%@" = "Prótese Pro v%@";
+
+/* No comment provided by engineer. */
+"Pro Prothese Workout" = "Treino Prótese Pró";
+
+/* No comment provided by engineer. */
+"Progress of wearing times." = "Progresso dos tempos de uso.";
+
+/* No comment provided by engineer. */
+"Prostheses Mood Chart" = "Gráfico de humor de próteses";
+
+/* No comment provided by engineer. */
+"Prostheses Pain Chart" = "Tabela de Dor em Próteses";
+
+/* No comment provided by engineer. */
+"Prostheses worn on %@" = "Próteses usadas em %@";
+
+/* No comment provided by engineer. */
+"Prostheses you have worn in the last %lld days." = "Próteses que você usou nos últimos %lld dias.";
+
+/* No comment provided by engineer. */
+"Prosthesis" = "Prótese";
+
+/* No comment provided by engineer. */
+"Prosthesis & Liners" = "Prótese e Liners";
+
+/* No comment provided by engineer. */
+"prosthesis day." = "dia da prótese.";
+
+/* No comment provided by engineer. */
+"Prosthesis liner" = "Liner de prótese";
+
+/* No comment provided by engineer. */
+"Prosthesis Liner" = "Liner de Prótese";
+
+/* No comment provided by engineer. */
+"Prosthesis maintenance" = "Manutenção de prótese";
+
+/* No comment provided by engineer. */
+"Prosthesis wearing time" = "Tempo de uso da prótese";
+
+/* No comment provided by engineer. */
+"Prosthetic liner" = "Liner de Prótese";
+
+/* No comment provided by engineer. */
+"Protect your data with FaceID" = "Proteja seus dados com FaceID";
+
+/* No comment provided by engineer. */
+"Prothese" = "Prótese Pró";
+
+/* No comment provided by engineer. */
+"Prothese APP v%@" = "Pro Prótese v%@";
+
+/* No comment provided by engineer. */
+"Psychiatrist" = "Psiquiatra";
+
+/* No comment provided by engineer. */
+"Psychologist" = "Psicólogo";
+
+/* No comment provided by engineer. */
+"Push Notification" = "Notificação push";
+
+/* No comment provided by engineer. */
+"Quarterly" = "Trimestral";
+
+/* No comment provided by engineer. */
+"Rate the app" = "Avalie o aplicativo";
+
+/* No comment provided by engineer. */
+"Reason" = "Razão";
+
+/* No comment provided by engineer. */
+"Received another day" = "Recebi outro dia";
+
+/* No comment provided by engineer. */
+"Recieved today" = "Recebido hoje";
+
+/* No comment provided by engineer. */
+"Recommend app" = "Recomendar aplicativo";
+
+/* No comment provided by engineer. */
+"Regular" = "Regular";
+
+/* No comment provided by engineer. */
+"Reminder: The next maintenance of your %@ is due in 2 weeks." = "Lembrete: A próxima manutenção do seu %@ deverá ocorrer em 2 semanas.";
+
+/* No comment provided by engineer. */
+"Reminder: The next maintenance of your %@ is due in 4 weeks." = "Lembrete: a próxima manutenção do seu %@ deverá ocorrer em 4 semanas.";
+
+/* No comment provided by engineer. */
+"Reminder: The next maintenance of your %@ is overdue. Is there a delay? 😔" = "Lembrete: A próxima manutenção do seu %@ está atrasada. Existe um atraso? 😔";
+
+/* No comment provided by engineer. */
+"Reminds you daily the set time, the day of your daily mood." = "Lembra diariamente o horário definido, o dia do seu humor diário.";
+
+/* No comment provided by engineer. */
+"Reminds you daily to keep your data up to date in the app." = "Lembra você diariamente de manter seus dados atualizados no aplicativo.";
+
+/* No comment provided by engineer. */
+"Repeating notifications" = "Repetindo notificações";
+
+/* No comment provided by engineer. */
+"Replacement" = "Substituição";
+
+/* No comment provided by engineer. */
+"Replacement\nProsthesis" = "Substituição\nPrótese";
+
+/* No comment provided by engineer. */
+"Replacement Prosthesis" = "Prótese de Substituição";
+
+/* No comment provided by engineer. */
+"Replacement Prosthesis Liner" = "Liner de prótese de reposição";
+
+/* No comment provided by engineer. */
+"Required Permissions" = "Permissões necessárias";
+
+/* No comment provided by engineer. */
+"Reset" = "Reiniciar";
+
+/* No comment provided by engineer. */
+"Reset step goal 50% reached message Date" = "Redefinir meta de passos 50% alcançado mensagem Data";
+
+/* No comment provided by engineer. */
+"Reset step goal reached message Date" = "Mensagem de redefinição da meta de passos alcançada Data";
+
+/* No comment provided by engineer. */
+"Restore" = "Restaurar";
+
+/* No comment provided by engineer. */
+"Rhythm" = "Ritmo";
+
+/* No comment provided by engineer. */
+"Salutation" = "Saudação";
+
+/* No comment provided by engineer. */
+"Save" = "Salvar";
+
+/* No comment provided by engineer. */
+"Saved data" = "Dados salvos";
+
+/* No comment provided by engineer. */
+"Saving workout" = "Salvando treino";
+
+/* No comment provided by engineer. */
+"Security" = "Segurança";
+
+/* No comment provided by engineer. */
+"Select a prostheses for which you want to start the timer." = "Selecione uma prótese para a qual deseja iniciar o temporizador.";
+
+/* No comment provided by engineer. */
+"Send appointment notification" = "Enviar notificação de compromisso";
+
+/* No comment provided by engineer. */
+"Send Email" = "Enviar email";
+
+/* No comment provided by engineer. */
+"Set interval" = "Definir intervalo";
+
+/* No comment provided by engineer. */
+"Settings" = "Configurações";
+
+/* No comment provided by engineer. */
+"Setup Assistant" = "Assistente de configuração";
+
+/* No comment provided by engineer. */
+"Share" = "Compartilhar";
+
+/* No comment provided by engineer. */
+"Show" = "Mostrar";
+
+/* No comment provided by engineer. */
+"Show all expired appointments of the last week in the event list view." = "Mostre todos os compromissos expirados da última semana na visualização da lista de eventos.";
+
+/* No comment provided by engineer. */
+"Show all prostheses" = "Mostrar todas as próteses";
+
+/* No comment provided by engineer. */
+"Show goal steps in chart background." = "Mostre as etapas da meta no plano de fundo do gráfico.";
+
+/* No comment provided by engineer. */
+"Show less" = "Mostre menos";
+
+/* No comment provided by engineer. */
+"Show step goal" = "Mostrar meta de passos";
+
+/* No comment provided by engineer. */
+"Show the average daily steps in the chart background." = "Mostre os passos diários médios no fundo do gráfico.";
+
+/* No comment provided by engineer. */
+"since %@" = "desde %@";
+
+/* No comment provided by engineer. */
+"SnapShot" = "Instantâneo";
+
+/* No comment provided by engineer. */
+"Specialist Clinic" = "Clínica Especializada";
+
+/* No comment provided by engineer. */
+"Sport Prostheses" = "Próteses Esportivas";
+
+/* No comment provided by engineer. */
+"Sports" = "Esportes";
+
+/* No comment provided by engineer. */
+"Sports\nProsthesis" = "Esportes\nPrótese";
+
+/* No comment provided by engineer. */
+"Sports Prosthesis" = "Prótese Esportiva";
+
+/* No comment provided by engineer. */
+"Sports Prosthesis Liner" = "Liner de Prótese Esportiva";
+
+/* No comment provided by engineer. */
+"Standard statistics" = "Estatísticas padrão";
+
+/* No comment provided by engineer. */
+"Start" = "Start";
+
+/* No comment provided by engineer. */
+"Start the day well 🦾 🦾" = "Comece bem o dia 🦾 🦾";
+
+/* No comment provided by engineer. */
+"Statistic" = "Estatística";
+
+/* No comment provided by engineer. */
+"Statistics" = "Estatisticas";
+
+/* No comment provided by engineer. */
+"Step history of the last 8 weeks." = "Histórico de passos das últimas 8 semanas.";
+
+/* No comment provided by engineer. */
+"Step Trend" = "Tendência de passos";
+
+/* No comment provided by engineer. */
+"Steps" = "Passos";
+
+/* No comment provided by engineer. */
+"Steps compared to the previous month." = "Etapas em comparação com o mês anterior.";
+
+/* No comment provided by engineer. */
+"Steps compared to yesterday." = "Passos em comparação com ontem.";
+
+/* No comment provided by engineer. */
+"Steps from last week" = "Passos da semana passada";
+
+/* No comment provided by engineer. */
+"Steps this month" = "Passos este mês";
+
+/* No comment provided by engineer. */
+"Steps this week" = "Passos esta semana";
+
+/* No comment provided by engineer. */
+"Steps today" = "Passos hoje";
+
+/* No comment provided by engineer. */
+"Stop the timer on your iPhone." = "Pare o cronômetro do seu iPhone.";
+
+/* No comment provided by engineer. */
+"Suggestion for improvement" = "Sugestão de melhoria";
+
+/* No comment provided by engineer. */
+"Summary" = "Resumo";
+
+/* No comment provided by engineer. */
+"Support" = "Apoiar";
+
+/* No comment provided by engineer. */
+"Support us" = "Apoie-nos";
+
+/* No comment provided by engineer. */
+"Supporter" = "Apoiador";
+
+/* No comment provided by engineer. */
+"Supporter subscription" = "Assinatura de apoiador";
+
+/* No comment provided by engineer. */
+"System" = "Sistema";
+
+/* No comment provided by engineer. */
+"System access" = "Acesso ao sistema";
+
+/* No comment provided by engineer. */
+"Take a picture" = "Tirar uma foto";
+
+/* No comment provided by engineer. */
+"Task:" = "Tarefa:";
+
+/* No comment provided by engineer. */
+"Task`s" = "Tarefas";
+
+/* No comment provided by engineer. */
+"Tell me about your day 🦾 🦾" = "Conte-me sobre o seu dia 🦾 🦾";
+
+/* No comment provided by engineer. */
+"Temperatures" = "Temperaturas";
+
+/* No comment provided by engineer. */
+"Termin" = "Término";
+
+/* No comment provided by engineer. */
+"Terms of Use" = "Termos de uso";
+
+/* No comment provided by engineer. */
+"The contact details refer to the general contact information such as \"Headquarters\". You can add additional contacts later." = "Os detalhes de contato referem-se às informações gerais de contato, como \"Sede\". Você pode adicionar contatos adicionais posteriormente.";
+
+/* No comment provided by engineer. */
+"The developer" = "O desenvolvedor";
+
+/* No comment provided by engineer. */
+"The next maintenance appointment for your Everyday Prosthesis!" = "A próxima consulta de manutenção para a sua Prótese Diária!";
+
+/* No comment provided by engineer. */
+"The next maintenance appointment for your Replacement Prosthesis!" = "A próxima consulta de manutenção da sua Prótese de Substituição!";
+
+/* No comment provided by engineer. */
+"The next maintenance appointment for your Sports Prosthesis!" = "A próxima consulta de manutenção da sua Prótese Desportiva!";
+
+/* No comment provided by engineer. */
+"The next maintenance appointment for your Waterproof Prosthesis!" = "A próxima consulta de manutenção da sua Prótese Impermeável!";
+
+/* No comment provided by engineer. */
+"The pain recorder is available in the current version. A more detailed recording is planned, in combination with a medication plan/reminder. In addition, a PDF creation of the documented data is planned, which can be easily shared or emailed to the appropriate contacts. In addition, other widgets and statistics are created." = "O gravador de dor está disponível na versão atual. Está prevista uma gravação mais detalhada, em combinação com um plano/lembrete de medicação. Além disso, está prevista a criação de um PDF dos dados documentados, que podem ser facilmente compartilhados ou enviados por e-mail para os contatos apropriados. Além disso, outros widgets e estatísticas são criados.";
+
+/* No comment provided by engineer. */
+"The parameters “reasons” and “painkillers” can be deleted here. Editing is not possible. The parameters can be recreated when editing or creating the pain record." = "Os parâmetros “motivos” e “analgésicos” podem ser excluídos aqui. A edição não é possível. Os parâmetros podem ser recriados ao editar ou criar o registro de dor.";
+
+/* No comment provided by engineer. */
+"The summary of your current progress for the last week is now available." = "O resumo do seu progresso atual da última semana já está disponível.";
+
+/* No comment provided by engineer. */
+"The time goes by so fast" = "O tempo passa tão rápido";
+
+/* No comment provided by engineer. */
+"The timer for your prosthesis could not be started!" = "O cronômetro da sua prótese não pôde ser iniciado!";
+
+/* No comment provided by engineer. */
+"The weekly wear time" = "O tempo de uso semanal";
+
+/* No comment provided by engineer. */
+"There were no events last week!" = "Não houve eventos na semana passada!";
+
+/* No comment provided by engineer. */
+"Thin" = "Afinar";
+
+/* No comment provided by engineer. */
+"Think of your prosthesis diary and behave in your time. ✌️" = "Pense no seu diário de prótese e comporte-se no seu tempo. ✌️";
+
+/* No comment provided by engineer. */
+"This Month" = "Este mês";
+
+/* No comment provided by engineer. */
+"This Week" = "Essa semana";
+
+/* No comment provided by engineer. */
+"Times" = "Tempos";
+
+/* No comment provided by engineer. */
+"Times of Day" = "Horas do dia";
+
+/* No comment provided by engineer. */
+"Titel" = "Título";
+
+/* No comment provided by engineer. */
+"To edit this entry??" = "Para editar esta entrada??";
+
+/* No comment provided by engineer. */
+"today" = "hoje";
+
+/* No comment provided by engineer. */
+"Today" = "Hoje";
+
+/* No comment provided by engineer. */
+"Today's wearing time" = "Tempo de uso de hoje";
+
+/* No comment provided by engineer. */
+"Top-Left" = "Superior esquerdo";
+
+/* No comment provided by engineer. */
+"Top-Right" = "Canto superior direito";
+
+/* No comment provided by engineer. */
+"Total Distance" = "Distância total";
+
+/* No comment provided by engineer. */
+"Total Wearingtime" = "Tempo total de uso";
+
+/* No comment provided by engineer. */
+"Tracking" = "Monitorando";
+
+/* No comment provided by engineer. */
+"Trail" = "Trilha";
+
+/* No comment provided by engineer. */
+"Trends" = "Tendências";
+
+/* No comment provided by engineer. */
+"Try it for 7 days for free" = "Experimente por 7 dias gratuitamente";
+
+/* No comment provided by engineer. */
+"Type: " = "Tipo:";
+
+/* No comment provided by engineer. */
+"Unbegrenzt Kontakten Verwalten" = "Gerencie contatos ilimitados";
+
+/* No comment provided by engineer. */
+"Unknown" = "Desconhecido";
+
+/* No comment provided by engineer. */
+"Unknown ID" = "ID desconhecido";
+
+/* No comment provided by engineer. */
+"Unlimited contacts" = "Contatos ilimitados";
+
+/* No comment provided by engineer. */
+"Update to unlock all Pro functionality" = "Atualização para desbloquear todas as funcionalidades Pro";
+
+/* No comment provided by engineer. */
+"value" = "valor";
+
+/* No comment provided by engineer. */
+"View all" = "Ver tudo";
+
+/* No comment provided by engineer. */
+"View all expired appointments" = "Ver todos os compromissos expirados";
+
+/* No comment provided by engineer. */
+"View all expired appointments from the last week" = "Ver todos os compromissos expirados da última semana";
+
+/* No comment provided by engineer. */
+"View average daily steps" = "Ver média de passos diários";
+
+/* No comment provided by engineer. */
+"View currrent steps in app badge." = "Veja as etapas atuais no selo do aplicativo.";
+
+/* No comment provided by engineer. */
+"View dentures worn today" = "Ver dentaduras usadas hoje";
+
+/* No comment provided by engineer. */
+"View your prosthesis timer on your lock screen and Dynamic Island." = "Veja o cronômetro da sua prótese na tela de bloqueio e na Ilha Dinâmica.";
+
+/* No comment provided by engineer. */
+"warmth" = "Cordialidade";
+
+/* No comment provided by engineer. */
+"Waterproof" = "À prova d'água";
+
+/* No comment provided by engineer. */
+"Waterproof\nProsthesis" = "Prótese Impermeável";
+
+/* No comment provided by engineer. */
+"Waterproof Prosthesis" = "Prótese Impermeável";
+
+/* No comment provided by engineer. */
+"Waterproof Prosthesis Liner" = "Liner de Prótese Impermeável";
+
+/* No comment provided by engineer. */
+"We haven't seen you today 😢" = "Não te vimos hoje 😢";
+
+/* No comment provided by engineer. */
+"We'll help you set up the app!" = "Ajudaremos você a configurar o aplicativo!";
+
+/* No comment provided by engineer. */
+"Wearing time" = "Tempo de uso";
+
+/* No comment provided by engineer. */
+"Wearing times chart" = "Gráfico de tempos de uso";
+
+/* No comment provided by engineer. */
+"weather" = "Clima";
+
+/* No comment provided by engineer. */
+"Weather" = "Clima";
+
+/* No comment provided by engineer. */
+"Week Step" = "Etapa da semana";
+
+/* No comment provided by engineer. */
+"Week: **%@**" = "Semana: **%@**";
+
+/* No comment provided by engineer. */
+"Weekly" = "Semanalmente";
+
+/* No comment provided by engineer. */
+"Weekly Avg Target" = "Meta média semanal";
+
+/* No comment provided by engineer. */
+"Weekly Avg Wearing Time" = "Tempo médio de uso semanal";
+
+/* No comment provided by engineer. */
+"Weekly Mood Trend" = "Tendência de humor semanal";
+
+/* No comment provided by engineer. */
+"Weekly Pain Trend" = "Tendência Semanal de Dor";
+
+/* No comment provided by engineer. */
+"Weekly progress report" = "Relatório de progresso semanal";
+
+/* No comment provided by engineer. */
+"Weekly report" = "Relatório semanal";
+
+/* No comment provided by engineer. */
+"Weekly Report" = "Relatório semanal";
+
+/* No comment provided by engineer. */
+"Weekly reports" = "Relatórios semanais";
+
+/* No comment provided by engineer. */
+"Weekly Steps Chart" = "Gráfico de passos semanais";
+
+/* No comment provided by engineer. */
+"Weekly Target" = "Meta Semanal";
+
+/* No comment provided by engineer. */
+"Welcome to Pro Prosthesis!" = "Bem-vindo à Prótese Pró!";
+
+/* No comment provided by engineer. */
+"What date was\nyour amputation?" = "Que data foi\nsua amputação?";
+
+/* No comment provided by engineer. */
+"What is the name of the liner model?" = "Qual é o nome do modelo do liner?";
+
+/* No comment provided by engineer. */
+"What kind of prosthesis would you like to add?" = "Que tipo de prótese você gostaria de adicionar?";
+
+/* No comment provided by engineer. */
+"What prosthesis" = "Qual prótese?";
+
+/* No comment provided by engineer. */
+"What prosthesis\ndid you wear?" = "Qual prótese\nvocê usou?";
+
+/* No comment provided by engineer. */
+"What purpose would you like to add?" = "Que propósito você gostaria de adicionar?";
+
+/* No comment provided by engineer. */
+"What type of prosthesis would you like to add?" = "Que tipo de prótese você gostaria de adicionar?";
+
+/* No comment provided by engineer. */
+"What was your last pain?" = "Qual foi sua última dor?";
+
+/* No comment provided by engineer. */
+"What's the name of the manufacturer?" = "Qual é o nome do fabricante?";
+
+/* No comment provided by engineer. */
+"When BG Task is running" = "Quando a tarefa BG está em execução";
+
+/* No comment provided by engineer. */
+"With an upgrade to the premium \n version, the app gets even better!" = "Com um upgrade para o premium\n versão, o aplicativo fica ainda melhor!";
+
+/* No comment provided by engineer. */
+"With an upgrade to the premium version,\nthe app gets even better!" = "Com uma atualização para a versão premium,\no aplicativo fica ainda melhor!";
+
+/* No comment provided by engineer. */
+"With the subscription you support the continuous development of the prosthesis app! \n at €9.99 per year!" = "Com a assinatura você apoia o desenvolvimento contínuo do aplicativo de prótese!\n a 9,99€ por ano!";
+
+/* No comment provided by engineer. */
+"Wöchentlich" = "Semanalmente";
+
+/* No comment provided by engineer. */
+"Woman" = "Mulher";
+
+/* No comment provided by engineer. */
+"Workouts" = "Exercícios";
+
+/* No comment provided by engineer. */
+"Worn prostheses" = "Próteses usadas";
+
+/* No comment provided by engineer. */
+"WOW, you've already walked %lld steps today, that's more than half of your daily goal. 🥳 👏" = "UAU, você já caminhou %lld passos hoje, isso é mais da metade de sua meta diária. 🥳 👏";
+
+/* No comment provided by engineer. */
+"Write e-mail" = "Escreva um email";
+
+/* No comment provided by engineer. */
+"Year" = "Ano";
+
+/* No comment provided by engineer. */
+"Yesterday" = "Nenhum tipo";
+
+/* No comment provided by engineer. */
+"You are still %lld days in the test phase. During this time you can test some pro features for free." = "Você ainda está %lld dias na fase de teste. Durante esse período, você pode testar alguns recursos profissionais gratuitamente.";
+
+/* No comment provided by engineer. */
+"You can apply for your new liner for your %@ in 3 days." = "Você pode solicitar seu novo liner para %@ em 3 dias.";
+
+/* No comment provided by engineer. */
+"You didn't even stop by yesterday. Just get back into your plan today." = "Você nem passou por aqui ontem. Basta voltar ao seu plano hoje.";
+
+/* No comment provided by engineer. */
+"You have an appointment at %@ on %@ at %@ ✌️. Come by and have a look at your notes. 😉" = "Você tem um compromisso marcado em %1$@ em %2$@ em %3$@ ✌️. Passe por aqui e dê uma olhada em suas anotações. 😉";
+
+/* No comment provided by engineer. */
+"You have not entered any moods in the current period." = "Você não entrou em nenhum estado de espírito no período atual.";
+
+/* No comment provided by engineer. */
+"You have not entered any moods yet" = "Você ainda não entrou em nenhum humor";
+
+/* No comment provided by engineer. */
+"You have not entered any pain in the current period." = "Você não sentiu nenhuma dor no período atual.";
+
+/* No comment provided by engineer. */
+"You have not entered any pains yet" = "Você ainda não entrou em nenhuma dor";
+
+/* No comment provided by engineer. */
+"You have not saved any Prosthesis" = "Você não salvou nenhuma prótese";
+
+/* No comment provided by engineer. */
+"You have not saved any Prosthesis-Liners" = "Você não salvou nenhum Liner de prótese";
+
+/* No comment provided by engineer. */
+"You have not yet added any moods to your prostheses" = "Você ainda não adicionou nenhum humor às suas próteses";
+
+/* No comment provided by engineer. */
+"You have not yet added any pains to your prostheses" = "Você ainda não adicionou nenhuma dor às suas próteses";
+
+/* No comment provided by engineer. */
+"You have now tested the app for more than 14 days free of charge. If you want to continue using the Pro features, you need a Pro subscription!" = "Você já testou o aplicativo por mais de 14 dias gratuitamente. Se quiser continuar usando os recursos Pro, você precisa de uma assinatura Pro!";
+
+/* No comment provided by engineer. */
+"You have reached your goal today!" = "Você alcançou seu objetivo hoje!";
+
+/* No comment provided by engineer. */
+"You have the premium subscription!" = "Você tem a assinatura premium!";
+
+/* No comment provided by engineer. */
+"You walked an average of %lld steps per day this week. That's  %lld fewer steps than last week." = "Você caminhou em média %lld passos por dia esta semana. São %lld menos etapas do que na semana passada.";
+
+/* No comment provided by engineer. */
+"You walked an average of %lld steps per day this week. These are %lld steps more as last week." = "Você caminhou em média %lld passos por dia esta semana. Estas são %lld etapas a mais que na semana passada.";
+
+/* No comment provided by engineer. */
+"You've already reached 50% of your daily step goal." = "Você já atingiu 50% de sua meta diária de passos.";
+
+/* No comment provided by engineer. */
+"Your amputation date is required for your statistics." = "A data da sua amputação é necessária para suas estatísticas.";
+
+/* No comment provided by engineer. */
+"Your appointments and notes at a glance." = "Seus compromissos e notas rapidamente.";
+
+/* No comment provided by engineer. */
+"Your daily goal for today is %lld steps." = "Sua meta diária para hoje é de %lld passos.";
+
+/* No comment provided by engineer. */
+"Your first name" = "Seu primeiro nome";
+
+/* No comment provided by engineer. */
+"Your mood history this week." = "Seu histórico de humor esta semana.";
+
+/* No comment provided by engineer. */
+"Your mood progression in the prosthesis comparison." = "A progressão do seu humor na comparação da prótese.";
+
+/* No comment provided by engineer. */
+"Your mood trend compared to the month before." = "Sua tendência de humor em comparação com o mês anterior.";
+
+/* No comment provided by engineer. */
+"Your mood trend compared to the week before." = "Sua tendência de humor em comparação com a semana anterior.";
+
+/* No comment provided by engineer. */
+"Your next liner for your %@ can now be requested." = "Seu próximo revestimento protético para seu %@ agora pode ser solicitado.";
+
+/* No comment provided by engineer. */
+"Your pain has a connection of %lld %%." = "Sua dor tem uma conexão de %lld %%.";
+
+/* No comment provided by engineer. */
+"Your Pain history this week." = "Seu histórico de dor esta semana.";
+
+/* No comment provided by engineer. */
+"Your pain progression in the prosthesis comparison." = "A progressão da sua dor na comparação da prótese.";
+
+/* No comment provided by engineer. */
+"Your Pain trend compared to the month before." = "Sua tendência de dor em comparação com o mês anterior.";
+
+/* No comment provided by engineer. */
+"Your Pain trend compared to the week before." = "Sua tendência de dor em comparação com a semana anterior.";
+
+/* No comment provided by engineer. */
+"Your personal weekly report" = "Seu relatório semanal pessoal";
+
+/* No comment provided by engineer. */
+"Your progress and activities at a glance." = "Resumo do seu progresso e atividades.";
+
+/* No comment provided by engineer. */
+"Your Prosthesis-Liners?" = "Seus liners de prótese?";
+
+/* No comment provided by engineer. */
+"Your Prosthesis?" = "Sua prótese?";
+
+/* No comment provided by engineer. */
+"Your Prosthetic:" = "Sua prótese:";
+
+/* No comment provided by engineer. */
+"Your statistics" = "Suas estatísticas";
+
+/* No comment provided by engineer. */
+"Your step goal" = "Seu objetivo de passos";
+
+/* No comment provided by engineer. */
+"Your step trend compared over the last %lld weeks." = "Sua tendência de passos comparada nas últimas %lld semanas.";
+
+/* No comment provided by engineer. */
+"Your steps today" = "Seus passos hoje";
+
+/* No comment provided by engineer. */
+"Your weekly progress compared to the previous week." = "Seu progresso semanal em comparação com a semana anterior.";
+
+/* No comment provided by engineer. */
+"Your weekly progress is available" = "Seu progresso semanal está disponível";
+
+/* No comment provided by engineer. */
+"Zeige erfüllte Tagesziele Schrittüberischt Schrittüberischt" = "Zeige erfüllte Tagesziele Schrittüberischt Schrittüberischt";
+
+/* No comment provided by engineer. */
+"Zeigt den Record Button auch auf der Schrittüberischt an." = "Zeigt the Record Button auch auf der Schrittüberischt an.";
+
+/* No comment provided by engineer. */
+"Zeit:" = "Tempo:";
+

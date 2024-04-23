@@ -1,0 +1,24 @@
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLSessionConfiguration+Alamofire.swiftdeps"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLSessionConfiguration+Alamofire.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLSessionConfiguration+Alamofire.o"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLSessionConfiguration+Alamofire.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLSessionConfiguration+Alamofire.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/URLEncodedFormEncoder.swift":
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLEncodedFormEncoder.swiftconstvalues"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLEncodedFormEncoder.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLEncodedFormEncoder.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLEncodedFormEncoder.dia"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLEncodedFormEncoder.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/Validation.swift":
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Validation.o"
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Validation.swiftdeps"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Validation.dia"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Validation.swiftconstvalues"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/Validation.d"
+"/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Alamofire/Source/URLRequest+Alamofire.swift":
+  swift-dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLRequest+Alamofire.swiftdeps"
+  object: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLRequest+Alamofire.o"
+  dependencies: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLRequest+Alamofire.d"
+  const-values: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLRequest+Alamofire.swiftconstvalues"
+  diagnostics: "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/build/Pods.build/Debug-iphonesimulator/Alamofire.build/Objects-normal-asan/arm64/URLRequest+Alamofire.dia"

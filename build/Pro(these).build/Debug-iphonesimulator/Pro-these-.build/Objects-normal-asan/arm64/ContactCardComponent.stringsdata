@@ -1,0 +1,28 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Events/Components/ContactComponents/ContactCardComponent.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "No dates available."
+      },
+      {
+        "comment": "",
+        "key": "No notes available!"
+      },
+      {
+        "comment": "",
+        "key": "Delete %@? \n \n All associated appointments \n and notes will be deleted!"
+      },
+      {
+        "comment": "",
+        "key": "Delete Contact"
+      },
+      {
+        "comment": "",
+        "key": "Edit contact"
+      }
+    ]
+  },
+  "version": 1
+}

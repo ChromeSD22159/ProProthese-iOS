@@ -1,0 +1,32 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Pain/calculateCorrelation.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Mostly in the morning"
+      },
+      {
+        "comment": "",
+        "key": "Mostly at midday"
+      },
+      {
+        "comment": "",
+        "key": "Mostly in the afternoon"
+      },
+      {
+        "comment": "",
+        "key": "Mostly in the evening"
+      },
+      {
+        "comment": "",
+        "key": "Mostly in the night"
+      },
+      {
+        "comment": "",
+        "key": "No time date"
+      }
+    ]
+  },
+  "version": 1
+}

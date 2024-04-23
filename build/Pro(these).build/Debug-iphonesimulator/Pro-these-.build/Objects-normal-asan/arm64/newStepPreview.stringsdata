@@ -1,0 +1,120 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Workouts/WorkoutEntryTabs/newStepPreview.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "**%lld**"
+      },
+      {
+        "comment": "",
+        "key": "**%@km**"
+      },
+      {
+        "comment": "",
+        "key": "**%@:%@h**"
+      },
+      {
+        "comment": "",
+        "key": "**%lld floors**"
+      },
+      {
+        "comment": "",
+        "key": "You walked an average of %lld steps per day this week. These are %lld steps more as last week."
+      },
+      {
+        "comment": "",
+        "key": "You walked an average of %lld steps per day this week. That's  %lld fewer steps than last week."
+      },
+      {
+        "comment": "",
+        "key": "Week: **%@**"
+      },
+      {
+        "comment": "",
+        "key": "- -"
+      },
+      {
+        "comment": "",
+        "key": "%lld daily step goal"
+      },
+      {
+        "comment": "",
+        "key": "⌀ %lld steps a day this week"
+      },
+      {
+        "comment": "",
+        "key": "–"
+      },
+      {
+        "comment": "",
+        "key": "Steps from last week"
+      },
+      {
+        "comment": "",
+        "key": "Steps this week"
+      },
+      {
+        "comment": "",
+        "key": "Your step goal"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "0"
+      },
+      {
+        "comment": "",
+        "key": "Steps"
+      },
+      {
+        "comment": "",
+        "key": "Distance"
+      },
+      {
+        "comment": "",
+        "key": "%@:%@h"
+      },
+      {
+        "comment": "",
+        "key": "Wearing time"
+      },
+      {
+        "comment": "",
+        "key": "date"
+      },
+      {
+        "comment": "",
+        "key": "value"
+      },
+      {
+        "comment": "",
+        "key": "%@"
+      },
+      {
+        "comment": "",
+        "key": "Reset"
+      },
+      {
+        "comment": "",
+        "key": "Today"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Last Week"
+      },
+      {
+        "comment": "",
+        "key": "This Week"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,24 @@
+{
+  "source": "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pro(these)/Views/TabViews/Home/Wearing/WearingWeek.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "The weekly wear time"
+      },
+      {
+        "comment": "",
+        "key": "Compared to the previous week."
+      },
+      {
+        "comment": "",
+        "key": "%@ hrs. %@ mins."
+      },
+      {
+        "comment": "",
+        "key": "%@%@%%"
+      }
+    ]
+  },
+  "version": 1
+}
