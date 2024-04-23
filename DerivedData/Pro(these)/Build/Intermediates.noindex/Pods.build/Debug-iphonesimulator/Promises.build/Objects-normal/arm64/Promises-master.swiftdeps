@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
-options: "dd233c44b804d65840a386d1e2e0afdaef7b09fb3286ae633c7de84c180afbb7"
-build_start_time: [1693263628, 983962000]
-build_end_time: [1693263629, 134141000]
-inputs:
-  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Promises/Promise/Promise+Extras.swift": !private [1693258540, 700250481]
-  "/Users/frederikkohler/Desktop/MyApps Development/Pro-these-/Pods/Promises/Promise/Promise.swift": !private [1693258540, 700025863]
