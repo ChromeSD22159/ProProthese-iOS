@@ -65,7 +65,54 @@
                   endingLineNumber = "1409"
                   offsetFromSymbolStart = "4120">
                </Location>
+               <Location
+                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - fc1db80aebf4194f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pro_these_.PainDetailView.getAllProthesesWearedToday(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; Swift.Array&lt;Pro_these_.ProthesenTimes&gt;"
+                  moduleName = "Pro-these-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/frederikkohler/Documents/App%20Development/Pro-these-/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1409"
+                  endingLineNumber = "1409"
+                  offsetFromSymbolStart = "4168">
+               </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D0D5C012-0FA7-4116-930F-76A91F377CA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pro(these)/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "userNotificationCenter(_:didReceive:withCompletionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31224687-B024-417E-94FF-3A3972D58D70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pro(these)/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "userNotificationCenter(_:willPresent:withCompletionHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

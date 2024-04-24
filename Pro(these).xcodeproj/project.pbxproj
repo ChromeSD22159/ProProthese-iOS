@@ -119,6 +119,8 @@
 		B615DF6A2A3B2020007C27E9 /* StopWatchComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B615DF5F2A3B201F007C27E9 /* StopWatchComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B615DF6E2A3B20B4007C27E9 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9491129F6EEFA00BBE3A2 /* Tab.swift */; };
 		B615DF6F2A3B20BD007C27E9 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F9490E29F6EECC00BBE3A2 /* AppConfig.swift */; };
+		B618B2EE2BD8193200A4B5D8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B618B2ED2BD8193200A4B5D8 /* FirebaseCrashlytics */; };
+		B618B2F02BD8240200A4B5D8 /* GoogleBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B618B2EF2BD8240200A4B5D8 /* GoogleBannerView.swift */; };
 		B620B38B2A41EBE000A61B1D /* ProFeatureSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620B38A2A41EBE000A61B1D /* ProFeatureSheet.swift */; };
 		B620B3912A4216E000A61B1D /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620B3902A4216E000A61B1D /* PurchaseManager.swift */; };
 		B629A71C2A3C4E17002D57D4 /* ProProtheseWidgetTodaySteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629A71B2A3C4E17002D57D4 /* ProProtheseWidgetTodaySteps.swift */; };
@@ -293,6 +295,19 @@
 		B69F88722B172AA500E4DED0 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F88712B172AA500E4DED0 /* NotificationService.swift */; };
 		B69F88762B172AA500E4DED0 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B69F886F2B172AA500E4DED0 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B69F887C2B1733C100E4DED0 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = B69F887B2B1733C100E4DED0 /* OneSignalExtension */; };
+		B6A3A3232BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A3242BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A3252BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A3262BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A3272BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A3282BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A3292BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A32A2BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */; };
+		B6A3A32D2BD7A4A000C037B2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B6A3A32C2BD7A4A000C037B2 /* FirebaseAnalytics */; };
+		B6A3A32F2BD7A4A000C037B2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = B6A3A32E2BD7A4A000C037B2 /* FirebaseAnalyticsOnDeviceConversion */; };
+		B6A3A3312BD7A4A000C037B2 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B6A3A3302BD7A4A000C037B2 /* FirebaseAnalyticsSwift */; };
+		B6A3A3332BD7A4A000C037B2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = B6A3A3322BD7A4A000C037B2 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		B6A3A3352BD7A4A000C037B2 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B6A3A3342BD7A4A000C037B2 /* FirebaseAppCheck */; };
 		B6A530132A3CF2FF00BB0F8F /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
 		B6A530142A3CF32100BB0F8F /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
 		B6A530152A3CF32100BB0F8F /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F2C4529FD0649006CA21E /* WatchConnectivityProvider.swift */; };
@@ -506,6 +521,7 @@
 		B615DF632A3B201F007C27E9 /* StopWatchComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchComplication.swift; sourceTree = "<group>"; };
 		B615DF652A3B2020007C27E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B615DF672A3B2020007C27E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B618B2EF2BD8240200A4B5D8 /* GoogleBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBannerView.swift; sourceTree = "<group>"; };
 		B620B38A2A41EBE000A61B1D /* ProFeatureSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFeatureSheet.swift; sourceTree = "<group>"; };
 		B620B3902A4216E000A61B1D /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		B629A71B2A3C4E17002D57D4 /* ProProtheseWidgetTodaySteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProProtheseWidgetTodaySteps.swift; sourceTree = "<group>"; };
@@ -683,6 +699,7 @@
 		B69F88712B172AA500E4DED0 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		B69F88732B172AA500E4DED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69F887A2B172B8F00E4DED0 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6A6391B2A9F63B10094EB73 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6A6BCF42A4A45E200D690F5 /* TestStore.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestStore.storekit; sourceTree = "<group>"; };
 		B6AF6E362AD5A7D00090F80A /* ContactPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPickerView.swift; sourceTree = "<group>"; };
@@ -802,13 +819,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B612B80E2B16C19600AA91F3 /* OneSignalFramework in Frameworks */,
+				B6A3A3352BD7A4A000C037B2 /* FirebaseAppCheck in Frameworks */,
 				B65340F02ACE1CC10047803D /* AppTrackingTransparency.framework in Frameworks */,
+				B618B2EE2BD8193200A4B5D8 /* FirebaseCrashlytics in Frameworks */,
 				B65340EE2ACE1CB10047803D /* AdSupport.framework in Frameworks */,
+				B6A3A3312BD7A4A000C037B2 /* FirebaseAnalyticsSwift in Frameworks */,
 				B636E6E22AD6A230008C6FC8 /* AppIntents.framework in Frameworks */,
 				B636E6DF2AD6A230008C6FC8 /* Intents.framework in Frameworks */,
 				B636E6E02AD6A230008C6FC8 /* IntentsUI.framework in Frameworks */,
+				B6A3A3332BD7A4A000C037B2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				B6C695342AEAD3980088F864 /* Apollo in Frameworks */,
+				B6A3A32F2BD7A4A000C037B2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				2A0F64F9C31B38C488A739C0 /* Pods_Pro_these_.framework in Frameworks */,
+				B6A3A32D2BD7A4A000C037B2 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1259,6 +1282,7 @@
 			children = (
 				B6F4E66E2A9D61160049AC6F /* GoogleAppOpenAd.swift */,
 				B66CE4322A9D6E570020EC1A /* GoogleInterstitialAd.swift */,
+				B618B2EF2BD8240200A4B5D8 /* GoogleBannerView.swift */,
 			);
 			path = GoogleAds;
 			sourceTree = "<group>";
@@ -1361,6 +1385,7 @@
 		B6F948EF29F6ED8500BBE3A2 /* Pro(these) */ = {
 			isa = PBXGroup;
 			children = (
+				B6A3A3222BD7A43C00C037B2 /* GoogleService-Info.plist */,
 				B66D6AA52ADD999100194E95 /* Localizable.xcstrings */,
 				B6F948F429F6ED8700BBE3A2 /* Assets.xcassets */,
 				B6F9491D29F6F15700BBE3A2 /* Pro-these--Info.plist */,
@@ -1645,6 +1670,7 @@
 				B6E3B3EB29FD1B5A00341144 /* Embed Watch Content */,
 				B63FC1362A05B49C0013652B /* Embed ExtensionKit Extensions */,
 				C4C77140770F58BA6FEDB9C5 /* [CP] Embed Pods Frameworks */,
+				B6A5BD3C2BD7ED41009BE4CF /* CrashLythics */,
 			);
 			buildRules = (
 			);
@@ -1659,6 +1685,12 @@
 			packageProductDependencies = (
 				B6C695332AEAD3980088F864 /* Apollo */,
 				B612B80D2B16C19600AA91F3 /* OneSignalFramework */,
+				B6A3A32C2BD7A4A000C037B2 /* FirebaseAnalytics */,
+				B6A3A32E2BD7A4A000C037B2 /* FirebaseAnalyticsOnDeviceConversion */,
+				B6A3A3302BD7A4A000C037B2 /* FirebaseAnalyticsSwift */,
+				B6A3A3322BD7A4A000C037B2 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				B6A3A3342BD7A4A000C037B2 /* FirebaseAppCheck */,
+				B618B2ED2BD8193200A4B5D8 /* FirebaseCrashlytics */,
 			);
 			productName = "Pro(these)";
 			productReference = B6F948ED29F6ED8500BBE3A2 /* Pro-these-.app */;
@@ -1750,6 +1782,7 @@
 			packageReferences = (
 				B6C695322AEAD3980088F864 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				B612B80C2B16C14D00AA91F3 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = B6F948EE29F6ED8500BBE3A2 /* Products */;
 			projectDirPath = "";
@@ -1774,6 +1807,7 @@
 			files = (
 				B615DF662A3B2020007C27E9 /* Assets.xcassets in Resources */,
 				B63D8E682A66DBD60032FBF7 /* Localizable.strings in Resources */,
+				B6A3A3272BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 				B63D8E652A66DBD60032FBF7 /* InfoPlist.strings in Resources */,
 				B6676BA72A466FC200260C8F /* StoreConnect.storekit in Resources */,
 			);
@@ -1785,6 +1819,7 @@
 			files = (
 				B697CF762A388B3B00A4CD01 /* Assets.xcassets in Resources */,
 				B63D8E5C2A66DBD60032FBF7 /* Localizable.strings in Resources */,
+				B6A3A3252BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 				B63D8E592A66DBD60032FBF7 /* InfoPlist.strings in Resources */,
 				B6676BA52A466FC200260C8F /* StoreConnect.storekit in Resources */,
 			);
@@ -1796,6 +1831,7 @@
 			files = (
 				B697CF992A3A043400A4CD01 /* Assets.xcassets in Resources */,
 				B63D8E622A66DBD60032FBF7 /* Localizable.strings in Resources */,
+				B6A3A3262BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 				B63D8E5F2A66DBD60032FBF7 /* InfoPlist.strings in Resources */,
 				B6676BA62A466FC200260C8F /* StoreConnect.storekit in Resources */,
 			);
@@ -1805,6 +1841,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A3A32A2BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1817,6 +1854,7 @@
 				B6E3B3E429FD1B5A00341144 /* Preview Assets.xcassets in Resources */,
 				B6E3B3E129FD1B5A00341144 /* Assets.xcassets in Resources */,
 				B6676BA42A466FC200260C8F /* StoreConnect.storekit in Resources */,
+				B6A3A3242BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1830,6 +1868,7 @@
 				B635A6622A4233ED00AF87FA /* Localizable.strings in Resources */,
 				B6676BA32A466FC200260C8F /* StoreConnect.storekit in Resources */,
 				B63D8E532A66DBD60032FBF7 /* Pro-these--InfoPlist.strings in Resources */,
+				B6A3A3232BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1838,6 +1877,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66D6AA62ADD999100194E95 /* Localizable.xcstrings in Resources */,
+				B6A3A3282BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1846,6 +1886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6FECDCF2AD6717D00380658 /* MainInterface.storyboard in Resources */,
+				B6A3A3292BD7A43C00C037B2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1873,6 +1914,30 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B6A5BD3C2BD7ED41009BE4CF /* CrashLythics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = CrashLythics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/output.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
 		};
 		C4C77140770F58BA6FEDB9C5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2144,6 +2209,7 @@
 				B697CC152ACD59350062344E /* ImagePickerView.swift in Sources */,
 				B63D8E472A6661C50032FBF7 /* SuggestionSheet.swift in Sources */,
 				B60497162A718C2E00985310 /* StepsAvarage.swift in Sources */,
+				B618B2F02BD8240200A4B5D8 /* GoogleBannerView.swift in Sources */,
 				B60DDCD42A041AC800372957 /* ContactCardComponent.swift in Sources */,
 				B66660792A7DD69B006C3122 /* WearingWeek.swift in Sources */,
 				B66660732A7D7280006C3122 /* PainTrend.swift in Sources */,
@@ -2429,7 +2495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProWatchOS Watch App/StopWatchComplication/Info.plist";
@@ -2464,7 +2530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProWatchOS Watch App/StopWatchComplication/Info.plist";
@@ -2500,7 +2566,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = ProProtheseWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProProtheseWidget/Info.plist;
@@ -2533,7 +2599,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = ProProtheseWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProProtheseWidget/Info.plist;
@@ -2565,7 +2631,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProWatchOS Watch App/ProProtheseWatchComplication/Info.plist";
@@ -2599,7 +2665,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProWatchOS Watch App/ProProtheseWatchComplication/Info.plist";
@@ -2632,7 +2698,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -2663,7 +2729,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -2696,7 +2762,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ProWatchOS Watch App/ProWatchOS Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_ASSET_PATHS = "\"ProWatchOS Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
@@ -2715,7 +2781,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.15;
+				MARKETING_VERSION = 1.3.16;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.ProWatchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2735,7 +2801,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "ProWatchOS Watch App/ProWatchOS Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_ASSET_PATHS = "\"ProWatchOS Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
@@ -2754,7 +2820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.15;
+				MARKETING_VERSION = 1.3.16;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.ProWatchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2801,7 +2867,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2898,7 +2964,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Pro(these)/Pro(these).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_ASSET_PATHS = "\"Pro(these)/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
@@ -2935,7 +3001,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_EXPORT_SUPPORTED = YES;
-				MARKETING_VERSION = 1.3.15;
+				MARKETING_VERSION = 1.3.16;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -2957,7 +3023,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Pro(these)/Pro(these).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_ASSET_PATHS = "\"Pro(these)/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
@@ -2994,7 +3060,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_EXPORT_SUPPORTED = YES;
-				MARKETING_VERSION = 1.3.15;
+				MARKETING_VERSION = 1.3.16;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -3011,7 +3077,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ProthesesIntentsUI/ProthesesIntentsUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -3042,7 +3108,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ProthesesIntentsUI/ProthesesIntentsUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -3072,7 +3138,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ProthesesIntents/ProthesesIntents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -3103,7 +3169,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ProthesesIntents/ProthesesIntents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.15;
+				CURRENT_PROJECT_VERSION = 1.3.16;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -3223,6 +3289,14 @@
 				minimumVersion = 5.0.4;
 			};
 		};
+		B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
 		B6C695322AEAD3980088F864 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
@@ -3239,10 +3313,40 @@
 			package = B612B80C2B16C14D00AA91F3 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalFramework;
 		};
+		B618B2ED2BD8193200A4B5D8 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
 		B69F887B2B1733C100E4DED0 /* OneSignalExtension */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B612B80C2B16C14D00AA91F3 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalExtension;
+		};
+		B6A3A32C2BD7A4A000C037B2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B6A3A32E2BD7A4A000C037B2 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		B6A3A3302BD7A4A000C037B2 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		B6A3A3322BD7A4A000C037B2 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		B6A3A3342BD7A4A000C037B2 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A3A32B2BD7A4A000C037B2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
 		};
 		B6C695332AEAD3980088F864 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;

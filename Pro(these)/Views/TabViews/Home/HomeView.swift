@@ -112,6 +112,10 @@ struct HomeView: View {
                         .padding(.bottom, 5)
                     }
                     
+                    AdBannerView()
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+                        .padding(.vertical, 10)
+                    
                     FilterTabs()
                         .padding(.vertical, 10)
                     

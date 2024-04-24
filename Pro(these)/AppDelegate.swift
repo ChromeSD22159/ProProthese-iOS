@@ -12,6 +12,7 @@ import AppTrackingTransparency
 import WidgetKit
 import UserNotifications
 import OneSignalFramework
+import FirebaseCore
 
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, ObservableObject {
     
@@ -25,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         requestTrackingAuthorization()
-        
         
         if #available(iOS 14, *) {
             
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             // Vor iOS 14, hier wird der IDFA ohne explizite Erlaubnis verfügbar sein
             print("App-Tracking ist verfügbar (vor iOS 14).")
             if !AppConfig.shared.hasPro {
-              if AppConfig.shared.adsDebug {
+                if AppConfig.shared.adsDebug {
                     GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "550578b8f99033c15cec59b88b2e9249" ]
                 } else {
                     GADMobileAds.sharedInstance().start(completionHandler: nil)
@@ -50,7 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             }
         }
         
-        /* TEST */
+        FirebaseApp.configure()
+
         UNUserNotificationCenter.current().delegate = self
         
         UIApplication.shared.registerForRemoteNotifications()
