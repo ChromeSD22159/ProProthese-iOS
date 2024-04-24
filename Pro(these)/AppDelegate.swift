@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         requestTrackingAuthorization()
         
         if #available(iOS 14, *) {
-            
+                    
             ATTrackingManager.requestTrackingAuthorization { status in
                 if !AppConfig.shared.hasPro {
                   if AppConfig.shared.adsDebug {

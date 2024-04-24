@@ -71,6 +71,12 @@ struct PainEntry: View {
                 
                 AddPainCard()
 
+                if !appConfig.hasPro {
+                    AdBannerView()
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+                        .padding(.vertical, 10)
+                }
+                
                 if vm.showList {
                     ListPainEntrys()
                         .padding(.top)

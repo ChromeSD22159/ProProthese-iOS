@@ -209,24 +209,6 @@ struct FeelingView: View {
                             }
                         }
                 }
-                
-                /*
-                Image(systemName: cal.isCalendar ? "calendar" : "list.bullet.below.rectangle")
-                    .foregroundColor(currentTheme.text)
-                    .font(.title3)
-                    .onTapGesture {
-                        withAnimation(.easeInOut(duration: 0.5)){
-                            cal.isCalendar.toggle()
-                        }
-                    }
-
-                Image(systemName: "gearshape")
-                    .foregroundColor(currentTheme.text)
-                    .font(.title3)
-                    .onTapGesture {
-                        tabManager.isSettingSheet.toggle()
-                    }
-                */
             }
         }
         .padding(.horizontal, 20)

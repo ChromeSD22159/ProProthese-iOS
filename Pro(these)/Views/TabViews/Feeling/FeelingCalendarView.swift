@@ -87,6 +87,13 @@ struct FeelingCalendarView: View {
                          }
                      }
              ) // gesture
+               
+               
+               if !appConfig.hasPro {
+                   AdBannerView()
+                       .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+                       .padding(.vertical, 10)
+               }
               
                
                ListSelectedDateMoods(screenSize: screen.size)

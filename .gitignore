@@ -5,7 +5,10 @@ DerivedData/
 *.hmap
 *.ipa
 *.xcuserstate
-project.xcworkspace/
+project.xcworkspace/+
+UserInterfaceState.xcuserstate
+Pro(these).xcworkspace
+Pro(these).xcodeproj
 
 # CocoaPods
 Pods/

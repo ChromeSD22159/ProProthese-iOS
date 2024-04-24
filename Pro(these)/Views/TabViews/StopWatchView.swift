@@ -39,6 +39,12 @@ struct StopWatchView: View {
                         VStack(spacing: 10) {
                             AnimatedHeader()
                             
+                            if !appConfig.hasPro {
+                                AdBannerView()
+                                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+                                    .padding(.vertical, 10)
+                            }
+                            
                             TempLocaltionRow()
                                 .padding(.top, 25)
                             

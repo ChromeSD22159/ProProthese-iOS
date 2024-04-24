@@ -77,6 +77,12 @@ struct Events: View {
                         .offset(y: -15)
                         //.listRowBackground(currentTheme.text.opacity(0.001))
                         
+                        if !appConfig.hasPro {
+                            AdBannerView()
+                                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+                                .padding(.vertical, 10)
+                        }
+                        
                         if appConfig.EventShowCalendar {
                             EventCalendar(events: events)
                         } else {
