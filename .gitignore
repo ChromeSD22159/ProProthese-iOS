@@ -1,0 +1,12 @@
+# Xcode
+build/
+DerivedData/
+.DS_Store
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace/
+
+# CocoaPods
+Pods/
+Podfile.lock
