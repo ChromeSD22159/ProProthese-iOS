@@ -38,20 +38,19 @@ final class GoogleAppOpenAd: NSObject, GADFullScreenContentDelegate, Observable 
            print("[OPEN AD] REQUESTED")
      
            let request = GADRequest()
-
-           GADAppOpenAd.load(withAdUnitID: GoogleAppStartrequest.requestType ,
+           
+           GADAppOpenAd.load(withAdUnitID: GoogleAppStartrequest.requestType,
                              request: request,
-                             orientation: UIInterfaceOrientation.portrait,
                              completionHandler: { (appOpenAdIn, _) in
-                                    self.appOpenAd = appOpenAdIn
-                                    self.appOpenAd?.fullScreenContentDelegate = self
-                                    self.loadTime = Date()
-                                    print("[OPEN AD] Ad is loaded")
-                                    
-                                       DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                           self.tryToPresentAd()
-                                       }
-                             })
+                               self.appOpenAd = appOpenAdIn
+                               self.appOpenAd?.fullScreenContentDelegate = self
+                               self.loadTime = Date()
+                               print("[OPEN AD] Ad is loaded")
+
+                               DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                 self.tryToPresentAd()
+                               }
+             })
        }
    }
    
