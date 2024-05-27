@@ -36,49 +36,32 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - 527e96d7be0db4c5"
+                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - dce13328a91d485f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Pro_these_.PainDetailView.getAllProthesesWearedToday(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; Swift.Array&lt;Pro_these_.ProthesenTimes&gt;"
                   moduleName = "Pro-these-"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/frederikkohler/Desktop/MyApps%20Development/Pro-these-/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
+                  urlString = "file:///Users/frederikkohler/Documents/App%20Development/iOS%20Apps/ProProthese-iOS/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1409"
-                  endingLineNumber = "1409"
-                  offsetFromSymbolStart = "4168">
+                  startingLineNumber = "1410"
+                  endingLineNumber = "1410">
                </Location>
                <Location
-                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - 527e96d7be0db4c5"
+                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - d711da4ebcced709"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Pro_these_.PainDetailView.getAllProthesesWearedToday(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; Swift.Array&lt;Pro_these_.ProthesenTimes&gt;"
+                  symbolName = "closure #2 (Pro_these_.WearingTimes) -&gt; Swift.Bool in Pro_these_.PainDetailView.getAllProthesesWearedToday(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; Swift.Array&lt;Pro_these_.ProthesenTimes&gt;"
                   moduleName = "Pro-these-"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/frederikkohler/Desktop/MyApps%20Development/Pro-these-/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
+                  urlString = "file:///Users/frederikkohler/Documents/App%20Development/iOS%20Apps/ProProthese-iOS/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1409"
-                  endingLineNumber = "1409"
-                  offsetFromSymbolStart = "4120">
-               </Location>
-               <Location
-                  uuid = "F37BF23B-8286-431C-AC65-090CD922DEF6 - fc1db80aebf4194f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pro_these_.PainDetailView.getAllProthesesWearedToday(date: Swift.Optional&lt;Foundation.Date&gt;) -&gt; Swift.Array&lt;Pro_these_.ProthesenTimes&gt;"
-                  moduleName = "Pro-these-"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/frederikkohler/Documents/App%20Development/Pro-these-/Pro(these)/Views/TabViews/Pain/PainEntry.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1409"
-                  endingLineNumber = "1409"
-                  offsetFromSymbolStart = "4168">
+                  startingLineNumber = "1410"
+                  endingLineNumber = "1410">
                </Location>
             </Locations>
          </BreakpointContent>
